@@ -1,0 +1,267 @@
+body {
+/*  background:url('/img/home-bg-fill.jpg') repeat-x; */
+  background:url('/img/int-bg-fill.jpg') repeat-x;
+}
+
+p {
+  color:#666;
+}
+
+h3 {
+  font-size:0.9em;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#777;
+}
+
+h4 {
+  margin:0;
+  font-size:1.1em;
+  color:#555;
+}
+
+h5 {
+  font-size:1.1em;
+  color:#9e7d3a;
+}
+
+h6 {
+  font-size:1.6em;
+  color:#9e7d3a;
+  font-weight:normal;
+  letter-spacing:1px;
+}
+
+a {
+  color:#9e7d3a;
+  text-decoration:none;
+}
+
+.main {
+/*  background:url('/img/home-bg.jpg') no-repeat center top; */
+  background:url('/img/int-bg.jpg') no-repeat center top;
+  height:521px;
+  position:relative;
+}
+
+.navwrap {
+  position:absolute;
+  top:62px;
+  left:50%;
+  margin-left:-475px;
+  height:50px;
+}
+
+.nav {
+  width:950px;
+}
+
+.nav .ul-nav {
+  list-style:none;
+  height:50px;
+  margin-left:-1px;
+}
+
+.nav .ul-nav > li.center {
+  width:270px;
+}
+
+.nav li.menu-head {
+  display:block;
+  float:left;
+  height:50px;
+  margin:0;
+  position:relative;
+}
+
+.nav li.menu-head > a {
+  display:block;
+  padding-top:14px;
+  height:35px;
+  width:170px;
+  text-align:center;
+  text-decoration:none;
+  color:black;
+  color:#444;
+  font-size:1.1em;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.nav li.active {
+  background-color:#f3f3f3;
+  border:1px solid #ddd;
+  margin:-1px;
+}
+
+.nav ul.menu {
+  display:none;
+  list-style:none;
+  border:2px solid #ddd;
+  z-index:1000;
+  background-color:white;
+  position:absolute;
+  top:44px;
+  left:-1px;
+  text-align:left;
+  width:168px;
+  box-shadow:5px 5px 5px #888;
+  -webkit-box-shadow:5px 5px 5px #888;
+}
+
+.nav ul.menu > li {
+  margin:0;
+  padding:0;
+}
+
+.nav ul.menu a {
+  padding:5px;
+  margin:0;
+  border:0px;
+  width:158px;
+  display:block;
+}
+
+.nav ul.menu a:hover {
+  background-color:#f5f5f5;
+}
+
+.home-hero {
+  position:absolute;
+  left:50%;
+  margin-left:-476px;
+  top:165px;
+  width:950px;
+}
+
+.home-hero-copy {
+  height:300px;
+  width:400px;
+  font-weight:normal;
+  top:165px;
+}
+
+.home-hero-copy h1 {
+  font-size:4em;
+  font-family: 'Special Elite', cursive;
+  margin-bottom:-8px;
+}
+
+.home-hero-copy h2 {
+  color:#9e7d3a;
+  font-weight:normal;
+  font-size:1.4em;
+  margin:0 0 7px 0;
+}
+
+.home-hero-copy p {
+  font-size:0.89em;
+  color:#111;
+}
+
+.home-grid-container {
+  width:950px;
+  margin:0 auto;
+  margin-top:-4px;
+  background:url('/img/home-grid-bg.png') repeat-y center top;
+}
+
+.home-grid {
+  float:left;
+}
+
+.home-left {
+  width:315px;
+  margin:0 40px 0 0;
+}
+
+.home-middle {
+  width:295px;
+  margin:0 40px 0 0;
+}
+
+.home-right {
+  width:249px;
+}
+
+.join-us {
+  margin-top:-5px;
+}
+
+footer {
+  height:120px;
+  padding-top:80px;
+  background:url('/img/home-bg-footer.jpg') repeat-x;
+}
+
+footer p {
+  text-align:center;
+}
+
+footer .copyright {
+  color:#bbb;
+}
+
+footer .fb-like {
+  float:left;
+}
+
+footer .tweet {
+  float:left;
+  padding-top:-3px;
+  padding-left:10px;
+}
+
+footer .social {
+  width:195px;
+  height:25px;
+  margin:0 auto;
+  padding-left:15px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after,
+.container_16:before,
+.container_16:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_12:after,
+.container_16:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_12,
+.container_16 {
+  zoom: 1;
+}
+
