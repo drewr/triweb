@@ -1,4 +1,5 @@
-(ns triweb.template)
+(ns triweb.template
+  (:require [me.raynes.cegdown :as markdown]))
 
 (defn wrap-template [app]
   (fn [req]
