@@ -1,2 +1,2 @@
-{:foo
- {:bar 1}}
+{:template
+ {:roots ["tmpl"]}}
