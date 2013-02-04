@@ -64,5 +64,6 @@
   (fn [req]
     (if-let [html (render-markdown (:uri req))]
       (-> (r/response html)
+          (r/content-type "text/html")
           (r/charset "UTF-8"))
       (app req))))
