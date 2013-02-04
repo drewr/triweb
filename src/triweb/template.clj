@@ -20,17 +20,18 @@
 
 (defn search [name]
   (or (if-let [url (io/resource name)]
-        (.getPath url))
+        name)
       (if (.isFile (file name))
-        name)))
+        (file name))))
 
 (defn find-tmpl*
+  "Find path to tempate.  If it's a local file return File object.  If
+  it's a resource return relative string."
   ([roots name]
      (->> roots
           (map #(str (file % name)))
           (map search)
-          (some identity)
-          file))
+          (some identity)))
   ([roots name alt-ext]
      (find-tmpl* roots (s/replace name #"\..*?$"
                                   (str "." alt-ext)))))
