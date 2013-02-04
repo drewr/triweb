@@ -7,14 +7,14 @@
 
 (defn find-tmpl*
   ([roots name]
-     (when-let [tmpl (->> roots
-                          (map #(io/file % name))
-                          (map str)
-                          (map io/resource)
-                          first)]
-       (.getPath tmpl)))
+     (->> roots
+          (map #(io/file % name))
+          (map str)
+          (map io/resource)
+          (map io/file)
+          first))
   ([roots name alt-ext]
-     (find-tmpl roots (s/replace name #"\..*?$"
+     (find-tmpl* roots (s/replace name #"\..*?$"
                                  (str "." alt-ext)))))
 
 (defn find-tmpl
