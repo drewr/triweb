@@ -1,0 +1,10 @@
+body {
+  background:url('/img/int-bg-fill.jpg') repeat-x;
+}
+
+.main {
+  background:url('/img/int-bg.jpg') no-repeat center top;
+  height:521px;
+  position:relative;
+}
+

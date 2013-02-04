@@ -44,7 +44,9 @@
   (when-let [tmpl (find-tmpl name)]
     (slurp tmpl)))
 
-(deftemplate t (find-tmpl "base.html") [c]
+(deftemplate index (find-tmpl "index.html") [])
+
+(deftemplate interior (find-tmpl "interior.html") [c]
   [:#content] (html-content c))
 
 (defn append-index-if-slash [path]
@@ -53,17 +55,19 @@
     path))
 
 (defn render-template [uri]
-  (t (slurp-tmpl (append-index-if-slash uri))))
+  (base (slurp-tmpl (append-index-if-slash uri))))
 
-(defn render-markdown [uri]
-  (let [uri (append-index-if-slash uri)
-        uri (.replace uri ".html" ".txt")]
-    (when-let [txt (slurp-tmpl uri)]
-      (t (markdown/to-html txt)))))
+(defn render [uri]
+  (if (= uri "/")
+    (index)
+    (let [uri (append-index-if-slash uri)
+          uri (.replace uri ".html" ".txt")]
+      (when-let [txt (slurp-tmpl uri)]
+        (interior (markdown/to-html txt))))))
 
 (defn wrap-template [app]
   (fn [req]
-    (if-let [html (render-markdown (:uri req))]
+    (if-let [html (render (:uri req))]
       (-> (r/response html)
           (r/content-type "text/html")
           (r/charset "UTF-8"))
