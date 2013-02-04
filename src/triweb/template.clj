@@ -3,19 +3,37 @@
             [me.raynes.cegdown :as markdown]
             [clojure.java.io :as io]
             [clojure.string :as s]
-            [carica.core :refer [config]]))
+            [ring.util.response :as r]
+            [carica.core :refer [config]])
+  (:import (java.io File)))
+
+(defn ^String join
+  ([x]
+     (io/as-file x))
+  ([x y]
+     (File. ^File (io/as-file x) ^String y))
+  ([x y & more]
+     (reduce join (join x y) more)))
+
+(defn file [& paths]
+  (apply join paths))
+
+(defn search [name]
+  (or (if-let [url (io/resource name)]
+        (.getPath url))
+      (if (.isFile (file name))
+        name)))
 
 (defn find-tmpl*
   ([roots name]
      (->> roots
-          (map #(io/file % name))
-          (map str)
-          (map io/resource)
-          (map io/file)
-          first))
+          (map #(str (file % name)))
+          (map search)
+          (some identity)
+          file))
   ([roots name alt-ext]
      (find-tmpl* roots (s/replace name #"\..*?$"
-                                 (str "." alt-ext)))))
+                                  (str "." alt-ext)))))
 
 (defn find-tmpl
   ([name]
@@ -25,24 +43,26 @@
   (when-let [tmpl (find-tmpl name)]
     (slurp tmpl)))
 
-(deftemplate t (find-tmpl "base.html") [content]
-  [:#content] (html-content content))
+(deftemplate t (find-tmpl "base.html") [c]
+  [:#content] (html-content c))
+
+(defn append-index-if-slash [path]
+  (if (.endsWith path "/")
+    (str (file path "index.html"))
+    path))
 
 (defn render-template [uri]
-  (let [uri (if (.endsWith uri "/")
-              (str (io/file uri "index.html"))
-              uri)]
-    (t (slurp-tmpl uri))))
+  (t (slurp-tmpl (append-index-if-slash uri))))
 
 (defn render-markdown [uri]
-  (let [uri (if (.endsWith uri "/")
-              (str (io/file uri "index.html"))
-              uri)]
-    (when-let [txt (slurp-tmpl (.replace uri ".html" ".txt"))]
+  (let [uri (append-index-if-slash uri)
+        uri (.replace uri ".html" ".txt")]
+    (when-let [txt (slurp-tmpl uri)]
       (t (markdown/to-html txt)))))
-
 
 (defn wrap-template [app]
   (fn [req]
-    (prn "****tmpl" req)
-    (app req)))
+    (if-let [html (render-markdown (:uri req))]
+      (-> (r/response html)
+          (r/charset "UTF-8"))
+      (app req))))

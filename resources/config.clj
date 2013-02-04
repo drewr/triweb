@@ -1,2 +1,3 @@
 {:template
- {:roots ["tmpl"]}}
+ {:roots ["tmpl"
+          "/home/aar/Dropbox/Trinity-WWW/www.tcnash.org"]}}
