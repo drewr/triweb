@@ -44,7 +44,7 @@
   (when-let [tmpl (find-tmpl name)]
     (slurp tmpl)))
 
-(deftemplate index (find-tmpl "index.html") [])
+(deftemplate home (find-tmpl "home.html") [])
 
 (deftemplate interior (find-tmpl "interior.html") [c]
   [:#content] (html-content c))
@@ -59,7 +59,7 @@
 
 (defn render [uri]
   (if (= uri "/")
-    (index)
+    (home)
     (let [uri (append-index-if-slash uri)
           uri (.replace uri ".html" ".txt")]
       (when-let [txt (slurp-tmpl uri)]

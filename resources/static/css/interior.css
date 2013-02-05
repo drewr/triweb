@@ -4,7 +4,23 @@ body {
 
 .main {
   background:url('/img/int-bg.jpg') no-repeat center top;
-  height:521px;
-  position:relative;
 }
+
+.content-wrap {
+  width:950px;
+  margin:0 auto;
+  position:relative;
+  top:215px;
+  margin-bottom:190px;
+}
+
+#sidebar {
+  float:left;
+  width:195px;
+}
+#content {
+  float:left;
+  width:750px;
+}
+
 

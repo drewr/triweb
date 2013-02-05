@@ -3,8 +3,8 @@
 <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
 <link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
-<!-- <link rel="stylesheet" type="text/css" media="all" href="/css/960.css" /> -->
-<link rel="stylesheet" type="text/css" href="/css/screen.css" />
+<link rel="stylesheet" type="text/css" href="/css/clear.css" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
 <link rel="stylesheet" type="text/css" href="/css/interior.css" />
 <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
@@ -17,7 +17,7 @@
 <ul class="ul-nav">
 <li class="left menu-head">
 <a href="">About Us</a>
-<ul class="menu">
+<ul class="menu" style="display:none">
 <li><a href="something">Something</a></li>
 <li><a href="something">Something Else!</a></li>
 </ul>
@@ -25,23 +25,38 @@
 
 <li class="leftctr menu-head">
 <a href="">Life@Trinity</a>
-<ul class="menu">
+<ul class="menu" style="display:none">
 <li><a href="something">Something</a></li>
 <li><a href="something">Something Else!</a></li>
 </ul>
 </li>
 
 <li class="center menu-head">&nbsp;</li>
-<li class="rightctr menu-head"><a href="">Ministry</a></li>
-<li class="right menu-head"><a href="">Sermons</a></li>
+<li class="rightctr menu-head"><a href="">Ministry</a>
+
+</li>
+
+<li class="right menu-head"><a href="">Sermons</a>
+
+</li>
 </ul>
 </div>
 </div>
 
-<div id="content"></div>
 
-
+<div class="content-wrap">
+<div id="sidebar">
+<ul class="sidenav">
+  <li>One</li>
+  <li>One</li>
+  <li>One</li>
+  <li>One</li>
+</ul>
+</div>
+<div id="content">
+</div>
 <div class="clearfix"></div>
+</div>
 
 
 <footer>
@@ -71,6 +86,7 @@ All rights reserved.
 </p>
 </footer>
 </div>
+
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

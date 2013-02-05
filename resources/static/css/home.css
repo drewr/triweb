@@ -1,0 +1,72 @@
+body {
+  background:url('/img/home-bg-fill.jpg') repeat-x;
+}
+
+.main {
+  background:url('/img/home-bg.jpg') no-repeat center top;
+  height:521px;
+  position:relative;
+}
+
+.home-hero {
+  position:absolute;
+  left:50%;
+  margin-left:-476px;
+  top:165px;
+  width:950px;
+}
+
+.home-hero-copy {
+  height:300px;
+  width:400px;
+  font-weight:normal;
+  top:165px;
+}
+
+.home-hero-copy h1 {
+  font-size:4em;
+  font-family: 'Special Elite', cursive;
+  margin-bottom:-8px;
+}
+
+.home-hero-copy h2 {
+  color:#9e7d3a;
+  font-weight:normal;
+  font-size:1.4em;
+  margin:0 0 7px 0;
+}
+
+.home-hero-copy p {
+  font-size:0.89em;
+  color:#111;
+}
+
+.home-grid-container {
+  width:950px;
+  margin:0 auto;
+  margin-top:-4px;
+  background:url('/img/home-grid-bg.png') repeat-y center top;
+}
+
+.home-grid {
+  float:left;
+}
+
+.home-left {
+  width:315px;
+  margin:0 40px 0 0;
+}
+
+.home-middle {
+  width:295px;
+  margin:0 40px 0 0;
+}
+
+.home-right {
+  width:249px;
+}
+
+.join-us {
+  margin-top:-5px;
+}
+
