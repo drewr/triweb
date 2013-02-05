@@ -1,5 +1,6 @@
 (ns triweb.template
   (:require [net.cgrand.enlive-html :refer [deftemplate html-content]]
+            [net.cgrand.enlive-html :as html]
             [me.raynes.cegdown :as markdown]
             [clojure.java.io :as io]
             [clojure.string :as s]
@@ -72,3 +73,45 @@
           (r/content-type "text/html")
           (r/charset "UTF-8"))
       (app req))))
+
+
+
+(def navmd  "
+# Membership
+* Foo Biz
+* /foo2test.html:Foo Bar!
+* Something
+
+# bar
+* bar1
+
+# baz
+* baz23
+")
+
+(defn navitem [item]
+  (let [[a b] (.split item ":")]
+    (if (and a b)
+      {:name b
+       :href a}
+      {:name a
+       :href (->> a
+                  (re-seq #"[A-Za-z0-9]")
+                  (apply str)
+                  .toLowerCase
+                  (format "/%s.html"))})))
+
+(defn navmenu [[menu subs]]
+  {:menu (html/text menu)
+   :options (->> [:li]
+                 (html/select subs)
+                 (map html/text)
+                 (map navitem))})
+
+(defn navmap [ht]
+  (->> #{[:h1] [:ul]}
+       (html/select (html/html-snippet ht))
+       (partition 2)
+       (map navmenu)))
+
+(navmap (markdown/to-html navmd))
