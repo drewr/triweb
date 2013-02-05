@@ -55,9 +55,6 @@
     (str (file path "index.html"))
     path))
 
-(defn render-template [uri]
-  (base (slurp-tmpl (append-index-if-slash uri))))
-
 (defn render [uri]
   (if (= uri "/")
     (home)
