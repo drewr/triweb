@@ -1,3 +1,4 @@
 {:template
  {:roots ["tmpl"
-          "/home/aar/Dropbox/Trinity-WWW/www.tcnash.org"]}}
+          (format "%s/Dropbox/Trinity-WWW/www.tcnash.org"
+                  (System/getProperty "user.home"))]}}
