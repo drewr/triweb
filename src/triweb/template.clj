@@ -3,8 +3,7 @@
             [clojure.java.io :as io]
             [clojure.string :as s]
             [me.raynes.cegdown :as markdown]
-            [net.cgrand.enlive-html :as html]
-            [net.cgrand.enlive-html :refer [deftemplate html-content]]
+            [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.template.nav :as nav])
   (:import (java.io File)))
@@ -21,14 +20,10 @@
   (apply join paths))
 
 (defn search [name]
-  (or (if-let [url (io/resource name)]
-        name)
-      (if (.isFile (file name))
-        (file name))))
+  (prn name)
+  (io/resource name))
 
 (defn find-tmpl*
-  "Find path to tempate.  If it's a local file return File object.  If
-  it's a resource return relative string."
   ([roots name]
      (->> roots
           (map #(str (file % name)))
@@ -44,14 +39,21 @@
      (find-tmpl* (config :template :roots) name)))
 
 (defn slurp-tmpl [name]
+  (prn name)
   (when-let [tmpl (find-tmpl name)]
+    (prn tmpl)
     (slurp tmpl)))
 
-(deftemplate home (find-tmpl "home.html") [])
+(defn slurp-markdown [name]
+  (when-let [md (slurp-tmpl name)]
+    (markdown/to-html md)))
 
-(deftemplate interior (find-tmpl "interior.html") [nav c]
-  [:div.nav] (html-content nav)
-  [:#content] (html-content c))
+(h/deftemplate home (find-tmpl "home.html") [nav]
+  [:div.nav] (h/content nav))
+
+(h/deftemplate interior (find-tmpl "interior.html") [nav c]
+  [:div.nav] (h/content nav)
+  [:#content] (h/html-content c))
 
 (defn append-index-if-slash [path]
   (if (.endsWith path "/")
@@ -59,13 +61,15 @@
     path))
 
 (defn render [uri]
-  (if (= uri "/")
-    (home)
-    (let [uri (append-index-if-slash uri)
-          uri (.replace uri ".html" ".txt")]
-      (when-let [txt (slurp-tmpl uri)]
-        (interior (nav/html )
-         (markdown/to-html txt))))))
+  (let [nav (nav/make
+             (slurp-markdown "home/_nav.txt")
+             "<li class=\"center menu-head\">&nbsp;</li>")]
+    (if (= uri "/")
+      (home nav)
+      (let [uri (append-index-if-slash uri)
+            uri (.replace uri ".html" ".txt")]
+        (when-let [page-html (slurp-markdown uri)]
+          (interior nav page-html))))))
 
 (defn wrap-template [app]
   (fn [req]

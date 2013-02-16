@@ -3,8 +3,7 @@
                                             text select sniptest content
                                             clone-for emit* do-> append
                                             set-attr first-child]]
-            [me.raynes.cegdown :as markdown]
-            ))
+            [net.cgrand.enlive-html :as h]))
 
 (def navhtml "
 <ul class=\"ul-nav\">
@@ -73,7 +72,7 @@
                   (format "/%s.html"))})))
 
 (defn navmenu [[menu k subs]]
-  {(text k)
+  {(keyword (text k))
    {:menu (text menu)
     :class (text k)
     :options (->> [:li]
@@ -88,19 +87,25 @@
        (map navmenu)
        (apply merge)))
 
-
-
 (defn menu [m]
-  (html
-   [:li {:class (str "menu " (:class m))}
-    [:a (:menu m)]
-    [:ul {:style "display:none"}
-     (for [o (:options m)]
-       [:li
-        [:a {:href (:href o)} (:name o)]])]]))
+  (->> (html
+        [:li {:class (str "menu-head " (:class m))}
+         [:a (:menu m)]
+         [:ul {:class "menu"
+               :style "display:none"}
+          (for [o (:options m)]
+            [:li
+             [:a {:href (:href o)} (:name o)]])]])
+       emit*
+       (apply str)))
 
-
-(->> (get (navmap (markdown/to-html navmd)) "left")
-     menu
-     emit*
-     (apply str))
+(defn make [navhtml center]
+  (let [m (navmap navhtml)]
+    (html-snippet
+     "<ul class=\"ul-nav\">"
+     (menu (:left m))
+     (menu (:leftctr m))
+     center
+     (menu (:rightctr m))
+     (menu (:right m))
+     "</ul")))
