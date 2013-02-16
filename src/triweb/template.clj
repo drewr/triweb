@@ -20,8 +20,9 @@
   (apply join paths))
 
 (defn search [name]
-  (prn name)
-  (io/resource name))
+  (or (io/resource name)
+      (if (.isFile (file name))
+        (file name))))
 
 (defn find-tmpl*
   ([roots name]
@@ -39,14 +40,12 @@
      (find-tmpl* (config :template :roots) name)))
 
 (defn slurp-tmpl [name]
-  (prn name)
   (when-let [tmpl (find-tmpl name)]
-    (prn tmpl)
     (slurp tmpl)))
 
 (defn slurp-markdown [name]
   (when-let [md (slurp-tmpl name)]
-    (markdown/to-html md)))
+    (markdown/to-html md [:smartypants])))
 
 (h/deftemplate home (find-tmpl "home.html") [nav]
   [:div.nav] (h/content nav))
