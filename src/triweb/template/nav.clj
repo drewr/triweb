@@ -88,6 +88,8 @@
        (map navmenu)
        (apply merge)))
 
+
+
 (defn menu [m]
   (html
    [:li {:class (str "menu " (:class m))}
@@ -96,6 +98,7 @@
      (for [o (:options m)]
        [:li
         [:a {:href (:href o)} (:name o)]])]]))
+
 
 (->> (get (navmap (markdown/to-html navmd)) "left")
      menu

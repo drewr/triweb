@@ -1,11 +1,12 @@
 (ns triweb.template
-  (:require [net.cgrand.enlive-html :refer [deftemplate html-content]]
-            [net.cgrand.enlive-html :as html]
-            [me.raynes.cegdown :as markdown]
+  (:require [carica.core :refer [config]]
             [clojure.java.io :as io]
             [clojure.string :as s]
+            [me.raynes.cegdown :as markdown]
+            [net.cgrand.enlive-html :as html]
+            [net.cgrand.enlive-html :refer [deftemplate html-content]]
             [ring.util.response :as r]
-            [carica.core :refer [config]])
+            [triweb.template.nav :as nav])
   (:import (java.io File)))
 
 (defn ^String join
@@ -48,7 +49,8 @@
 
 (deftemplate home (find-tmpl "home.html") [])
 
-(deftemplate interior (find-tmpl "interior.html") [c]
+(deftemplate interior (find-tmpl "interior.html") [nav c]
+  [:div.nav] (html-content nav)
   [:#content] (html-content c))
 
 (defn append-index-if-slash [path]
@@ -62,7 +64,8 @@
     (let [uri (append-index-if-slash uri)
           uri (.replace uri ".html" ".txt")]
       (when-let [txt (slurp-tmpl uri)]
-        (interior (markdown/to-html txt))))))
+        (interior (nav/html )
+         (markdown/to-html txt))))))
 
 (defn wrap-template [app]
   (fn [req]
@@ -71,4 +74,3 @@
           (r/content-type "text/html")
           (r/charset "UTF-8"))
       (app req))))
-
