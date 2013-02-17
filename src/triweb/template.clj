@@ -62,7 +62,7 @@
 (defn render [uri]
   (let [nav (nav/make
              (slurp-markdown "home/_nav.txt")
-             "<li class=\"center menu-head\">&nbsp;</li>")]
+             "<li class=\"center menu-head\"><a href=\"/\">&nbsp;</a></li>")]
     (if (= uri "/")
       (home nav)
       (let [uri (append-index-if-slash uri)
