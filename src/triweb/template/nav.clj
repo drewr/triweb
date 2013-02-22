@@ -59,17 +59,25 @@
 * baz23
 ")
 
+(defn title-to-url [title]
+  (->> title
+       (re-seq #"[A-Za-z0-9]")
+       (apply str)
+       .toLowerCase
+       (format "/%s.html")))
+
 (defn navitem [item]
   (let [[a b] (.split item ":")]
     (if (and a b)
       {:name b
        :href a}
       {:name a
-       :href (->> a
-                  (re-seq #"[A-Za-z0-9]")
-                  (apply str)
-                  .toLowerCase
-                  (format "/%s.html"))})))
+       :href (title-to-url a)})))
+
+(defn sections [ht]
+  (->> #{[:h1] [:h2] [:ul]}
+       (select (html-snippet ht))
+       (partition 3)))
 
 (defn navmenu [[menu k subs]]
   {(keyword (text k))
@@ -81,9 +89,7 @@
                   (map navitem))}})
 
 (defn navmap [ht]
-  (->> #{[:h1] [:h2] [:ul]}
-       (select (html-snippet ht))
-       (partition 3)
+  (->> (sections ht)
        (map navmenu)
        (apply merge)))
 
@@ -109,3 +115,33 @@
      (menu (:rightctr m))
      (menu (:right m))
      "</ul")))
+
+(defn section-items [section]
+  (->> (select section [:li])
+       (map h/text)
+       (map navitem)))
+
+(defn match-section [uri sections]
+  (let [promote (fn [item]
+                  (if (= uri (:href item))
+                    (assoc item :active true)
+                    item))]
+    (->> sections
+         (map section-items)
+         (some (fn [items]
+                 (let [uriset (->> items (map :href) set)]
+                   (when (uriset uri)
+                     (map promote items))))))))
+
+(defn sidebar [navhtml uri]
+  (let [items (match-section uri (sections navhtml))]
+    (->> items
+         (map (fn [i]
+                (html
+                 [:li
+                  [:a (merge
+                       {:href (:href i)}
+                       (when (:active i)
+                         {:class "active"}))
+                   (:name i)]])))
+         (apply concat))))

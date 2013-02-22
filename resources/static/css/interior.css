@@ -29,3 +29,7 @@ body {
 #content p {
   color:#222;
 }
+
+#sidebar .active {
+  font-weight:bold;
+}

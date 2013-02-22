@@ -8,6 +8,9 @@
             [triweb.template.nav :as nav])
   (:import (java.io File)))
 
+(def centerhtml
+  "<li class=\"center menu-head\"><a href=\"/\">&nbsp;</a></li>")
+
 (defn ^String join
   ([x]
      (io/as-file x))
@@ -50,8 +53,9 @@
 (h/deftemplate home (find-tmpl "home.html") [nav]
   [:div.nav] (h/content nav))
 
-(h/deftemplate interior (find-tmpl "interior.html") [nav c]
+(h/deftemplate interior (find-tmpl "interior.html") [nav side c]
   [:div.nav] (h/content nav)
+  [:ul.sidenav] (h/content side)
   [:#content] (h/html-content c))
 
 (defn append-index-if-slash [path]
@@ -60,15 +64,15 @@
     path))
 
 (defn render [uri]
-  (let [nav (nav/make
-             (slurp-markdown "home/_nav.txt")
-             "<li class=\"center menu-head\"><a href=\"/\">&nbsp;</a></li>")]
+  (let [navmd (slurp-markdown "home/_nav.txt")
+        side (nav/sidebar (slurp-markdown "home/_nav.txt") uri)
+        nav (nav/make navmd centerhtml)]
     (if (= uri "/")
       (home nav)
       (let [uri (append-index-if-slash uri)
             uri (.replace uri ".html" ".txt")]
         (when-let [page-html (slurp-markdown uri)]
-          (interior nav page-html))))))
+          (interior nav side page-html))))))
 
 (defn wrap-template [app]
   (fn [req]
