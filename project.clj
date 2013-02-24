@@ -11,5 +11,5 @@
                  [me.raynes/cegdown "0.1.0" :exclude [org.clojure/clojure]]
                  [ring "1.1.8"]
                  [sonian/carica "1.0.2"]]
-  :plugins [[lein-ring "0.8.2"]]
+  :plugins [[lein-ring "0.8.3"]]
   :ring {:handler triweb.handler/app})
