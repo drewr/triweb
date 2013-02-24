@@ -51,8 +51,17 @@
   (when-let [md (slurp-tmpl name)]
     (markdown/to-html md [:smartypants])))
 
-(h/deftemplate home (find-tmpl "home.html") [nav]
-  [:div.nav] (h/content nav))
+(defn snip-tmpl [name]
+  (-> name
+      slurp-markdown
+      (or "&nbsp;")
+      h/html-snippet))
+
+(h/deftemplate home (find-tmpl "home.html") [nav hero sunday upcoming]
+  [:div.nav] (h/content nav)
+  [:div.home-hero-copy] (h/content hero)
+  [:div.home-left] (h/content (or sunday (h/html-snippet "&nbsp;")))
+  [:div.home-middle] (h/content upcoming))
 
 (h/deftemplate interior (find-tmpl "interior.html") [nav side c]
   [:div.nav] (h/content nav)
@@ -69,7 +78,10 @@
         side (nav/sidebar (slurp-markdown "home/_nav.txt") uri)
         nav (nav/make navmd centerhtml)]
     (if (= uri "/")
-      (home nav)
+      (home nav
+            (snip-tmpl "home/_hero.txt")
+            (snip-tmpl "home2/_sunday.txt")
+            (snip-tmpl "home2/_upcoming.txt"))
       (let [uri (append-index-if-slash uri)
             uri (.replace uri ".html" ".txt")]
         (when-let [page-html (slurp-markdown uri)]
