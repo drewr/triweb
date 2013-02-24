@@ -61,7 +61,11 @@
   [:div.nav] (h/content nav)
   [:div.home-hero-copy] (h/content hero)
   [:div.home-left] (h/content (or sunday (h/html-snippet "&nbsp;")))
-  [:div.home-middle] (h/content upcoming))
+  [:div.home-middle] (h/content upcoming)
+  [:span.softwareversion] (h/html-content
+                           (.trim
+                            (slurp
+                             (io/resource "version.txt")))))
 
 (h/deftemplate interior (find-tmpl "interior.html") [nav side c]
   [:div.nav] (h/content nav)
