@@ -9,6 +9,7 @@
 
 (defroutes handler
   (GET "/" [] "home")
+  (route/resources "/" {:root "static"})
   (route/not-found "no go!"))
 
 (def app
