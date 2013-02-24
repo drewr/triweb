@@ -76,8 +76,10 @@
 
 (defn wrap-template [app]
   (fn [req]
-    (if-let [html (render (:uri req))]
-      (-> (r/response html)
-          (r/content-type "text/html")
-          (r/charset "UTF-8"))
-      (app req))))
+    (let [uri (or (:path-info req)
+                  (:uri req))]
+      (if-let [html (render uri)]
+        (-> (r/response html)
+            (r/content-type "text/html")
+            (r/charset "UTF-8"))
+        (app req)))))
