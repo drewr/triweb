@@ -5,6 +5,7 @@
             [me.raynes.cegdown :as markdown]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
+            [triweb.log :refer [log]]
             [triweb.template.nav :as nav])
   (:import (java.io File)))
 
