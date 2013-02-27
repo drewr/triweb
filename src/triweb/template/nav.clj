@@ -43,7 +43,7 @@
 # one
 ## left
 * Foo Biz
-* /foo2test.html:Foo Bar!
+* /foo2test.html:::Foo Bar!
 * Something
 
 # two
@@ -61,13 +61,14 @@
 
 (defn title-to-url [title]
   (->> title
-       (re-seq #"[A-Za-z0-9]")
+       (re-seq #"[ A-Za-z0-9]")
        (apply str)
+       (#(.replaceAll % " " "-"))
        .toLowerCase
        (format "/%s.html")))
 
 (defn navitem [item]
-  (let [[a b] (.split item ":")]
+  (let [[a b] (.split item ":::")]
     (if (and a b)
       {:name b
        :href a}
