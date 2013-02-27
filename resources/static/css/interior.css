@@ -19,6 +19,26 @@ body {
   width:195px;
 }
 
+#sidebar ul {
+  list-style:none;
+  margin-top:50px;
+}
+
+#sidebar ul li {
+  padding:0px;
+  margin-left:25px;
+}
+
+#sidebar ul a {
+  display:block;
+  padding:2px 2px 2px 6px;
+  width:150px
+}
+
+#sidebar ul a:hover {
+  background-color:#efefef;
+}
+
 #content {
   float:left;
   width:750px;
