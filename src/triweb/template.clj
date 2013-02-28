@@ -57,20 +57,22 @@
       (or "&nbsp;")
       h/html-snippet))
 
-(h/deftemplate home (find-tmpl "home.html") [nav hero sunday upcoming]
+(h/defsnippet footer (find-tmpl "home.html")
+  [:footer] [ver]
+  [:span.softwareversion] (h/html-content ver))
+
+(h/deftemplate home (find-tmpl "home.html") [nav footer hero sunday upcoming]
   [:div.nav] (h/content nav)
   [:div.home-hero-copy] (h/content hero)
   [:div.home-left] (h/content (or sunday (h/html-snippet "&nbsp;")))
   [:div.home-middle] (h/content upcoming)
-  [:span.softwareversion] (h/html-content
-                           (.trim
-                            (slurp
-                             (io/resource "version.txt")))))
+  [:footer] (h/substitute footer))
 
-(h/deftemplate interior (find-tmpl "interior.html") [nav side c]
+(h/deftemplate interior (find-tmpl "interior.html") [nav footer side c]
   [:div.nav] (h/content nav)
   [:ul.sidenav] (h/content side)
-  [:#content] (h/html-content c))
+  [:#content] (h/html-content c)
+  [:footer] (h/substitute footer))
 
 (defn append-index-if-slash [path]
   (if (.endsWith path "/")
@@ -80,16 +82,18 @@
 (defn render [uri]
   (let [navmd (slurp-markdown "home/_nav.txt")
         side (nav/sidebar (slurp-markdown "home/_nav.txt") uri)
-        nav (nav/make navmd centerhtml)]
+        nav (nav/make navmd centerhtml)
+        ftr (footer (-> "version.txt" io/resource slurp .trim))]
     (if (= uri "/")
       (home nav
+            ftr
             (snip-tmpl "home/_hero.txt")
             (snip-tmpl "home2/_sunday.txt")
             (snip-tmpl "home2/_upcoming.txt"))
       (let [uri (append-index-if-slash uri)
             uri (.replace uri ".html" ".txt")]
         (when-let [page-html (slurp-markdown uri)]
-          (interior nav side page-html))))))
+          (interior nav ftr side page-html))))))
 
 (defn wrap-template [app]
   (fn [req]
