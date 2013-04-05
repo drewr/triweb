@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+
+<title>Trinity Church of Nashville</title>
+<link>http://trinitynashville.org</link>
+<description>Sermons from Trinity Church by Matt McCullough and others.</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 26 Sep 2010 12:00:00 CDT</lastBuildDate>
+<itunes:author>Matt McCullough</itunes:author>
+<itunes:keywords>reformed, gospel, baptist, eakin, grace, dave hunt</itunes:keywords>
+<itunes:image href="http://trinitynashville.org/img/podcast4.png" />
+<image>
+  <url>http://trinitynashville.org/img/podcast4.png</url>
+  <title>Trinity Church of Nashville</title>
+  <link>http://trinitynashville.org</link>
+  <width>480</width>
+  <height>480</height>
+</image>
+<itunes:owner>
+  <itunes:email>web@trinitynashville.org</itunes:email>
+  <itunes:name>Drew Raines</itunes:name>
+</itunes:owner>
+<category>Religion &amp; Spirituality</category>
+<category>Christianity</category>
+<itunes:category text="Religion &amp; Spirituality">
+  <itunes:category text="Christianity" />
+</itunes:category>
+<copyright>&#xA9;2010 Trinity Church of Nashville. This work is licensed
+under a Creative Commons Attribution-Noncommercial-No Derivative Works
+3.0 United States License. To view a copy of this license, visit
+http://creativecommons.org/licensenc-nd/3.0/us/</copyright>
+
+<item/>
+
+</channel>
+</rss>

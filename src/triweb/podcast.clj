@@ -1,7 +1,7 @@
 (ns triweb.podcast
   (:require [clj-http.client :as http]
             [clojure.data.xml :as xml]
-            [net.cgrand.enlive-html :as html]
+            [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.template :as t])
   (:import [java.text SimpleDateFormat]
@@ -78,6 +78,10 @@
     (->> (html/select nodes [:#content :p])
          (filter contains-mp3?))))
 
+(h/deftemplate podcast (t/find-tmpl "audio.xml") [items]
+  [:item] (h/clone-for [item items]
+                       (h/html-content "<foo/>")))
+
 (defn wrap-podcast [app]
   (fn [req]
     (let [uri (or (:path-info req)
@@ -89,3 +93,4 @@
                 (r/content-type "text/xml"))
             )
         (app req)))))
+
