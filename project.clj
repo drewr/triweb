@@ -5,11 +5,14 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.0-RC16"]
-                 [compojure "1.1.5"]
+  :dependencies [[compojure "1.1.5"]
+                 [clj-http "0.7.0"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [me.raynes/cegdown "0.1.0" :exclude [org.clojure/clojure]]
+                 [org.clojure/clojure "1.5.1"]
+                 [org.clojure/data.xml "0.0.7"]
                  [ring "1.1.8"]
                  [sonian/carica "1.0.2"]]
+  :profiles {:dev {:dependencies [[ring/ring-devel "1.1.8"]]}}
   :plugins [[lein-ring "0.8.3"]]
   :ring {:handler triweb.handler/app})

@@ -5,6 +5,7 @@
             [ring.middleware.content-type :refer [wrap-content-type]]
             [ring.util.response :as r]
             [triweb.log :refer [log]]
+            [triweb.podcast :refer [wrap-podcast]]
             [triweb.template :refer [wrap-template]]
             [triweb.template :as tmpl]))
 
@@ -23,6 +24,7 @@
 (def app
   (-> handler
       (wrap-template)
+      (wrap-podcast)
       (wrap-resource "static")
       (wrap-content-type)
       (wrap-log)))
