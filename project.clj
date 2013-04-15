@@ -5,7 +5,8 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[compojure "1.1.5"]
+  :dependencies [[commons-codec/commons-codec "1.7"]
+                 [compojure "1.1.5"]
                  [clj-http "0.7.0"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [me.raynes/cegdown "0.1.0" :exclude [org.clojure/clojure]]
