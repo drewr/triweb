@@ -13,7 +13,7 @@
 (def time-of-day "12:00:00")
 
 (defn get-html [url]
-  (html/html-resource (java.net.URL. url)))
+  (h/html-resource (java.net.URL. url)))
 
 (defn mp3-info [mp3]
   (try
@@ -34,12 +34,12 @@
       (doseq [entry (take n
                           (butlast
                            (rest
-                            (html/select (get-html audio-url)
+                            (h/select (get-html audio-url)
                                          [:#content :p]))))]
-        (when-let [mp3 (mp3-info (-> entry (html/select [:a])
+        (when-let [mp3 (mp3-info (-> entry (h/select [:a])
                                      first :attrs :href))]
           (let [[date title speaker _ & body] (map #(.trim %)
-                                                   (-> entry html/text
+                                                   (-> entry h/text
                                                        (.split "\n")))
                 date (.format date-out
                               (.parse date-in
@@ -66,7 +66,7 @@
             (println))))))
 
 (defn contains-mp3? [node]
-  (->> (html/select node [:a])
+  (->> (h/select node [:a])
        (map :attrs)
        (map :href)
        (map #(.toLowerCase %))
@@ -77,8 +77,8 @@
   (let [nodes (->> (t/render path)
                    (apply str)
                    java.io.StringReader.
-                   html/html-resource)]
-    (->> (html/select nodes [:#content :p])
+                   h/html-resource)]
+    (->> (h/select nodes [:#content :p])
          (filter contains-mp3?))))
 
 (h/deftemplate podcast (t/find-tmpl "audio.xml") [items]
