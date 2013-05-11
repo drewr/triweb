@@ -27,8 +27,7 @@
 ;; http://www.apple.com/itunes/podcasts/specs.html#example
 (defn build-items [entries]
   (for [entry entries]
-    (when-let [mp3 (mp3-info (-> entry (h/select [:a])
-                                 first :attrs :href))]
+    (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
       (let [date (-> entry (h/select [:strong]) h/texts first)
             title (-> entry :content (nth 2))
             speaker (-> entry (h/select [:em]) first :content first)
@@ -37,7 +36,13 @@
                           (.parse date-in
                                   (format "%s %s" date time-of-day)))
             speaker (.trim (re-find #"[A-Za-z ]+" speaker))
-            guid (-> (UUID/randomUUID) str .toUpperCase)
+            guid (.toUpperCase
+                  (DigestUtils/sha1Hex
+                   (apply str
+                          ((juxt :url
+                                 :length
+                                 :duration)
+                           mp3))))
             link "http://www.trinitynashville.org/sermons/current.html"
             subtitle (format "Speaker: %s" speaker)
             summary body
@@ -74,7 +79,7 @@
 
 (h/deftemplate podcast (t/find-tmpl "audio.xml") [items]
   [:items] (h/clone-for [item items]
-                       (h/html-content item)))
+                        (h/html-content item)))
 
 (defn wrap-podcast [app]
   (fn [req]
