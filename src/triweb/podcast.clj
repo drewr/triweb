@@ -24,46 +24,37 @@
          :duration (or (headers "x-amz-meta-runtime") "NOT FOUND")}))
     (catch Exception _)))
 
-(defn tag [t c]
-  {:tag t
-   :content (if (vector? c) c [c])})
-
 ;; http://www.apple.com/itunes/podcasts/specs.html#example
-#_(defn print-last-entry [n]
-    (do
-      (doseq [entry (take n
-                          (butlast
-                           (rest
-                            (h/select (get-html audio-url)
-                                         [:#content :p]))))]
-        (when-let [mp3 (mp3-info (-> entry (h/select [:a])
-                                     first :attrs :href))]
-          (let [[date title speaker _ & body] (map #(.trim %)
-                                                   (-> entry h/text
-                                                       (.split "\n")))
-                date (.format date-out
-                              (.parse date-in
-                                      (format "%s %s" date time-of-day)))
-                speaker (.trim (re-find #"[A-Za-z ]+" speaker))
-                guid (-> (UUID/randomUUID) str .toUpperCase)
-                link "http://www.trinitynashville.org/sermons/current.html"
-                subtitle (format "Speaker: %s" speaker)
-                summary (apply str (interpose " " body))
-                desc (format "%s. %s" subtitle summary)
-                content [(tag :title title)
-                         (tag :link link)
-                         (tag :description desc)
-                         (tag :itunes:subtitle subtitle)
-                         (tag :itunes:summary summary)
-                         (tag :pubDate date)
-                         (tag :guid guid)
-                         {:tag :enclosure
-                          :attrs {:url (:url mp3)
-                                  :length (:length mp3)
-                                  :type "audio/mpeg"}}
-                         (tag :itunes:duration (:duration mp3))]]
-            (xml/emit-str (tag :item content))
-            (println))))))
+(defn build-items [entries]
+  (for [entry entries]
+    (when-let [mp3 (mp3-info (-> entry (h/select [:a])
+                                 first :attrs :href))]
+      (let [date (-> entry (h/select [:strong]) h/texts first)
+            title (-> entry :content (nth 2))
+            speaker (-> entry (h/select [:em]) first :content first)
+            body (-> entry :content last .trim)
+            date (.format date-out
+                          (.parse date-in
+                                  (format "%s %s" date time-of-day)))
+            speaker (.trim (re-find #"[A-Za-z ]+" speaker))
+            guid (-> (UUID/randomUUID) str .toUpperCase)
+            link "http://www.trinitynashville.org/sermons/current.html"
+            subtitle (format "Speaker: %s" speaker)
+            summary body
+            desc (format "%s. %s" subtitle summary)
+            content [(xml/element :title {} title)
+                     (xml/element :link {} link)
+                     (xml/element :description {} desc)
+                     (xml/element :itunes:subtitle {} subtitle)
+                     (xml/element :itunes:summary {} summary)
+                     (xml/element :pubDate {} date)
+                     (xml/element :guid {} guid)
+                     (xml/element :enclosure
+                                  {:url (:url mp3)
+                                   :length (:length mp3)
+                                   :type "audio/mpeg"})
+                     (xml/element :itunes:duration {} (:duration mp3))]]
+        (xml/element :item {} content)))))
 
 (defn contains-mp3? [node]
   (->> (h/select node [:a])
@@ -82,17 +73,21 @@
          (filter contains-mp3?))))
 
 (h/deftemplate podcast (t/find-tmpl "audio.xml") [items]
-  [:item] (h/clone-for [item items]
-                       (h/html-content "<foo/>")))
+  [:items] (h/clone-for [item items]
+                       (h/html-content item)))
 
 (defn wrap-podcast [app]
   (fn [req]
     (let [uri (or (:path-info req)
                   (:uri req))]
       (if (= uri "/audio.xml")
-        (r/response "<foo>you know this is foo!</foo>")
-        #_(if-let [html (t/render uri)]
-            (-> (r/response html)
-                (r/content-type "text/xml"))
-            )
+        (r/content-type
+         (->> "/sermons/current.html"
+              sermon-seq
+              build-items
+              (map xml/emit-str)
+              podcast
+              (apply str)
+              r/response)
+         "text/xml")
         (app req)))))
