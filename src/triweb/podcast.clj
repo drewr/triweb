@@ -49,20 +49,19 @@
             link "http://www.trinitynashville.org/sermons/current.html"
             subtitle (format "Speaker: %s" speaker)
             summary body
-            desc (format "%s. %s" subtitle summary)
-            content [(xml/element :title {} title)
-                     #_(xml/element :link {} link)
-                     (xml/element :description {} desc)
-                     (xml/element :itunes:subtitle {} subtitle)
-                     (xml/element :itunes:summary {} summary)
-                     (xml/element :pubDate {} date)
-                     (xml/element :guid {} guid)
-                     (xml/element :enclosure
-                                  {:url (:url mp3)
-                                   :length (:length mp3)
-                                   :type "audio/mpeg"})
-                     (xml/element :itunes:duration {} (:duration mp3))]]
-        (xml/element :item {} content)))))
+            desc (format "%s. %s" subtitle summary)]
+        [(xml/element :title {} title)
+         #_(xml/element :link {} link)
+         (xml/element :description {} desc)
+         (xml/element :itunes:subtitle {} subtitle)
+         (xml/element :itunes:summary {} summary)
+         (xml/element :pubDate {} date)
+         (xml/element :guid {} guid)
+         (xml/element :enclosure
+                      {:url (:url mp3)
+                       :length (:length mp3)
+                       :type "audio/mpeg"})
+         (xml/element :itunes:duration {} (:duration mp3))]))))
 
 (defn contains-mp3? [node]
   (->> (h/select node [:a])
@@ -82,19 +81,19 @@
 
 (h/deftemplate podcast
   (h/xml-resource (t/find-tmpl "audio.xml")) [items]
-  [:items] (h/clone-for [item items]
-                        (h/html-content item)))
+  [:item] (h/clone-for [item items]
+                       (h/html-content item)))
 
-(def xmlstr
-  (memo/memo-ttl
-   (fn []
-     (->> "/sermons/current.html"
-          sermon-seq
-          build-items
-          (map xml/emit-str)
-          podcast
-          (apply str)))
-   (* CACHE-SECS 1000)))
+(defn podcast-str []
+  (->> "/sermons/current.html"
+       sermon-seq
+       build-items
+       (map xml/emit-str)
+       podcast
+       (apply str)))
+
+(def podcast-cached
+  (memo/memo-ttl podcast-str (* CACHE-SECS 1000)))
 
 (defn wrap-podcast [app]
   (fn [req]
@@ -102,7 +101,7 @@
                   (:uri req))]
       (if (= uri "/audio.xml")
         (->
-         (r/response (xmlstr))
+         (r/response (podcast-cached))
          (r/content-type "text/xml")
          (r/charset "utf-8"))
         (app req)))))
