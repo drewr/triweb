@@ -51,7 +51,7 @@
             summary body
             desc (format "%s. %s" subtitle summary)
             content [(xml/element :title {} title)
-                     (xml/element :link {} link)
+                     #_(xml/element :link {} link)
                      (xml/element :description {} desc)
                      (xml/element :itunes:subtitle {} subtitle)
                      (xml/element :itunes:summary {} summary)
