@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-07-22/DR000123.mp3
+TITLE=2012-07-22-Gods-Will
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Bill Maynard"
+ALBUM="Wisdom"
+GENRE=Sermon
+COMMENT="How can you determine God's will for your life?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000168
+FNAME=Is-55-Quantity-Quality-Redemption
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="Because of the Servant's work, God offers the only thing that can truly satisfy us--himself.  And he offers himself to all who see their need for him--everyone from everywhere."
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

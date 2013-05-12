@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-05-06/DR000112-trunc.mp3
+TITLE=2012-05-06-Heb-6-Our-Immovable-Anchor
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Few of us would likely claim what makes us confident in the gospel's promises is the fact that God swore an oath. But this passage suggests that's precisely how God intended to give us stronger hope and unshakeable confidence. So how does God's oath make us secure?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

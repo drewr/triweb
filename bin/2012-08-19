@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000128
+FNAME=Heb-10-Hold-On-To-Hope
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="This verse and the context it draws from help us to trust the faithfulness of God when faced with doubts of mind and soul."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

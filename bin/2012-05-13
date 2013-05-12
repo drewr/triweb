@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-05-13/DR000113.mp3
+TITLE=2012-05-13-Heb-7-Order-of-Melchizedek
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Why do we need a priest? And why does it matter that Jesus is a priest like Melchizedek? Hebrews 7, the meat of this letter, introduces the mysterious beauty of Jesus's priesthood."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

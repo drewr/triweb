@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000160
+FNAME=Is-46-Whos-Carrying-Whom
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="Using an image of unmistakeable power, Isaiah shows that idols may draw you in with the promise of control, but in the end you're left to carry their crushing weight. By contrast, the Holy One of Israel demands submissive trust in a God you can't control, but he is powerful, wise, and loving enough to carry you."
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

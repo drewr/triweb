@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000151
+FNAME=Isaiah-64-From-Our-Sins
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Advent 2012"
+GENRE=Sermon
+COMMENT="We can't help but long for justice against evil, but we're guilty of the things we despise. How can we be saved? That's the question raised by Isaiah 64. We need more than deliverance from what threatens us; we need deliverance from the evil that's in us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

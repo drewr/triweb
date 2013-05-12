@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-07-29/DR000124.mp3
+TITLE=2012-07-29-Heb-10-Pleasing-God
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="We know from human relationships how disruptive it is to have displeased the other person and to know we've been displeasing. Israel's relationship with God suffered from this sense that God wasn't fully pleased with his people, and a major point of their sacrificial system was to remind them of this problem. But Jesus came to perfectly please God, to do his will once and for all, and because of Jesus we can please God too."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000167
+FNAME=Is-54-Gracious-Redefinition
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="This chapter unpacks the beautiful reality that's possible because the Servant has suffered for our sins. God's grace can reframe your past, and God's grace can perfectly secure your future."
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,73 @@
+#!/usr/bin/env zsh
+
+# SRC=$1
+# TITLE=$2
+# AUTHOR="Trinity Church"
+# YEAR=2011
+# COMPOSER="Matt McCullough"
+# ALBUM="Minor Prophets"
+GENRE=Speech
+# COMMENT="In Luke's narrative, the angels' celebration of Jesus's birth hinges on the promise"
+# COMMENT="${COMMENT} that his coming means peace on earth. But what did they mean by \"peace?\" And where is it?"
+
+if [[ -z $SRC ]]; then
+  echo need src
+  exit 1
+fi
+
+BUCKET=s3://media.tcnash.org
+
+DESTHIFI=${TITLE}-HIFI.mp3
+DEST=${TITLE}.mp3
+SCALE=${SCALE:-3}
+PNG=../resources/static/img/podcast4.png
+
+cp $SRC $DESTHIFI
+
+echo encoding $DESTHIFI
+lame -S --scale $SCALE --preset studio $SRC $DESTHIFI
+echo encoding $DEST
+lame -S --scale $SCALE --preset voice $SRC $DEST
+
+eyeD3 --to-v2.4 $DESTHIFI 
+eyeD3 --to-v2.4 $DEST
+
+eyeD3 \
+  --add-image=$PNG:ICON \
+  --set-text-frame="TPE1:${AUTHOR}" \
+  --set-text-frame="TYER:${YEAR}" \
+  --set-text-frame="TCOM:${COMPOSER}" \
+  --set-text-frame="TALB:${ALBUM}" \
+  --set-text-frame="TCON:${GENRE}" \
+  --set-text-frame="TIT2:${TITLE}-HIFI" \
+  -c "eng::$COMMENT" \
+  --set-encoding=utf8 \
+  --itunes \
+  $DESTHIFI
+
+eyeD3 \
+  --add-image=$PNG:ICON \
+  --set-text-frame="TPE1:${AUTHOR}" \
+  --set-text-frame="TYER:${YEAR}" \
+  --set-text-frame="TCOM:${COMPOSER}" \
+  --set-text-frame="TALB:${ALBUM}" \
+  --set-text-frame="TCON:${GENRE}" \
+  --set-text-frame="TIT2:${TITLE}" \
+  -c "eng::$COMMENT" \
+  --set-encoding=utf8 \
+  --itunes \
+  $DEST
+
+DURATION=$(eyeD3 $DEST | \
+  fgrep Time | awk '{printf $2}' | sed 's/\x1b\[[0-9]*m//g')
+
+if eyeD3 --rfc822 $DEST | fgrep -q TASCAM; then
+  echo "FAIL bad id3 encoding"
+  exit 99
+fi
+
+echo s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DEST $BUCKET/$DEST
+s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DEST $BUCKET/$DEST
+echo s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DESTHIFI $BUCKET/$DESTHIFI
+s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DESTHIFI $BUCKET/$DESTHIFI
+

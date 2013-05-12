@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000148
+FNAME=Heb-13-Remember
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="The letter to the Hebrews ends with a benediction, a reminder of what God has done and a prayer for what God will do for his children.  By sacrificing the blood of his Son, God has made a covenant that promises peace and life that will last forever.  By his covenant God gives to us what he requires of us, promising to transform us so we can live the lives of worship we were made to live."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

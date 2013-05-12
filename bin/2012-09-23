@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000139
+FNAME=Heb-11-Abraham
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="The life of Abraham offers one of the Bible's best examples of what it looks like to claim the promises of God by faith. Here our author uses Abraham's life to call us to live as exiles in this world because we live with a homesick longing for the world to come."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-04-22/DR000110.mp3
+TITLE=2012-04-22-Heb-6-Warning
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="In one of the most difficult and controversial passages in the entire New Testament, the author of Hebrews warns of the irreversible consequences of falling away from Jesus.  What is the nature, purpose, and proper effect of this harsh warning?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-06-10/DR000117.mp3
+TITLE=2012-06-10-Heb-8-Better-Promises
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="God responds to our abandonment of him by binding himself to us with a covenant we can't break.  In his new covenant, God makes us secure by changing what we want, by satisfying us with himself, and by forgetting our sins against him."
+
+SCALE=10
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT SCALE
+
+../bin/encode

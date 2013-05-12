@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000152
+FNAME=Gospel-And-Prayer
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Prayer"
+GENRE=Sermon
+COMMENT="The gospel, God's good news that defines who we are, helps us understand why prayer is so important to our lives and to our church. The gospel clarifies why we must pray and what we must pray."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

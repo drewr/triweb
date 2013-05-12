@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000131
+FNAME=The-Value-Of-Work
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="David Atchison"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="We often overlook work as a means to an end, but God created it and is glorified by us doing it in faith."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

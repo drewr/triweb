@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-08-05/DR000125.mp3
+TITLE=2012-08-05-Heb-10-Sitting-Waiting
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="Here, at the climax of the entire letter, we get two images that help us see that Jesus's work for us is finished and how his work begins to change us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

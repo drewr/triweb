@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000144
+FNAME=1Jn-2-Obedience
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Bill Maynard"
+ALBUM="Gospel Living"
+GENRE=Sermon
+COMMENT="Samuel said to Saul, \"To obey is better than sacrifice.\"  Obedience is lovingly conforming our lives to the ways of God in thought, word, deed, and attitude.  The apostle John, in his last writings, put it even more simply: walk as Jesus did.  Why should we obey?  What results from our obedience?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

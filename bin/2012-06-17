@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-06-17/DR000118.mp3
+TITLE=2012-06-17-Heb-8-Promises-Applied
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="We all want to change, Christian or not. We try to change by swapping out behaviors, but the radical message of Christianity is that change comes through a set of promises."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

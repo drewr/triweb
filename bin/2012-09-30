@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000140
+FNAME=Heb-11-Moses-Faith-Our-Identity
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="Moses's life shows how faith is a matter of identity.  Faith says that Jesus is more satisfying than the fleeting pleasure of sin.  He's more rewarding than the greatest treasures of this world.  He's more secure than the powers we admire and crave.  And that's because Jesus alone overcomes our inadequacy and makes us children of God."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

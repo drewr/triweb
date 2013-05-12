@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000153
+FNAME=Is-1-Gospel-According-To-Isaiah
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According to Isaiah"
+GENRE=Sermon
+COMMENT="Using Isaiah 1 as an introduction to our new series, this sermon aims to clarify the four questions Isaiah helps us answer: Who is God? Who are we? What has God promised us? And how should we respond to his Word?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

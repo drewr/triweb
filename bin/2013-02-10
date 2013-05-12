@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000158
+FNAME=Is-7-Whom-Will-You-Trust
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="The story of Ahaz illustrates Isaiah's perspective on what's wrong with Israel and with us. Then and now, everything rides on a single question: whom will you trust?"
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

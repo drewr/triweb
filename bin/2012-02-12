@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+SRC=~/Documents/Personal/Trinity/audio/_SOURCES/2012-02-12/DR000096.mp3
+TITLE=2012-02-12-Heb-2-Our-Suffering-Brother
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="At the heart of Christianity is the claim that God took on our humanity–became one of us–so that he could suffer. Hebrews 2 helps us understand why this had to be. Jesus became like us so he could act for us, defeating death as our champion by removing sin as our high priest. And because Jesus suffered everything we could before we do, he empathizes with us and promises us our Father is trustworthy."
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

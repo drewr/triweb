@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-05-20/DR000114.mp3
+TITLE=2012-05-20-Heb-7
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Bill Heerman"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT=""
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-05-27/DR000115.mp3
+TITLE=2012-05-27-Heb-7-Perm-Priest-Good-News
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Hebrews 7, the most challenging section of this letter, has offered a host of minute and obscure details to show that Jesus's priesthood will last forever. Now, at the end of the chapter, we're told why this is such good news."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

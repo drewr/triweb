@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-03-25/DR000105.mp3
+TITLE=2012-03-25-Heb-5-A-Priest-Forever
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="This section of Hebrews introduces one of the letter's most important subjects: the perfect priesthood of Jesus. But why do we need a priest in the first place? What did biblical priests actually do? And what makes Jesus a perfect priest?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

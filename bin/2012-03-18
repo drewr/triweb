@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-03-18/DR000103.mp3
+TITLE=2012-03-18-Heb-4-Hold-Fast
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="This crucial section of Hebrews offers a summary of what's already been said and a taste of what's still to come. Jesus is the Son of God who became our sympathetic high priest. These titles–admitedly abstract to our modern ears–are introduced for a profoundly practical purpose. They're meant to convince us to hold fast to Jesus because only Jesus offers what we really need."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

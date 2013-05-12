@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-07-01/DR000120.mp3
+TITLE=2012-07-01-Heb-9-Failure-Death-Redemption
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="All of us possess a moral conscience, and all of us have experienced what it is to have a defiled conscience-a conscience that tells us we have failed to meet our own standards, much less God's. This passage explains how Jesus came to purify our consciences, to redeem us from living under the dark cloud of our failure."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

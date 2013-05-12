@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000159
+FNAME=Is-44-Uselessness-Of-Idolatry
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="Isaiah presents idolatry--worshipping and trusting what isn't God--as one of Israel's most consistent and most significant problems. And though the symptoms have changed from culture to culture, idolatry is a heart disease we all carry. This chapter helps us understand what idolatry is, why it's useless, how we're guilty of it, and how we can be saved from it."
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000146
+FNAME=Heb-13-The-Grateful-Life
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="Because of Jesus, worship looks different. There are no more temples, sacrifices, or ceremonial cleansings; now worship is a way of life, a life defined by gratitude for what God has done and will do for us through Jesus. This passage gives examples of what should mark a grateful life."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

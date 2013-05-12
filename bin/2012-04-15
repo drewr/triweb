@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-04-15/DR000109.mp3
+TITLE=2012-04-15-Heb-5-Spiritual-Maturity
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Spiritual growth came no easier for the earliest Christians than it comes for us. This passage helps us understand what holds us back from spiritual maturity and how we can press on towards it."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

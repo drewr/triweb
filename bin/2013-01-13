@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000154
+FNAME=Is-6-Holy-One-Of-Israel
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According to Isaiah"
+GENRE=Sermon
+COMMENT="\"Holy\" is Isaiah's favorite description of God, the one that stands behind everything else he says about him. But what does that mean, and how can we understand and love that God is holy?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

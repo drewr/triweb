@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000141
+FNAME=Heb-11-Faith-In-Better-Resurrection
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="This conclusion to Hebrews's list of faith's exemplars offers a striking contrast.  Sometimes faith brings back the dead, and sometimes faith costs everything.  But the key point is this: if Jesus is alive, the difference between gaining or losing everything in this life doesn't ultimately matter."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

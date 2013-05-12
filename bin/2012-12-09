@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000150
+FNAME=Isaiah-25-From-Our-Fears
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Advent 2012"
+GENRE=Sermon
+COMMENT="In this prophetic vision Isaiah describes what the new world will be like when God comes to make all things new. Engaging this vision in light of the brokenness of the world we life in helps us sharpen our hope. It helps us long for the promise that God will deliver us from the things we fear and cannot control."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

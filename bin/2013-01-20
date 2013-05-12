@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000155
+FNAME=Is-40-No-Comparison
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According to Isaiah"
+GENRE=Sermon
+COMMENT="At the heart of Isaiah's portrait of God is God's holy transcendence--the fact that God is beyond us and anything we experience in this world, that he's not limited by the powers of this world or our ability to understand him. This aspect of what God is like is unavoidably abstract and difficult to connect with, much less enjoy. And that's why Isaiah 40 is in the Bible--to help us see and enjoy God's holy transcendence more fully."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

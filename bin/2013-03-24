@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+WHERE=$1
+MP3NUM=DR000164
+FNAME=Is-53-The-Royal-Servant-Suffers
+SRC=$WHERE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="God's promised redeemer, both king and servant, triumphs through suffering. That's the unexpected message of this famous passage, which explains for us both why he had to suffer and why his suffering is such good news for us. His suffering is substitutionary, voluntary, and obedient."
+
+export WHERE SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

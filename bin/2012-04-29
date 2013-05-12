@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-04-29/DR000111.mp3
+TITLE=2012-04-29-Heb-6-Genuine-Christianity
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Because the power of the gospel transforms, genuine followers of Jesus bear certain marks.  This passage presents three of these marks--love, faith, and patience--and why they're so important."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

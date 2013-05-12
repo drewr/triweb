@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000142
+FNAME=Heb-12-Endure-Pain
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="Book of Hebrews"
+GENRE=Sermon
+COMMENT="The witness of Israel's heroes and especially of Jesus is this: God's promises are more precious than the comforts of this world.  But this text reveals another dimension to how we should view our pain as people of faith.  Our pain is used by our Father to discipline us; it shows God loves us, it aims at our holiness, and it always bears fruit."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

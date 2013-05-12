@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-07-15/DR000122.mp3
+TITLE=2012-07-15-Heb-9-Jesus-And-Your-Future
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Everyone faces a future defined by one of two realities: death and judgment, or Jesus's death and coming redemption. What will your future be? Are you eagerly waiting for him?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

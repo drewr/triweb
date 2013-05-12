@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-04-01/DR000106.mp3
+TITLE=2012-04-01-Heb-Palm-Sunday
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="There is an ironic truth at the heart of the story Christians commemorate as Holy Week. The same man hailed as king one day is shamefully executed a few days later, and that death was inextricably linked to his becoming king. Hebrews helps us understand why Jesus had to die to become king, and its explanation has a great deal to do with a mysterious figure called Melchizedek."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

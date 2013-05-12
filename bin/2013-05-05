@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Is-58-What-God-Wants-From-Us
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="Genuine trust in God and his promises produces a different way of life. But God isn't interested in any good works we might offer as a kind of bargaining chip to get what we want from him. God is pleased by good works done for others as an overflow of our joyful security in him."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+SRC=~/Documents/Personal/Trinity/audio/_SOURCES/2012-02-05/DR000091.mp3
+TITLE=2012-02-05-Heb-2-Death-Of-Death
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="Death is the fundamental human problem.  It shows us the limits of our power perhaps more clearly than anything else.  It calls into question everything we were meant to be and all we try to accomplish.  And, from the perspective of the Bible and Hebrews in particular, death is unnatural--an impostor, a weapon in the hands of a ruthless enemy whose days are numbered.  For the death and resurrection of Jesus hold out a promise, a promise that his sacrifice means the death of death itself."
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode
+
+
+
+

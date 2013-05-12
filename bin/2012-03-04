@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/2012-03-04/DR000100.mp3
+TITLE=2012-03-04-Heb-4-Rest
+AUTHOR="Trinity Church"
+YEAR=2012
+COMPOSER="Matt McCullough"
+ALBUM="The Book Of Hebrews"
+GENRE=Sermon
+COMMENT="This passage offers both an invitation to share in God's rest and a warning not to miss out. On one hand, we're invited to enjoy perfect satisfaction in God and the security that comes from knowing he provides everything we need. On the other hand we're told to fear and strive against unbelief and disobedience. How do these commands square with our promise of rest?"
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+../bin/encode

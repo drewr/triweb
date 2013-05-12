@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000157
+FNAME=Is-40-True-Love
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="The Bible claims that God is love, but in trying to understand what that means we've got to be careful to avoid imposing our confused views of what love is onto God. The fact is that God's love isn't like any love in our experience, which is to say it's holy love. In light of Isaiah 40, God's holy love is preemptive, pardoning, and permanent."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

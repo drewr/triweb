@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+DATE=$(basename $0)
+MP3NUM=DR000156
+FNAME=Is-5-Holy-In-Righteousness
+SRC=/Users/aar/Documents/Personal/Trinity/audio/_SOURCES/$DATE/$MP3NUM.mp3
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="One of the ways in which God is holy, in which he is not like us, is his perfect moral righteousness. We redefine what's right and justify doing wrong; God is perfectly committed to what's right and unfailingly judges what's wrong. This makes God's holy perfection a severe threat. But his holy perfection also comes to us as a promise: God offers us Jesus's record of perfect righteousness, and by his Spirit we come to love what's right and hate what's wrong as God does."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
