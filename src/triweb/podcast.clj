@@ -7,7 +7,7 @@
             [triweb.template :as t])
   (:import (java.text SimpleDateFormat)))
 
-(def CACHE-SECS 60)
+(def CACHE-SECS 3600)
 
 (def date-in (SimpleDateFormat. "E, dd MMM y HH:mm:SS"))
 (def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS zzz"))
