@@ -77,7 +77,8 @@
     (->> (h/select nodes [:#content :p])
          (filter contains-mp3?))))
 
-(h/deftemplate podcast (t/find-tmpl "audio.xml") [items]
+(h/deftemplate podcast
+  (h/xml-resource (t/find-tmpl "audio.xml")) [items]
   [:items] (h/clone-for [item items]
                         (h/html-content item)))
 
