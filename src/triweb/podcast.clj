@@ -5,9 +5,7 @@
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.template :as t])
-  (:import (org.apache.commons.codec.digest DigestUtils)
-           (java.text SimpleDateFormat)
-           (java.util UUID)))
+  (:import (java.text SimpleDateFormat)))
 
 (def CACHE-SECS 60)
 
@@ -39,13 +37,7 @@
                           (.parse date-in
                                   (format "%s %s" date time-of-day)))
             speaker (.trim (re-find #"[A-Za-z ]+" speaker))
-            guid (.toUpperCase
-                  (DigestUtils/sha1Hex
-                   (apply str
-                          ((juxt :url
-                                 :length
-                                 :duration)
-                           mp3))))
+            guid (:url mp3)
             link "http://www.trinitynashville.org/sermons/current.html"
             subtitle (format "Speaker: %s" speaker)
             summary body
