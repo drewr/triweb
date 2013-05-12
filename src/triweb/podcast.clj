@@ -1,5 +1,6 @@
 (ns triweb.podcast
   (:require [clj-http.client :as http]
+            [clojure.core.memoize :as memo]
             [clojure.data.xml :as xml]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
@@ -7,6 +8,8 @@
   (:import (org.apache.commons.codec.digest DigestUtils)
            (java.text SimpleDateFormat)
            (java.util UUID)))
+
+(def CACHE-SECS 60)
 
 (def date-in (SimpleDateFormat. "E, dd MMM y HH:mm:SS"))
 (def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS zzz"))
@@ -82,19 +85,24 @@
   [:items] (h/clone-for [item items]
                         (h/html-content item)))
 
+(def xmlstr
+  (memo/memo-ttl
+   (fn []
+     (->> "/sermons/current.html"
+          sermon-seq
+          build-items
+          (map xml/emit-str)
+          podcast
+          (apply str)))
+   (* CACHE-SECS 1000)))
+
 (defn wrap-podcast [app]
   (fn [req]
     (let [uri (or (:path-info req)
                   (:uri req))]
       (if (= uri "/audio.xml")
         (->
-         (->> "/sermons/current.html"
-              sermon-seq
-              build-items
-              (map xml/emit-str)
-              podcast
-              (apply str)
-              r/response)
+         (r/response (xmlstr))
          (r/content-type "text/xml")
          (r/charset "utf-8"))
         (app req)))))

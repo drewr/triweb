@@ -13,7 +13,8 @@
                  [org.clojure/clojure "1.5.1"]
                  [org.clojure/data.xml "0.0.7"]
                  [ring "1.1.8"]
-                 [sonian/carica "1.0.2"]]
+                 [sonian/carica "1.0.2"]
+                 [org.clojure/core.memoize "0.5.3"]]
   :profiles {:dev {:dependencies [[ring/ring-devel "1.1.8"]]}}
   :plugins [[lein-ring "0.8.3"]]
   :ring {:handler triweb.handler/app})
