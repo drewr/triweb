@@ -87,7 +87,7 @@
     (let [uri (or (:path-info req)
                   (:uri req))]
       (if (= uri "/audio.xml")
-        (r/content-type
+        (->
          (->> "/sermons/current.html"
               sermon-seq
               build-items
@@ -95,5 +95,6 @@
               podcast
               (apply str)
               r/response)
-         "text/xml")
+         (r/content-type "text/xml")
+         (r/charset "utf-8"))
         (app req)))))
