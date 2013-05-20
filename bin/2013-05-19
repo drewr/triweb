@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Is-66-The-Worshipful-Life
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="This final chapter in Isaiah captures the only suitable response to the message of the book: Worship. And worship that pleases God hinges on the heart posture of the worshiper. God wants worshipers who come desperate and empty handed, who tremble at his word."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

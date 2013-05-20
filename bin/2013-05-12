@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Is-61-While-You-Wait
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel According To Isaiah"
+GENRE=Sermon
+COMMENT="Isaiah is full of sweeping promises from God about his plans to redeem his people and remake the world. Many of these promises haven't been fulfilled yet, so we wait. This text shows us how to wait in faith: we testify to what's coming and we pray until it gets here."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
