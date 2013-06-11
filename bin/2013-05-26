@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Ps-1-What-Do-You-Love
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Bill Heerman"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="When we place God at the center of our lives, we will experience a deep happiness that is not dependent on our circumstances. By understanding the psalmist's metaphor--a tree planted by streams of water--we hope to gain a deeper knowledge of who God is and what it looks like to love him most."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

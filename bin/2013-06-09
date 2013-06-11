@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-1-Cross-Centered-Community
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="Paul writes this letter to a dysfunctional church plant to clarify what defines a healthy church community: holiness, grace, and love."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
