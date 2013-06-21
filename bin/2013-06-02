@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Ps-23-The-Good-Shepherd
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Bill Heerman"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="Psalm 23 is a dramatic portrayal of trusting God completely. When we read its six verses, we are drawn to ask ourselves if we trust God enough to proclaim \"The LORD is my shepherd, I shall not want.\""
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
