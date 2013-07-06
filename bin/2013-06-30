@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-2-Gospel-Centered-Minimalism
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="The aim of Paul's ministry was to see deeper faith in the power of God apart from any substitute. If we share his goal, that means our message must focus always and only on Jesus and his cross. And it means our methods must clarify the power of the cross, not distract from it."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
