@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-3-You-Are-Gods
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="The church in Corinth was falling apart because its members were insecure and self-obsessed; or, in Paul's words, they were behaving like infants, in a merely human way. The unflinching challenge of this text confronts all of us with two crucial questions: Who are you? And what are you doing with your life?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
