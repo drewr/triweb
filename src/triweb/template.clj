@@ -99,7 +99,9 @@
   (fn [req]
     (let [uri (or (:path-info req)
                   (:uri req))]
-      (if-let [html (render uri)]
+      (if-let [html (and (= uri "/")
+                         (.endsWith uri ".html")
+                         (render uri))]
         (-> (r/response html)
             (r/content-type "text/html")
             (r/charset "UTF-8"))
