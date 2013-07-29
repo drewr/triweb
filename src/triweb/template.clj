@@ -90,18 +90,17 @@
             (snip-tmpl "home/_hero.txt")
             (snip-tmpl "home2/_sunday.txt")
             (snip-tmpl "home2/_upcoming.txt"))
-      (let [uri (append-index-if-slash uri)
-            uri (.replace uri ".html" ".txt")]
-        (when-let [page-html (slurp-markdown uri)]
-          (interior nav ftr side page-html))))))
+      (if (.endsWith uri ".html")
+        (let [uri (append-index-if-slash uri)
+              uri (.replace uri ".html" ".txt")]
+          (when-let [page-html (slurp-markdown uri)]
+            (interior nav ftr side page-html)))))))
 
 (defn wrap-template [app]
   (fn [req]
     (let [uri (or (:path-info req)
                   (:uri req))]
-      (if-let [html (and (= uri "/")
-                         (.endsWith uri ".html")
-                         (render uri))]
+      (if-let [html (render uri)]
         (-> (r/response html)
             (r/content-type "text/html")
             (r/charset "UTF-8"))
