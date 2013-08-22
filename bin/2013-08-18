@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-6-Conflict-and-the-Kingdom
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="How we handle conflict shows what we love and where we belong. When our hearts are locked on the things of this world, we're driven to protect what we have and compete for even more. When we realize God has not given us what we deserve, we're free to lay aside our rights and love with forgiveness."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
