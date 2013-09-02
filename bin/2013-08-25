@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-6-Jesus-And-Your-Sex-Life
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="Why do Christians think sex outside of marriage is such a bad thing? Given what Paul says here, the answer to that question has much to do with the sacredness of the body, the power of sex, and the purpose of sex within marriage."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
