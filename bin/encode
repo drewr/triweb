@@ -33,36 +33,35 @@ eyeD3 --to-v2.4 $DESTHIFI
 eyeD3 --to-v2.4 $DEST
 
 eyeD3 \
-  --add-image=$PNG:ICON \
-  --set-text-frame="TPE1:${AUTHOR}" \
-  --set-text-frame="TYER:${YEAR}" \
-  --set-text-frame="TCOM:${COMPOSER}" \
-  --set-text-frame="TALB:${ALBUM}" \
-  --set-text-frame="TCON:${GENRE}" \
-  --set-text-frame="TIT2:${TITLE}-HIFI" \
-  -c "eng::$COMMENT" \
-  --set-encoding=utf8 \
-  --itunes \
-  $DESTHIFI
+ --add-image ${PNG}:ICON \
+ -Y ${YEAR} \
+ -a "${AUTHOR}" \
+ -A "${ALBUM}" \
+ -G "${GENRE}" \
+ -t "${TITLE}-HIFI" \
+ --add-comment "${COMMENT}" \
+ --encoding utf8 \
+ $DESTHIFI
+eyeD3 -P itunes-podcast --add $DESTHIFI
 
 eyeD3 \
-  --add-image=$PNG:ICON \
-  --set-text-frame="TPE1:${AUTHOR}" \
-  --set-text-frame="TYER:${YEAR}" \
-  --set-text-frame="TCOM:${COMPOSER}" \
-  --set-text-frame="TALB:${ALBUM}" \
-  --set-text-frame="TCON:${GENRE}" \
-  --set-text-frame="TIT2:${TITLE}" \
-  -c "eng::$COMMENT" \
-  --set-encoding=utf8 \
-  --itunes \
-  $DEST
+ --add-image ${PNG}:ICON \
+ -Y ${YEAR} \
+ -a "${AUTHOR}" \
+ -A "${ALBUM}" \
+ -G "${GENRE}" \
+ -t "${TITLE}" \
+ --add-comment "${COMMENT}" \
+ --encoding utf8 \
+ $DEST
+eyeD3 -P itunes-podcast --add $DEST
 
 DURATION=$(eyeD3 $DEST | \
   fgrep Time | awk '{printf $2}' | sed 's/\x1b\[[0-9]*m//g')
 
-if eyeD3 --rfc822 $DEST | fgrep -q TASCAM; then
-  echo "FAIL bad id3 encoding"
+if eyeD3 $DEST | fgrep -q TASCAM; then
+  echo "FAIL bad id3 encoding...."
+  eyeD3 $DEST
   exit 99
 fi
 
