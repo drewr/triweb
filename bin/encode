@@ -65,8 +65,10 @@ if eyeD3 $DEST | fgrep -q TASCAM; then
   exit 99
 fi
 
-echo s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DEST $BUCKET/$DEST
-s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DEST $BUCKET/$DEST
-echo s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DESTHIFI $BUCKET/$DESTHIFI
-s3cmd put -P --add-header=x-amz-meta-runtime:$DURATION $DESTHIFI $BUCKET/$DESTHIFI
+cmd="s3c drewr put -P --add-header=x-amz-meta-runtime:$DURATION $DEST $BUCKET/$DEST"
+echo $cmd
+eval ${cmd}
 
+cmd="s3c drewr put -P --add-header=x-amz-meta-runtime:$DURATION $DESTHIFI $BUCKET/$DESTHIFI"
+echo $cmd
+eval ${cmd}
