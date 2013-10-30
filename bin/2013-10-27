@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-12-Gifted-In-Community
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="For the good of the church, God's Spirit gives each believer gifts that are unique and indispensable. We're all gifted. But we're not self-sufficient. As members of one body, we each need others and others need each of us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

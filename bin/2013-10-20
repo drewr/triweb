@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-11-Do-This-Until-He-Comes
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="Confronting self-centered divisiveness at Corinth, Paul helps us understand what we do in the Lord's Supper and what the Lord's Supper does in us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
