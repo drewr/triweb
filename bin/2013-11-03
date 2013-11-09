@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-13-The-More-Excellent-Way
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="Christians are defined by love, not by what they possess or how they perform. Christians are bound by love, because only love like God's can keep sinful, selfish people together. And Christians are destined for love, for the endless world of love that we taste in part when we love each other well."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
