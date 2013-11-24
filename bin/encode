@@ -22,39 +22,31 @@ DEST=${TITLE}.mp3
 SCALE=${SCALE:-3}
 PNG=../resources/static/img/podcast4.png
 
-cp $SRC $DESTHIFI
+do_encode () {
+  local dest="$1"
 
-echo encoding $DESTHIFI
-lame -S --scale $SCALE --preset studio $SRC $DESTHIFI
-echo encoding $DEST
-lame -S --scale $SCALE --preset voice $SRC $DEST
+  if [[ ! -f $dest ]]; then
+    echo encoding $dest
+    lame -S --scale $SCALE --preset voice $SRC $dest
+    
+    eyeD3 --to-v2.4 $dest
+    
+    eyeD3 \
+     --add-image ${PNG}:ICON \
+     -Y ${YEAR} \
+     -a "${AUTHOR}" \
+     -A "${ALBUM}" \
+     -G "${GENRE}" \
+     -t "${TITLE}-HIFI" \
+     --add-comment "${COMMENT}" \
+     --encoding utf8 \
+     $dest
+    eyeD3 -P itunes-podcast --add $dest
+  fi
+}
 
-eyeD3 --to-v2.4 $DESTHIFI 
-eyeD3 --to-v2.4 $DEST
-
-eyeD3 \
- --add-image ${PNG}:ICON \
- -Y ${YEAR} \
- -a "${AUTHOR}" \
- -A "${ALBUM}" \
- -G "${GENRE}" \
- -t "${TITLE}-HIFI" \
- --add-comment "${COMMENT}" \
- --encoding utf8 \
- $DESTHIFI
-eyeD3 -P itunes-podcast --add $DESTHIFI
-
-eyeD3 \
- --add-image ${PNG}:ICON \
- -Y ${YEAR} \
- -a "${AUTHOR}" \
- -A "${ALBUM}" \
- -G "${GENRE}" \
- -t "${TITLE}" \
- --add-comment "${COMMENT}" \
- --encoding utf8 \
- $DEST
-eyeD3 -P itunes-podcast --add $DEST
+do_encode $DEST
+do_encode $DESTHIFI
 
 DURATION=$(eyeD3 $DEST | \
   fgrep Time | awk '{printf $2}' | sed 's/\x1b\[[0-9]*m//g')
