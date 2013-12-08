@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Cor-16-In-Love-Things-Love
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2013
+COMPOSER="Matt McCullough"
+ALBUM="1 Corinthians: The Cross-Centered Community"
+GENRE=Sermon
+COMMENT="Paul's first letter to the church in Corinth covers a full range of issues basic to human life across the centuries. It's a letter about politics and competition, about fashion and style, about sex and money and food. And straight through every issue it's about selfishness and the power of cross-centered love to overcome the root of evil. It's a letter well-summarized by Paul's final instruction: \"Let all that you do be done in love.\""
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
