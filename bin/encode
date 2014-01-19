@@ -23,11 +23,11 @@ SCALE=${SCALE:-3}
 PNG=../resources/static/img/podcast4.png
 
 do_encode () {
-  local dest="$1"
+  local dest="$2"
 
   if [[ ! -f $dest ]]; then
     echo encoding $dest
-    lame -S --scale $SCALE --preset voice $SRC $dest
+    lame -S --scale $SCALE --preset $1 $SRC $dest
     
     eyeD3 --to-v2.4 $dest
     
@@ -45,8 +45,8 @@ do_encode () {
   fi
 }
 
-do_encode $DEST
-do_encode $DESTHIFI
+do_encode voice $DEST
+do_encode 256 $DESTHIFI 
 
 DURATION=$(eyeD3 $DEST | \
   fgrep Time | awk '{printf $2}' | sed 's/\x1b\[[0-9]*m//g')
