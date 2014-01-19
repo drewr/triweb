@@ -15,7 +15,7 @@ if [[ -z $SRC ]]; then
   exit 1
 fi
 
-BUCKET=s3://media.tcnash.org
+BUCKET=s3://media.trinitynashville.org
 
 DESTHIFI=${TITLE}-HIFI.mp3
 DEST=${TITLE}.mp3
