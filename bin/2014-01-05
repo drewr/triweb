@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Ps-103-Remember-Gods-Work
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt Givens"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="One of the most challenging problems in the heart of a Christian is forgetfulness.  David gives us hope by encouraging us to remember all that God has done for us in Christ: He has saved us from sin, saved us from death, saved us by love, and saved us for joy in Him."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
