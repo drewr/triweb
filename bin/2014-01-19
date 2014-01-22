@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-1-Jesus-Is
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="The opening of John's Gospel gets at questions all of us must address at one point or another.  Where did we come from?  Why are we here?  What's wrong with us and our environment?  Who can we trust to solve problems that are too big for us?  John places Jesus at the center of these questions, and confronts us with questions of his own, the questions his book will address all the way through: Who is Jesus?  And who is Jesus to you?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
