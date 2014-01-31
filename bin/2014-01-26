@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-1-The-Beauty-Of-Incarnation
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="At the heart of Christianity is the claim that God became human for us. But how can we get our minds and hearts around this claim? It's at once abstract and too familiar, but John would have us taste the beauty of incarnation."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
