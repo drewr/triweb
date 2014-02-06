@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-1-Following-John-To-Jesus
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="This story of Jesus's life begins not with Jesus himself but with a figure called John the Baptist, one sent to prepare the way for the Christ.  Following John's lead, we get a clear picture of what we must know about ourselves and about Jesus if we're to truly enjoy what Jesus offers us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
