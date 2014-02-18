@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-1-The-Wedding
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="This story captures the first of Jesus's \"signs,\" actions that symbolize what he came to do for us.  It isn't as eye-catching as some of his later miracles.  There's no healing of the sick, no calming of a storm, no resurrection of the dead.  But when Jesus turned water into wine, he offered a perfect taste of what his coming means for his people: he will turn guilt and shame to unimaginable joy."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
