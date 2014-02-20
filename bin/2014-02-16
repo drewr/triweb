@@ -2,7 +2,7 @@
 
 SRC=$1
 DATE=$(basename $0)
-FNAME=John-1-The-Wedding
+FNAME=John-2-The-Wedding
 TITLE=$DATE-$FNAME
 AUTHOR="Trinity Church"
 YEAR=2014
