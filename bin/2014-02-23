@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-2-Jesus-And-Knowing-God
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="This passage tells the story of Jesus cleansing the Jerusalem temple of all those selling animals and changing money.  The fury of Jesus can be shocking given what we normally expect from him.  But the anger he showed in driving shopkeepers from the temple flowed from the same love that drove him to earth.  His all-consuming passion was for knowing God, and he came to make knowing God possible for us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

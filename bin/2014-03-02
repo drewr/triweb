@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-2-3-Born-Again
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="Jesus insists that only those who are born again can enter the kingdom he came to establish.  But what does it mean to be born again?  And where can you get this experience?  The answers come out in Jesus's conversation with a religious leader named Nicodemus.  They're unexpected, but they're life-giving."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
