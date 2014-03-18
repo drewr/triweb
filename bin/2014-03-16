@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-3-He-Must-Increase
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="This story centers on John the Baptist near the end of his life, just as his ministry was fading way and eclipsed by the rising popularity of Jesus.  In his response to the situation we get one of this Gospel's clearest examples of what it looks like to have genuine faith in Jesus.  There's transforming, liberating power in John's statement of faith: \"He must increase; I must decrease.\""
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
