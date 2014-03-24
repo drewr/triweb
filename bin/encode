@@ -65,5 +65,5 @@ cmd="awsg drewr s3api put-object --acl public-read --body $DEST --bucket $BUCKET
 echo $cmd
 eval ${cmd}
 
-echo "Now go set x-amz-meta-runtime=$DURATION on the objects"
+echo "Now go set audio/mpeg & x-amz-meta-runtime=$DURATION on the objects"
 echo "until https://github.com/aws/aws-cli/issues/356 is fixed"
