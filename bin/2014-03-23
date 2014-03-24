@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-4-What-Jesus-Offers
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="This passage tells the story of Jesus's meeting with a lonely Samaritan woman, an outcast even among an outcast people, whose life seems to have been a series of failed relationships with men.  John tells the story to illustrate what Jesus came to offer those who trust in him.  He offers acceptance even for those rejected by everyone else.  And he offers satisfaction that is unmatched and unending."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
