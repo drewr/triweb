@@ -67,3 +67,5 @@ eval ${cmd}
 
 echo "Now go set audio/mpeg & x-amz-meta-runtime=$DURATION on the objects"
 echo "until https://github.com/aws/aws-cli/issues/356 is fixed"
+echo
+echo "Publish http://$BUCKET/$DEST on the website"
