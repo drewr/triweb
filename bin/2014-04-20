@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-10-Our-Living-Life-Giving-Shepherd
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In place of a life defined by sin, suffering and death, Jesus offers us a life that is abundant and eternal.  This passage is meant to show us why we can trust him to deliver on his promise.  Jesus cares for his people with a love that drove him to death and a power that death could not conquer."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
