@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-5-Do-You-Want-To-Be-Healed
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In his healing of the lame man, Jesus shows he is the one who will make all things new.  But in the responses of the Jewish leaders and the healed man, we're warned against two ways to miss out on the new world Jesus came to bring."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
