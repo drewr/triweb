@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-5-Death-Is-Not-The-End
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="The words of Jesus in this passage are the words that got him killed.  When we hear his words as they sounded to his first audience, it's not difficult to understand why.  He is making claims that are ridiculous at best and dangerous at worst--if they're not true, that is.  If they're true--if he does have the power of God over life and death and judgment--then we must honor the Son."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
