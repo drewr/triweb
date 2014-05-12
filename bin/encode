@@ -57,15 +57,12 @@ if eyeD3 $DEST | fgrep -q TASCAM; then
   exit 99
 fi
 
-cmd="awsg drewr s3api put-object --acl public-read --body $DESTHIFI --bucket $BUCKET --key $DESTHIFI"
+cmd="awsg drewr s3api put-object --acl public-read --metadata runtime=${DURATION} --content-type audio/mpeg --body $DESTHIFI --bucket $BUCKET --key $DESTHIFI"
 echo $cmd
 eval ${cmd}
 
-cmd="awsg drewr s3api put-object --acl public-read --body $DEST --bucket $BUCKET --key $DEST"
+cmd="awsg drewr s3api put-object --acl public-read --metadata runtime=${DURATION} --content-type audio/mpeg --body $DEST --bucket $BUCKET --key $DEST"
 echo $cmd
 eval ${cmd}
 
-echo "Now go set audio/mpeg & x-amz-meta-runtime=$DURATION on the objects"
-echo "until https://github.com/aws/aws-cli/issues/356 is fixed"
-echo
 echo "Publish http://$BUCKET/$DEST on the website"
