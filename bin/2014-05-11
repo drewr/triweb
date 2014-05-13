@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-5-How-Can-You-Believe
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In this dialogue with those who opposed him, having just claimed to be equal with God, Jesus points to the evidence that supports his claim.  But his main focus is explaining why those who've seen the evidence still don't believe in him.  If we believe based on what we want, and if we want the respect and praise of other people, we'll never believe in Jesus.  But if we want the approval of God more than the approval of other people, Jesus becomes beautiful to us."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
