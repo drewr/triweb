@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-6-Power-and-Purpose
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="Like Matthew, Mark and Luke, John gives us the story of the feeding of the 5,000, where Jesus turns a glorified snack into a full meal for a massive crowd of hungry people.  It's a story meant to demonstrate that Jesus has power that isn't limited by rigid laws of nature, that in him we catch a glimpse of a new world breaking into the somber limitations of this old one.  But John also means this story to provide a sign of Jesus' purpose.  He will use his power not necessarily to give us what we want but to give us what we need above all else."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
