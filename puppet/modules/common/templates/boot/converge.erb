@@ -1,0 +1,18 @@
+#!/bin/bash
+
+INFRAHOME=~root
+
+function refresh_puppet_infra {
+  local infra=$INFRAHOME/infra
+
+  cd $infra
+  git pull
+  rsync -av puppet /etc
+}
+
+function puppet_apply {
+  puppet apply /etc/puppet/manifests/<%= @region %>.pp $*
+}
+
+refresh_puppet_infra
+puppet_apply
