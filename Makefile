@@ -12,3 +12,6 @@ upload: package
 	scp target/triweb.war deploy@valve:/apps/jetty/webapps
 
 deploy: upload restart
+
+converge:
+	sudo rsync -avz --delete puppet /etc
