@@ -2,7 +2,6 @@
 
 cat <<OUTEREOF >/usr/local/bin/nodes
 cat <<EOF
----
 parameters:
   region: us-east
 EOF
