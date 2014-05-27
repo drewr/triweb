@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-6-The-Work-Of-God
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="The difference between life and death hinges on the difference between the work God wants from us and the work God does for us.  According to Jesus, the work God requires of us is to believe on him.  But it is God's work to make us satisfied and to make us secure."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
