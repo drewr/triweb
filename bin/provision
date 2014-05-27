@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cat <<OUTEREOF >/usr/local/bin/nodes
+cat <<EOF
+---
+region: us-east
+EOF
+OUTEREOF
+chmod +x /usr/local/bin/nodes
+
+rsync -avz --delete puppet /etc
+puppet apply /etc/puppet/manifests/site.pp

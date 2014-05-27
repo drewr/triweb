@@ -14,5 +14,4 @@ upload: package
 deploy: upload restart
 
 converge:
-	sudo rsync -avz --delete puppet /etc
-	sudo puppet apply /etc/puppet/manifests/site.pp
+	sudo bin/provision
