@@ -10,6 +10,7 @@ Exec {
 
 class { "common":
   admin_email => "root@trinitynashville.org",
+  region => $::region,
 }
 
 node /^web01\./ {
