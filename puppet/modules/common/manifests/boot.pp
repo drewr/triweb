@@ -1,4 +1,5 @@
 class common::boot(
+  $region = undef,
 ) {
   file { "/usr/local/bin/converge":
     owner => "root",
