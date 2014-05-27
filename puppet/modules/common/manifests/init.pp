@@ -1,11 +1,12 @@
 class common (
-  $admin_email = "dev_ops@elasticsearch.com",
+  $admin_email = "root@trinitynashville.org",
+  $region = $::region,
 ) {
   class { "common::users": }
   class { "common::packages": }
 
   class { "common::boot":
-    region => $::region,
+    region => $region,
   }
 
   class { "mail":
