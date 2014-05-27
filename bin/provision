@@ -3,7 +3,8 @@
 cat <<OUTEREOF >/usr/local/bin/nodes
 cat <<EOF
 ---
-region: us-east
+parameters:
+  region: us-east
 EOF
 OUTEREOF
 chmod +x /usr/local/bin/nodes
