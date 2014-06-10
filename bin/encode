@@ -48,8 +48,11 @@ do_encode () {
 do_encode voice $DEST
 do_encode 256 $DESTHIFI 
 
-DURATION=$(eyeD3 $DEST | \
-  fgrep Time | awk '{printf $2}' | sed 's/\x1b\[[0-9]*m//g')
+DURATION=$(eyeD3 $DEST |
+  fgrep Time | awk '{print $2}' | perl -pe 's,\e\[22m([0-9:]+),$1,')
+
+echo -n DURATION: ''
+echo -n $DURATION | od -c
 
 if eyeD3 $DEST | fgrep -q TASCAM; then
   echo "FAIL bad id3 encoding...."
