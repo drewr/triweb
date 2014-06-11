@@ -20,7 +20,7 @@ class dropbox (
 
   wget::fetch { "dropbox":
     source => $url,
-    destination => $home,
+    destination => "${home}/${archive}",
     require => [User[$user],
                 File[$home]],
   }
@@ -28,6 +28,7 @@ class dropbox (
   exec { "install-dropbox":
     command => "/bin/sh -c \"cd ${home}; gzip -cd ${archive} | tar xf -\"",
     user => $user,
+    onlyif => "test -f ${home}/${archive}",
     path    => "/usr/bin:/usr/sbin:/bin:/usr/local/bin:/opt/local/bin",
     require => Wget::Fetch["dropbox"],
   }
