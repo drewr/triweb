@@ -2,5 +2,4 @@ class web (
 
 
 ) {
-  class { "dropbox": }
 }

@@ -31,6 +31,7 @@ node /^web01\./ {
   # awsg tri.drewr ec2 \
   #    describe-instances \
   #     --filter "Name=tag:Name,Values=web01"
+  class { "dropbox": }
   class { "web": }
 }
 
