@@ -6,10 +6,23 @@ class dropbox (
   $urlpre = "https://s3.amazonaws.com/deploy.trinitynashville.org",
 ) {
   $url = "${urlpre}/${archive}"
- 
+
+  file { $home:
+    ensure => directory,
+    owner => $user,
+    group => $group,
+  }
+
+  user { $user:
+    managehome => true,
+    ensure => present,
+  }
+
   wget::fetch { "dropbox":
     source => $url,
     destination => $home,
+    require => [User[$user],
+                File[$home]],
   }
 
   exec { "install-dropbox":
