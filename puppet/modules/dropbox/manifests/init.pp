@@ -5,7 +5,7 @@ class dropbox (
   $archive = "dropbox-lnx.x86_64-2.8.3.tar.gz",
   $urlpre = "https://s3.amazonaws.com/deploy.trinitynashville.org",
 ) {
-  $url = "${urlpre}/${archive}",
+  $url = "${urlpre}/${archive}"
  
   wget::fetch { "dropbox":
     source => $url,
