@@ -1,0 +1,6 @@
+#!/bin/sh
+
+HOME=<%= @home %>
+exec 2>&1
+echo starting...
+exec setuidgid <%= @user %> $HOME/.dropbox-dist/dropbox
