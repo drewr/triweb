@@ -1,4 +1,6 @@
 class web (
+
+
 ) {
-  notice("W E B")
+  class { "dropbox": }
 }
