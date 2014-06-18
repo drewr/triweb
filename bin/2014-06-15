@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Psalm-36-God-Is-Not-Like-Us
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Seth Jones"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="God is not like us, but he wants to make us like Him."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
