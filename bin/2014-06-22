@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-7-Is-This-The-Christ
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In this chapter John develops the mounting tension over who Jesus is and how to respond to him.  Along the way, he illustrates three ways to reject Jesus and the one way for anyone to embrace him.  Ultimately, it's all about the heart."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
