@@ -61,11 +61,13 @@
   [:footer] [ver]
   [:span.softwareversion] (h/html-content ver))
 
-(h/deftemplate home (find-tmpl "home.html") [nav footer hero sunday upcoming]
+(h/deftemplate home (find-tmpl "home.html") [nav footer hero
+                                             sunday upcoming join]
   [:div.nav] (h/content nav)
   [:div.home-hero-copy] (h/content hero)
   [:div.home-left] (h/content (or sunday (h/html-snippet "&nbsp;")))
   [:div.home-middle] (h/content upcoming)
+  [:div.home-right] (h/content join)
   [:footer] (h/substitute footer))
 
 (h/deftemplate interior (find-tmpl "interior.html") [nav footer side c]
@@ -89,7 +91,8 @@
             ftr
             (snip-tmpl "home/_hero.txt")
             (snip-tmpl "home2/_sunday.txt")
-            (snip-tmpl "home2/_upcoming.txt"))
+            (snip-tmpl "home2/_upcoming.txt")
+            (snip-tmpl "home2/_join.txt"))
       (if (.endsWith uri ".html")
         (let [uri (append-index-if-slash uri)
               uri (.replace uri ".html" ".txt")]
