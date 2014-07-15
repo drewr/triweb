@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-7-Neither-Do-I-Condemn-You
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="Though most agree this famous story doesn't belong in John's Gospel, it stands as a vivid and beautiful illustration of the Bible's consistent and clear message: sin is a universal problem (and not just someone else's problem), but it is no match for the liberating power of Jesus's grace."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
