@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Heb-11-Navigating-A-Broken-World-By-Faith
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="David Atchison"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="Moses's life demonstrates that uncertainty can only be successfully met with faith."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

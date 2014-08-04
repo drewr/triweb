@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-10-The-Good-Life-And-The-Good-Shepherd
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="Jesus claims that he is the door into the good life---a life of safety and satisfaction. He claims that everyone else offering the good life will ultimately bleed you dry, not fill you up. And he claims that he will deliver where all others fall short because he is the Good Shepherd who loves his sheep enough to die for them and who's powerful enough to conquer death for them."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

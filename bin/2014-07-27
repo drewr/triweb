@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-9-Seeing-Jesus-With-New-Eyes
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Bill Heerman"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="By healing the blind man, Jesus shows us that we must be completely and miraculously remade."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
