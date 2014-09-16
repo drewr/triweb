@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-11-The-Conquering-Lamb
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="These three stories point us to the irony we have to recognize if we want to understand Jesus and what it means to follow him: he is the death-defeating king who conquers by dying, the champion who wins by losing, the one who gains his glorious throne by embracing the shameful cross."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
