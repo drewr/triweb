@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-14-If-You-Love-Me
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="Jesus teaches that if we love him we will obey him, and if we don't love him we won't obey him.  The key to our behavior---what we do---is in the affections---what we love.  That's why Jesus's promise of a Helper, the Holy Spirit, is such good news.  The promised Spirit is also a promise of a new heart moved by love for Jesus."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
