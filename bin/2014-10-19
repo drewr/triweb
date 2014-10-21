@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-15-Abide-In-Me
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="When it comes to growth as a Christian, Jesus leaves no middle ground.  Those who abide in him bear fruit, and those who don't abide in him wither and die.  It's either/or.  So what does it mean to abide in him?  And what sort of fruit comes from those who do?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
