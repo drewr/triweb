@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-16-Love-Hate-Life-In-The-World
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In this text Jesus implies that understanding and anticipating the hatred of the world for Jesus and his followers is crucial for faith that lasts.  But what does Jesus mean by the hatred of the world?  And how should we deal with the hatred of the world?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
