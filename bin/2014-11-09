@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-Thes-1-Thank-God-For-Models
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Robert C."
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="Paul's prayer for his friends shows us the model response to the gospel, the model messenger of the gospel, and the model community created by the gospel."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
