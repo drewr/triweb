@@ -140,8 +140,14 @@ footer .tweet {
   padding-left:10px;
 }
 
+footer .youtube {
+  float:left;
+  margin-top:-2px;
+  margin-left:-21px;
+}
+
 footer .social {
-  width:215px;
+  width:320px;
   height:25px;
   margin:0 auto;
   padding-left:15px;
