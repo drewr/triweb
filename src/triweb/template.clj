@@ -2,6 +2,8 @@
   (:require [carica.core :refer [config]]
             [clojure.java.io :as io]
             [clojure.string :as s]
+            [compojure.core :refer [defroutes GET]]
+            [compojure.route :as route]
             [me.raynes.cegdown :as markdown]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
@@ -108,3 +110,8 @@
             (r/content-type "text/html")
             (r/charset "UTF-8"))
         (app req)))))
+
+(defroutes handler
+  (GET "/" [] "home")
+  (route/resources "/" {:root "static"})
+  (route/not-found "We can't find "))
