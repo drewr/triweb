@@ -114,4 +114,4 @@
 (defroutes handler
   (GET "/" [] "home")
   (route/resources "/" {:root "static"})
-  (route/not-found "We can't find "))
+  (route/not-found "Page does not exist"))
