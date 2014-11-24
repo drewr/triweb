@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-16-No-One-Will-Take-Your-Joy
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel Of John"
+GENRE=Sermon
+COMMENT="In his last conversation with his closest friends before his execution, Jesus promises real sorrow overcome by lasting joy.  But why should we believe this joy is possible?  And how can we connect with it?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
