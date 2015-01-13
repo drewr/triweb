@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=1-John-2-Walk-In-The-Light
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2014
+COMPOSER="Matt McCullough"
+ALBUM="Advent"
+GENRE=Sermon
+COMMENT="Part of our calling as Christians is to reflect the light of Christmas until Jesus comes again.  John tells us that the old command, the command to love one another, has been made new because the light is already shining and the darkness is passing away.  So how must we love one another if we are to walk in the light of Jesus?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

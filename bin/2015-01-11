@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-18-Courage-Cowardice-Compassion
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="The opening scenes in the story of Jesus's death tell a story of great courage, as Jesus faces his captors with unflinching resolve and in absolute control.  They tell a story of great cowardice, as Peter faces his own examination and denies Jesus repeatedly.  And they tell a story of great compassion: Jesus dies on purpose because he knew Peter would deny him, and he knew we'd deny him too."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
