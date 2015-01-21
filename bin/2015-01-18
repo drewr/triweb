@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-18-Behold-Your-King
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="John gives us more detail about Roman governor Pontius Pilate than all the other Gospel writers combined.  And John tells us that everything he's included is meant to persuade us to believe that Jesus is the Christ.  So how does looking at Pilate help us see the beauty of Jesus?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
