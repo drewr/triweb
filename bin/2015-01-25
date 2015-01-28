@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-19-It-Is-Finished
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="This text tells the story of Jesus's death by crucifixion, one of history's cruelest forms of torture.  Yet John spares us all the brutal details.  He focuses instead on all the signs that Jesus died on his terms for his purposes.  So why did Jesus have to die?  What did his death accomplish?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
