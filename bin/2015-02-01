@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-19-I-Have-Seen-The-Lord
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="All the good news in Christianity hinges on what John tells us about Jesus in this text: Jesus's physical body really did die, it really was buried, and it really did rise to new physical life.  Why should you believe what John reports?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
