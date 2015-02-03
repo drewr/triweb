@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Col-1-Learning-To-Pray-For-People
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Bill Heerman"
+ALBUM="Sunday Sermons"
+GENRE=Sermon
+COMMENT="Paul's prayers for his friends offer us a wonderful model for how we should pray for each other."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
