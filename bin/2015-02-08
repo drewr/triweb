@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-20-Meeting-the-Risen-Christ
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="Belief in the resurrection of Jesus is a self-involving belief.  It's more than intellectual.  It's personal.  To meet the risen Christ is to be transformed--to move from fear to gladness, from doubt to worship, from aimlessness to mission."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
