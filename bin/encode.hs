@@ -43,7 +43,7 @@ main = do
     (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
     (Right pi) -> do
       encode "voice" (pack . mp3SrcPath $ o) (encodeDest pi o)
-      encode "256" (pack . mp3SrcPath $ o) (encodeDest pi o)
+      encode "256" (pack . mp3SrcPath $ o) (encodeDestHifi pi o)
       return ()
 
 encode :: Text -> Text -> Text -> IO ()
