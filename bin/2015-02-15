@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=John-21-Do-You-Love-Me
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="The Gospel of John"
+GENRE=Sermon
+COMMENT="This conclusion to John's Gospel does more than tie up a few loose ends.  It illustrates the faithful, patient love of Jesus toward those who have failed him.  And it shows us the only power that can transform our lives and sustain our faith to the end.  Do you love Jesus?"
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
