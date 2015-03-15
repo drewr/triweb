@@ -29,6 +29,7 @@ import Options.Applicative ( execParser
                            , value)
 import System.FilePath.Posix (takeBaseName)
 import System.Directory
+import Filesystem.Path.CurrentOS (fromText)
 
 defaultBucket = "media.trinitynashville.org"
 defaultAuthor = "Trinity Church"
@@ -42,19 +43,21 @@ main = do
   case (decodeEither (B.pack j) :: Either String PodcastInput) of
     (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
     (Right pi) -> do
-      encode "voice" (pack . mp3SrcPath $ o) (encodeDest pi o)
-      encode "256" (pack . mp3SrcPath $ o) (encodeDestHifi pi o)
+      encode "voice" (audioScale o) (pack . mp3SrcPath $ o) (encodeDest pi o)
+      encode "320" (audioScale o) (pack . mp3SrcPath $ o) (encodeDestHifi pi o)
       return ()
 
-encode :: Text -> Text -> Text -> IO ()
-encode preset src dest = do
-  lame "scale!" preset src dest
+encode :: Text -> Int -> Text -> Text -> IO ()
+encode preset scale src dest = do
+  exist <- testfile . fromText $ dest
+  when (not exist) $ do
+    lame preset scale src dest
 
-lame :: Text -> Text -> Text -> Text -> IO ()
-lame scale preset src dest =
+lame :: Text -> Int -> Text -> Text -> IO ()
+lame preset scale src dest =
   loggingProc "lame"
        [ "-S"
-       , "--scale", scale
+       , "--scale", (pack . show $ scale)
        , "--preset", preset
        , src
        , dest
