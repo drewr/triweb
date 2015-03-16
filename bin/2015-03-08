@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Proverbs-1-How-Proverbs-Helps-Us
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="Get Wisdom"
+GENRE=Sermon
+COMMENT="This opening passage in Proverbs is a poetic introduction to the whole book.  It points us to what the proverbs are for and to the truth that is the key to understanding them."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode

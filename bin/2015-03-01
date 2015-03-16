@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+SRC=$1
+DATE=$(basename $0)
+FNAME=Fear-The-Lord-Wisdom-Intro
+TITLE=$DATE-$FNAME
+AUTHOR="Trinity Church"
+YEAR=2015
+COMPOSER="Matt McCullough"
+ALBUM="Get Wisdom"
+GENRE=Sermon
+COMMENT="What is wisdom, exactly?  What does a wise life look like?  And where does Jesus fit in?  This overview of biblical wisdom kicks off our study of Proverbs, Job, Ecclesiastes, and James."
+
+export SRC TITLE AUTHOR YEAR COMPOSER ALBUM GENRE COMMENT
+
+./encode
