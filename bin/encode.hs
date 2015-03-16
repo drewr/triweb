@@ -36,61 +36,26 @@ defaultAuthor = "Trinity Church"
 defaultImage  = "../resources/static/img/podcast4.png"
 defaultScale  = 3
 
-main :: IO ()
-main = do
-  o <- execParser $ info (helper <*> opts) (header "Trinity Audio Encoder")
-  j <- getContents
-  case (decodeEither (B.pack j) :: Either String PodcastInput) of
-    (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
-    (Right pi) -> do
-      encode "voice" (audioScale o) (pack . mp3SrcPath $ o) (encodeDest pi o)
-      encode "320" (audioScale o) (pack . mp3SrcPath $ o) (encodeDestHifi pi o)
-      return ()
-
-encode :: Text -> Int -> Text -> Text -> IO ()
-encode preset scale src dest = do
-  exist <- testfile . fromText $ dest
-  when (not exist) $ do
-    lame preset scale src dest
-
-lame :: Text -> Int -> Text -> Text -> IO ()
-lame preset scale src dest =
-  loggingProc "lame"
-       [ "-S"
-       , "--scale", (pack . show $ scale)
-       , "--preset", preset
-       , src
-       , dest
-       ]
-
-loggingProc :: Text -> [Text] -> IO ()
-loggingProc cmd args = do
-  echo $ format ("running: "%s%" "%s) cmd (intercalate " " args)
-  ret <- proc cmd args empty
-  case ret of
-     ExitSuccess -> return ()
-     ExitFailure err -> die (cmd <> " has failed: " <> (repr err))
+type Preset = Text
+type Suffix = Text
 
 class Dated a where
   datedString :: a -> Text
 
 class Encodable a where
-  encodeTitle    :: Dated b => a -> b -> Text
-  encodeDestHifi :: Dated b => a -> b -> Text
-  encodeDest     :: Dated b => a -> b -> Text
+  encodeTitle :: Dated b => a -> b -> Text
 
 instance Dated Opts where
   datedString o = pack . takeBaseName . mp3SrcPath $ o
 
 instance Encodable PodcastInput where
-  encodeTitle pi o    = (datedString o) <> "-" <> (pcFilePrefix pi)
-  encodeDestHifi pi o = (encodeTitle pi o) <> "-HIFI.mp3"
-  encodeDest pi o     = (encodeTitle pi o) <> ".mp3"
+  encodeTitle pi o = (datedString o) <> "-" <> (pcFilePrefix pi)
 
-data Opts = Opts { mp3SrcPath :: String
-                 , bucket     :: String
-                 , imagePath  :: String
-                 , audioScale :: Int
+data Opts = Opts { mp3SrcPath  :: String
+                 , bucket      :: String
+                 , imagePath   :: String
+                 , audioScale  :: Int
+                 , albumAuthor :: String
                  } deriving (Show)
 
 opts :: Options.Parser Opts
@@ -110,6 +75,11 @@ opts = Opts <$> argument str (metavar "MP3")
            <> metavar "IMAGE"
            <> help "What image to attach to the podcast"
            <> value defaultScale )
+       <*> strOption
+           ( long "albumAuthor"
+           <> metavar "ALBUM AUTHOR"
+           <> help "What image to attach to the podcast"
+           <> value defaultAuthor )
 
 data PodcastInput = PodcastInput
   { pcFilePrefix :: Text
@@ -124,3 +94,73 @@ data PodcastInput = PodcastInput
 $(deriveJSON
   defaultOptions { fieldLabelModifier = (map toLower) . (drop 2)
                  } ''PodcastInput)
+
+data Context = Context { ctxOpts :: Opts
+                       , ctxPi :: PodcastInput
+                       } deriving (Show)
+
+makeContext :: Opts -> PodcastInput -> Context
+makeContext o pi = Context o pi
+
+encode :: Context -> Preset -> Suffix -> IO ()
+encode ctx preset suffix = do
+  let pi = ctxPi ctx
+      o = ctxOpts ctx
+      title = (encodeTitle pi o) <> suffix
+      dest = title <> ".mp3"
+  exist <- testfile . fromText $ dest
+  when (not exist) $ do
+    let scale = audioScale . ctxOpts $ ctx
+        src = pack . mp3SrcPath . ctxOpts $ ctx
+    lame preset scale src dest
+    setVersion dest
+    addMeta ctx title dest
+
+lame :: Text -> Int -> Text -> Text -> IO ()
+lame preset scale src dest =
+  loggingProc "lame"
+       [ "-S"
+       , "--scale", (pack . show $ scale)
+       , "--preset", preset
+       , src
+       , dest
+       ]
+
+setVersion dest = loggingProc "eyeD3" [ "--to-v2.4", dest]
+
+addMeta :: Context -> Text -> Text -> IO ()
+addMeta ctx title dest =
+  let o = ctxOpts ctx
+      pi = ctxPi ctx
+  in
+    loggingProc "eyeD3"
+         [ "--add-image", (pack . imagePath $ o)
+         , "--release-year", (pack . show . pcYear $ pi)
+         , "--artist", pcComposer pi
+         , "--album", pcAlbum pi
+         , "--album-artist", (pack . albumAuthor $ o)
+         , "--title", title
+         , "--genre", (pcGenre pi)
+         , "--add-comment", (pcComment pi)
+         , "--encoding", "utf8"
+         ]
+
+loggingProc :: Text -> [Text] -> IO ()
+loggingProc cmd args = do
+  echo $ format ("running: "%s%" "%s) cmd (intercalate " " args)
+  ret <- proc cmd args empty
+  case ret of
+     ExitSuccess -> return ()
+     ExitFailure err -> die (cmd <> " has failed: " <> (repr err))
+
+main :: IO ()
+main = do
+  o <- execParser $ info (helper <*> opts) (header "Trinity Audio Encoder")
+  j <- getContents
+  case (decodeEither (B.pack j) :: Either String PodcastInput) of
+    (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
+    (Right pi) -> do
+      let ctx = makeContext o pi
+      encode ctx "voice" ""
+      encode ctx "320" "-HIFI"
+      return ()
