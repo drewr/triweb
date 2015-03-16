@@ -34,8 +34,9 @@ do_encode () {
     eyeD3 \
      --add-image ${PNG}:ICON \
      -Y ${YEAR} \
-     -a "${AUTHOR}" \
+     -a "${COMPOSER}" \
      -A "${ALBUM}" \
+     -b "Trinity Church" \
      -G "${GENRE}" \
      -t "${TITLE}-HIFI" \
      --add-comment "${COMMENT}" \
