@@ -33,7 +33,7 @@ import Filesystem.Path.CurrentOS (fromText)
 
 defaultBucket = "media.trinitynashville.org"
 defaultAuthor = "Trinity Church"
-defaultImage  = "../resources/static/img/podcast4.png"
+defaultImage  = "resources/static/img/podcast4.png"
 defaultScale  = 3
 
 type Preset = Text
@@ -134,7 +134,7 @@ addMeta ctx title dest =
       pi = ctxPi ctx
   in
     loggingProc "eyeD3"
-         [ "--add-image", (pack . imagePath $ o)
+         [ "--add-image", (pack (imagePath o ++ ":ICON"))
          , "--release-year", (pack . show . pcYear $ pi)
          , "--artist", pcComposer pi
          , "--album", pcAlbum pi
@@ -143,6 +143,7 @@ addMeta ctx title dest =
          , "--genre", (pcGenre pi)
          , "--add-comment", (pcComment pi)
          , "--encoding", "utf8"
+         , dest
          ]
 
 loggingProc :: Text -> [Text] -> IO ()
