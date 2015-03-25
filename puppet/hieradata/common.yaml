@@ -8,6 +8,7 @@ nginx::nginx_upstreams:
 nginx::nginx_vhosts:
   www.trinitynashville.org:
     ensure: present
+    use_default_location: false
     server_name:
       - trinitynashville.org
       - stage.trinitynashville.org
