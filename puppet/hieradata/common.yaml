@@ -7,12 +7,14 @@ nginx::nginx_upstreams:
 
 nginx::nginx_vhosts:
   www.trinitynashville.org:
+    ensure: present
     server_name:
       - trinitynashville.org
       - stage.trinitynashville.org
 
 nginx::nginx_locations:
-  www.trinitynashville.org:
+  proxy:
+    ensure: present
     vhost: www.trinitynashville.org
     proxy: http://jetty0/triweb
     proxy_set_header:
