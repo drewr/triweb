@@ -16,9 +16,6 @@ nginx::nginx_vhosts:
 nginx::nginx_locations:
   proxy:
     ensure: present
+    location: /
     vhost: www.trinitynashville.org
-    proxy: http://jetty0/triweb
-    proxy_set_header:
-    - "Host $host"
-    - "X-Real-Ip $remote_addr"
-    - "X-Forwarded-For $proxy_add_x_forwarded_for"
+    proxy: http://jetty0/triweb/
