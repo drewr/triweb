@@ -27,9 +27,10 @@ import Options.Applicative ( execParser
                            , strOption
                            , long
                            , value)
-import System.FilePath.Posix (takeBaseName)
+import System.FilePath.Posix (takeBaseName, takeFileName)
 import System.Directory
 import Filesystem.Path.CurrentOS (fromText)
+import qualified Control.Foldl as Fold
 
 defaultBucket = "media.trinitynashville.org"
 defaultAuthor = "Trinity Church"
@@ -115,6 +116,8 @@ encode ctx preset suffix = do
     lame preset scale src dest
     setVersion dest
     addMeta ctx title dest
+    rt <- runtime dest
+    upload ctx dest rt
 
 lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
@@ -127,6 +130,13 @@ lame preset scale src dest =
        ]
 
 setVersion dest = loggingProc "eyeD3" [ "--to-v2.4", dest]
+
+runtime :: Text -> IO (Text)
+runtime dest = do
+  rt <- fold (inshell (format ("eyeD3 "%s%" | fgrep Time | awk '{print $2}' | perl -pe 's,\\e\\[22m([0-9:]+),$1,'") dest) empty) Fold.head
+  case rt of
+    (Just rt') -> return rt'
+    Nothing -> die (format ("cannot get runtime from "%s) dest)
 
 addMeta :: Context -> Text -> Text -> IO ()
 addMeta ctx title dest =
@@ -146,10 +156,33 @@ addMeta ctx title dest =
          , dest
          ]
 
+upload :: Context -> Text -> Text -> IO ()
+upload ctx dest dur =
+  let o = ctxOpts ctx
+      pi = ctxPi ctx
+  in
+    loggingProc "aws"
+         [ "s3api", "put-object"
+         , "--acl", "public-read"
+         , "--metadata", "runtime=" <> dur
+         , "--content-type", "audio/mpeg"
+         , "--body", dest
+         , "--bucket", (pack . bucket $ o)
+         , "--key", (pack . takeFileName . unpack $ dest)
+         ]
+
 loggingProc :: Text -> [Text] -> IO ()
 loggingProc cmd args = do
   echo $ format ("running: "%s%" "%s) cmd (intercalate " " args)
   ret <- proc cmd args empty
+  case ret of
+     ExitSuccess -> return ()
+     ExitFailure err -> die (cmd <> " has failed: " <> (repr err))
+
+loggingShell :: Text -> IO ()
+loggingShell cmd = do
+  echo $ format ("running: "%s) cmd
+  ret <- shell cmd empty
   case ret of
      ExitSuccess -> return ()
      ExitFailure err -> die (cmd <> " has failed: " <> (repr err))
@@ -164,4 +197,3 @@ main = do
       let ctx = makeContext o pi
       encode ctx "voice" ""
       encode ctx "320" "-HIFI"
-      return ()
