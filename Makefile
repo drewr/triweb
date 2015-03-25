@@ -1,3 +1,5 @@
+REMOTE = deploy@web01.trinitynashville.org
+
 clean:
 	lein clean
 
@@ -6,12 +8,15 @@ package:
 	lein ring uberwar triweb.war
 
 restart:
-	ssh deploy@valve sudo svc -tu /service/jetty
+	ssh $(REMOTE) sudo svc -tu /service/jetty
 
 upload: package
-	scp target/triweb.war deploy@valve:/apps/jetty/webapps
+	scp target/triweb.war $(REMOTE):jetty/webapps
 
 deploy: upload restart
 
 converge:
 	sudo bin/provision
+
+encode:
+	ghc -O2 -o encode -ddump-minimal-imports bin/encode
