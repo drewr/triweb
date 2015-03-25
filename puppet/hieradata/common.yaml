@@ -1,0 +1,20 @@
+---
+nginx::nginx_upstreams:
+  jetty0:
+    ensure: present
+    members:
+      - localhost:8080
+
+nginx::nginx_vhosts:
+  www.trinitynashville.org:
+    server_name:
+      - trinitynashville.org
+      - stage.trinitynashville.org
+
+nginx::nginx_locations:
+  www.trinitynashville.org:
+    vhost: www.trinitynashville.org
+    proxy: http://jetty0/triweb
+    proxy_set_header: "Host $host"
+    proxy_set_header: "X-Real-Ip $remote_addr"
+    proxy_set_header: "X-Forwarded-For $proxy_add_x_forwarded_for"

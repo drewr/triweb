@@ -54,4 +54,7 @@ ssh_authorized_key { $user:
     down => false,
     require => Exec["install-jetty"],
   }
+
+
+  class { "nginx": }
 }
