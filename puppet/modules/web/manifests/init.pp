@@ -27,7 +27,8 @@ class web (
   }
 
   exec { "install-jetty":
-    command => "/bin/sh -c \"cd ${home}; gzip -cd ${archive} | tar xf -\"",
+    command => "/bin/tar zxpf ${archive}",
+    cwd => $home,
     user => $user,
     onlyif => "test -f ${home}/${archive}",
     path    => "/usr/bin:/usr/sbin:/bin:/usr/local/bin:/opt/local/bin",
