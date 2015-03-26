@@ -1,6 +1,5 @@
 ---
-web:
-  jetty_version: jetty-6.1.26
+web::jetty_version: jetty-6.1.26
 
 nginx::nginx_upstreams:
   jetty0:
