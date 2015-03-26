@@ -1,11 +1,11 @@
 class web (
   $jetty_version = "jetty-distribution-9.2.1.v20140609",
-  $archive = "jetty-distribution-9.2.1.v20140609.tar.gz",
   $urlpre = "https://s3.amazonaws.com/deploy.trinitynashville.org",
   $user = "deploy",
   $group = "deploy",
   $home = "/home/deploy",
 ){
+  $archive = "${jetty_version}.tar.gz"
   $url = "${urlpre}/${archive}"
 
   file { $home:
@@ -37,6 +37,7 @@ ssh_authorized_key { $user:
     cwd => $home,
     user => $user,
     onlyif => "test -f ${home}/${archive}",
+    unless => "test -d ${home}/${jetty_version}",
     path    => "/usr/bin:/usr/sbin:/bin:/usr/local/bin:/opt/local/bin",
     require => Wget::Fetch["jetty"],
   }

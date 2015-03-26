@@ -1,4 +1,7 @@
 ---
+web:
+  jetty_version: jetty-6.1.26
+
 nginx::nginx_upstreams:
   jetty0:
     ensure: present
