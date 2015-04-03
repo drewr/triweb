@@ -19,4 +19,5 @@ converge:
 	sudo bin/provision
 
 encode:
-	ghc -O2 -o encode -ddump-minimal-imports bin/encode
+#	ghc -O2 -o encode -ddump-minimal-imports bin/encode
+	PATH=~/tmp/py/bin:$$PATH envg drewr bin/encode.hs ~/Dropbox/Trinity-WWW/$(DATE).mp3 <bin/$(DATE).yaml
