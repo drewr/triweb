@@ -10,8 +10,8 @@
 (def CACHE-SECS 3600)
 
 (def date-in (SimpleDateFormat. "E, dd MMM y HH:mm:SS"))
-(def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS zzz"))
-(def time-of-day "12:00:00")
+(def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS Z"))
+(def time-of-day "17:00:00")
 
 (defn get-html [url]
   (h/html-resource (java.net.URL. url)))
