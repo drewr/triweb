@@ -1,4 +1,4 @@
-REMOTE = deploy@web01.trinitynashville.org
+HOST = web01.trinitynashville.org
 
 clean:
 	lein clean
@@ -8,10 +8,10 @@ package:
 	lein ring uberwar triweb.war
 
 restart:
-	ssh $(REMOTE) sudo svc -tu /service/jetty
+	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty
 
 upload: package
-	scp target/triweb.war $(REMOTE):jetty/webapps
+	scp target/triweb.war deploy@$(HOST):jetty/webapps
 
 deploy: upload restart
 
