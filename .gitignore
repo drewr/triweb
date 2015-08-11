@@ -13,3 +13,4 @@ pom.xml.asc
 /etc/version.txt
 *.mp3
 /.nrepl-port
+/tmp
