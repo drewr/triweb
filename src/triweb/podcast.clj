@@ -29,31 +29,37 @@
 (defn build-items [entries]
   (for [entry entries]
     (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
-      (let [date (-> entry (h/select [:strong]) h/texts first)
-            title (-> entry :content (nth 2))
-            speaker (-> entry (h/select [:em]) first :content first)
-            body (-> entry :content last .trim)
-            date (.format date-out
-                          (.parse date-in
-                                  (format "%s %s" date time-of-day)))
-            speaker (.trim (re-find #"[A-Za-z ]+" speaker))
-            guid (:url mp3)
-            link "http://www.trinitynashville.org/sermons/current.html"
-            subtitle (format "Speaker: %s" speaker)
-            summary body
-            desc (format "%s. %s" subtitle summary)]
-        [(xml/element :title {} title)
-         #_(xml/element :link {} link)
-         (xml/element :description {} desc)
-         (xml/element :itunes:subtitle {} subtitle)
-         (xml/element :itunes:summary {} summary)
-         (xml/element :pubDate {} date)
-         (xml/element :guid {} guid)
-         (xml/element :enclosure
-                      {:url (:url mp3)
-                       :length (:length mp3)
-                       :type "audio/mpeg"})
-         (xml/element :itunes:duration {} (:duration mp3))]))))
+      (try
+        (let [date (-> entry (h/select [:strong]) h/texts first)
+              title (-> entry :content (nth 2))
+              speaker (-> entry (h/select [:em]) first :content first)
+              body (-> entry :content last .trim)
+              date (.format date-out
+                            (.parse date-in
+                                    (format "%s %s" date time-of-day)))
+              speaker (.trim (re-find #"[A-Za-z ]+" speaker))
+              guid (:url mp3)
+              link "http://www.trinitynashville.org/sermons/current.html"
+              subtitle (format "Speaker: %s" speaker)
+              summary body
+              desc (format "%s. %s" subtitle summary)]
+          [(xml/element :title {} title)
+           #_(xml/element :link {} link)
+           (xml/element :description {} desc)
+           (xml/element :itunes:subtitle {} subtitle)
+           (xml/element :itunes:summary {} summary)
+           (xml/element :pubDate {} date)
+           (xml/element :guid {} guid)
+           (xml/element :enclosure
+                        {:url (:url mp3)
+                         :length (:length mp3)
+                         :type "audio/mpeg"})
+           (xml/element :itunes:duration {} (:duration mp3))])
+        (catch Exception e
+          (throw (Exception. (format "entry has errors: %s\n\n%s"
+                                     (with-out-str
+                                       (clojure.pprint/pprint entry))
+                                     (str e)))))))))
 
 (defn contains-mp3? [node]
   (->> (h/select node [:a])
