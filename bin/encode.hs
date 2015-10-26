@@ -118,6 +118,7 @@ encode ctx preset suffix = do
     addMeta ctx title dest
     rt <- runtime dest
     upload ctx dest rt
+    echo (format ("*** LINK: http://"%s%"/"%s) (pack . bucket $ o) dest)
 
 lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
