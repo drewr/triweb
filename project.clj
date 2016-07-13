@@ -10,7 +10,7 @@
                  [clj-http "0.7.0"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [me.raynes/cegdown "0.1.0" :exclude [org.clojure/clojure]]
-                 [org.clojure/clojure "1.5.1"]
+                 [org.clojure/clojure "1.8.0"]
                  [org.clojure/data.xml "0.0.7"]
                  [ring "1.3.1"]
                  [sonian/carica "1.0.2"]
