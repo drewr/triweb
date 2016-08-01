@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack runghc
+-- stack runghc --resolver lts-6.10 --package turtle --package yaml --package system-filepath --package foldl
 
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
