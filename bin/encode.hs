@@ -34,7 +34,8 @@ import Options.Applicative ( execParser
                            , auto
                            , strOption
                            , long
-                           , value)
+                           , value
+                           , optional )
 import System.FilePath.Posix (takeBaseName, takeFileName)
 import System.Directory
 import Filesystem.Path.CurrentOS (fromText)
@@ -55,7 +56,9 @@ class Encodable a where
   encodeTitle :: Dated b => a -> b -> Text
 
 instance Dated Opts where
-  datedString o = pack . takeBaseName . mp3SrcPath $ o
+  datedString (Opts {setDate = (Just date)}) = pack date
+  datedString o@(Opts {setDate = Nothing}) =
+    pack . takeBaseName . mp3SrcPath $ o
 
 instance Encodable PodcastInput where
   encodeTitle pi o = (datedString o) <> "-" <> (pcFilePrefix pi)
@@ -65,6 +68,7 @@ data Opts = Opts { mp3SrcPath  :: String
                  , imagePath   :: String
                  , audioScale  :: Int
                  , albumAuthor :: String
+                 , setDate :: Maybe String
                  } deriving (Show)
 
 opts :: Options.Parser Opts
@@ -89,6 +93,10 @@ opts = Opts <$> argument str (metavar "MP3")
            <> metavar "ALBUM AUTHOR"
            <> help "What image to attach to the podcast"
            <> value defaultAuthor )
+       <*> ( optional $ strOption
+             ( long "setDate"
+             <> metavar "YYYY-MM-DD"
+             <> help "Date prefix override" ) )
 
 data PodcastInput = PodcastInput
   { pcFilePrefix :: Text
