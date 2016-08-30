@@ -85,13 +85,13 @@ opts = Opts <$> argument str (metavar "MP3")
            <> value defaultImage )
        <*> option auto
            ( long "audioScale"
-           <> metavar "IMAGE"
-           <> help "What image to attach to the podcast"
+           <> metavar "SCALE"
+           <> help "Audio scale"
            <> value defaultScale )
        <*> strOption
            ( long "albumAuthor"
            <> metavar "ALBUM AUTHOR"
-           <> help "What image to attach to the podcast"
+           <> help "Album author"
            <> value defaultAuthor )
        <*> ( optional $ strOption
              ( long "setDate"
