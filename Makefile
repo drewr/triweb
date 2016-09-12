@@ -20,4 +20,4 @@ converge:
 
 encode:
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
-	PATH=~/tmp/py/bin:$$PATH envg drewr bin/encode.hs --setDate $(DATE) ~/Dropbox/Trinity-WWW/$(DATE).mp3 <bin/$(DATE).yaml
+	PATH=~/tmp/py/bin:$$PATH envg drewr bin/encode.hs --setDate $(DATE) ~/Downloads/$(DATE).mp3 <bin/$(DATE).yaml
