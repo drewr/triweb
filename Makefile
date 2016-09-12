@@ -21,3 +21,6 @@ converge:
 encode:
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
 	PATH=~/tmp/py/bin:$$PATH envg drewr bin/encode.hs --setDate $(DATE) ~/Downloads/$(DATE).mp3 <bin/$(DATE).yaml
+
+aws-check:
+	PATH=~/tmp/py/bin:$$PATH envg drewr aws s3 ls s3://media.trinitynashville.org/$(DATE)
