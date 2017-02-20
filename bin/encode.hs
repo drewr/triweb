@@ -43,7 +43,7 @@ import qualified Control.Foldl as Fold
 
 defaultBucket = "media.trinitynashville.org"
 defaultAuthor = "Trinity Church"
-defaultImage  = "resources/static/img/podcast4.png"
+defaultImage  = "resources/static/img/podcast5.png"
 defaultScale  = 3
 
 type Preset = Text
