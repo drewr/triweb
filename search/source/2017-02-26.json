@@ -1,0 +1,20 @@
+{
+  "series": "Authentic Christianity: 2 Corinthians",
+  "speaker": "Matt Givens",
+  "title": "Jars Of Clay",
+  "scripture.texts": [
+    {
+      "book": "2 Corinthians",
+      "start": {
+        "chapter": 4,
+        "verse": 7
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 15
+      }
+    }
+  ],
+  "blurb": "Because of Jesus, the world's greatest treasure comes hidden in jars of clay--common, unexceptional, even fragile and weak. That means, for the Christian, suffering is never what it seems.",
+  "file.slug": "2-Cor-4-Jars-Of-Clay"
+}
