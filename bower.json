@@ -16,9 +16,12 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-node-child-process": "^3.0.0"
+    "purescript-foreign": "^4.0.1",
+    "purescript-node-streams": "^3.1.0",
+    "purescript-console": "^3.0.0",
+    "purescript-node-child-process": "^4.0.0"
   },
   "devDependencies": {
-    "purescript-console": "^2.0.0"
+    "purescript-psci-support": "^3.0.0"
   }
 }
