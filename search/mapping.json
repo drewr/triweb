@@ -1,0 +1,86 @@
+{
+  "trinity": {
+    "mappings": {
+      "t": {
+        "properties": {
+          "blurb": {
+            "type": "text"
+          },
+          "date": {
+            "type": "date"
+          },
+          "file": {
+            "properties": {
+              "slug": {
+                "type": "keyword"
+              }
+            }
+          },
+          "scripture": {
+            "properties": {
+              "texts": {
+                "properties": {
+                  "book": {
+                    "type": "keyword",
+                    "fields": {
+                      "analyzed": {
+                        "type": "text"
+                      }
+                    }
+                  },
+                  "end": {
+                    "properties": {
+                      "chapter": {
+                        "type": "short"
+                      },
+                      "verse": {
+                        "type": "short"
+                      }
+                    }
+                  },
+                  "start": {
+                    "properties": {
+                      "chapter": {
+                        "type": "short"
+                      },
+                      "verse": {
+                        "type": "short"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "series": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "speaker": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
