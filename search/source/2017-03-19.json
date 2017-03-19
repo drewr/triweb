@@ -1,0 +1,21 @@
+{
+  "series": "Authentic Christianity: 2 Corinthians",
+  "speaker": "Matt McCullough",
+  "title": "In Christ",
+  "date": "2017-03-19",
+  "scripture.texts": [
+    {
+      "book": "2 Corinthians",
+      "start": {
+        "chapter": 5,
+        "verse": 11
+      },
+      "end": {
+        "chapter": 5,
+        "verse": 17
+      }
+    }
+  ],
+  "blurb": "\"In Christ\" is a phrase that comes up all throughout Paul's letters. It's easy to pass right over it without paying much notice. But what does it mean to be \"in Christ\"? And why is it so important?",
+  "file.slug": "2-Cor-5-In-Christ"
+}
