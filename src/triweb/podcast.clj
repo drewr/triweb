@@ -91,7 +91,7 @@
        (apply str)))
 
 (def podcast-cached
-  (memo/memo-ttl podcast-str (* CACHE-SECS 1000)))
+  (memo/ttl podcast-str :ttl/threshold (* CACHE-SECS 1000)))
 
 (defn wrap-podcast [app]
   (fn [req]
