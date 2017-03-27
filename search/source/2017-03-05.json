@@ -4,16 +4,10 @@
   "title": "Beyond Comparison",
   "scripture.texts": [
     {
-      "book": "2 Corinthians",
-      "start": {
-        "chapter": 4,
-        "verse": 16
-      },
-      "end": {
-        "chapter": 4,
-        "verse": 18
-      }
+      "gte": 47004016,
+      "lte": 47004018
     }
+
   ],
   "blurb": "Paul says the problems we face now can't compare to the eternal glory we're promised in Christ. He says we get this truth when we focus not on what we can see but on what we can't see. But how do we compare what we can see to what we can't see?",
   "file.slug": "2-Cor-4-Beyond-Comparison"

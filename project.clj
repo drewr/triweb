@@ -6,6 +6,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[circleci/clj-yaml "0.5.5" :exclusions [[org.clojure/clojure]]]
+                 [clj-time "0.13.0"]
                  [commons-codec/commons-codec "1.10"]
                  [compojure "1.5.2" :exclusions [org.clojure/tools.reader]]
                  ;;[clj-http "2.3.0"]

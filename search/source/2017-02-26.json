@@ -4,15 +4,8 @@
   "title": "Jars Of Clay",
   "scripture.texts": [
     {
-      "book": "2 Corinthians",
-      "start": {
-        "chapter": 4,
-        "verse": 7
-      },
-      "end": {
-        "chapter": 4,
-        "verse": 15
-      }
+      "gte": 47004007,
+      "lte": 47004015
     }
   ],
   "blurb": "Because of Jesus, the world's greatest treasure comes hidden in jars of clay--common, unexceptional, even fragile and weak. That means, for the Christian, suffering is never what it seems.",
