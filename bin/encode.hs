@@ -13,7 +13,8 @@
 
 import Turtle hiding (option)
 import GHC.IO.Exception
-import Data.Yaml (decodeEither)
+import Data.Map (Map(..))
+import Data.Aeson (eitherDecode)
 import Data.Aeson.TH ( deriveJSON
                      , defaultOptions
                      , fieldLabelModifier
@@ -21,7 +22,7 @@ import Data.Aeson.TH ( deriveJSON
                      )
 import Data.Text (Text, unpack, pack, intercalate)
 import Data.Char (toLower)
-import qualified Data.ByteString.Char8 as B
+import qualified Data.ByteString.Lazy.Char8 as B
 import Options.Applicative as Options
 import Options.Applicative ( execParser
                            , info
@@ -43,6 +44,7 @@ import qualified Control.Foldl as Fold
 
 defaultBucket = "media.trinitynashville.org"
 defaultAuthor = "Trinity Church"
+defaultGenre  = "Speech"
 defaultImage  = "resources/static/img/podcast5.png"
 defaultScale  = 3
 
@@ -51,6 +53,7 @@ type Suffix = Text
 
 class Dated a where
   datedString :: a -> Text
+  year :: a -> Int
 
 class Encodable a where
   encodeTitle :: Dated b => a -> b -> Text
@@ -59,15 +62,17 @@ instance Dated Opts where
   datedString (Opts {setDate = (Just date)}) = pack date
   datedString o@(Opts {setDate = Nothing}) =
     pack . takeBaseName . mp3SrcPath $ o
+  year (Opts {setDate = (Just date)}) = read $ take 4 date :: Int
 
-instance Encodable PodcastInput where
-  encodeTitle pi o = (datedString o) <> "-" <> (pcFilePrefix pi)
+instance Encodable PodcastSource where
+  encodeTitle pi o = (datedString o) <> "-" <> (pcSlug pi)
 
 data Opts = Opts { mp3SrcPath  :: String
                  , bucket      :: String
                  , imagePath   :: String
                  , audioScale  :: Int
                  , albumAuthor :: String
+                 , genre       :: String
                  , setDate :: Maybe String
                  } deriving (Show)
 
@@ -93,30 +98,34 @@ opts = Opts <$> argument str (metavar "MP3")
            <> metavar "ALBUM AUTHOR"
            <> help "Album author"
            <> value defaultAuthor )
+       <*> strOption
+           ( long "genre"
+           <> metavar "GENRE"
+           <> help "Podcast genre category"
+           <> value defaultGenre )
        <*> ( optional $ strOption
              ( long "setDate"
              <> metavar "YYYY-MM-DD"
              <> help "Date prefix override" ) )
 
-data PodcastInput = PodcastInput
-  { pcFilePrefix :: Text
-  , pcAuthor     :: Text
-  , pcYear       :: Int
-  , pcComposer   :: Text
-  , pcAlbum      :: Text
-  , pcGenre      :: Text
-  , pcComment    :: Text
+data PodcastSource = PodcastSource
+  { pcSeries    :: Text
+  , pcSpeaker   :: Text
+  , pcTitle     :: Text
+  , pcScripture :: [Map String Int]
+  , pcSlug      :: Text
+  , pcBlurb     :: Text
   } deriving (Show)
 
 $(deriveJSON
   defaultOptions { fieldLabelModifier = (map toLower) . (drop 2)
-                 } ''PodcastInput)
+                 } ''PodcastSource)
 
 data Context = Context { ctxOpts :: Opts
-                       , ctxPi :: PodcastInput
+                       , ctxPi :: PodcastSource
                        } deriving (Show)
 
-makeContext :: Opts -> PodcastInput -> Context
+makeContext :: Opts -> PodcastSource -> Context
 makeContext o pi = Context o pi
 
 encode :: Context -> Preset -> Suffix -> IO ()
@@ -162,13 +171,13 @@ addMeta ctx title dest =
   in
     loggingProc "eyeD3"
          [ "--add-image", (pack (imagePath o ++ ":ICON"))
-         , "--release-year", (pack . show . pcYear $ pi)
-         , "--artist", pcComposer pi
-         , "--album", pcAlbum pi
+         , "--release-year", (pack . show . year $ o)
+         , "--artist", pcSpeaker pi
+         , "--album", pack . albumAuthor $ o
          , "--album-artist", (pack . albumAuthor $ o)
          , "--title", title
-         , "--genre", (pcGenre pi)
-         , "--add-comment", (pcComment pi)
+         , "--genre", pack . genre $ o
+         , "--add-comment", (pcBlurb pi)
          , "--encoding", "utf8"
          , dest
          ]
@@ -208,7 +217,7 @@ main :: IO ()
 main = do
   o <- execParser $ info (helper <*> opts) (header "Trinity Audio Encoder")
   j <- getContents
-  case (decodeEither (B.pack j) :: Either String PodcastInput) of
+  case (eitherDecode (B.pack j) :: Either String PodcastSource) of
     (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
     (Right pi) -> do
       let ctx = makeContext o pi

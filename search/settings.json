@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "t": {
+      "properties": {
+        "blurb": {
+          "type": "text"
+        },
+        "date": {
+          "type": "date"
+        },
+        "slug": {
+          "type": "keyword"
+        },
+        "scripture": {
+          "type": "integer_range"
+        },
+        "series": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "speaker": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "title": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "type": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

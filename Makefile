@@ -20,7 +20,7 @@ converge:
 
 encode:
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
-	PATH=~/tmp/py/bin:$$PATH bin/encode.hs --setDate $(DATE) ~/Downloads/$(DATE).mp3 <bin/$(DATE).yaml
+	PATH=~/tmp/py/bin:$$PATH bin/encode.hs --setDate $(DATE) ~/Downloads/$(DATE).mp3 <search/source/$(DATE).json
 
 aws-check:
 	PATH=~/tmp/py/bin:$$PATH aws s3 ls s3://media.trinitynashville.org/$(DATE)

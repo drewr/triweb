@@ -2,12 +2,13 @@
   "series": "Authentic Christianity: 2 Corinthians",
   "speaker": "Matt McCullough",
   "title": "Freedom",
-  "scripture.texts": [
+  "scripture": [
     {
       "gte": 47003012,
       "lte": 47004006
     }
   ],
   "blurb": "True freedom, the freedom that comes by God's Spirit, is not primarily freedom from something holding you back. It's freedom for--freedom to see, to enjoy, and to be transformed by the glory of Jesus.",
-  "file.slug": "2-Cor-3-Freedom"
+  "slug": "2-Cor-3-Freedom",
+  "type": "Sermon"
 }

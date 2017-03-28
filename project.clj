@@ -12,11 +12,14 @@
                  ;;[clj-http "2.3.0"]
                  [elastic/elasticsearch-clojure "0.99.5-20170220.205659-11"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
+                 [environ "1.1.0"]
                  [me.raynes/cegdown "0.1.0" :exclusions [org.clojure/clojure]]
                  [org.clojure/clojure "1.9.0-alpha14"]
                  [org.clojure/data.xml "0.0.8"]
                  [ring "1.5.1"]
                  [sonian/carica "1.0.2"]
                  [org.clojure/core.memoize "0.5.8"]]
-  :plugins [[lein-ring "0.11.0"]]
+  :profiles {:dev {:env {:es-url "http://localhost:9200" }}}
+  :plugins [[lein-ring "0.11.0"]
+            [lein-environ "1.1.0"]]
   :ring {:handler triweb.handler/app})
