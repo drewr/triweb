@@ -17,6 +17,9 @@
         "slug": {
           "type": "keyword"
         },
+        "tags": {
+          "type": "keyword"
+        },
         "scripture": {
           "type": "integer_range"
         },
