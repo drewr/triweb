@@ -2,5 +2,5 @@
   (:require [ring.adapter.jetty :refer [run-jetty]]
             [triweb.handler :refer [app]]))
 
-(defonce server
-  (run-jetty #'app {:port 8000 :join? false}))
+(defn serve! [port]
+  (run-jetty #'app {:port port :join? false}))

@@ -2,7 +2,7 @@
   (:require [carica.core :refer [config]]
             [clojure.java.io :as io]
             [clojure.string :as s]
-            [compojure.core :refer [defroutes GET]]
+            [compojure.core :refer [defroutes GET ANY]]
             [compojure.route :as route]
             [me.raynes.cegdown :as markdown]
             [net.cgrand.enlive-html :as h]
@@ -16,11 +16,11 @@
 
 (defn ^String join
   ([x]
-     (io/as-file x))
+   (io/as-file x))
   ([x y]
-     (File. ^File (io/as-file x) ^String y))
+   (File. ^File (io/as-file x) ^String y))
   ([x y & more]
-     (reduce join (join x y) more)))
+   (reduce join (join x y) more)))
 
 (defn file [& paths]
   (apply join paths))
@@ -32,18 +32,18 @@
 
 (defn find-tmpl*
   ([roots name]
-     (->> roots
-          (map #(str (file % name)))
-          (map search)
-          reverse
-          (some identity)))
+   (->> roots
+        (map #(str (file % name)))
+        (map search)
+        reverse
+        (some identity)))
   ([roots name alt-ext]
-     (find-tmpl* roots (s/replace name #"\..*?$"
-                                  (str "." alt-ext)))))
+   (find-tmpl* roots (s/replace name #"\..*?$"
+                                (str "." alt-ext)))))
 
 (defn find-tmpl
   ([name]
-     (find-tmpl* (config :template :roots) name)))
+   (find-tmpl* (config :template :roots) name)))
 
 (defn slurp-tmpl [name]
   (when-let [tmpl (find-tmpl name)]
@@ -113,5 +113,9 @@
 
 (defroutes handler
   (GET "/" [] "home")
+  (ANY "/upload" req (let []
+                       (clojure.pprint/pprint req)
+                       {:headers {"Access-Control-Allow-Origin" "*"}
+                        :body ((h/template (find-tmpl "upload.html") []))}))
   (route/resources "/" {:root "static"})
   (route/not-found "Page does not exist"))
