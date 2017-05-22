@@ -7,10 +7,11 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[circleci/clj-yaml "0.5.5" :exclusions [[org.clojure/clojure]]]
                  [clj-time "0.13.0"]
+                 [org.clojure/spec.alpha "0.1.94"]
                  [commons-codec/commons-codec "1.10"]
                  [compojure "1.5.2" :exclusions [org.clojure/tools.reader]]
                  ;;[clj-http "2.3.0"]
-                 [elastic/elasticsearch-clojure "0.99.5-20170220.205659-11"]
+                 [elastic/elasticsearch-clojure "0.99.5"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [environ "1.1.0"]
                  [me.raynes/cegdown "0.1.0" :exclusions [org.clojure/clojure]]

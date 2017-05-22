@@ -4,7 +4,7 @@
             [clj-time.format :as time.format]
             [clojure.java.io :as io]
             [clojure.string :as str]
-            [clojure.spec :as s]
+            [clojure.spec.alpha :as s]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
             [triweb.search :as search]))
