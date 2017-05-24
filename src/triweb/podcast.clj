@@ -10,7 +10,8 @@
 
 (def CACHE-SECS 3600)
 
-(s/def :podcast/date        string?)
+(s/def :podcast/date        (s/and string?
+                                   #(re-find #"\d\d\d\d-\d\d-\d\d" %)))
 (s/def :podcast/title       string?)
 (s/def :podcast/subtitle    string?)
 (s/def :podcast/speaker     string?)
@@ -42,7 +43,8 @@
                 :podcast/description
                 :podcast/mp3]))
 
-(def date-in (SimpleDateFormat. "E, dd MMM y HH:mm:SS"))
+(def date-ymd (SimpleDateFormat. "yyyy-MM-dd"))
+(def date-in (SimpleDateFormat. "E, dd MMM y"))
 (def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS Z"))
 (def time-of-day "17:00:00")
 
@@ -64,9 +66,9 @@
 (defn html-to-edn [entry]
   (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
     (let [date (when-let [d (-> entry (h/select [:strong]) h/texts first)]
-                 (.format date-out
-                          (.parse date-in
-                                  (format "%s %s" d time-of-day))))
+                 (->> d
+                     (.parse date-in)
+                     (.format date-ymd)))
           title (-> entry :content (nth 2))
           speaker (-> entry (h/select [:em]) first :content first)
           body (-> entry :content last .trim)
@@ -95,13 +97,17 @@
                        (s/explain-data :podcast/mp3 obj))))))
           obj)))))
 
+(s/fdef edn-to-xml
+        :args (s/cat :entry :podcast/entry))
 (defn edn-to-xml [entry]
   [(xml/element :title {} (:podcast/title entry))
    #_(xml/element :link {} link)
    (xml/element :description {} (:podcast/description entry))
    (xml/element :itunes:subtitle {} (:podcast/subtitle entry))
    (xml/element :itunes:summary {} (:podcast/summary entry))
-   (xml/element :pubDate {} (:podcast/date entry))
+   (xml/element :pubDate {} (->> (:podcast/date entry)
+                                 (.parse date-ymd)
+                                 (.format date-out)))
    (xml/element :guid {} (:podcast/guid entry))
    (xml/element :enclosure
                 {:url (-> entry :podcast/mp3 :mp3/url)

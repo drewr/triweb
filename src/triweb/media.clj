@@ -7,20 +7,23 @@
             [clojure.spec.alpha :as s]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
+            [triweb.podcast :as podcast]
             [triweb.search :as search]))
 
 (def ymd-fmt
   (time.format/formatter "yyyy-MM-dd"))
 
-(s/def :media/type string?)
-
-(s/def :media/series string?)
-
-(s/def :media/speaker string?)
-
-(s/def :media/title string?)
-
+(s/def :media/blurb string?)
 (s/def :media/date string?)
+(s/def :media/slug string?)
+(s/def :media/tags (s/coll-of string?))
+(s/def :media/type string?)
+(s/def :media/series string?)
+(s/def :media/speaker string?)
+(s/def :media/title string?)
+(s/def :media/type string?)
+(s/def :media/has-audio boolean?)
+(s/def :media/has-audio-error boolean?)
 
 (defn from-legacy-yaml [source]
   )
@@ -45,4 +48,3 @@
                        :date date-str)]
         (es.doc/index conn index search/_type (make-id doc) {:body doc})))
     (indices/refresh conn index)))
-

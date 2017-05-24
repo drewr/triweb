@@ -75,6 +75,12 @@
 (def book-number
   (into {} (map #(vector (second %) (first %)) books)))
 
+(defn contains-book? [s]
+  (when (string? s)
+    (some true?
+          (for [b (keys book-number)]
+            (.contains s b)))))
+
 (defn strip-leading-zeros [n-str]
   (apply str (drop-while #(= \0 %) n-str)))
 
@@ -100,15 +106,15 @@
             (vector v1 v2))
         proc-vs
         (fn proc-vs [vs]
-                  (cond
-                    (vector? vs) (map proc-vs vs)
-                    (map? vs) (if (= 1 (count vs))
-                                (str (key (first vs))
-                                     ":" (str/join "-" (val (first vs))))
-                                (str (key (first vs))
-                                     ":" (first (val (first vs)))
-                                     "-" (key (second vs))
-                                     ":" (first (val (second vs)))))))
+          (cond
+            (vector? vs) (map proc-vs vs)
+            (map? vs) (if (= 1 (count vs))
+                        (str (key (first vs))
+                             ":" (str/join "-" (val (first vs))))
+                        (str (key (first vs))
+                             ":" (first (val (first vs)))
+                             "-" (key (second vs))
+                             ":" (first (val (second vs)))))))
         proc-book (fn [[k v]]
                     (str k " " (let [strs (proc-vs v)]
                                  (if (sequential? strs)
