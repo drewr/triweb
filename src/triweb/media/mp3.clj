@@ -49,6 +49,7 @@
 (defn update-duration [bucket key]
   (->> (list-all-objects {:bucket-name bucket
                           :prefix key})
+       (filter #(.endsWith (:key %) ".mp3"))
        (map #(update-duration! bucket (:key %)))
        doall)
   (shutdown-agents))
