@@ -22,7 +22,8 @@
   (let [mp3 key]
     (when (not (.exists (io/file mp3)))
       (let [res (s3/get-object :bucket-name bucket :key key)]
-        (io/copy (:input-stream res) (io/file mp3))))
+        (io/copy (:input-stream res) (io/file mp3))
+        (.close (:input-stream res))))
     (let [secs (get-seconds mp3)
           res (s3/copy-object
                :source-bucket-name bucket
