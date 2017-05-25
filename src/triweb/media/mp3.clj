@@ -23,21 +23,26 @@
     (when (not (.exists (io/file mp3)))
       (let [res (s3/get-object :bucket-name bucket :key key)]
         (io/copy (:input-stream res) (io/file mp3))
-        (.close (:input-stream res))))
+        ;; So we don't leak HTTP pool resources
+        ;; https://github.com/mcohen01/amazonica/commit/5843ecdb8d64541631b22416b989a25ce1198f6e
+        (slurp (:input-stream res))))
     (let [secs (get-seconds mp3)
-          res (s3/copy-object
-               :source-bucket-name bucket
-               :source-key key
-               :destination-bucket-name bucket
-               :destination-key key
-               :access-control-list {:grant-permission ["AllUsers" "Read"]}
-               :new-object-metadata
-               {:user-metadata
-                {:seconds secs
-                 :md5 (md5sum-file mp3)}})]
+          _ (s3/copy-object
+             :source-bucket-name bucket
+             :source-key key
+             :destination-bucket-name bucket
+             :destination-key key
+             :access-control-list {:grant-permission ["AllUsers" "Read"]}
+             :new-object-metadata
+             {:user-metadata
+              {:seconds secs
+               :md5 (md5sum-file mp3)}})
+          res (s3/get-object :bucket-name bucket :key key)]
+      ;; ditto
+      (slurp (:input-stream res))
       (clojure.pprint/pprint
        [bucket key
-        (-> (s3/get-object :bucket-name bucket :key key)
+        (-> res
             :object-metadata
             :user-metadata)]))))
 
