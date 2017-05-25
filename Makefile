@@ -1,10 +1,15 @@
 HOST = web01.trinitynashville.org
 
+bootstrap: etc/version.txt
+
+etc/version.txt:
+	mkdir -p etc
+	git ver >etc/version.txt
+
 clean:
 	lein clean
 
-package:
-	git ver >etc/version.txt
+package: bootstrap
 	lein ring uberwar triweb.war
 
 restart:
