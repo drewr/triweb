@@ -190,7 +190,7 @@ upload ctx dest dur =
     loggingProc "aws"
          [ "s3api", "put-object"
          , "--acl", "public-read"
-         , "--metadata", "runtime=" <> dur
+         , "--metadata", "duration=" <> dur
          , "--content-type", "audio/mpeg"
          , "--body", dest
          , "--bucket", (pack . bucket $ o)
