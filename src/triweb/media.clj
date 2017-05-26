@@ -15,15 +15,27 @@
 
 (s/def :media/blurb string?)
 (s/def :media/date string?)
-(s/def :media/slug string?)
-(s/def :media/tags (s/coll-of string?))
-(s/def :media/type string?)
-(s/def :media/series string?)
-(s/def :media/speaker string?)
-(s/def :media/title string?)
-(s/def :media/type string?)
 (s/def :media/has-audio boolean?)
 (s/def :media/has-audio-error boolean?)
+(s/def :media/series string?)
+(s/def :media/slug string?)
+(s/def :media/speaker string?)
+(s/def :media/tags (s/coll-of string?))
+(s/def :media/title string?)
+(s/def :media/type string?)
+
+(s/def :media/entry
+  (s/keys
+   :req [:media/blurb
+         :media/date
+         :media/has-audio
+         :media/has-audio-error
+         :media/series
+         :media/slug
+         :media/speaker
+         :media/tags
+         :media/title
+         :media/type]))
 
 (defn from-legacy-yaml [source]
   )

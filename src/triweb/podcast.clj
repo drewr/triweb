@@ -20,15 +20,18 @@
 (s/def :podcast/summary     string?)
 (s/def :podcast/body        string?)
 (s/def :podcast/description string?)
+(s/def :podcast/scripture string?)
 
 (s/def :mp3/url string?)
 (s/def :mp3/bytes integer?)
+(s/def :mp3/seconds integer?)
 (s/def :mp3/duration string?)
 
 (s/def :podcast/mp3
   (s/keys :req [:mp3/url
                 :mp3/bytes
-                :mp3/duration ;; min:secs
+                :mp3/duration
+                :mp3/seconds
                 ]))
 
 (s/def :podcast/entry
@@ -57,18 +60,21 @@
           obj {:mp3/url mp3
                :mp3/bytes (when-let [l (headers "content-length")]
                             (Long/parseLong l))
-               :mp3/duration (headers "x-amz-meta-runtime")}]
-      (if (= :s/invalid (s/conform :podcast/mp3 obj))
-        (clojure.pprint/pprint
-         (s/explain-data :podcast/mp3 obj))
+               :mp3/duration (headers "x-amz-meta-duration")
+               :mp3/seconds (Integer/parseInt
+                             (headers "x-amz-meta-seconds"))}]
+      (if (= ::s/invalid (s/conform :podcast/mp3 obj))
+        (throw
+         (ex-info (str "bad mp3: " mp3)
+                  (s/explain-data :podcast/mp3 obj)))
         obj))))
 
 (defn html-to-edn [entry]
   (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
     (let [date (when-let [d (-> entry (h/select [:strong]) h/texts first)]
                  (->> d
-                     (.parse date-in)
-                     (.format date-ymd)))
+                      (.parse date-in)
+                      (.format date-ymd)))
           title (-> entry :content (nth 2))
           speaker (-> entry (h/select [:em]) first :content first)
           body (-> entry :content last .trim)
@@ -88,13 +94,13 @@
                  :podcast/body         body
                  :podcast/description  desc
                  :podcast/mp3          mp3}]
-        (if (= :s/invalid (s/conform :podcast/entry obj))
+        (if (= ::s/invalid (s/conform :podcast/entry obj))
           (throw
            (Exception.
-            (format "entry has errors: %s\n\n%s"
+            (format "entry has errors: %s"
                     (with-out-str
                       (clojure.pprint/pprint
-                       (s/explain-data :podcast/mp3 obj))))))
+                       (s/explain-data :podcast/entry obj))))))
           obj)))))
 
 (s/fdef edn-to-xml
