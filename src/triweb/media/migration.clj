@@ -3,6 +3,7 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.spec.alpha :as s]
+            [clojure.walk :as walk]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
             [triweb.podcast :as podcast]
@@ -57,7 +58,8 @@
             :media/series          "FIXME"
             :media/slug            (get-slug (-> x :podcast/mp3 :mp3/url))
             :media/tags            []
-            :media/type            "sermon"
+            :media/type            "Sermon"
+            :media/published       true
             }
         x4 (s/conform :media/entry x3)]
     (if (= ::s/invalid x4)
@@ -65,11 +67,23 @@
        (ex-info "doesn't conform" (s/explain-data :media/entry x3)))
       x4)))
 
+(defn jsonify [x]
+  (json/encode
+   (into (sorted-map)
+         ;; Remove ns from keywords.  Isn't `stringify-keys` real
+         ;; purpose, but since it uses `name` it works.
+         (walk/stringify-keys x))
+   {:pretty true}))
+
+(defn scrape-sermons [urls dir*]
+  (doseq [s (->> urls
+                 (pmap (comp sermons-with-standard-titles #(java.net.URL. %)))
+                 (apply concat)
+                 (sort-by :podcast/date)
+                 (pmap make-media-entry))]
+    (let [dir (doto (io/file dir*) .mkdirs)
+          f (io/file dir (str (:media/date s) ".json"))]
+      (spit f (jsonify (dissoc s :media/date))))))
+
 (comment
-  (->> urls
-       (pmap (comp sermons-with-standard-titles #(java.net.URL. %)))
-       (apply concat)
-       (sort-by :podcast/date)
-       (pmap make-media-entry)
-       first
-       clojure.pprint/pprint))
+  (scrape-sermons urls "./search/source-tmp"))
