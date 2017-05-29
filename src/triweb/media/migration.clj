@@ -1,6 +1,7 @@
 (ns triweb.media.migration
   (:require [cheshire.core :as json]
             [clojure.java.io :as io]
+            [clojure.java.shell :as sh]
             [clojure.string :as str]
             [clojure.spec.alpha :as s]
             [clojure.walk :as walk]
@@ -18,7 +19,7 @@
    "http://trinitynashville.org/sermons/current.html"])
 
 (def urls
-  ["http://trinitynashville.org/audio/2.html"
+  ["http://trinitynashville.org/audio/1.html"
    ])
 
 (defn parse-title [s]
@@ -81,9 +82,19 @@
                  (apply concat)
                  (sort-by :podcast/date)
                  (pmap make-media-entry))]
-    (let [dir (doto (io/file dir*) .mkdirs)
-          f (io/file dir (str (:media/date s) ".json"))]
-      (spit f (jsonify (dissoc s :media/date))))))
+    (let [content (jsonify (dissoc s :media/date))
+          dir (doto (io/file dir*) .mkdirs)
+          f-base (io/file dir (:media/date s))
+          f (io/file (str f-base ".json"))]
+      (if (and (.exists f) (not= (slurp f) content))
+        (let [f-new (io/file (str f-base ".json.new"))
+              f-diff (io/file (str f-base ".diff"))]
+          (println f-new)
+          (spit f-new content)
+          (spit f-diff (:out (sh/sh "diff" "-u" (str f) (str f-new)))))
+        (do
+          (println f)
+          (spit f content))))))
 
 (comment
   (scrape-sermons urls "./search/source-tmp"))
