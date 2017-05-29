@@ -113,5 +113,10 @@
 
 (defroutes handler
   (GET "/" [] "home")
+  (GET "/admin" req
+       (do
+         ((h/template
+           (find-tmpl "admin.html") []
+           ))))
   (route/resources "/" {:root "static"})
   (route/not-found "Page does not exist"))
