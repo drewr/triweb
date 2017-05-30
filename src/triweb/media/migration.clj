@@ -25,9 +25,8 @@
 (defn parse-title [s]
   (when (string? s)
     (let [[title other] (str/split s #" - ")]
-      (when other
-        {:podcast/title title
-         :media/scripture other}))))
+      {:podcast/title title
+       :media/scripture (or other "FIXME")})))
 
 (defn get-slug [url]
   (let [[_ slug] (re-find #"https?://[^/]+/?([^.]+)" url)]
@@ -41,7 +40,7 @@
              s)))
        (filter identity)))
 
-(defn sermons-with-standard-titles [url]
+(defn sermons [url]
   (->> (for [s (podcast/sermon-seq url)]
          (when-let [title (parse-title (:podcast/title s))]
            (merge s title)))
@@ -89,12 +88,13 @@
       (if (and (.exists f) (not= (slurp f) content))
         (let [f-new (io/file (str f-base ".json.new"))
               f-diff (io/file (str f-base ".diff"))]
-          (println f-new)
+          (println (str f-new))
           (spit f-new content)
           (spit f-diff (:out (sh/sh "diff" "-u" (str f) (str f-new)))))
         (do
-          (println f)
+          (println (str f))
           (spit f content))))))
 
 (comment
-  (scrape-sermons urls "./search/source-tmp"))
+  (scrape-sermons urls "./search/source-tmp")
+  )
