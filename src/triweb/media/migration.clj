@@ -13,8 +13,10 @@
             [triweb.search :as search]))
 
 (def urls
-  ["http://trinitynashville.org/audio/1.html"
+  ["http://trinitynashville.org/audio.html"
+   "http://trinitynashville.org/audio/1.html"
    "http://trinitynashville.org/audio/2.html"
+   "http://trinitynashville.org/sermons/series/judges.html"
    "http://trinitynashville.org/sermons/archives.html"
    "http://trinitynashville.org/sermons/current.html"])
 
