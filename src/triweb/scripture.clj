@@ -75,6 +75,14 @@
 (def book-number
   (into {} (map #(vector (second %) (first %)) books)))
 
+(defn pad [v n]
+  (format (str "%0" n "d") (Integer/parseInt (str v))))
+
+(defn book-matches [s]
+  (for [b (map second books)
+        :when (re-find (re-pattern b) s)]
+    b))
+
 (defn contains-book? [s]
   (when (string? s)
     (some true?
@@ -99,9 +107,10 @@
     (update-in coll [bn ch] (fnil f []) ve)))
 
 (defn decode-range [v1 v2]
-  (-> (sorted-map) (decode v1) (decode v2)))
+  (-> (sorted-map) (decode v1) (cond->
+                                   (not= v1 v2) (decode v2))))
 
-(defn refs-str [refs]
+(defn unparse [refs]
   (let [m (fn [v1 v2]
             (vector v1 v2))
         proc-vs
@@ -124,3 +133,72 @@
                 m (map #(decode-range (:gte %) (:lte %)) refs))
          (map proc-book)
          (str/join "; "))))
+
+(defn match-refs [s]
+  (re-find #"([0-9]+):([0-9-,]+)" s))
+
+(defn encode-verse [book chapter verse]
+  (str
+   (pad (book-number book) 2)
+   (pad chapter 3)
+   (pad verse 3)))
+
+(defn parse-verse-range [book ch s]
+  (let [[start end] (str/split s #"-")]
+    [(encode-verse book ch start)
+     (if end
+       (encode-verse book ch end)
+       (encode-verse book ch start))]))
+
+(defn parse-verse-range-different-chapters [book s]
+  (let [[start end] (str/split s #"-")
+        [c1 v1] (str/split start #":")
+        [c2 v2] (str/split end #":")]
+    [(encode-verse book c1 v1)
+     (encode-verse book c2 v2)]))
+
+(defn parse-verses
+  "A range (1-5), a single verse number (2), or a nil (the whole
+  chapter)."
+  [book ch s]
+  (if s
+    (map (partial parse-verse-range book ch) (str/split s #", ?"))
+    ;; Whole chapter, might need to look up the real value, but not
+    ;; for searching
+    [[(encode-verse book ch 1) (encode-verse book ch 999)]]
+    ))
+
+(def verses-same-chapter
+  #"[0-9]+:[0-9-,]+")
+
+(def verses-different-chapter
+  #"[0-9]+:[0-9]+-[0-9]+:[0-9]+")
+
+(defn parse-ref [book s]
+  (cond
+    (re-find verses-different-chapter s)
+    (parse-verse-range-different-chapters book s)
+    (re-find verses-same-chapter s)
+    (let [[chap vs] (str/split s #":")]
+      (parse-verses book chap vs))))
+
+(defn parse [s]
+  (when (contains-book? s)
+    (let [n (count (book-matches s))
+          f (fn [acc section]
+              (let [book (first (book-matches section))
+                    curr (or book (:current acc))]
+                (merge acc
+                       {:current curr
+                        curr (conj
+                              (acc curr)
+                              (parse-ref
+                               curr
+                               (.trim (str/replace section curr ""))))})))]
+      (->>
+       (-> (reduce f {:current nil} (map #(.trim %) (str/split s #"; ?")))
+           (dissoc :current))
+       (mapcat val)
+       (apply concat)
+       (map (fn [[gte lte]]
+              {:gte gte :lte lte}))))))
