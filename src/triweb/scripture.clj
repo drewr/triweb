@@ -1,5 +1,7 @@
 (ns triweb.scripture
-  (:require [clojure.string :as str]))
+  (:require [clojure.java.io :as io]
+            [clojure.string :as str]
+            [instaparse.core :as i]))
 
 (def books
   [[1  "Genesis"]
@@ -202,3 +204,19 @@
        (apply concat)
        (map (fn [[gte lte]]
               {:gte gte :lte lte}))))))
+
+(def grammar
+  (-> "scripture/grammar.ebnf"
+      io/resource
+      slurp
+      (str/replace "%%BOOKS%%" (->> books
+                                    (map second)
+                                    (map #(str "'" % "'"))
+                                    (interpose "|")
+                                    (apply str)))))
+
+(def parser
+  (i/parser grammar))
+
+(defn parse [s]
+  (parser s))

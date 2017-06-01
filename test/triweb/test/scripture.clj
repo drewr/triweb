@@ -29,6 +29,5 @@
                  (filter #(.endsWith (str %) "json"))
                  (map #(:scripture (cheshire.core/decode (slurp %) true)))
                  (into #{})
-                 sort
-                 (take 10))]
-    (is (= :foo (scripture/parse x)) x)))
+                 (take 5))]
+    (is (= x (scripture/unparse (scripture/parse x))))))

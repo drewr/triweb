@@ -1,0 +1,16 @@
+a = book [ <sp> ref ] ( book [ <sp> ref ] )*
+book = %%BOOKS%%
+ref = ( ( just-chapter | chapter-then-verses | multi-chapter-verse-range ) [<semi>] )+
+just-chapter = chapter !colon
+chapter-then-verses = chapter <colon> verses
+multi-chapter-verse-range = chapter <colon> verse <dash> chapter <colon> verse
+verses = ( verse | range )+
+chapter = num
+verse = num [ <comma> ]
+range = verse <dash> verse [ <comma> ]
+num = #'[0-9]+'
+sp = #' +'
+colon = ':'
+comma = ','
+dash = '-'
+semi = #'[; ]+'

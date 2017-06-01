@@ -14,6 +14,7 @@
                  [elastic/elasticsearch-clojure "0.99.5"]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [environ "1.1.0"]
+                 [instaparse "1.4.7"]
                  [me.raynes/cegdown "0.1.0" :exclusions [org.clojure/clojure]]
                  [org.clojure/clojure "1.9.0-alpha14"]
                  [org.clojure/core.memoize "0.5.8"]
