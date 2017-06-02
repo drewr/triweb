@@ -1,4 +1,5 @@
-a = book [ <sp> ref ] ( book [ <sp> ref ] )*
+a = bookref bookref*
+bookref = book [ <sp> ref ]
 book = %%BOOKS%%
 ref = ( ( just-chapter | chapter-then-verses | multi-chapter-verse-range ) [<semi>] )+
 just-chapter = chapter !colon

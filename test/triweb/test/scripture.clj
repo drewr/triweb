@@ -25,7 +25,14 @@
                               :lte 1001001}]))))
 
 (deftest parse
-  (doseq [x (->> (file-seq (io/file "search-tmp/source"))
+  (is (= (scripture/parse
+          "1 Corinthians 15:1,2-3,5; Romans 16:1-17:8; Genesis")
+         [{:gte "46015001", :lte "46015001"}
+          {:gte "46015002", :lte "46015003"}
+          {:gte "46015005", :lte "46015005"}
+          {:gte "45016001", :lte "45017008"}
+          {:gte "01001001", :lte "01999999"}]))
+  #_(doseq [x (->> (file-seq (io/file "search-tmp/source"))
                  (filter #(.endsWith (str %) "json"))
                  (map #(:scripture (cheshire.core/decode (slurp %) true)))
                  (into #{})

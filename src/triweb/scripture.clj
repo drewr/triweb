@@ -91,6 +91,15 @@
           (for [b (keys book-number)]
             (.contains s b)))))
 
+(defn make-book-range-maker [c1 v1 c2 v2]
+  (fn [b]
+    {:gte (str (pad b 2)
+               (pad c1 3)
+               (pad v1 3))
+     :lte (str (pad b 2)
+               (pad c2 3)
+               (pad v2 3))}))
+
 (defn strip-leading-zeros [n-str]
   (apply str (drop-while #(= \0 %) n-str)))
 
@@ -136,75 +145,6 @@
          (map proc-book)
          (str/join "; "))))
 
-(defn match-refs [s]
-  (re-find #"([0-9]+):([0-9-,]+)" s))
-
-(defn encode-verse [book chapter verse]
-  (str
-   (pad (book-number book) 2)
-   (pad chapter 3)
-   (pad verse 3)))
-
-(defn parse-verse-range [book ch s]
-  (let [[start end] (str/split s #"-")]
-    [(encode-verse book ch start)
-     (if end
-       (encode-verse book ch end)
-       (encode-verse book ch start))]))
-
-(defn parse-verse-range-different-chapters [book s]
-  (let [[start end] (str/split s #"-")
-        [c1 v1] (str/split start #":")
-        [c2 v2] (str/split end #":")]
-    [(encode-verse book c1 v1)
-     (encode-verse book c2 v2)]))
-
-(defn parse-verses
-  "A range (1-5), a single verse number (2), or a nil (the whole
-  chapter)."
-  [book ch s]
-  (if s
-    (map (partial parse-verse-range book ch) (str/split s #", ?"))
-    ;; Whole chapter, might need to look up the real value, but not
-    ;; for searching
-    [[(encode-verse book ch 1) (encode-verse book ch 999)]]
-    ))
-
-(def verses-same-chapter
-  #"[0-9]+:[0-9-,]+")
-
-(def verses-different-chapter
-  #"[0-9]+:[0-9]+-[0-9]+:[0-9]+")
-
-(defn parse-ref [book s]
-  (cond
-    (re-find verses-different-chapter s)
-    (parse-verse-range-different-chapters book s)
-    (re-find verses-same-chapter s)
-    (let [[chap vs] (str/split s #":")]
-      (parse-verses book chap vs))))
-
-(defn parse [s]
-  (when (contains-book? s)
-    (let [n (count (book-matches s))
-          f (fn [acc section]
-              (let [book (first (book-matches section))
-                    curr (or book (:current acc))]
-                (merge acc
-                       {:current curr
-                        curr (conj
-                              (acc curr)
-                              (parse-ref
-                               curr
-                               (.trim (str/replace section curr ""))))})))]
-      (->>
-       (-> (reduce f {:current nil} (map #(.trim %) (str/split s #"; ?")))
-           (dissoc :current))
-       (mapcat val)
-       (apply concat)
-       (map (fn [[gte lte]]
-              {:gte gte :lte lte}))))))
-
 (def grammar
   (-> "scripture/grammar.ebnf"
       io/resource
@@ -215,8 +155,44 @@
                                     (interpose "|")
                                     (apply str)))))
 
+(def xforms
+  {:a (fn [& refs]
+        (apply concat refs))
+
+   :bookref (fn [[_ book] & refs]
+              (let [bn (book-number book)]
+                (if refs
+                  (map (fn [f]
+                         (f bn))
+                       (mapcat second refs))
+                  [((make-book-range-maker 1 1 999 999) bn)])))
+
+   :multi-chapter-verse-range
+   (fn [& a]
+     [(apply make-book-range-maker a)])
+
+   :chapter-then-verses
+   (fn [ch vs]
+     (let [f (fn [x]
+               (cond
+                 (number? x)
+                 (make-book-range-maker ch x ch x)
+                 (vector? x)
+                 (let [[_ v1 v2] x]
+                   (make-book-range-maker ch v1 ch v2))))]
+       (map f (rest vs))))
+
+   :verse (fn [[_ num]]
+            (Integer/parseInt num))
+
+   :chapter (fn [[_ num]]
+              (Integer/parseInt num))
+
+   })
+
 (def parser
   (i/parser grammar))
 
 (defn parse [s]
-  (parser s))
+  (i/transform
+   xforms (parser s)))
