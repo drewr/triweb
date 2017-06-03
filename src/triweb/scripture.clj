@@ -138,9 +138,24 @@
         (fn proc-vs [vs]
           (cond
             (vector? vs) (map proc-vs vs)
-            (map? vs) (if (= 1 (count vs))
+            (map? vs) (cond
+                        ;; "Genesis 12"
+                        (and (= 1 (count vs))
+                             (= [1 999] (val (first vs))))
+                        (str (key (first vs)))
+
+                        ;; "Genesis 1:1"
+                        (= 1 (count vs))
                         (str (key (first vs))
                              ":" (str/join "-" (val (first vs))))
+
+                        ;; "Genesis 1-3"
+                        (and (= 2 (count vs))
+                             (= [999] (val (second vs))))
+                        (str (key (first vs)) "-" (key (second vs)))
+
+                        ;; "Genesis 1:1-2:1"
+                        :else
                         (str (key (first vs))
                              ":" (first (val (first vs)))
                              "-" (key (second vs))
@@ -170,12 +185,16 @@
         (apply concat refs))
 
    :bookref (fn [[_ book] & refs]
+              (prn book refs)
               (let [bn (book-number book)]
                 (if refs
                   (map (fn [f]
                          (f bn))
                        (mapcat second refs))
                   [((make-book-range-maker 1 1 999 999) bn)])))
+
+   :just-chapter (fn [ch]
+                   [(make-book-range-maker ch 1 ch 999)])
 
    :chapter-range (fn [ch1 ch2]
                     [(make-book-range-maker ch1 1 ch2 999)])
@@ -207,5 +226,6 @@
   (i/parser grammar))
 
 (defn parse [s]
+  (prn 'parse s)
   (i/transform
    xforms (parser s)))
