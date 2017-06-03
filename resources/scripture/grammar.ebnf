@@ -1,8 +1,12 @@
 a = bookref bookref*
 bookref = book [ <sp> ref ]
 book = %%BOOKS%%
-ref = ( ( just-chapter | chapter-then-verses | multi-chapter-verse-range ) [<semi>] )+
+ref = ( ( just-chapter
+        | chapter-range
+        | chapter-then-verses
+        | multi-chapter-verse-range ) [<semi>] )+
 just-chapter = chapter !colon
+chapter-range = ( chapter <dash> chapter [<comma>] )+
 chapter-then-verses = chapter <colon> verses
 multi-chapter-verse-range = chapter <colon> verse <dash> chapter <colon> verse
 verses = ( verse | range )+

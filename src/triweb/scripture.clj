@@ -167,6 +167,9 @@
                        (mapcat second refs))
                   [((make-book-range-maker 1 1 999 999) bn)])))
 
+   :chapter-range (fn [ch1 ch2]
+                    [(make-book-range-maker ch1 1 ch2 999)])
+
    :multi-chapter-verse-range
    (fn [& a]
      [(apply make-book-range-maker a)])
