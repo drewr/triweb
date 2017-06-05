@@ -103,12 +103,14 @@
 
 (defn make-book-range-maker [c1 v1 c2 v2]
   (fn [b]
-    {:gte (str (pad b 2)
-               (pad c1 3)
-               (pad v1 3))
-     :lte (str (pad b 2)
-               (pad c2 3)
-               (pad v2 3))}))
+    {:gte (Long/parseLong
+           (str (pad b 2)
+                (pad c1 3)
+                (pad v1 3)))
+     :lte (Long/parseLong
+           (str (pad b 2)
+                (pad c2 3)
+                (pad v2 3)))}))
 
 (defn strip-leading-zeros [n-str]
   (apply str (drop-while #(= \0 %) n-str)))
@@ -190,7 +192,6 @@
         (apply concat refs))
 
    :bookref (fn [[_ book] & refs]
-              (prn book refs)
               (let [bn (book-number book)]
                 (if refs
                   (map (fn [f]
@@ -231,6 +232,5 @@
   (i/parser grammar))
 
 (defn parse [s]
-  (prn 'parse s)
   (i/transform
    xforms (parser s)))

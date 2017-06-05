@@ -1,5 +1,6 @@
 (ns triweb.test.scripture
-  (:require [clojure.java.io :as io]
+  (:require [cheshire.core :as json]
+            [clojure.java.io :as io]
             [clojure.test :refer :all])
   (:require [triweb.scripture :as scripture]
             :reload-all))
@@ -27,14 +28,13 @@
 (deftest parse
   (is (= (scripture/parse
           "1 Corinthians 15:1,2-3,5; Romans 16:1-17:8; Genesis")
-         [{:gte "46015001", :lte "46015001"}
-          {:gte "46015002", :lte "46015003"}
-          {:gte "46015005", :lte "46015005"}
-          {:gte "45016001", :lte "45017008"}
-          {:gte "01001001", :lte "01999999"}]))
-  #_(doseq [x (->> (file-seq (io/file "search-tmp/source"))
+         [{:gte 46015001, :lte 46015001}
+          {:gte 46015002, :lte 46015003}
+          {:gte 46015005, :lte 46015005}
+          {:gte 45016001, :lte 45017008}
+          {:gte 1001001, :lte 1999999}]))
+  (doseq [x (->> (file-seq (io/file "search/source"))
                  (filter #(.endsWith (str %) "json"))
-                 (map #(:scripture (cheshire.core/decode (slurp %) true)))
-                 (into #{})
-                 (take 5))]
-    (is (= x (scripture/unparse (scripture/parse x))))))
+                 (map #(:scripture (json/decode (slurp %) true)))
+                 (into #{}))]
+    (is (= x (scripture/parse (scripture/unparse x))))))
