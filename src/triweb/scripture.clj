@@ -139,6 +139,10 @@
           (cond
             (vector? vs) (map proc-vs vs)
             (map? vs) (cond
+                        ;; "Genesis"
+                        (= {1 [1] 999 [999]} vs)
+                        nil
+
                         ;; "Genesis 12"
                         (and (= 1 (count vs))
                              (= [1 999] (val (first vs))))
@@ -161,10 +165,11 @@
                              "-" (key (second vs))
                              ":" (first (val (second vs)))))))
         proc-book (fn [[k v]]
-                    (str k " " (let [strs (proc-vs v)]
-                                 (if (sequential? strs)
-                                   (str/join "; " strs)
-                                   strs))))]
+                    (str k (when-let [strs (proc-vs v)]
+                             (str " "
+                                  (if (sequential? strs)
+                                    (str/join "; " strs)
+                                    strs)))))]
     (->> (apply merge-with
                 m (map #(decode-range (:gte %) (:lte %)) refs))
          (map proc-book)
