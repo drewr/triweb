@@ -97,6 +97,18 @@
           (println (str f))
           (spit f content))))))
 
+(defn print-legacy-post [file]
+  (let [ymd (re-find #"\d\d\d\d-\d\d-\d\d" file)
+        json (-> file slurp (json/decode true))]
+    (printf "**%s**  \n" (->> ymd
+                              (.parse podcast/date-ymd)
+                              (.format podcast/date-in)))
+    (printf "%s - %s   \n" (:title json) (bible/unparse (:scripture json)))
+    (printf "*%s* ---\n[MP3](%s)   \n" (:speaker json)
+            (format
+             "http://media.trinitynashville.org/%s-%s.mp3" ymd (:slug json)))
+    (printf "%s\n" (:blurb json))))
+
 (comment
   (scrape-sermons urls "./search/source-tmp")
   )

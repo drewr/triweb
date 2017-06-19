@@ -47,7 +47,7 @@
                 :podcast/mp3]))
 
 (def date-ymd (SimpleDateFormat. "yyyy-MM-dd"))
-(def date-in (SimpleDateFormat. "E, dd MMM y"))
+(def date-in (SimpleDateFormat. "EEEE, dd MMM y"))
 (def date-out (SimpleDateFormat. "EEE, dd MMM yyyy HH:mm:SS Z"))
 (def time-of-day "17:00:00")
 
