@@ -79,7 +79,7 @@
 
 (defn scrape-sermons [urls dir*]
   (doseq [s (->> urls
-                 (pmap (comp sermons-with-standard-titles #(java.net.URL. %)))
+                 (pmap (comp sermons #(java.net.URL. %)))
                  (apply concat)
                  (sort-by :podcast/date)
                  (pmap make-media-entry))]
