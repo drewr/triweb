@@ -1,15 +1,24 @@
+.PHONY: package version
+
 HOST = web01.trinitynashville.org
+VERSION = $(shell git ver)
 
-bootstrap: etc/version.txt
-
-etc/version.txt:
+version:
 	mkdir -p etc
-	git ver >etc/version.txt
+	echo $(VERSION) >etc/version.txt
+
+pkg/Dockerfile: *.m4
+	mkdir -p pkg
+	cd pkg && m4 -I .. ../Dockerfile.m4 >Dockerfile
+
+package: pkg/Dockerfile
+	rsync -avz elasticsearch pkg
+	docker build -t trinitynashville/media:$(VERSION) pkg
 
 clean:
 	lein clean
 
-package: bootstrap
+triweb.war: etc/version.txt
 	lein ring uberwar triweb.war
 
 restart:

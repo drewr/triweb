@@ -1,0 +1,4 @@
+#!/usr/bin/execlineb -P
+cd /elasticsearch
+s6-setuidgid nobody
+exec bin/elasticsearch -E discovery.zen.minimum_master_nodes=1
