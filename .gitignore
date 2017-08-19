@@ -1,9 +1,11 @@
+/app/target
 /target
 /lib
 /classes
 /checkouts
 pom.xml
 pom.xml.asc
+project.clj
 *.jar
 *.class
 .lein-deps-sum
@@ -12,6 +14,7 @@ pom.xml.asc
 .lein-repl-history
 /etc/version.txt
 *.mp3
-/.nrepl-port
+.nrepl-port
 /tmp
 /pkg
+/_build

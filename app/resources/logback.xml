@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%date{ISO8601} %level [%-30logger{26}] %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+      <timeZone>UTC</timeZone>
+      <fieldNames class="net.logstash.logback.fieldnames.ShortenedFieldNames">
+        <timestamp>time</timestamp>
+        <version>version</version>
+        <message>msg</message>
+      </fieldNames>
+    </encoder>
+  </appender>
+
+  <logger name="org.apache.http.client.protocol" level="TRACE" />
+
+  <root level="WARN">
+    <appender-ref ref="JSON" />
+  </root>
+</configuration>
+

@@ -3,10 +3,6 @@
 HOST = web01.trinitynashville.org
 VERSION = $(shell git ver)
 
-version:
-	mkdir -p etc
-	echo $(VERSION) >etc/version.txt
-
 pkg/Dockerfile: *.m4
 	mkdir -p pkg
 	cd pkg && m4 -I .. ../Dockerfile.m4 >Dockerfile
@@ -14,6 +10,9 @@ pkg/Dockerfile: *.m4
 package: pkg/Dockerfile
 	rsync -avz elasticsearch pkg
 	docker build -t trinitynashville/media:$(VERSION) pkg
+
+test:
+	./Build.hs test-jetty
 
 clean:
 	lein clean
