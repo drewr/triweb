@@ -105,7 +105,7 @@ main = shakeArgs shakeOpts $ do
     putNormal "cleaning..."
     projectCljExists <- doesFileExist $ appDir </> "project.clj"
     when projectCljExists $ do
-      unit $ cmd (Cwd appDir) "lein clean"
+      unit $ cmd (Cwd appDir) "rm -rf target"
     removeFilesAfter "_build" ["//*"]
     removeFilesAfter "lib" ["//*.jar"]
     removeFilesAfter appDir ["project.clj"]

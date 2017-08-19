@@ -15,7 +15,7 @@ test:
 	./Build.hs test-jetty
 
 clean:
-	lein clean
+	./Build.hs clean
 
 triweb.war: etc/version.txt
 	lein ring uberwar triweb.war
