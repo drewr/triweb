@@ -1,5 +1,4 @@
 (defproject org.trinitynashville/triweb "$appVersion$"
-  :resource-paths ["resources" "lib"]
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -40,5 +39,8 @@
              :server {:uberjar-name "app.jar"}}
   :plugins [[lein-ring "0.11.0"]
             [lein-environ "1.1.0"]]
+  :resource-paths ["resources" "lib"]
+  ;; stupid :aot :all started hanging for no reason, I love computers
   :aot [triweb.boot
-        triweb.handler])
+        triweb.core]
+  :ring {:handler triweb.core/app})

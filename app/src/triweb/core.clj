@@ -1,4 +1,4 @@
-(ns triweb.handler
+(ns triweb.core
   (:require [ring.middleware.resource :refer [wrap-resource]]
             [ring.middleware.content-type :refer [wrap-content-type]]
             [ring.util.response :as r]
