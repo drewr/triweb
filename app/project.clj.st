@@ -5,18 +5,22 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [
-                 [amazonica "0.3.101" :exclusions [joda-time commons-logging]]
-;;                 [circleci/clj-yaml "0.5.5" :exclusions [[org.clojure/clojure]]]
-                 ;;[clj-time "0.12.2"]
-;;                 [com.mpatric/mp3agic "0.9.0"]
-;;                 [commons-codec/commons-codec "1.10"]
-                 [compojure "1.5.2" :exclusions [org.clojure/tools.reader]]
+                 [amazonica "0.3.101" :exclusions [joda-time
+                                                   commons-logging
+                                                   commons-codec/commons-codec]]
+                 ;; [circleci/clj-yaml "0.5.5" :exclusions [[org.clojure/clojure]]]
+                 ;; [clj-time "0.12.2"]
+                 [com.mpatric/mp3agic "0.9.0"]
+                 [commons-codec/commons-codec "1.10"]
+                 [compojure "1.5.2" :exclusions [org.clojure/tools.reader
+                                                 instaparse
+                                                 ]]
                  [elastic/elasticsearch-clojure "0.99.6"
                           :exclusions [com.fasterxml.jackson.core/jackson-core]]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [environ "1.1.0"]
                  [functionalbytes/sibiro "0.1.4"]
-;;                 [instaparse "1.4.7"]
+                 [instaparse "1.4.7"]
                  [me.raynes/cegdown "0.1.0" :exclusions [org.clojure/clojure]]
                  [org.clojure/clojure "$clojureVersion$"]
 ;;                 [org.clojure/core.memoize "0.5.8"]
