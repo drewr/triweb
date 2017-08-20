@@ -1,6 +1,5 @@
-include(env.m4)dnl
 FROM voidlinux/voidlinux
-MAINTAINER __MAINTAINER__
+MAINTAINER $maintainer$
 
 RUN xbps-install -A -y -S openjdk \
  && xbps-install -A -y -S curl \
@@ -19,10 +18,10 @@ RUN curl -LO https://github.com/just-containers/s6-overlay/releases/download/v1.
  && rmdir /bin \
  && ln -snf usr/bin /bin
 
-RUN curl -LO https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-__ES_VERSION__.tar.gz \
- && tar zxf elasticsearch-__ES_VERSION__.tar.gz \
- && rm elasticsearch-__ES_VERSION__.tar.gz \
- && mv elasticsearch-__ES_VERSION__ /elasticsearch \
+RUN curl -LO https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$esVersion$.tar.gz \
+ && tar zxf elasticsearch-$esVersion$.tar.gz \
+ && rm elasticsearch-$esVersion$.tar.gz \
+ && mv elasticsearch-$esVersion$ /elasticsearch \
  && chown -R nobody /elasticsearch
 
 ENTRYPOINT [ "/init" ]
