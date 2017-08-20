@@ -1,4 +1,4 @@
-.PHONY: package version
+.PHONY: package version docker
 
 HOST = web01.trinitynashville.org
 VERSION = $(shell git ver)
@@ -16,6 +16,9 @@ test:
 
 clean:
 	./Build.hs clean
+
+docker:
+	./Build.hs docker-run
 
 triweb.war: etc/version.txt
 	lein ring uberwar triweb.war

@@ -18,3 +18,4 @@ version.txt
 /tmp
 /pkg
 /_build
+/docker

@@ -31,9 +31,12 @@ appVersion = "0.0.1"
 heapSize = "1g"
 appDir = "app"
 projectClj = appDir </> "project.clj"
-appDeployedJar = "lib" </> "app.jar"
 appUberJar = appDir </> "target" </> "app.jar"
 versionTxtApp = appDir </> "resources" </> "version.txt"
+dockerDir = "docker"
+dockerFileTmpl = "Dockerfile.app.st"
+dockerFile = dockerDir </> "Dockerfile"
+appDeployedJar = dockerDir </> "app.jar"
 
 shakeOpts = shakeOptions { shakeFiles="_build"
                          , shakeTimings=True}
@@ -107,6 +110,7 @@ main = shakeArgs shakeOpts $ do
     when projectCljExists $ do
       unit $ cmd (Cwd appDir) "rm -rf target"
     removeFilesAfter "_build" ["//*"]
+    removeFilesAfter "docker" ["//*"]
     removeFilesAfter "lib" ["//*.jar"]
     removeFilesAfter appDir ["project.clj"]
     removeFilesAfter appDir ["resources/version.txt"]
@@ -158,12 +162,14 @@ main = shakeArgs shakeOpts $ do
   phony "docker-build" $ do
     ver <- liftIO gitVersion
     need [ appDeployedJar
+         , dockerFile
          ]
     cmd
+      [ Cwd dockerDir ]
       [ "docker"
       , "build"
       , "-t"
-      , "container-registry-test.elastic.co/infra/tileprox:" <> ver
+      , "trinitynashville/media:dev"
       , "."
       ]
 
@@ -178,34 +184,16 @@ main = shakeArgs shakeOpts $ do
       , "-i"
       , "-p"
       , "9000:9000"
-      , "container-registry-test.elastic.co/infra/tileprox:" <> ver
+      , "trinitynashville/media:dev"
       ]
 
-  phony "docker-push-staging" $ do
-    ver <- liftIO gitVersion
-    need [ "docker-build"
-         ]
-    unit $ cmd
-      [ "docker"
-      , "push"
-      , "container-registry-test.elastic.co/infra/tileprox:" <> ver
-      ]
-
-  phony "docker-push-production" $ do
-    ver <- liftIO gitVersion
-    need [ "docker-build"
-         ]
-    unit $ cmd
-      [ "docker"
-      , "tag"
-      , "container-registry-test.elastic.co/infra/tileprox:" <> ver
-      , "push.docker.elastic.co/infra/tileprox:" <> ver
-      ]
-    cmd
-      [ "docker"
-      , "push"
-      , "push.docker.elastic.co/infra/tileprox:" <> ver
-      ]
+  dockerFile %> \out -> do
+    need [ dockerFileTmpl ]
+    confText <- liftIO . readFile $ dockerFileTmpl
+    let tmpl = newSTMP confText :: StringTemplate String
+        rendered = render $
+          setAttribute "maintainer" "Drew Raines <web@trinitynashville.org>" tmpl
+    liftIO $ writeFile out rendered
 
   projectClj %> \out -> do
     let cljTmpl = projectClj <> ".st"
