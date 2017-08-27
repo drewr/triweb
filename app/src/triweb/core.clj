@@ -17,9 +17,18 @@
          (with-out-str (pr req)))
     (app req)))
 
+(defn text-response [body]
+  {:status 200
+   :headers {"Content-Type" "text/plain; charset=utf-8"}
+   :body body})
+
 (defmulti handle-route
   (fn [req]
     (first (:route-handler req))))
+
+(defmethod handle-route :ping
+  [req]
+  (text-response "pong"))
 
 (def raw-routes
   (let [api-prefix "/:api-version{v\\d+}"
