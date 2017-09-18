@@ -1,6 +1,7 @@
 #!/usr/bin/env stack
 {- stack
      --resolver lts-6.10
+     --install-ghc
      runghc
      --package turtle
      --package yaml
