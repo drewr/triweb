@@ -13,15 +13,15 @@
             [triweb.search :as search]))
 
 (def urls
-  ["http://trinitynashville.org/audio.html"
-   "http://trinitynashville.org/audio/1.html"
-   "http://trinitynashville.org/audio/2.html"
-   "http://trinitynashville.org/sermons/series/judges.html"
-   "http://trinitynashville.org/sermons/archives.html"
-   "http://trinitynashville.org/sermons/current.html"])
+  ["http://stage.trinitynashville.org/audio.html"
+   "http://stage.trinitynashville.org/audio/1.html"
+   "http://stage.trinitynashville.org/audio/2.html"
+   "http://stage.trinitynashville.org/sermons/series/judges.html"
+   "http://stage.trinitynashville.org/sermons/archives.html"
+   "http://stage.trinitynashville.org/sermons/current.html"])
 
 (def urls
-  ["http://trinitynashville.org/audio/1.html"
+  ["http://stage.trinitynashville.org/audio/1.html"
    ])
 
 (defn parse-title [s]
