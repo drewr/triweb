@@ -25,9 +25,10 @@ import System.Process.Internals
 import Text.Regex
 import Text.StringTemplate
 
-clojureVersion = "1.9.0-alpha17"
+clojureVersion = "1.9.0-beta1"
 appVersion = "0.0.1"
 
+maintainer = "Drew Raines <web@trinitynashville.org>"
 heapSize = "1g"
 appDir = "app"
 projectClj = appDir </> "project.clj"
@@ -169,7 +170,7 @@ main = shakeArgs shakeOpts $ do
       [ "docker"
       , "build"
       , "-t"
-      , "trinitynashville/media:dev"
+      , "trinitynashville/media:" <> ver
       , "."
       ]
 
@@ -184,7 +185,7 @@ main = shakeArgs shakeOpts $ do
       , "-i"
       , "-p"
       , "9000:9000"
-      , "trinitynashville/media:dev"
+      , "trinitynashville/media:" <> ver
       ]
 
   dockerFile %> \out -> do
@@ -192,7 +193,7 @@ main = shakeArgs shakeOpts $ do
     confText <- liftIO . readFile $ dockerFileTmpl
     let tmpl = newSTMP confText :: StringTemplate String
         rendered = render $
-          setAttribute "maintainer" "Drew Raines <web@trinitynashville.org>" tmpl
+          setAttribute "maintainer" maintainer tmpl
     liftIO $ writeFile out rendered
 
   projectClj %> \out -> do
