@@ -4,13 +4,13 @@
   "title": "Luther's Psalm",
   "scripture": [
     {
-      "gte": 19113001,
-      "lte": 19113999
+      "gte": 19118001,
+      "lte": 19118999
     }
   ],
   "blurb": "To commemorate the 500th anniversary of the Protestant Reformation, we decided to work through Psalm 118, the favorite psalm of Martin Luther. And it isn't difficult to see why he loved this psalm so much. It captures the heart of the gospel Luther helped to clarify: everything depends on God's steadfast love, which is freely available to all who believe.",
   "tags": [
   ],
-  "slug": "Psalm-113-Luthers-Psalm",
+  "slug": "Psalm-118-Luthers-Psalm",
   "type": "Sermon"
 }
