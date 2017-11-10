@@ -80,7 +80,7 @@
           body (-> entry :content last .trim)
           speaker (.trim (re-find #"[A-Za-z ]+" speaker))
           guid (:mp3/url mp3)
-          link "http://www.trinitynashville.org/sermons/current.html"
+          link "http://web01.trinitynashville.org/sermons/current.html"
           subtitle (format "Speaker: %s" speaker)
           summary body
           desc (format "%s. %s" subtitle summary)]
