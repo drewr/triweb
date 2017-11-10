@@ -62,7 +62,7 @@
                             (Long/parseLong l))
                :mp3/duration (headers "x-amz-meta-duration")
                :mp3/seconds (Integer/parseInt
-                             (headers "x-amz-meta-seconds"))}]
+                             (or (headers "x-amz-meta-seconds") "-1"))}]
       (if (= ::s/invalid (s/conform :podcast/mp3 obj))
         (throw
          (ex-info (str "bad mp3: " mp3)
