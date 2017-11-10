@@ -12,7 +12,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
 
+import Control.Monad
 import Turtle hiding (option)
+import Turtle.Pattern hiding (option)
 import GHC.IO.Exception
 import Data.Map (Map(..))
 import Data.Aeson (eitherDecode)
@@ -126,6 +128,12 @@ data Context = Context { ctxOpts :: Opts
                        , ctxPi :: PodcastSource
                        } deriving (Show)
 
+data Runtime = Runtime
+  { duration :: Text
+  , seconds :: Integer
+  }
+
+
 makeContext :: Opts -> PodcastSource -> Context
 makeContext o pi = Context o pi
 
@@ -158,11 +166,18 @@ lame preset scale src dest =
 
 setVersion dest = loggingProc "eyeD3" [ "--to-v2.4", dest]
 
-runtime :: Text -> IO (Text)
+parseSecs :: Text -> Integer
+parseSecs dur = secs'
+  where
+    ((mins:secs:_):_) = match (decimal `sepBy` ":") dur
+    secs' = mins * 60 + secs
+
+runtime :: Text -> IO Runtime
 runtime dest = do
   rt <- fold (inshell (format ("eyeD3 "%s%" | fgrep Time | awk '{print $2}' | perl -pe 's,\\e\\[22m([0-9:]+),$1,'") dest) empty) Fold.head
   case rt of
-    (Just rt') -> return rt'
+    (Just rt') -> do
+        return $ Runtime { duration=rt', seconds=parseSecs rt'}
     Nothing -> die (format ("cannot get runtime from "%s) dest)
 
 addMeta :: Context -> Text -> Text -> IO ()
@@ -183,15 +198,16 @@ addMeta ctx title dest =
          , dest
          ]
 
-upload :: Context -> Text -> Text -> IO ()
-upload ctx dest dur =
+upload :: Context -> Text -> Runtime -> IO ()
+upload ctx dest rt =
   let o = ctxOpts ctx
       pi = ctxPi ctx
   in
     loggingProc "aws"
          [ "s3api", "put-object"
          , "--acl", "public-read"
-         , "--metadata", "duration=" <> dur
+         , "--metadata", "duration=" <> duration rt
+         , "--metadata", "seconds=" <> ( pack . show . seconds $ rt )
          , "--content-type", "audio/mpeg"
          , "--body", dest
          , "--bucket", (pack . bucket $ o)
