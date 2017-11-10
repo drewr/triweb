@@ -1,10 +1,14 @@
-.PHONY: package version docker encode
+.PHONY: docker encode deploy
 
 HOST = web01.trinitynashville.org
 VERSION = $(shell git ver)
+WAR = app/target/app.war
 
 test:
 	./Build.hs test-jetty
+
+run:
+	./Build.hs run-jetty
 
 clean:
 	./Build.hs clean
@@ -12,14 +16,14 @@ clean:
 docker:
 	./Build.hs docker-run
 
-triweb.war: etc/version.txt
-	lein ring uberwar triweb.war
-
 restart:
 	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty
 
-upload: package
-	scp target/triweb.war deploy@$(HOST):jetty/webapps
+$(WAR):
+	./Build.hs $(WAR)
+
+upload: $(WAR)
+	scp $(WAR) deploy@$(HOST):jetty/webapps/triweb.war
 
 deploy: upload restart
 

@@ -35,12 +35,12 @@
                  [com.fasterxml.jackson.core/jackson-databind "2.8.2"]
                  ]
   :injections [(require 'clojure.pprint)]
-  :profiles {:dev {:env {:es-url "http://localhost:9200" }}
-             :server {:uberjar-name "app.jar"}}
+  :profiles {:dev {:env {:es-url "http://localhost:9200" }}}
   :plugins [[lein-ring "0.11.0"]
             [lein-environ "1.1.0"]]
   :resource-paths ["resources" "lib"]
   ;; stupid :aot :all started hanging for no reason, I love computers
   :aot [triweb.boot
         triweb.core]
-  :ring {:handler triweb.core/app})
+  :ring {:handler triweb.core/app
+         :uberwar-name "app.war"})

@@ -32,12 +32,12 @@ maintainer = "Drew Raines <web@trinitynashville.org>"
 heapSize = "1g"
 appDir = "app"
 projectClj = appDir </> "project.clj"
-appUberJar = appDir </> "target" </> "app.jar"
+appUberJar = appDir </> "target" </> "app.war"
 versionTxtApp = appDir </> "resources" </> "version.txt"
 dockerDir = "docker"
 dockerFileTmpl = "Dockerfile.app.st"
 dockerFile = dockerDir </> "Dockerfile"
-appDeployedJar = dockerDir </> "app.jar"
+appDeployedJar = dockerDir </> "app.war"
 
 shakeOpts = shakeOptions { shakeFiles="_build"
                          , shakeTimings=True}
@@ -112,7 +112,7 @@ main = shakeArgs shakeOpts $ do
       unit $ cmd (Cwd appDir) "rm -rf target"
     removeFilesAfter "_build" ["//*"]
     removeFilesAfter "docker" ["//*"]
-    removeFilesAfter "lib" ["//*.jar"]
+    removeFilesAfter "lib" ["//*.jar", "//*.war"]
     removeFilesAfter appDir ["project.clj"]
     removeFilesAfter appDir ["resources/version.txt"]
 
@@ -154,11 +154,9 @@ main = shakeArgs shakeOpts $ do
   phony "run-jetty" $ do
     need [ appDeployedJar]
     unit $ cmd [ AddEnv "DEV" "true"
+               , Cwd appDir
                ]
-      "java" "-cp" appDeployedJar
-      ("-Xmx" <> heapSize)
-      ("-Xms" <> heapSize)
-      "triweb.boot"
+      "lein" "ring" "server-headless"
 
   phony "docker-build" $ do
     ver <- liftIO gitVersion
@@ -217,7 +215,7 @@ main = shakeArgs shakeOpts $ do
          ]
     unit $ cmd [ Cwd appDir
                , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
-            "lein with-profile server uberjar"
+            "lein ring uberwar"
 
   appDeployedJar %> \out -> do
     need [ appUberJar
