@@ -33,8 +33,20 @@
           {:gte 46015005, :lte 46015005}
           {:gte 45016001, :lte 45017008}
           {:gte 1001001, :lte 1999999}]))
-  (doseq [x (->> (file-seq (io/file "search/source"))
-                 (filter #(.endsWith (str %) "json"))
-                 (map #(:scripture (json/decode (slurp %) true)))
-                 (into #{}))]
-    (is (= x (scripture/parse (scripture/unparse x))))))
+  (let [debug (fn [x]
+                #_(println x)
+                x)
+        decode (fn [x]
+                 (let [s (slurp x)
+                       d (json/decode s true)]
+                   d))]
+    (doseq [x (->> (file-seq (io/file "search/source"))
+                   (filter #(.endsWith (str %) "json"))
+                   (map debug)
+                   (map decode)
+                   (map :scripture)
+                   (into #{}))]
+      (let [unparsed (scripture/unparse x)]
+        (testing (str x)
+          (when unparsed
+            (is (= x (scripture/parse unparsed)))))))))

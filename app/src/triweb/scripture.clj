@@ -134,48 +134,49 @@
                                    (not= v1 v2) (decode v2))))
 
 (defn unparse [refs]
-  (let [m (fn [v1 v2]
-            (vector v1 v2))
-        proc-vs
-        (fn proc-vs [vs]
-          (cond
-            (vector? vs) (map proc-vs vs)
-            (map? vs) (cond
-                        ;; "Genesis"
-                        (= {1 [1] 999 [999]} vs)
-                        nil
+  (when (and refs (not-empty refs))
+    (let [m (fn [v1 v2]
+              (vector v1 v2))
+          proc-vs
+          (fn proc-vs [vs]
+            (cond
+              (vector? vs) (map proc-vs vs)
+              (map? vs) (cond
+                          ;; "Genesis"
+                          (= {1 [1] 999 [999]} vs)
+                          nil
 
-                        ;; "Genesis 12"
-                        (and (= 1 (count vs))
-                             (= [1 999] (val (first vs))))
-                        (str (key (first vs)))
+                          ;; "Genesis 12"
+                          (and (= 1 (count vs))
+                               (= [1 999] (val (first vs))))
+                          (str (key (first vs)))
 
-                        ;; "Genesis 1:1"
-                        (= 1 (count vs))
-                        (str (key (first vs))
-                             ":" (str/join "-" (val (first vs))))
+                          ;; "Genesis 1:1"
+                          (= 1 (count vs))
+                          (str (key (first vs))
+                               ":" (str/join "-" (val (first vs))))
 
-                        ;; "Genesis 1-3"
-                        (and (= 2 (count vs))
-                             (= [999] (val (second vs))))
-                        (str (key (first vs)) "-" (key (second vs)))
+                          ;; "Genesis 1-3"
+                          (and (= 2 (count vs))
+                               (= [999] (val (second vs))))
+                          (str (key (first vs)) "-" (key (second vs)))
 
-                        ;; "Genesis 1:1-2:1"
-                        :else
-                        (str (key (first vs))
-                             ":" (first (val (first vs)))
-                             "-" (key (second vs))
-                             ":" (first (val (second vs)))))))
-        proc-book (fn [[k v]]
-                    (str k (when-let [strs (proc-vs v)]
-                             (str " "
-                                  (if (sequential? strs)
-                                    (str/join "; " strs)
-                                    strs)))))]
-    (->> (apply merge-with
-                m (map #(decode-range (:gte %) (:lte %)) refs))
-         (map proc-book)
-         (str/join "; "))))
+                          ;; "Genesis 1:1-2:1"
+                          :else
+                          (str (key (first vs))
+                               ":" (first (val (first vs)))
+                               "-" (key (second vs))
+                               ":" (first (val (second vs)))))))
+          proc-book (fn [[k v]]
+                      (str k (when-let [strs (proc-vs v)]
+                               (str " "
+                                    (if (sequential? strs)
+                                      (str/join "; " strs)
+                                      strs)))))]
+      (->> (apply merge-with
+                  m (map #(decode-range (:gte %) (:lte %)) refs))
+           (map proc-book)
+           (str/join "; ")))))
 
 (def grammar
   (-> "scripture/grammar.ebnf"
@@ -232,5 +233,6 @@
   (i/parser grammar))
 
 (defn parse [s]
-  (i/transform
-   xforms (parser s)))
+  (when s
+    (i/transform
+     xforms (parser s))))

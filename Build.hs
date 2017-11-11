@@ -32,12 +32,13 @@ maintainer = "Drew Raines <web@trinitynashville.org>"
 heapSize = "1g"
 appDir = "app"
 projectClj = appDir </> "project.clj"
-appUberJar = appDir </> "target" </> "app.war"
+appUberWar = appDir </> "target" </> "app.war"
+appUberJar = appDir </> "target" </> "app.jar"
 versionTxtApp = appDir </> "resources" </> "version.txt"
 dockerDir = "docker"
 dockerFileTmpl = "Dockerfile.app.st"
 dockerFile = dockerDir </> "Dockerfile"
-appDeployedJar = dockerDir </> "app.war"
+appDockerWar = dockerDir </> "app.war"
 
 shakeOpts = shakeOptions { shakeFiles="_build"
                          , shakeTimings=True}
@@ -102,7 +103,7 @@ main :: IO ()
 main = shakeArgs shakeOpts $ do
   want [ "info"
        , projectClj
-       , appDeployedJar
+       , appDockerWar
        ]
 
   phony "clean" $ do
@@ -126,7 +127,7 @@ main = shakeArgs shakeOpts $ do
 
   phony "test-jetty" $ do
     env' <- liftIO getEnvironment
-    need [ appDeployedJar]
+    need [ appUberJar ]
     let
       -- This wasn't ideal because the compilations from the `lein
       -- run` and the `lein test` would actually happen concurrently.
@@ -139,20 +140,18 @@ main = shakeArgs shakeOpts $ do
       --                    , "triweb.boot" ])
       --       { cwd = Just appDir }
       p = (proc "java" [ "-cp"
-                       , appDeployedJar
+                       , appUberJar
                        , "triweb.boot"
                        ])
-          { env = Just ([ ("DEV", "true")
-                        , ("PROFILE", "aws-test")] <> env') }
+          { env = Just ([ ("DEV", "true") ] <> env') }
     withProcess "jetty" p $ do
       unit $ cmd [ Cwd appDir
                  , AddEnv "ES" "http://localhost:9200"
                  ]
-        -- "lein do clean, test :only tileprox.proxy-test/ping, test :only tileprox.proxy-test/license"
         "lein do clean, test"
 
   phony "run-jetty" $ do
-    need [ appDeployedJar]
+    need [ appUberWar ]
     unit $ cmd [ AddEnv "DEV" "true"
                , Cwd appDir
                ]
@@ -160,7 +159,7 @@ main = shakeArgs shakeOpts $ do
 
   phony "docker-build" $ do
     ver <- liftIO gitVersion
-    need [ appDeployedJar
+    need [ appDockerWar
          , dockerFile
          ]
     cmd
@@ -209,7 +208,7 @@ main = shakeArgs shakeOpts $ do
     ver <- liftIO gitVersion
     liftIO $ writeFile out ver
 
-  appUberJar %> \out -> do
+  appUberWar %> \out -> do
     need [ projectClj
          , versionTxtApp
          ]
@@ -217,8 +216,11 @@ main = shakeArgs shakeOpts $ do
                , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
             "lein ring uberwar"
 
-  appDeployedJar %> \out -> do
-    need [ appUberJar
+  appUberJar %> \out -> do
+    need [ projectClj
+         , versionTxtApp
          ]
-    copyFile' appUberJar out
+    unit $ cmd [ Cwd appDir
+               , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
+            "lein with-profile package uberjar"
 
