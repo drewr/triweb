@@ -151,7 +151,7 @@ main = shakeArgs shakeOpts $ do
         "lein do clean, test"
 
   phony "run-jetty" $ do
-    need [ appUberWar ]
+    need [ projectClj ]
     unit $ cmd [ AddEnv "DEV" "true"
                , Cwd appDir
                ]
