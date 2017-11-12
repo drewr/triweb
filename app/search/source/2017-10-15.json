@@ -1,6 +1,13 @@
 {
   "series": "Experiencing God In The Psalms",
   "speaker": "Matt McCullough",
+  "title": "Bless The Lord",
+  "scripture": [
+    {
+      "gte": 19103001,
+      "lte": 19103999
+    }
+  ],
   "problem": "E_NO_AUDIO",
   "type": "Sermon"
 }
