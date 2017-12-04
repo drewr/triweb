@@ -95,7 +95,7 @@
           link "http://web01.trinitynashville.org/sermons/current.html"
           subtitle (format "Speaker: %s" speaker)
           summary body
-          desc (format "%s. %s" subtitle summary)]
+          desc body]
       (let [obj {:podcast/date         date
                  :podcast/title        title
                  :podcast/subtitle     subtitle
