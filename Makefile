@@ -36,4 +36,4 @@ encode:
 	cd app && lein run -m triweb.media.migration/print-legacy-post search/source/$(DATE).json
 
 aws-check:
-	PATH=~/tmp/py/bin:$$PATH aws s3 ls s3://media.trinitynashville.org/$(DATE)
+	aws s3 ls s3://media.trinitynashville.org/$(DATE)
