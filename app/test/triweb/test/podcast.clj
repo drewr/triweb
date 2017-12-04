@@ -23,7 +23,7 @@
 (deftest edn
   (let [s (podcast/sermon-seq (java.io.StringReader. html))]
     (is (= (count s) 1))
-    (is (= "The God-Centered Life - 2 Corinthians 10:1-18"
+    (is (= "The God-Centered Life | Matt McCullough | 2 Corinthians 10:1-18"
            (-> s first :podcast/title)))
     (is (= "2017-05-14" (-> s first :podcast/date str)))))
 
@@ -31,5 +31,5 @@
   (let [s (podcast/build-items
            (podcast/sermon-seq (java.io.StringReader. html)))]
     (is (= (count s) 1))
-    (is (= "The God-Centered Life - 2 Corinthians 10:1-18"
+    (is (= "The God-Centered Life | Matt McCullough | 2 Corinthians 10:1-18"
            (-> s first first :content first)))))

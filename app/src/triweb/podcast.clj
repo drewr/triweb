@@ -3,6 +3,7 @@
             [clojure.core.memoize :as memo]
             [clojure.data.xml :as xml]
             [clojure.spec.alpha :as s]
+            [clojure.string :as str]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.template :as t])
@@ -69,16 +70,27 @@
                   (s/explain-data :podcast/mp3 obj)))
         obj))))
 
+(defn infuse-speaker-into-title [maybe-title speaker]
+  (let [[t ref] (if (string? maybe-title)
+                  (str/split maybe-title #" - " 2))]
+    (format "%s%s"
+            (format "%s | %s" t speaker ref)
+            (if ref
+              (format " | %s" ref)
+              ""))))
+
 (defn html-to-edn [entry]
   (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
     (let [date (when-let [d (-> entry (h/select [:strong]) h/texts first)]
                  (->> d
                       (.parse date-in)
                       (.format date-ymd)))
-          title (-> entry :content (nth 2))
-          speaker (-> entry (h/select [:em]) first :content first)
+          speaker (let [s (-> entry (h/select [:em]) first :content first)]
+                    (if s
+                      (.trim (re-find #"[-A-Za-z.' ]+" s))
+                      ""))
+          title (infuse-speaker-into-title (-> entry :content (nth 2)) speaker)
           body (-> entry :content last .trim)
-          speaker (.trim (re-find #"[A-Za-z ]+" speaker))
           guid (:mp3/url mp3)
           link "http://web01.trinitynashville.org/sermons/current.html"
           subtitle (format "Speaker: %s" speaker)
