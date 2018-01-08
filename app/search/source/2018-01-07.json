@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "True Love: Introducing John's Letters",
+  "scripture": [
+    {
+      "gte": 62001001,
+      "lte": 62001004
+    }
+  ],
+  "blurb": "John wrote his letters to help his friends tell the difference between genuine and counterfeit Christianity. But why did John feel the need to do that? And how can you recognize true Christianity?",
+  "tags": [
+  ],
+  "slug": "1-John-1-True-Love",
+  "type": "Sermon"
+}
