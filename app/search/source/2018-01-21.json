@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Love And Obedience",
+  "scripture": [
+    {
+      "gte": 62002001,
+      "lte": 62002006
+    }
+  ],
+  "blurb": "When we know God through Jesus, we will come to want what he wants and trust what he commands.",
+  "tags": [
+  ],
+  "slug": "1-John-2-Love-And-Obedience",
+  "type": "Sermon"
+}
