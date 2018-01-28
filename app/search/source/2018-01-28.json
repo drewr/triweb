@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Old And New",
+  "scripture": [
+    {
+      "gte": 62002007,
+      "lte": 62002011
+    }
+  ],
+  "blurb": "When God showed his love for us in the life and death of Jesus, an old command became new. And that command is at the heart of what it looks like to follow Jesus.",
+  "tags": [
+  ],
+  "slug": "1-John-2-Old-And-New",
+  "type": "Sermon"
+}
