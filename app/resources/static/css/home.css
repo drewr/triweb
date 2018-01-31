@@ -1,9 +1,8 @@
 body {
-  background:url('/img/home-bg-fill.jpg') repeat-x;
 }
 
 .main {
-  background:url('/img/home-bg.jpg') no-repeat center top;
+ /* background:url('/img/home-bg.jpg') no-repeat center top; */
   height:521px;
   position:relative;
 }

@@ -14,11 +14,14 @@
                  [compojure "1.5.2" :exclusions [org.clojure/tools.reader
                                                  instaparse
                                                  ]]
-                 [elastic/elasticsearch-clojure "0.99.7"
+                 [elastic/elasticsearch-clojure "0.99.8-20171031.194719-1"
                           :exclusions [com.fasterxml.jackson.core/jackson-core]]
-                 [enlive "1.1.1" :exclude [org.clojure/clojure]]
+
+                 [enlive "1.1.6" :exclude [org.clojure/clojure]]
+                 [com.akolov.enlive-reload "0.2.1"]
+
                  [environ "1.1.0"]
-                 [functionalbytes/sibiro "0.1.4"]
+                 [functionalbytes/sibiro "0.1.5"]
                  [instaparse "1.4.7"]
                  [me.raynes/cegdown "0.1.0" :exclusions [org.clojure/clojure]]
                  [org.clojure/clojure "$clojureVersion$"]
@@ -41,7 +44,6 @@
             [lein-environ "1.1.0"]]
   :resource-paths ["resources" "lib"]
   ;; stupid :aot :all started hanging for no reason, I love computers
-  :aot [triweb.boot
-        triweb.core]
-  :ring {:handler triweb.core/app
+  :aot [triweb.boot]
+  :ring {:handler triweb.http/app
          :uberwar-name "app.war"})

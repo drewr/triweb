@@ -118,7 +118,7 @@ a {
 footer {
   height:120px;
   padding-top:80px;
-  background:url('/img/home-bg-footer.jpg') repeat-x;
+/*  background:url('/img/home-bg-footer.jpg') repeat-x; */
 }
 
 footer p {

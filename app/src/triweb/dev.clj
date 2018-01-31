@@ -1,6 +1,12 @@
 (ns triweb.dev
   (:require [ring.adapter.jetty :refer [run-jetty]]
-            [triweb.core :refer [app]]))
+            [ring.middleware.reload :refer [wrap-reload]]
+            [com.akolov.enlive-reload :refer [wrap-enlive-reload]]
+            [triweb.http :refer [app]]
+            ))
 
 (defonce server
-  (run-jetty #'app {:port 8000 :join? false}))
+  (run-jetty (-> #'app
+                 wrap-reload
+                 wrap-enlive-reload)
+             {:port 8000 :join? false}))
