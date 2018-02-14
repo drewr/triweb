@@ -1,5 +1,7 @@
 #!/usr/bin/env stack
 {- stack
+    --nix
+    --no-nix-pure
     runghc
     --package filemanip
     --package HStringTemplate

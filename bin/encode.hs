@@ -2,6 +2,8 @@
 {- stack
      --resolver lts-6.10
      --install-ghc
+     --nix
+     --no-nix-pure
      runghc
      --package turtle
      --package yaml
