@@ -1,5 +1,7 @@
 #!/usr/bin/env stack
 {- stack
+    --nix
+    --no-nix-pure
     runghc
     --package filemanip
     --package HStringTemplate
@@ -39,6 +41,7 @@ dockerDir = "docker"
 dockerFileTmpl = "Dockerfile.app.st"
 dockerFile = dockerDir </> "Dockerfile"
 appDockerWar = dockerDir </> "app.war"
+appDockerJar = dockerDir </> "app.jar"
 
 shakeOpts = shakeOptions { shakeFiles="_build"
                          , shakeTimings=True}
@@ -159,7 +162,7 @@ main = shakeArgs shakeOpts $ do
 
   phony "docker-build" $ do
     ver <- liftIO gitVersion
-    need [ appDockerWar
+    need [ appDockerJar
          , dockerFile
          ]
     cmd
@@ -224,3 +227,14 @@ main = shakeArgs shakeOpts $ do
                , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
             "lein with-profile package uberjar"
 
+  appDockerWar %> \out -> do
+    let archive = appUberWar
+    need [ archive
+         ]
+    copyFile' archive out
+
+  appDockerJar %> \out -> do
+    let archive = appUberJar
+    need [ archive
+         ]
+    copyFile' archive out

@@ -1,8 +1,10 @@
 FROM voidlinux/voidlinux
-MAINTAINER $maintainer$
 
-RUN xbps-install -A -y -S openjdk curl \\
- && rm -rf /var/cache/xbps/*
+RUN xbps-install -Suy \\
+ && xbps-install -ASy openjdk-jre \\
+ && xbps-remove -Oo
+
+MAINTAINER $maintainer$
 
 ENV USER deploy
 ENV HOME /home/\$USER
