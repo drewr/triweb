@@ -14,7 +14,13 @@ clean:
 	./Build.hs clean
 
 docker:
+	./Build.hs docker-build
+
+docker-run:
 	./Build.hs docker-run
+
+ring:
+	./Build.hs run-ring
 
 restart:
 	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty

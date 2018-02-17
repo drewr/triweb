@@ -3,21 +3,23 @@
             [clojure.edn :as edn]
             [clojure.spec.alpha :as s]
             [clojure.spec.test.alpha]
+            [clojure.tools.logging :as log]
             [ring.adapter.jetty :as jetty]
             [ring.middleware.content-type :refer [wrap-content-type]]
             [ring.middleware.resource :refer [wrap-resource]]
             [ring.middleware.params :refer [wrap-params]]
             [triweb.admin :as admin]
             [triweb.http.auth]
+            [triweb.http.home]
             [triweb.http.common :refer [text-response]]
             [triweb.http.routes :refer [handle-route router]]))
 
 (defn wrap-log [app]
   (fn [req]
-    (locking #'wrap-log
-      (printf "%s %s\n"
-               (.toString (java.util.Date.))
-               (with-out-str (pr req))))
+    (log/debug
+     (format "%s %s"
+             (.toString (java.util.Date.))
+             (with-out-str (pr req))))
     (app req)))
 
 ;; the :ring :handler

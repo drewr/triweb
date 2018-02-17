@@ -1,19 +1,14 @@
 (ns triweb.http.routes
   (:require [triweb.data :refer [strip-trailing]]
-            [triweb.http.common :refer [text-response error-response]]
+            [triweb.http.common :refer [text-response html-response
+                                        error-response]]
+            [triweb.template.home :as home]
             [sibiro.core :as sibiro]
             [sibiro.extras :refer [route-handler wrap-try-alts wrap-routes]]))
 
 (defmulti handle-route
   (fn [req]
     (first (:route-handler req))))
-
-(defmethod handle-route :default-route
-  [req]
-  (text-response
-   (with-out-str
-     (clojure.pprint/pprint [:default
-                             (select-keys req [:uri :route-handler])]))))
 
 (defn handle-next [req]
   (handle-route (update req :route-handler rest)))

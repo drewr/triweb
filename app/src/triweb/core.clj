@@ -14,5 +14,4 @@
       (wrap-podcast)
       (wrap-file [".pdf" ".txt" ".png" ".jpg" ".gif"])
       (wrap-resource "static")
-      (wrap-content-type)
-      (wrap-log)))
+      (wrap-content-type)))

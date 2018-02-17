@@ -9,4 +9,4 @@
   (run-jetty (-> #'app
                  wrap-reload
                  wrap-enlive-reload)
-             {:port 8000 :join? false}))
+             {:port 3000 :join? false}))

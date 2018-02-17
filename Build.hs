@@ -153,12 +153,12 @@ main = shakeArgs shakeOpts $ do
                  ]
         "lein do clean, test"
 
-  phony "run-jetty" $ do
+  phony "run-ring" $ do
     need [ projectClj ]
     unit $ cmd [ AddEnv "DEV" "true"
                , Cwd appDir
                ]
-      "lein" "ring" "server-headless"
+      "lein" "with-profile" "dev" "ring" "server-headless"
 
   phony "docker-build" $ do
     ver <- liftIO gitVersion

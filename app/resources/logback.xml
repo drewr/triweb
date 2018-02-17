@@ -20,7 +20,7 @@
 
   <logger name="org.apache.http.client.protocol" level="TRACE" />
 
-  <root level="WARN">
+  <root level="DEBUG">
     <appender-ref ref="JSON" />
   </root>
 </configuration>

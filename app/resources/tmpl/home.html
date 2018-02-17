@@ -1,117 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link rel="icon" href="../../favicon.ico">
 
-<html>
-<head>
-<meta name="google-site-verification" content="68HXrk2WTjbe784mfsXMxICUoTUp_K8hdiOvboLeToY" />
-<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
-<link rel="stylesheet" type="text/css" href="/css/clear.css" />
-<link rel="stylesheet" type="text/css" href="/css/common.css" />
-<link rel="stylesheet" type="text/css" href="/css/home.css" />
-<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
-</head>
-<body>
-<div class="main">
-<div class="navwrap">
-<div class="nav">
+    <title>Jumbotron Template for Bootstrap</title>
 
-<ul class="ul-nav">
-<li class="left menu-head">
-<a href="">About Us</a>
-<ul class="menu" style="display:none">
-<li><a href="something">Something</a></li>
-<li><a href="something">Something Else!</a></li>
-</ul>
-</li>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-<li class="leftctr menu-head">
-<a href="">Life@Trinity</a>
-<ul class="menu" style="display:none">
-<li><a href="something">Something</a></li>
-<li><a href="something">Something Else!</a></li>
-</ul>
-</li>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-<li class="center menu-head">&nbsp;</li>
-<li class="rightctr menu-head"><a href="">Ministry</a></li>
-<li class="right menu-head"><a href="">Sermons</a></li>
-</ul>
-</div>
-</div>
+    <!-- Custom styles for this template -->
+    <link href="/css/admin.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<div class="home-hero">
-<div class="home-hero-copy">
-<h1>Redemption.</h1>
-<h2>It's the central story of the Bible.</h2>
-<p>
-It’s the foundation of our life as community. It’s the substance of
-God’s promise to the world. And it’s found only in Jesus. We live in
-hope because “in Him we have redemption through His blood, the
-forgiveness of sins” (Eph 1:7). At Trinity Church, we exist to worship
-the God who is holy and merciful, to encourage each other as we shape
-our lives by the gospel, and to hold out the message of redemption in
-the heart of Nashville.
-</p>
-</div>
-</div>
+  <body>
 
-</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
 
-<div class="home-grid-container">
-<div class="home-grid home-left">
-<h3>Sundays At Trinity</h3>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, <span id="hello-name"/>!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
 
-<h4>Consider Jesus: The Message of Hebrews</h4>
+    <div class="container">
+      <h1 style="border:1px solid red">Foo!</h1>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
 
-<p>This year our sermons will consider the beautiful and enigmatic New
-Testament book of Hebrews.  This book is a celebration of Jesus as the
-Son of God who became our perfect High Priest.  It's an argument for
-why Jesus offers what no other savior can.  And it's written with a
-profoundly pastoral purpose.  It's an appeal to hold fast to Jesus
-even when the promises of a hope we can't see are called in question.
-</p>
-</div>
+      <hr>
 
-<div class="home-grid home-middle">
-<h3>Upcoming Events</h3>
-
-<h4>August 31</h4>
-<h5>Worship at Eakin Elementary</h5>
-
-<h4>September 1</h4>
-<h5>Summer Book Study Kick-off</h5>
-
-<h4>September 8</h4>
-<h5>Book Study</h5>
-
-<h4>September 15</h4>
-<h5>Worship</h5>
-
-</div>
+      <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
 
 
-<div class="clearfix"></div>
-
-<div id="content"></div>
-
-<footer>
-
-</footer>
-
-</div>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -121,6 +111,5 @@ try {
 var pageTracker = _gat._getTracker("UA-13120469-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-</body>
-
+  </body>
 </html>
