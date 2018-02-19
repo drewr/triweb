@@ -7,4 +7,4 @@
             [triweb.template :refer [find-tmpl slurp-tmpl]]))
 
 (h/deftemplate home (find-tmpl "home.html") [name]
-  [:#hello-name] (h/html-content name))
+  [:title] (h/html-content (str "Hi, " name "!")))
