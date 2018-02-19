@@ -4,6 +4,9 @@ HOST = web01.trinitynashville.org
 VERSION = $(shell git ver)
 WAR = app/target/app.war
 
+projectclj:
+	./Build.hs app/project.clj
+
 test:
 	./Build.hs test-jetty
 
