@@ -35,5 +35,10 @@ encode:
 	nix-shell --command "bin/encode.hs --setDate $(DATE) --imagePath app/resources/static/img/podcast5.png ~/Downloads/$(DATE).mp3 <app/search/source/$(DATE).json"
 	cd app && lein run -m triweb.media.migration/print-legacy-post search/source/$(DATE).json
 
+# Hack because Dropbox won't update anymore on the server
+publish-podcast:
+	scp ~/Dropbox/Trinity-WWW/www.trinitynashville.org/sermons/current.txt ubuntu@$(HOST):/tmp/current.txt
+	ssh ubuntu@$(HOST) 'sudo -u trinity cp /tmp/current.txt ~trinity/Dropbox/Trinity-WWW/www.trinitynashville.org/sermons/current.txt'
+
 aws-check:
 	aws s3 ls s3://media.trinitynashville.org/$(DATE)
