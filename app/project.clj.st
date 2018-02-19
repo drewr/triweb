@@ -18,7 +18,6 @@
                           :exclusions [com.fasterxml.jackson.core/jackson-core]]
 
                  [enlive "1.1.6" :exclude [org.clojure/clojure]]
-                 [com.akolov.enlive-reload "0.2.1"]
 
                  [environ "1.1.0"]
                  [functionalbytes/sibiro "0.1.5"]
