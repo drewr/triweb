@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Bill Heerman",
+  "title": "One Thing Matters",
+  "scripture": [
+    {
+      "gte": 62002018,
+      "lte": 62002027
+    }
+  ],
+  "blurb": "John claims that there is only one thing that matters in all of life. What is it and why does it matter so much?",
+  "tags": [
+  ],
+  "slug": "1-John-2-One-Thing-Matters",
+  "type": "Sermon"
+}
