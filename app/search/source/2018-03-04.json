@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Sin And The Christian",
+  "scripture": [
+    {
+      "gte": 62003004,
+      "lte": 62003010
+    }
+  ],
+  "blurb": "In this passage John says that no one who knows God can keep on sinning. So what does that mean? Why is it impossible? And where does that leave me?",
+  "tags": [
+  ],
+  "slug": "1-John-3-Sin-And-The-Christian",
+  "type": "Sermon"
+}
