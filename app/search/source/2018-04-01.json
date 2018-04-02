@@ -1,0 +1,17 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Resurrection Identity",
+  "scripture": [
+    {
+      "gte": 62003001,
+      "lte": 62003003
+    }
+  ],
+  "blurb": "Because Jesus rose from the dead, we are God's children now. And, one day, we will be like him.",
+  "tags": [
+    "easter"
+  ],
+  "slug": "1-John-3-Resurrection-Identity",
+  "type": "Sermon"
+}
