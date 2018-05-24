@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Love In Truth",
+  "scripture": [
+    {
+      "gte": 63001001,
+      "lte": 63999999
+    }
+  ],
+  "blurb": "The truth about who God is, what he's done, and what he commands defines the sort of love we should have for one another.",
+  "tags": [
+  ],
+  "slug": "2-John-Love-In-Truth",
+  "type": "Sermon"
+}
