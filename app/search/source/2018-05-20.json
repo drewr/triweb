@@ -1,0 +1,16 @@
+{
+  "series": "John's Letters",
+  "speaker": "Matt McCullough",
+  "title": "Whose Name Matters?",
+  "scripture": [
+    {
+      "gte": 64001001,
+      "lte": 64999999
+    }
+  ],
+  "blurb": "John wrote this letter to help a friend understand what sort of leader he should support and whom he should avoid. The primary test: whose name matters most?",
+  "tags": [
+  ],
+  "slug": "3-John-Whose-Name-Matters",
+  "type": "Sermon"
+}
