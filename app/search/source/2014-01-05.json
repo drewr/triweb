@@ -1,0 +1,16 @@
+{
+  "blurb" : "One of the most challenging problems in the heart of a Christian is forgetfulness. David gives us hope by encouraging us to remember all that God has done for us in Christ: He has saved us from sin, saved us from death, saved us by love, and saved us for joy in Him.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 19103001,
+    "lte" : 19103999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-01-05-Ps-103-Remember-Gods-Work",
+  "speaker" : "Matt Givens",
+  "tags" : [ ],
+  "title" : "Remember God’s Work",
+  "type" : "Sermon"
+}

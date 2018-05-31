@@ -1,0 +1,16 @@
+{
+  "blurb" : "The church in Corinth was falling apart because its members were insecure and self-obsessed; or, in Paul’s words, they were behaving like infants, in a merely human way. The unflinching challenge of this text confronts all of us with two crucial questions: Who are you? And what are you doing with your life?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46003001,
+    "lte" : 46003017
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-07-21-1-Cor-3-You-Are-Gods",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "You Are God’s",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus’s final words to his followers make every Christian responsible for getting the gospel to everyone who hasn’t heard it. How can we take up this responsibility?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 44001008,
+    "lte" : 44001008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-10-30-Acts-1-We-Are-Responsible",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "We Are Responsible",
+  "type" : "Sermon"
+}

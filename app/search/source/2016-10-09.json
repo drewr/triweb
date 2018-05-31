@@ -1,0 +1,16 @@
+{
+  "blurb" : "The story of Gideon focuses on Gideon’s slow-rising faith, God’s remarkable patience, and the promise that the Lord delivers those willing to give up their desire for control and trust him.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 7006001,
+    "lte" : 7007999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-10-09-Judges-6-7-The-Lord-Is-With-You",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Lord Is With You",
+  "type" : "Sermon"
+}

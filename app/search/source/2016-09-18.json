@@ -1,0 +1,16 @@
+{
+  "blurb" : "This chapter introduces what’s typically called the Judges cycle. It’s a pattern that most of the individual stories follow and it’s the key to the meaning of the whole book.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 7002006,
+    "lte" : 7002023
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-09-18-Judges-2-Vicious-Cycle",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Vicious Cycle",
+  "type" : "Sermon"
+}

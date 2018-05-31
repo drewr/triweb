@@ -1,0 +1,16 @@
+{
+  "blurb" : "A contemporary of Hosea, Amos prophesied to dispel Israel’s mistaken assumption that sin and judgment were someone else’s problem. Amos is unique among the prophets for his emphasis on Israel’s exploitation of the weak and vulnerable. His words, full of beauty and laced with satire, help us understand why God takes injustice personally. And they help us understand why Jesus is the only hope for the unjust.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 30001001,
+    "lte" : 30999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-09-18-Amos-Injustice-Idolatry-Jesus",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Injustice, Idolatry, and Jesus",
+  "type" : "Sermon"
+}

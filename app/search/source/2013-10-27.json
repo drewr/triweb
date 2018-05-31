@@ -1,0 +1,16 @@
+{
+  "blurb" : "For the good of the church, God’s Spirit gives each believer gifts that are unique and indispensable. We’re all gifted. But we’re not self-sufficient. As members of one body, we each need others and others need each of us.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46012001,
+    "lte" : 46012031
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-10-27-1-Cor-12-Gifted-In-Community",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Gifted in Community",
+  "type" : "Sermon"
+}

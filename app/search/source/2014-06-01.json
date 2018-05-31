@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus uses vivid imagery as a metaphor for belief. He is the bread of life and the living water, and whoever feeds on his flesh and drinks his blood has eternal life.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43006041,
+    "lte" : 43006059
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-06-01-John-6-Feeding-On-Jesus",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Feeding on Jesus",
+  "type" : "Sermon"
+}

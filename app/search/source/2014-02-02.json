@@ -1,0 +1,16 @@
+{
+  "blurb" : "This story of Jesus’s life begins not with Jesus himself but with a figure called John the Baptist, one sent to prepare the way for the Christ. Following John’s lead, we get a clear picture of what we must know about ourselves and about Jesus if we’re to truly enjoy what Jesus offers us.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43001019,
+    "lte" : 43001034
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-02-02-John-1-Following-John-To-Jesus",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Following John to Jesus",
+  "type" : "Sermon"
+}

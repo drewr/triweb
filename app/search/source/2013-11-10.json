@@ -1,0 +1,16 @@
+{
+  "blurb" : "The church comes together not for private communion with God but to encourage each other with the gospel. We encourage each other by using our minds to engage our hearts.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46014001,
+    "lte" : 46014040
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-11-10-1-Cor-14-When-We-Gather",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "When We Gather",
+  "type" : "Sermon"
+}

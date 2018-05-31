@@ -1,0 +1,16 @@
+{
+  "blurb" : "Job tells the story of a man who was wise and good, enjoying all the benefits of wisdom that Proverbs predicts. Job had everything, then he lost everything, and it wasn’t his fault. Job’s suffering raises questions none of us can avoid if we’re paying attention. At one level, there’s the mystery around all innocent suffering: what is God doing? At a deeper level, suffering raises a question of worship: can we love God for himself, even if we lose the things we want to get from him?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 18001001,
+    "lte" : 18002008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-06-07-Job-1-Jobs-Suffering",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Job’s Suffering",
+  "type" : "Sermon"
+}

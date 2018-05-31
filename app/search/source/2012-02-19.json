@@ -1,0 +1,16 @@
+{
+  "blurb" : "When the author of Hebrews wished to encourage his readers to remain faithful, he pointed them to the faithfulness of Jesus. But so much rests on the answer to this question: What is the connection between Jesus’s faithfulness and ours?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58003001,
+    "lte" : 58003006
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-02-19-Heb-3-Jesus-Faithfulness",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus’s Faithfulness, and Ours",
+  "type" : "Sermon"
+}

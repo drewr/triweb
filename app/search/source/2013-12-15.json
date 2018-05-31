@@ -1,0 +1,16 @@
+{
+  "blurb" : "",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40006005,
+    "lte" : 40006015
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-12-15-Matt-6-Praying-Like-Jesus",
+  "speaker" : "Bill Heerman",
+  "tags" : [ ],
+  "title" : "Praying Like Jesus",
+  "type" : "Sermon"
+}

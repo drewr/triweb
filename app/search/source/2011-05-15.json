@@ -1,0 +1,16 @@
+{
+  "blurb" : "The strange little story of the Tower of Babel explains the origins of Israel’s neighbors as the result of a clash between the unfettered pride of humankind and the unmatched sovereignty of God. Rich in irony, it juxtaposes the united human drive for security and significance with God’s effortless sway over the best of human ingenuity. But more than that, like all of Genesis 1-11, the story of Babel has timeless relevance as an explanation of our sinful condition and a precursor to God’s specific goals in salvation.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 1011001,
+    "lte" : 1011009
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-05-15-Gen-11-Babel",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Babel",
+  "type" : "Sermon"
+}

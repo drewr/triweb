@@ -1,0 +1,16 @@
+{
+  "blurb" : "James is a down-to-earth letter, so it’s no surprise that he takes up a problem that’s common to all of us: conflict with other people. But what James has to say about our people problems is surprising all the way through.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 59004001,
+    "lte" : 59004003
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-10-18-James-4-People-Problems",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "People Problems?",
+  "type" : "Sermon"
+}

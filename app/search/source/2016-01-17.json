@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus said that the kingdom of heaven belongs to the poor in spirit, but what did he mean by “poor in spirit”? And what does that mean for us if we want to enjoy his kingdom?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40005003,
+    "lte" : 40005003
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-01-17-Matt-5-Poor-In-Spirit",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Poor in Spirit",
+  "type" : "Sermon"
+}

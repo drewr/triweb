@@ -1,0 +1,16 @@
+{
+  "blurb" : "these creatures, and how is this speech meant to encourage Job and us in our sorrow?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 18040006,
+    "lte" : 18042006
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-07-05-Jobs-God-Part-2",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Job’s God (Part 2)",
+  "type" : "Sermon"
+}

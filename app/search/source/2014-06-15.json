@@ -1,0 +1,16 @@
+{
+  "blurb" : "God is not like us, but he wants to make us like Him.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 19036001,
+    "lte" : 19036999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-06-15-Psalm-36-God-Is-Not-Like-Us",
+  "speaker" : "Seth Jones",
+  "tags" : [ ],
+  "title" : "God Is Not Like Us",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "The opening scenes in the story of Jesus’s death tell a story of great courage, as Jesus faces his captors with unflinching resolve and in absolute control. They tell a story of great cowardice, as Peter faces his own examination and denies Jesus repeatedly. And they tell a story of great compassion: Jesus dies on purpose because he knew Peter would deny him, and he knew we’d deny him too.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43018001,
+    "lte" : 43018027
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-01-11-John-18-Courage-Cowardice-Compassion",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Courage, Cowardice, and Compassion",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "In two places Ecclesiastes laments the power of injustice, and in both places the author ties injustice to the problem of death. If death is our end, why do human lives deserve to be protected equally? And if the just and the unjust both end up dying, why worry with justice at all? Our only hope for the justice we crave is a God who sees all things and will judge us–all of us–after death.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 21003016,
+    "lte" : 21004003
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-08-09-Ecclesiastes-What-Good-Is-Justice",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "What Good Is Justice?",
+  "type" : "Sermon"
+}

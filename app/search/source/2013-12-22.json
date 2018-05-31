@@ -1,0 +1,16 @@
+{
+  "blurb" : "God became a child to make you a child of God.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43001009,
+    "lte" : 43001014
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-12-22-Jn-1-Child-Of-God",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Child of God",
+  "type" : "Sermon"
+}

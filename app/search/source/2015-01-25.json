@@ -1,0 +1,16 @@
+{
+  "blurb" : "This text tells the story of Jesus’s death by crucifixion, one of history’s cruelest forms of torture. Yet John spares us all the brutal details. He focuses instead on all the signs that Jesus died on his terms for his purposes. So why did Jesus have to die? What did his death accomplish?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43019016,
+    "lte" : 43019037
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-01-25-John-19-It-Is-Finished",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "It Is Finished",
+  "type" : "Sermon"
+}

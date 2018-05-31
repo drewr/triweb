@@ -1,0 +1,16 @@
+{
+  "blurb" : "This story centers on John the Baptist near the end of his life, just as his ministry was fading way and eclipsed by the rising popularity of Jesus. In his response to the situation we get one of this Gospel’s clearest examples of what it looks like to have genuine faith in Jesus. There’s transforming, liberating power in John’s statement of faith: “He must increase; I must decrease.”",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43003022,
+    "lte" : 43003036
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-03-16-John-3-He-Must-Increase",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "He Must Increase",
+  "type" : "Sermon"
+}

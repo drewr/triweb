@@ -1,0 +1,16 @@
+{
+  "blurb" : "Ecclesiastes is a book about meaninglessness and death, but it’s also a book about joy. Many times through the book, the author follows up sections on the depressing emptiness of life under the sun by telling us to enjoy ourselves as long as we live. How can we live with joy in a world so full of vanity?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 21011008,
+    "lte" : 21012008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-08-16-Ecclesiastes-Resilient-Joy",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Resilient Joy",
+  "type" : "Sermon"
+}

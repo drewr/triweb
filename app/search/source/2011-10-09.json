@@ -1,0 +1,16 @@
+{
+  "blurb" : "Like so many of the Minor Prophets, Micah focuses on coming judgment and promises a kingdom of peace and security on the other side of judgment. But Micah is unique in his focus on leadership. Israel’s unfaithful leaders led to the nation’s downfall. So who would lead them—and us—to peace?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 33001001,
+    "lte" : 33999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-10-09-Micah-He-Is-Our-Peace",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "He Is Our Peace",
+  "type" : "Sermon"
+}

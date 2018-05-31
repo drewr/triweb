@@ -1,0 +1,16 @@
+{
+  "blurb" : "At the heart of Christianity is the claim that God took on our humanity–became one of us–so that he could suffer. Hebrews 2 helps us understand why this had to be. Jesus became like us so he could act for us, defeating death as our champion by removing sin as our high priest. And because Jesus suffered everything we could before we do, he empathizes with us and promises us our Father is trustworthy.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58002010,
+    "lte" : 58002018
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-02-12-Heb-2-Our-Suffering-Brother",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Our Suffering Brother",
+  "type" : "Sermon"
+}

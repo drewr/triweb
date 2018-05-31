@@ -1,0 +1,16 @@
+{
+  "blurb" : "James opens his letter full of commands with perhaps the most surprising command of all. He insists we’re to see the trials we face in life as cause for joy. It is through trial that we grow in maturity, through trial that we’re protected from a faith that’s not genuine. So sort of trial should we expect? And where can we get what we need to persevere?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 59001001,
+    "lte" : 59001018
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-08-30-James-Gifts-Of-God-And-Trials-Of-Life",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Gifts of God and the Trials of Life",
+  "type" : "Sermon"
+}

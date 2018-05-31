@@ -1,0 +1,16 @@
+{
+  "blurb" : "How can a local church stay faithful over the long haul? By pursuing what God is doing through his gospel.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 50001001,
+    "lte" : 50001999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-01-03-Phil-1-Gospel-Partnership",
+  "speaker" : "Scott Patty",
+  "tags" : [ ],
+  "title" : "Gospel Partnership",
+  "type" : "Sermon"
+}

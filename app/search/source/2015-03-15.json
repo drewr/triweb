@@ -1,0 +1,16 @@
+{
+  "blurb" : "This text leads us to questions we’ve got to consider carefully before launching into wisdom of Proverbs: What does it look like to seek wisdom well? How do we even get started? And how can we know it’s worth the effort?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 20002001,
+    "lte" : 20002011
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-03-15-Proverbs-2-Seek-Wisdom",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Seek Wisdom",
+  "type" : "Sermon"
+}

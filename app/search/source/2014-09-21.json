@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus serves us, so we serve each other.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43013001,
+    "lte" : 43013020
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-09-21-John-13-He-Loved-Them-To-The-End",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "He Loved Them to the End",
+  "type" : "Sermon"
+}

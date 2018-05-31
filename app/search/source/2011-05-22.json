@@ -1,0 +1,16 @@
+{
+  "blurb" : "sin, is inseparable from these ancient promises. They speak of the content of salvation, the vehicle of salvation, and the scope of salvation.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 1012001,
+    "lte" : 1012009
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-05-22-Gen-12-Abraham-Promise-Salvation",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Abraham and the Promise of Salvation",
+  "type" : "Sermon"
+}

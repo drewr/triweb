@@ -1,0 +1,16 @@
+{
+  "blurb" : "Like Matthew, Mark and Luke, John gives us the story of the feeding of the 5,000, where Jesus turns a glorified snack into a full meal for a massive crowd of hungry people. It’s a story meant to demonstrate that Jesus has power that isn’t limited by rigid laws of nature, that in him we catch a glimpse of a new world breaking into the somber limitations of this old one. But John also means this story to provide a sign of Jesus’ purpose. He will use his power not necessarily to give us what we want but to give us what we need above all else.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43006001,
+    "lte" : 43006015
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-05-18-John-6-Power-and-Purpose",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Power and Purpose",
+  "type" : "Sermon"
+}

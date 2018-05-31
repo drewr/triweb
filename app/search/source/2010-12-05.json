@@ -1,0 +1,16 @@
+{
+  "blurb" : "In this cluster of stories Mark helps explain why people respond to Jesus in very different ways, some in faith and others with persistent unbelief. Contrasting the disciples’ struggle to believe even after all they’d seen with Peter’s dramatic confession of Jesus as the Christ, Mark shows us that spiritual sight is never the same thing as physical sight. Faith–seeing with new eyes–is a gift of God.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 41008001,
+    "lte" : 41008030
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2010-12-05-Mark-8-Seeing-and-Believing",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Seeing and Believing",
+  "type" : "Sermon"
+}

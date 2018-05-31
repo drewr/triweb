@@ -1,0 +1,16 @@
+{
+  "blurb" : "The aim of Paul’s ministry was to see deeper faith in the power of God apart from any substitute. If we share his goal, that means our message must focus always and only on Jesus and his cross. And it means our methods must clarify the power of the cross, not distract from it.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46002001,
+    "lte" : 46002005
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-06-30-1-Cor-2-Gospel-Centered-Minimalism",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Gospel-Centered Minimalism",
+  "type" : "Sermon"
+}

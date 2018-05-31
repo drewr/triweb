@@ -1,0 +1,16 @@
+{
+  "blurb" : "Isaiah offers some of the Bible’s most beautiful descriptions of God’s plan to save sinners and heal the brokenness of the world. According to Isaiah 9, those plans center on the coming of a perfect and permanent King.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 23009001,
+    "lte" : 23009007
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-03-10-Is-9-Perfect-Permanent-King",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Perfect and Permanent King",
+  "type" : "Sermon"
+}

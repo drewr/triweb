@@ -1,0 +1,16 @@
+{
+  "blurb" : "This passage tells the story of Jesus cleansing the Jerusalem temple of all those selling animals and changing money. The fury of Jesus can be shocking given what we normally expect from him. But the anger he showed in driving shopkeepers from the temple flowed from the same love that drove him to earth. His all-consuming passion was for knowing God, and he came to make knowing God possible for us.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43002013,
+    "lte" : 43002022
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-02-23-John-2-Jesus-And-Knowing-God",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus and Knowing God",
+  "type" : "Sermon"
+}

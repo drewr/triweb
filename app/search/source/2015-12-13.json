@@ -1,0 +1,16 @@
+{
+  "blurb" : "David’s song of praise for God’s deliverance points us to the great reversal we all need. We need someone who can rewrite our stories of darkness, mourning, and death into stories of morning, gladness, and life.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 19030001,
+    "lte" : 19030999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-12-13-Psalm-30-The-Great-Reversal",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Great Reversal",
+  "type" : "Sermon"
+}

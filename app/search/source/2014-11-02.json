@@ -1,0 +1,16 @@
+{
+  "blurb" : "If you’re a follower of Jesus, you have been chosen by God to live your life on his mission with the promise of his power.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43015012,
+    "lte" : 43015027
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-11-02-John-15-Chosen-To-Go",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Chosen to Go",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "Before teaching us how to pray, Jesus first clarifies why we should pray to God in the first place. We should come to God because we love him, not from a hypocritical desire to impress other people. And we should come to God because we trust him, not from some attempt to control him by saying just the right thing.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40006005,
+    "lte" : 40006008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-05-22-Matt-6-When-You-Pray",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "When You Pray",
+  "type" : "Sermon"
+}

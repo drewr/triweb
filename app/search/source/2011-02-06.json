@@ -1,0 +1,16 @@
+{
+  "blurb" : "To this point Mark’s narrative has promised that Jesus would, paradoxically, establish the kingdom of God through his death. So what does this mean for who belongs to the kingdom and how? Mark answers this question by contrasting stories on faith with stories on self-reliance. In short, the kingdom belongs to the desperate, not the self-reliant, because it belongs to those who rest only on Jesus.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 41010013,
+    "lte" : 41010052
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-02-06-Mark-10-Kingdom-Citizenship",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Kingdom Citizenship",
+  "type" : "Sermon"
+}

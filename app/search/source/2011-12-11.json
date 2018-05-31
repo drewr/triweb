@@ -1,0 +1,19 @@
+{
+  "blurb" : "Micah promised that a ruler to come, Israel’s Messiah, would emerge from Bethlehem, and a basic piece of the Christmas story is Jesus’s fulfillment of Micah’s prophecy. But why is Bethlehem so important? Bethlehem’s significance has everything to do with the kingdom of God, and with the goal of that kingdom, the glory of God.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 33005002,
+    "lte" : 33005005
+  }, {
+    "gte" : 42002001,
+    "lte" : 42002007
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-12-11-Mic-5-Why-Bethlehem",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Why Bethlehem?",
+  "type" : "Sermon"
+}

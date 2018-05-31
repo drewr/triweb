@@ -1,0 +1,16 @@
+{
+  "blurb" : "As Jesus makes his way towards Jerusalem and the death that’s waiting there for him, he narrows his focus to teaching his disciples what it means to follow a Messiah who suffers. The cross sets the pattern for Christian discipleship, and this text offers concrete examples. A life modeled on the cross is a life that puts the interests of others above its own, and it’s a life that fights a radical battle with sin.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 41009030,
+    "lte" : 41009050
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-01-23-Mark-9-Cross-Centered-Life",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Living the Cross-Centered Life",
+  "type" : "Sermon"
+}

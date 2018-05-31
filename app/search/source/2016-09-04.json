@@ -1,0 +1,16 @@
+{
+  "blurb" : "This overview sermon sets up our fall preaching series. What is Judges about? It’s about Israel’s disobedience–and ours. It’s about God’s holiness–his perfect justice and his relentless love. And it’s about Jesus, who is the only answer to the questions raised by this book.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 7001001,
+    "lte" : 7999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-09-04-Judges-Introduction",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Introducing Judges: The King We All Need",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "Ecclesiastes is probably the darkest book in the Bible. It’s author imagines the meaning of life if all there is to it is what we experience “under the sun”—as if God doesn’t exist. His conclusions sound remarkably modern: everything is meaningless because everything dies. Unless…",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 21001001,
+    "lte" : 21999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-07-12-Ecclesiastes-What-Good-Is-Wisdom-If-Youre-Dead",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Introducing Ecclesiastes: What Good Is Wisdom if You’re Dead?",
+  "type" : "Sermon"
+}

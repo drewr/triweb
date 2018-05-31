@@ -1,0 +1,16 @@
+{
+  "blurb" : "Only Jesus can give us true sight.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43009001,
+    "lte" : 43009999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-07-27-John-9-Seeing-Jesus-With-New-Eyes",
+  "speaker" : "Bill Heerman",
+  "tags" : [ ],
+  "title" : "Seeing Jesus with New Eyes",
+  "type" : "Sermon"
+}
