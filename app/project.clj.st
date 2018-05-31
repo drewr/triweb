@@ -37,7 +37,7 @@
                  [com.fasterxml.jackson.core/jackson-databind "2.8.2"]
                  ]
   :injections [(require 'clojure.pprint)]
-  :profiles {:dev {:env {:es-media-url "http://localhost:9200" }}
+  :profiles {:dev {:env {:es-url "http://localhost:9200" }}
              :package {:uberjar-name "$appUberJarBaseName$"}}
   :plugins [[lein-ring "0.11.0"]
             [lein-environ "1.1.0"]]
