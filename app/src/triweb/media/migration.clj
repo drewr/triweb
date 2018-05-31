@@ -20,10 +20,6 @@
    "http://stage.trinitynashville.org/sermons/archives.html"
    "http://stage.trinitynashville.org/sermons/current.html"])
 
-(def urls
-  ["http://stage.trinitynashville.org/audio/1.html"
-   ])
-
 (defn parse-title [s]
   (when (string? s)
     (let [[title other] (str/split s #" - ")]
