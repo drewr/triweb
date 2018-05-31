@@ -7,7 +7,7 @@
             [elasticsearch.document :as es]
             [triweb.media :as media]))
 
-(def ES (es.conn/make {:url (env/env :es-url)}))
+(def ES (es.conn/make {:url (env/env :es-url "PLEASECONFIGURE")}))
 (def IDX "trinity")
 
 (deftest bootstrap
