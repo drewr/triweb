@@ -36,7 +36,8 @@ heapSize = "1g"
 appDir = "app"
 projectClj = appDir </> "project.clj"
 appUberWar = appDir </> "target" </> "app.war"
-appUberJar = appDir </> "target" </> "app.jar"
+appUberJarBaseName = "app.jar"
+appUberJar = appDir </> "target" </> appUberJarBaseName
 versionTxtApp = appDir </> "resources" </> "version.txt"
 dockerDir = "docker"
 dockerFileTmpl = "Dockerfile.app.st"
@@ -205,6 +206,7 @@ main = shakeArgs shakeOpts $ do
     let tmpl = newSTMP confText :: StringTemplate String
         rendered = render $
           setAttribute "appVersion" appVersion $
+          setAttribute "appUberJarBaseName" appUberJarBaseName $
           setAttribute "clojureVersion" clojureVersion tmpl
     liftIO $ writeFile out rendered
 

@@ -38,7 +38,7 @@
                  ]
   :injections [(require 'clojure.pprint)]
   :profiles {:dev {:env {:es-media-url "http://localhost:9200" }}
-             :package {:uberjar-name "app.jar"}}
+             :package {:uberjar-name "$appUberJarBaseName$"}}
   :plugins [[lein-ring "0.11.0"]
             [lein-environ "1.1.0"]]
   :resource-paths ["resources" "lib"]
