@@ -13,18 +13,21 @@
             [triweb.search :as search]))
 
 (def urls
-  ["http://stage.trinitynashville.org/audio.html"
+  [#_"http://stage.trinitynashville.org/audio.html"
    "http://stage.trinitynashville.org/audio/1.html"
    "http://stage.trinitynashville.org/audio/2.html"
    "http://stage.trinitynashville.org/sermons/series/judges.html"
+   "http://stage.trinitynashville.org/sermons/series/2-corinthians.html"
    "http://stage.trinitynashville.org/sermons/archives.html"
    "http://stage.trinitynashville.org/sermons/current.html"])
 
 (defn parse-title [s]
   (when (string? s)
-    (let [[title other] (str/split s #" - ")]
+    (let [[title _ other] (str/split (str/trim s) #" \| ")]
       {:podcast/title title
-       :media/scripture (or other "FIXME")})))
+       :media/scripture (if other
+                          (bible/parse other)
+                          "FIX_SCRIPTURE")})))
 
 (defn get-slug [url]
   (let [[_ slug] (re-find #"https?://[^/]+/?([^.]+)" url)]
@@ -53,7 +56,7 @@
             :media/scripture       (-> x :media/scripture)
             :media/has-audio       (pos? (-> x :podcast/mp3 :mp3/bytes))
             :media/has-audio-error false
-            :media/series          "FIXME"
+            :media/series          "FIX_SERIES"
             :media/slug            (get-slug (-> x :podcast/mp3 :mp3/url))
             :media/tags            []
             :media/type            "Sermon"
@@ -107,4 +110,6 @@
 
 (comment
   (scrape-sermons urls "./search/source-tmp")
+  (scrape-sermons ["http://stage.trinitynashville.org/sermons/archives.html"] "./search/source-tmp")
+  (scrape-sermons ["file:///tmp/sermon.html"] "./search/source-tmp")
   )
