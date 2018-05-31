@@ -152,7 +152,7 @@ main = shakeArgs shakeOpts $ do
       unit $ cmd [ Cwd appDir
                  , AddEnv "ES" "http://localhost:9200"
                  ]
-        "lein do clean, test"
+        "lein test"
 
   phony "run-ring" $ do
     need [ projectClj ]
