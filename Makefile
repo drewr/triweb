@@ -37,8 +37,7 @@ encode:
 
 # Hack because Dropbox won't update anymore on the server
 publish-podcast:
-	scp ~/Dropbox/Trinity-WWW/www.trinitynashville.org/sermons/current.txt ubuntu@$(HOST):/tmp/current.txt
-	ssh ubuntu@$(HOST) 'sudo -u trinity cp /tmp/current.txt ~trinity/Dropbox/Trinity-WWW/www.trinitynashville.org/sermons/current.txt'
+	rsync -avz ~/Dropbox/Trinity-WWW/www.trinitynashville.org/sermons trinity@web01.trinitynashville.org:Dropbox/Trinity-WWW/www.trinitynashville.org
 
 aws-check:
 	aws s3 ls s3://media.trinitynashville.org/$(DATE)
