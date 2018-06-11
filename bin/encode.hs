@@ -176,7 +176,7 @@ parseSecs dur = secs'
 
 runtime :: Text -> IO Runtime
 runtime dest = do
-  rt <- fold (inshell (format ("eyeD3 "%s%" | fgrep Time | awk '{print $2}' | perl -pe 's,\\e\\[22m([0-9:]+),$1,'") dest) empty) Fold.head
+  rt <- fold (inshell (format ("eyeD3 "%s%" | egrep ^Time | awk '{print $2}'") dest) empty) Fold.head
   case rt of
     (Just rt') -> do
         return $ Runtime { duration=rt', seconds=parseSecs rt'}
