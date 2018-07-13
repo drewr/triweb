@@ -6,8 +6,8 @@
             [ring.adapter.jetty :as jetty]
             [triweb.core]))
 
-(defn run [settings]
+(defn run [port]
   (jetty/run-jetty
    triweb.core/app
-   {:port 9000
+   {:port (if (string? port) (Integer/parseInt port) port)
     :send-server-version? false}))

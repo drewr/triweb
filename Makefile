@@ -4,6 +4,9 @@ HOST = web01.trinitynashville.org
 VERSION = $(shell git ver)
 WAR = app/target/app.war
 
+ring:
+	cd app && lein ring server-headless
+
 test:
 	./Build.hs test-jetty
 

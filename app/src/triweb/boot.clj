@@ -3,6 +3,7 @@
   (:require [clojure.edn :as edn]
             [clojure.spec.alpha :as s]
             [clojure.spec.test.alpha :as spec.test]
+            [environ.core :as env]
             [triweb.http :as http]
             [triweb.time :as time]))
 
@@ -18,13 +19,8 @@
            (shutdown-agents)
            (System/exit 1)))))))
 
-(defn -main [& [conf]]
+(defn -main [& args]
   (when (System/getenv "DEV")
     (spec.test/instrument))
   (println "starting web server")
-  (http/run
-    (merge
-     {}
-     (when conf
-       (println "using local config" conf)
-       (-> conf slurp edn/read-string)))))
+  (http/run (or (env/env :port) 9000)))

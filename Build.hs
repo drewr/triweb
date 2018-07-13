@@ -36,6 +36,7 @@ heapSize = "1g"
 gcrRoot = "gcr.io"
 gcrProject = "trinitynashville-188115"
 gcrTagName = "media"
+gcrInstanceName = "media-service"
 appDir = "app"
 projectClj = appDir </> "project.clj"
 appUberWar = appDir </> "target" </> "app.war"
@@ -198,6 +199,21 @@ main = shakeArgs shakeOpts $ do
     cmd
       [ "docker"
       , "push"
+      , makeGcrImageName ver
+      ]
+
+  phony "gcr-update" $ do
+    ver <- liftIO gitVersion
+    need [ "docker-push-gcr"
+         ]
+    cmd
+      [ "gcloud"
+      , "beta"
+      , "compute"
+      , "instances"
+      , "update-container"
+      , gcrInstanceName
+      , "--container-image"
       , makeGcrImageName ver
       ]
 
