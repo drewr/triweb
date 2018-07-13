@@ -2,6 +2,7 @@
 {- stack
     --nix
     --no-nix-pure
+    --resolver=lts-11.17
     runghc
     --package filemanip
     --package HStringTemplate
