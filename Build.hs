@@ -33,6 +33,9 @@ appVersion = "0.0.1"
 
 maintainer = "Drew Raines <web@trinitynashville.org>"
 heapSize = "1g"
+gcrRoot = "gcr.io"
+gcrProject = "trinitynashville-188115"
+gcrTagName = "media"
 appDir = "app"
 projectClj = appDir </> "project.clj"
 appUberWar = appDir </> "target" </> "app.war"
@@ -102,6 +105,8 @@ gitVersion = do
     justNums s = subRegex (mkRegex "[^0-9]+") s ""
     dropLast4 s = reverse . (drop 4) . reverse $ s
 
+makeGcrImageName :: String -> String
+makeGcrImageName ver = gcrRoot <> "/" <> gcrProject <> "/" <> gcrTagName <> ":" <> ver
 
 main :: IO ()
 main = shakeArgs shakeOpts $ do
@@ -173,6 +178,27 @@ main = shakeArgs shakeOpts $ do
       , "-t"
       , "trinitynashville/media:" <> ver
       , "."
+      ]
+
+  phony "docker-tag-gcr" $ do
+    ver <- liftIO gitVersion
+    need [ "docker-build"
+         ]
+    cmd
+      [ "docker"
+      , "tag"
+      , "trinitynashville/media:" <> ver
+      , makeGcrImageName ver
+      ]
+    
+  phony "docker-push-gcr" $ do
+    ver <- liftIO gitVersion
+    need [ "docker-tag-gcr"
+         ]
+    cmd
+      [ "docker"
+      , "push"
+      , makeGcrImageName ver
       ]
 
   phony "docker-run" $ do
