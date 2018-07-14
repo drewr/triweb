@@ -20,7 +20,7 @@ docker:
 	./Build.hs docker-run
 
 gcr:
-	./Build.hs docker-push-gcr
+	./Build.hs update-gcr
 
 restart:
 	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty

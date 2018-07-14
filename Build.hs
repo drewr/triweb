@@ -204,7 +204,7 @@ main = shakeArgs shakeOpts $ do
       , makeGcrImageName ver
       ]
 
-  phony "gcr-update" $ do
+  phony "update-gcr" $ do
     ver <- liftIO gitVersion
     need [ "docker-push-gcr"
          ]
