@@ -44,7 +44,8 @@
 (defmethod handle-route :date-view
   [req]
   (let [date (-> req :route-params :date)
-        sermons (media/load-sermons (-> req :sermon-file))
+        sermons (media/load-sermons (-> req :sermon-file)
+                                    "http://media.trinitynashville.org")
         doc (get-in sermons [date])]
     (json-response (json/encode doc))))
 
@@ -71,11 +72,11 @@
             :route-params (:route-params match)
             :route-handler (:route-handler match)))))))
 
-(defn wrap-load-sermons [app file]
+(defn wrap-sermon-file [app file]
   (fn [req]
     (app (assoc req :sermon-file file))))
 
 (def app
   (-> router
-      (wrap-load-sermons "/sermons.json.gz" "http://media.trinitynashville.org")
+      (wrap-sermon-file "/sermons.json.gz")
       (wrap-content-type)))

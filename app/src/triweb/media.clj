@@ -93,5 +93,8 @@
                     (json/decode true))]
        (reduce #(conj %1 [(:date %2)
                           (assoc %2
-                            :link (format "%s/%s" url-prefix (:slug %2)))])
+                            :link (format "%s/%s-%s.mp3"
+                                          url-prefix
+                                          (:date %2)
+                                          (:slug %2)))])
                {} docs)))))
