@@ -84,11 +84,14 @@
 
 (def load-sermons
   (memoize
-   (fn [f]
+   (fn [f url-prefix]
      (let [docs (-> f
                     io/input-stream
                     GZIPInputStream.
                     io/reader
                     slurp
                     (json/decode true))]
-       (reduce #(conj %1 [(:date %2) %2]) {} docs)))))
+       (reduce #(conj %1 [(:date %2)
+                          (assoc %2
+                            :link (format "%s/%s" url-prefix (:slug %2)))])
+               {} docs)))))

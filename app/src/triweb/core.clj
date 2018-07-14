@@ -77,5 +77,5 @@
 
 (def app
   (-> router
-      (wrap-load-sermons "/sermons.json.gz")
+      (wrap-load-sermons "/sermons.json.gz" "http://media.trinitynashville.org")
       (wrap-content-type)))
