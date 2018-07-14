@@ -209,14 +209,11 @@ main = shakeArgs shakeOpts $ do
     need [ "docker-push-gcr"
          ]
     cmd
-      [ "gcloud"
-      , "beta"
-      , "compute"
-      , "instances"
-      , "update-container"
-      , gcrInstanceName
-      , "--container-image"
-      , makeGcrImageName ver
+      [ "kubectl"
+      , "set"
+      , "image"
+      , "deployment/" <> gcrProject
+      , gcrProject <> "=" <> makeGcrImageName ver
       ]
 
   phony "docker-run" $ do
