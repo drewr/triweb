@@ -15,6 +15,5 @@ RUN mkdir \$APPDIR
 COPY app.jar \$APPDIR
 RUN chown -R \$USER \$APPDIR
 
-EXPOSE 9000
 USER \$USER
 CMD ["java", "-cp", "/app/app.jar", "triweb.boot"]

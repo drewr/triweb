@@ -25,6 +25,9 @@ docker-run:
 ring:
 	./Build.hs run-ring
 
+gcr:
+	./Build.hs docker-push-gcr
+
 restart:
 	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty
 

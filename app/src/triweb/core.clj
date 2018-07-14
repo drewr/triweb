@@ -9,9 +9,5 @@
             [triweb.template :as tmpl]))
 
 (def app
-  (-> tmpl/handler
-      (wrap-template)
-      (wrap-podcast)
-      (wrap-file [".pdf" ".txt" ".png" ".jpg" ".gif"])
-      (wrap-resource "static")
+  (-> router
       (wrap-content-type)))

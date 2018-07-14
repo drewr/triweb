@@ -30,10 +30,10 @@
       (wrap-content-type)
       wrap-log))
 
-(defn run [settings]
+(defn run [port]
   (jetty/run-jetty
-   app
-   {:port 9000
+   triweb.core/app
+   {:port (if (string? port) (Integer/parseInt port) port)
     :send-server-version? false}))
 
 (defmethod handle-route :ping

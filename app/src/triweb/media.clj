@@ -7,6 +7,7 @@
             [clojure.spec.alpha :as s]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
+            [triweb.scripture :as scripture]
             [triweb.podcast :as podcast]
             [triweb.search :as search]))
 
@@ -43,20 +44,28 @@
 (defn make-id [{:keys [slug date]}]
   (format "%s-%s" date slug))
 
+(defn make-doc [path]
+  (let [path-str (str path)
+        file-str (str (.getFileName path))
+        [_ date-str] (re-find #"(\d{4}-\d{2}-\d{2}).*" file-str)
+        doc (assoc (-> path-str
+                       slurp
+                       (json/decode true))
+              :date date-str)]
+    (merge doc {:id (make-id doc)
+                :scripture (scripture/unparse (:scripture doc))})))
+
+(defn make-docs [dir]
+  (for [path (->> (file-seq (io/file dir "source"))
+                  (filter #(.isFile %))
+                  (map #(.toPath %)))]
+    (make-doc path)))
+
 (defn index-dir [dir conn index]
   (let [source-dir (io/file dir "source")
         settings-file (io/file dir "settings.json")
         settings (-> settings-file slurp (json/decode true))]
     (indices/ensure conn index {:body settings})
-    (doseq [path (->> (file-seq source-dir)
-                      (filter #(.isFile %))
-                      (map #(.toPath %)))]
-      (let [path-str (str path)
-            file-str (str (.getFileName path))
-            [_ date-str] (re-find #"(\d{4}-\d{2}-\d{2}).*" file-str)
-            doc (assoc (-> path-str
-                           slurp
-                           (json/decode true))
-                       :date date-str)]
-        (es.doc/index conn index search/_type (make-id doc) {:body doc})))
+    (doseq [doc (make-docs source-dir)]
+      (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)}))
     (indices/refresh conn index)))

@@ -1,0 +1,23 @@
+{
+  "series": "Lament",
+  "speaker": "Matt McCullough",
+  "title": "How?!",
+  "scripture": [
+      {
+      "gte": 25001001,
+      "lte": 25001999
+    }
+  ],
+  "blurb": "This collection of poems is a memorial to unimaginable suffering, meant to help us understand the pain of loss, the importance of a witness, and the only possible hope.
+",
+  "tags": [
+    "memory",
+    "grief",
+    "dante",
+    "inferno",
+    "cs",
+    "lewis"
+  ],
+  "slug": "Lam-1-How",
+  "type": "Sermon"
+}
