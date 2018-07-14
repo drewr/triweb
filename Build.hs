@@ -36,7 +36,7 @@ heapSize = "1g"
 gcrRoot = "gcr.io"
 gcrProject = "trinitynashville-188115"
 gcrTagName = "media"
-gcrInstanceName = "media-service"
+gcrDeploymentName = "triweb-media"
 appDir = "app"
 projectClj = appDir </> "project.clj"
 appUberWar = appDir </> "target" </> "app.war"
@@ -212,8 +212,8 @@ main = shakeArgs shakeOpts $ do
       [ "kubectl"
       , "set"
       , "image"
-      , "deployment/" <> gcrProject
-      , gcrProject <> "=" <> makeGcrImageName ver
+      , "deployment/" <> gcrDeploymentName
+      , gcrDeploymentName <> "=" <> makeGcrImageName ver
       ]
 
   phony "docker-run" $ do
