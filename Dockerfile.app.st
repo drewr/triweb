@@ -15,5 +15,7 @@ RUN mkdir \$APPDIR
 COPY app.jar \$APPDIR
 RUN chown -R \$USER \$APPDIR
 
+COPY sermons.json.gz /
+
 USER \$USER
 CMD ["java", "-cp", "/app/app.jar", "triweb.boot"]

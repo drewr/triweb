@@ -9,7 +9,8 @@
             [elasticsearch.indices :as indices]
             [triweb.scripture :as scripture]
             [triweb.podcast :as podcast]
-            [triweb.search :as search]))
+            [triweb.search :as search])
+  (:import (java.util.zip GZIPInputStream GZIPOutputStream)))
 
 (def ymd-fmt
   (time.format/formatter "yyyy-MM-dd"))
@@ -69,3 +70,25 @@
     (doseq [doc (make-docs source-dir)]
       (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)}))
     (indices/refresh conn index)))
+
+(defn compile-sermons [dir]
+  (let [target (io/file "target" "sermons.json.gz")
+        docs (->> dir
+                  make-docs
+                  (filter #(= (:type %) "Sermon")))]
+    (with-open [^java.io.Writer w (-> target
+                                      io/output-stream
+                                      GZIPOutputStream.
+                                      io/writer)]
+      (.write w (json/encode docs)))))
+
+(def load-sermons
+  (memoize
+   (fn [f]
+     (let [docs (-> f
+                    io/input-stream
+                    GZIPInputStream.
+                    io/reader
+                    slurp
+                    (json/decode true))]
+       (reduce #(conj %1 [(:date %2) %2]) {} docs)))))
