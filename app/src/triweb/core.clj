@@ -10,7 +10,8 @@
             [triweb.files :refer [wrap-file]]
             [triweb.media :as media]
             [triweb.template :refer [wrap-template]]
-            [triweb.template :as tmpl]))
+            [triweb.template :as tmpl]
+            [triweb.time :as time]))
 
 (def json-pretty-printer
   (json/create-pretty-printer
@@ -26,14 +27,19 @@
     (app req)))
 
 (defn text-response [body]
-  {:status 200
-   :headers {"Content-Type" "text/plain; charset=utf-8"}
-   :body body})
+  (-> (r/response body)
+      (r/content-type "text/plain")
+      (r/charset "utf-8")))
+
+(defn html-response [body]
+  (-> (r/response body)
+      (r/content-type "text/html")
+      (r/charset "utf-8")))
 
 (defn json-response [body]
-  {:status 200
-   :headers {"Content-Type" "application/json"}
-   :body body})
+  (-> (r/response body)
+      (r/content-type "application/json")
+      (r/charset "utf-8")))
 
 (defmulti handle-route
   (fn [req]
@@ -54,8 +60,22 @@
         sermons (media/load-sermons (-> req :sermon-file)
                                     "http://media.trinitynashville.org")
         doc (get-in sermons [date])]
-    (json-response
-     (json/encode doc {:pretty json-pretty-printer}))))
+    (if doc
+      (json-response
+       (json/encode doc {:pretty json-pretty-printer}))
+      (if-let [parsed-date (time/parse-ymd date)]
+        (let [possible-date (time/previous-possible-date
+                             parsed-date
+                             (->> sermons keys sort (map time/parse-ymd)))
+              body (format "Maybe you meant <a href=\"/by-date/%s\">%s</a>?"
+                           possible-date possible-date)]
+          (-> (r/not-found body)
+              (r/content-type "text/html")
+              (r/charset "utf-8")))
+        (let [body (format "<strong><code>%s</code></strong> doesn't look like a date" date)]
+          (-> (r/not-found body)
+              (r/content-type "text/html")
+              (r/charset "utf-8")))))))
 
 (def raw-routes
   (let [api-prefix "/:api-version{v\\d+}"
