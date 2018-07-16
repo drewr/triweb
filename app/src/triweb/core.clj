@@ -12,6 +12,12 @@
             [triweb.template :refer [wrap-template]]
             [triweb.template :as tmpl]))
 
+(def json-pretty-printer
+  (json/create-pretty-printer
+   (assoc json/default-pretty-print-options
+     :object-field-value-separator ": "
+     :indent-arrays? true)))
+
 (defn wrap-log [app]
   (fn [req]
     (log "%s %s"
@@ -39,7 +45,8 @@
 
 (defmethod handle-route :default-route
   [req]
-  (json-response (json/encode {:status "default"})))
+  (json-response (json/encode {:status "default"}
+                              {:pretty json-pretty-printer})))
 
 (defmethod handle-route :date-view
   [req]
@@ -47,7 +54,8 @@
         sermons (media/load-sermons (-> req :sermon-file)
                                     "http://media.trinitynashville.org")
         doc (get-in sermons [date])]
-    (json-response (json/encode doc))))
+    (json-response
+     (json/encode doc {:pretty json-pretty-printer}))))
 
 (def raw-routes
   (let [api-prefix "/:api-version{v\\d+}"
