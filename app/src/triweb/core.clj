@@ -73,7 +73,7 @@
               (r/content-type "text/html")
               (r/charset "utf-8")))
         (let [body (format
-                    "<strong><code>%s</code></strong> doesn't look like a YMD date"
+                    "<strong><code>%s</code></strong> doesn't look like a YYYY-MM-DD date?"
                     date)]
           (-> (r/not-found body)
               (r/content-type "text/html")
