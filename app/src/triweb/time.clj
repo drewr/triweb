@@ -23,6 +23,11 @@
     (f/parse (f/formatter :date) s)
     (catch Exception _)))
 
+(defn unparse-ymd [d]
+  (try
+    (f/unparse (f/formatter :date) d)
+    (catch Exception _)))
+
 (defn next-sunday [date]
   (->> (p/periodic-seq date (t/days 1))
        (filter pr/sunday?)
@@ -33,9 +38,10 @@
   possible date in the coll."
   [date coll]
   (loop [xs (filter #(instance? org.joda.time.DateTime %) coll)]
-    (if (t/within? (t/interval (first xs) (second xs)) date)
-      (first xs)
-      (recur (drop 1 xs)))))
+    (when (seq xs)
+      (if (t/within? (t/interval (first xs) (second xs)) date)
+        (first xs)
+        (recur (drop 1 xs))))))
 
 (defn elapsed-secs
   ([iso-string]

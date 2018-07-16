@@ -63,16 +63,18 @@
     (if doc
       (json-response
        (json/encode doc {:pretty json-pretty-printer}))
-      (if-let [parsed-date (time/parse-ymd date)]
-        (let [possible-date (time/previous-possible-date
-                             parsed-date
-                             (->> sermons keys sort (map time/parse-ymd)))
+      (if-let [possible-date (time/previous-possible-date
+                              (time/parse-ymd date)
+                              (->> sermons keys sort (map time/parse-ymd)))]
+        (let [guess (time/unparse-ymd possible-date)
               body (format "Maybe you meant <a href=\"/by-date/%s\">%s</a>?"
-                           possible-date possible-date)]
+                           guess guess)]
           (-> (r/not-found body)
               (r/content-type "text/html")
               (r/charset "utf-8")))
-        (let [body (format "<strong><code>%s</code></strong> doesn't look like a date" date)]
+        (let [body (format
+                    "<strong><code>%s</code></strong> doesn't look like a YMD date"
+                    date)]
           (-> (r/not-found body)
               (r/content-type "text/html")
               (r/charset "utf-8")))))))
