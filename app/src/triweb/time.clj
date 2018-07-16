@@ -41,7 +41,7 @@
     (t/within? (t/interval (t/epoch) (first coll)) date) (first coll)
     :else (loop [xs (filter #(instance? org.joda.time.DateTime %) coll)]
             (cond
-              (= (1 (count xs))) (first xs)
+              (= 1 (count xs)) (first xs)
               (seq xs) (if (t/within? (t/interval (first xs) (second xs)) date)
                          (first xs)
                          (recur (drop 1 xs)))
