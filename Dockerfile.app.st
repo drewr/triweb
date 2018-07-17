@@ -1,7 +1,7 @@
 FROM voidlinux/voidlinux
 
 RUN xbps-install -Suy \\
- && xbps-install -ASy openjdk-jre \\
+ && xbps-install -ASy openjdk-jre curl \\
  && xbps-remove -Oo
 
 MAINTAINER $maintainer$
