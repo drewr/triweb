@@ -20,7 +20,7 @@ spec:
   ports:
     - port: 9200
   selector:
-    name: elasticsearch
+    app: elasticsearch
 ---
 apiVersion: apps/v1beta1
 kind: Deployment
