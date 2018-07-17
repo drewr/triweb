@@ -61,11 +61,11 @@ spec:
             timeoutSeconds: 3
           resources:
             requests:
-              memory: 20Mi
-              cpu: 200m
+              memory: 250Mi
+              cpu: 100m
             limits:
               memory: 750Mi
-              cpu: 1000m
+              cpu: 500m
           volumeMounts:
             - mountPath: /usr/share/elasticsearch/data
               name: es-data
