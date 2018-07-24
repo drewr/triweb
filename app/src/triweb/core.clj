@@ -80,24 +80,20 @@
               (r/charset "utf-8")))))))
 
 (def raw-routes
-  (let [api-prefix "/:api-version{v\\d+}"
-        tile-route (str api-prefix "/:style/:zoom{\\d+}/*")
-        mani-route (str api-prefix "/manifest")]
-    #{[:get     "/by-date/:date"         [:date-view]]
-      [:get     "/ping"                  [:ping]]
-      [:head    "/ping"                  [:ping]]
-      [:options "/"                      [:cors-preflight]]
-      [:options ":*"                     [:cors-preflight]]
-      [:any     "/"                      [:default-route]]
-      [:any     ":*"                     [:default-route]]
-      }))
+  #{[:get     "/by-date/:date"         [:date-view]]
+    [:get     "/ping"                  [:ping]]
+    [:head    "/ping"                  [:ping]]
+    [:options "/"                      [:cors-preflight]]
+    [:options ":*"                     [:cors-preflight]]
+    [:any     "/"                      [:default-route]]
+    [:any     ":*"                     [:default-route]]
+    })
 
 (def router
   (let [rc (sibiro/compile-routes raw-routes)]
     (fn [req]
       (let [match (sibiro/match-uri rc (:uri req) (:request-method req))]
         (let [resp (handle-route (merge req match))]
-          #_(clojure.pprint/pprint resp)
           (assoc resp
             :route-params (:route-params match)
             :route-handler (:route-handler match)))))))
@@ -106,7 +102,11 @@
   (fn [req]
     (app (assoc req :sermon-file file))))
 
+(defn wrap-es-conn [app]
+  )
+
 (def app
   (-> router
       (wrap-sermon-file "/sermons.json.gz")
+      (wrap-es-conn)
       (wrap-content-type)))
