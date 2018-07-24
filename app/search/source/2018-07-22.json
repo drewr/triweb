@@ -1,0 +1,19 @@
+{
+  "series": "Lament",
+  "speaker": "Matt McCullough",
+  "title": "Witness",
+  "scripture": [
+      {
+      "gte": 25004001,
+      "lte": 25004999
+    }
+  ],
+  "blurb": "This poem answers the call of chapter one for a witness to the human tragedy of Jerusalem's fall. It offers a crucial model for us. Where and how should we bear witness to social problems in our time and place?",
+  "tags": [
+    "race",
+    "justice",
+    "injustice"
+  ],
+  "slug": "Lam-4-Witness",
+  "type": "Sermon"
+}
