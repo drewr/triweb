@@ -97,7 +97,7 @@
     [:get     "/ping"                  [:ping]]
     [:head    "/ping"                  [:ping]]
     [:get     "/es/info"               [:es-info]]
-    [:get     "/es/:key"               [:es-info]]
+    [:get     "/es/info/:key"          [:es-info]]
     [:options "/"                      [:cors-preflight]]
     [:options ":*"                     [:cors-preflight]]
     [:any     "/"                      [:default-route]]
