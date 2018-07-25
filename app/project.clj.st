@@ -14,7 +14,7 @@
                  [compojure "1.5.2" :exclusions [org.clojure/tools.reader
                                                  instaparse
                                                  ]]
-                 [elastic/elasticsearch-clojure "0.99.7"
+                 [elastic/elasticsearch-clojure "0.99.9-SNAPSHOT"
                           :exclusions [com.fasterxml.jackson.core/jackson-core]]
                  [enlive "1.1.1" :exclude [org.clojure/clojure]]
                  [environ "1.1.0"]

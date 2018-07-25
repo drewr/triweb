@@ -7,6 +7,7 @@
             [sibiro.extras :refer [route-handler wrap-try-alts wrap-routes]]
             [triweb.log :refer [log]]
             [triweb.podcast :refer [wrap-podcast]]
+            [triweb.elasticsearch :as elasticsearch]
             [triweb.files :refer [wrap-file]]
             [triweb.media :as media]
             [triweb.template :refer [wrap-template]]
@@ -51,8 +52,20 @@
 
 (defmethod handle-route :default-route
   [req]
-  (json-response (json/encode {:status "default"}
-                              {:pretty json-pretty-printer})))
+  (json-response
+   (json/encode {:status "default"}
+                {:pretty json-pretty-printer})))
+
+(defmethod handle-route :es-info
+  [req]
+  (let [es (-> req :es :conn)
+        es-info (elasticsearch/check es)]
+    (text-response
+     (if-let [key (-> req :route-params :key)]
+       (get es-info (keyword key) (format "key `%s` isn't there" key))
+       (with-out-str
+         (clojure.pprint/pprint
+          (elasticsearch/check es)))))))
 
 (defmethod handle-route :date-view
   [req]
@@ -83,6 +96,8 @@
   #{[:get     "/by-date/:date"         [:date-view]]
     [:get     "/ping"                  [:ping]]
     [:head    "/ping"                  [:ping]]
+    [:get     "/es/info"               [:es-info]]
+    [:get     "/es/:key"               [:es-info]]
     [:options "/"                      [:cors-preflight]]
     [:options ":*"                     [:cors-preflight]]
     [:any     "/"                      [:default-route]]
@@ -102,11 +117,15 @@
   (fn [req]
     (app (assoc req :sermon-file file))))
 
-(defn wrap-es-conn [app]
-  )
+(defn wrap-es-conn [app conn]
+  (fn [req]
+    (app (assoc-in req [:es :conn] conn))))
 
 (def app
   (-> router
       (wrap-sermon-file "/sermons.json.gz")
-      (wrap-es-conn)
       (wrap-content-type)))
+
+(defn make-with-es [app es-conn]
+  (-> app
+      (wrap-es-conn es-conn)))

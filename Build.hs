@@ -157,7 +157,7 @@ main = shakeArgs shakeOpts $ do
           { env = Just ([ ("DEV", "true") ] <> env') }
     withProcess "jetty" p $ do
       unit $ cmd [ Cwd appDir
-                 , AddEnv "ES" "http://localhost:9200"
+                 , AddEnv "ES_URL" "http://localhost:9200"
                  ]
         "lein do clean, test"
 
@@ -225,6 +225,10 @@ main = shakeArgs shakeOpts $ do
       , "run"
       , "-t"
       , "-i"
+      , "--network"
+      , "host"
+      , "-e"
+      , "ES_URL"
       , "-p"
       , "9000:9000"
       , "trinitynashville/media:" <> ver
