@@ -1,4 +1,5 @@
 (ns triweb.media.migration
+  (:gen-class)
   (:require [cheshire.core :as json]
             [clojure.java.io :as io]
             [clojure.java.shell :as sh]

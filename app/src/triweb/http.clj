@@ -30,9 +30,9 @@
       (wrap-content-type)
       wrap-log))
 
-(defn run [port]
+(defn run [port es-conn]
   (jetty/run-jetty
-   triweb.core/app
+   (app/make-with-es app/app es-conn)
    {:port (if (string? port) (Integer/parseInt port) port)
     :send-server-version? false}))
 

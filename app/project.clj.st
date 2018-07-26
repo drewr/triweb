@@ -14,7 +14,7 @@
                  [compojure "1.5.2" :exclusions [org.clojure/tools.reader
                                                  instaparse
                                                  ]]
-                 [elastic/elasticsearch-clojure "0.99.8-20171031.194719-1"
+                 [elastic/elasticsearch-clojure "0.99.9-SNAPSHOT"
                           :exclusions [com.fasterxml.jackson.core/jackson-core]]
 
                  [enlive "1.1.6" :exclude [org.clojure/clojure]]
@@ -39,6 +39,7 @@
   :injections [(require 'clojure.pprint)]
   :profiles {:dev {:env {:es-url "http://localhost:9200" }}
              :package {:uberjar-name "$appUberJarBaseName$"}}
+             :sermon-compile {}}
   :plugins [[lein-ring "0.11.0"]
             [lein-environ "1.1.0"]]
   :resource-paths ["resources" "lib"]

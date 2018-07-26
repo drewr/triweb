@@ -1,7 +1,7 @@
 FROM voidlinux/voidlinux
 
 RUN xbps-install -Suy \\
- && xbps-install -ASy openjdk-jre \\
+ && xbps-install -ASy openjdk-jre curl \\
  && xbps-remove -Oo
 
 MAINTAINER $maintainer$
@@ -14,6 +14,8 @@ RUN mkdir \$APPDIR
 
 COPY app.jar \$APPDIR
 RUN chown -R \$USER \$APPDIR
+
+COPY sermons.json.gz /
 
 USER \$USER
 CMD ["java", "-cp", "/app/app.jar", "triweb.boot"]
