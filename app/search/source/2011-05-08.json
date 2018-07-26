@@ -1,0 +1,16 @@
+{
+  "blurb" : "The story of Noah and the flood is far from a nursery rhyme. It’s a story of cataclysmic judgment mixed with mysterious divine grace. Like everything else in the opening chapters of Genesis, this story is meant to introduce key themes that continue to play out in the storyline of the Bible, and it raises crucial questions. How should this story of terrible and intentional judgment affect our view of God? Why did God choose to preserve Noah and his family? Why should we expect he’ll preserve us?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 1006009,
+    "lte" : 1009017
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-05-08-Gen-6-God-Remembers",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "God Remembers",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "Here are four things we can learn from Paul about how to correct one another in a healthy way.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 47001023,
+    "lte" : 47002011
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2017-01-29-2-Cor-1-Loving-Correction",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Loving Correction",
+  "type" : "Sermon"
+}

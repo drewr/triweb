@@ -1,0 +1,16 @@
+{
+  "blurb" : "The opening of John’s Gospel gets at questions all of us must address at one point or another. Where did we come from? Why are we here? What’s wrong with us and our environment? Who can we trust to solve problems that are too big for us? John places Jesus at the center of these questions, and confronts us with questions of his own, the questions his book will address all the way through: Who is Jesus? And who is Jesus to you?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43001001,
+    "lte" : 43001013
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-01-19-John-1-Jesus-Is",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus Is…",
+  "type" : "Sermon"
+}

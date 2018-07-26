@@ -1,0 +1,16 @@
+{
+  "blurb" : "This passage tells the story of Jesus’s meeting with a lonely Samaritan woman, an outcast even among an outcast people, whose life seems to have been a series of failed relationships with men. John tells the story to illustrate what Jesus came to offer those who trust in him. He offers acceptance even for those rejected by everyone else. And he offers satisfaction that is unmatched and unending.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43004001,
+    "lte" : 43004018
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-03-23-John-4-What-Jesus-Offers",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "What Jesus Offers",
+  "type" : "Sermon"
+}

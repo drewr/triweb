@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus’s conversation with the Samaritan woman clarifies the central calling of our lives. We’re called to be worshipers, and we’re called to seek worshipers.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43004019,
+    "lte" : 43004042
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-03-30-John-4-Call-To-Worship",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Call to Worship",
+  "type" : "Sermon"
+}

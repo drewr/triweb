@@ -1,0 +1,16 @@
+{
+  "blurb" : "Paul’s prayer for his friends shows us the model response to the gospel, the model messenger of the gospel, and the model community created by the gospel.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 52001001,
+    "lte" : 52002016
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-11-09-1-Thes-1-Thank-God-For-Models",
+  "speaker" : "Robert C.",
+  "tags" : [ ],
+  "title" : "Thank God for Models",
+  "type" : "Sermon"
+}

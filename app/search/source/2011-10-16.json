@@ -1,0 +1,16 @@
+{
+  "blurb" : "Nahum is a book of shocking images. They are images that challenge our common notions of what God is like, that challenge our tendency to flatten the character of God. They are images that show us clearly that God is against all evil, that make us ask whether God is against us. And they are images meant to send us running to Jesus.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 34001001,
+    "lte" : 34999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-10-16-Nahum-Wrath-And-Refuge",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Wrath and Refuge",
+  "type" : "Sermon"
+}

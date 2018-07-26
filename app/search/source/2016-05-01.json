@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus says his followers don’t resist when they’re mistreated. But what does it look like to obey? And wouldn’t it be dangerous for us and for others if we did obey? Jesus offer four examples that show us both how his words challenge us and how his words help us.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40005038,
+    "lte" : 40005042
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-05-01-Matt-5-Eye-For-An-Eye",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "An Eye for an Eye",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "The letter to the Hebrews ends with a benediction, a reminder of what God has done and a prayer for what God will do for his children. By sacrificing the blood of his Son, God has made a covenant that promises peace and life that will last forever. By his covenant God gives to us what he requires of us, promising to transform us so we can live the lives of worship we were made to live.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58013020,
+    "lte" : 58013025
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-11-25-Heb-13-Remember",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Remember Hebrews",
+  "type" : "Sermon"
+}

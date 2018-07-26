@@ -1,0 +1,16 @@
+{
+  "blurb" : "Describing the events leading to Jesus’s arrest and crucifixion, Mark tells us a great deal about what Jesus came here to do: He came to be abandoned so we won’t have to be. Jesus was abandoned by everyone–Judas, Peter, his disciples, even his Father–and, remarkably, he chose to have it that way. Why did he choose this path of excruciating isolation? Because through his death–the ultimate abandonment–he established a covenant relationship that will never break.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 41014001,
+    "lte" : 41014052
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-03-06-Mark-14-Jesus-Our-Substitute",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus, Our Substitute",
+  "type" : "Sermon"
+}

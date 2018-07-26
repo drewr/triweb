@@ -1,0 +1,16 @@
+{
+  "blurb" : "Job’s lost everything even though he’d done nothing wrong. His main desire was to know why. Near the end of the book, in a passage of remarkable power and beauty, God finally speaks to him. But what God says is not what Job expected. He doesn’t mention Job’s experience at all. He responds instead with a poem celebrating the vastness, complexity, and wildness of the natural world. How is this response helpful?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 18038001,
+    "lte" : 18040002
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-06-28-Jobs-God-Part-1",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Job’s God (Part 1)",
+  "type" : "Sermon"
+}

@@ -1,0 +1,247 @@
+{
+  "blurb" : "The stories of Jesus’s life and teaching in Mark’s Gospel are designed to answer three main questions: who is Jesus, what did Jesus come here to do, and what does that require of us? Already, in chapters 1-8, we’ve seen the shape of Mark’s answer to those crucial questions emerge. First, Jesus is the divine Son of God, as shown in his unmatched words and actions of authority and power. Second, he came to fix what was broken, to establish the kingdom of God by his life, death, and resurrection. And, finally, Jesus demands absolute submission from us: a repentance from all competing allegiances, a rest in the sufficiency of his power and love, and a willigness to follow him with a life of self-denial.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : {
+    "index" : 0,
+    "reason" : [ {
+      "tag" : "string",
+      "expecting" : "Revelation"
+    }, {
+      "tag" : "string",
+      "expecting" : "Jude"
+    }, {
+      "tag" : "string",
+      "expecting" : "3 John"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 John"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 John"
+    }, {
+      "tag" : "string",
+      "expecting" : "3 Jn"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Jn"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Jn"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Peter"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Peter"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Pet"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Pet"
+    }, {
+      "tag" : "string",
+      "expecting" : "James"
+    }, {
+      "tag" : "string",
+      "expecting" : "Hebrews"
+    }, {
+      "tag" : "string",
+      "expecting" : "Philemon"
+    }, {
+      "tag" : "string",
+      "expecting" : "Titus"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Timothy"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Timothy"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Thessalonians"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Thessalonians"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Thes"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Thes"
+    }, {
+      "tag" : "string",
+      "expecting" : "Colossians"
+    }, {
+      "tag" : "string",
+      "expecting" : "Philippians"
+    }, {
+      "tag" : "string",
+      "expecting" : "Ephesians"
+    }, {
+      "tag" : "string",
+      "expecting" : "Galatians"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Corinthians"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Corinthians"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Cor"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Cor"
+    }, {
+      "tag" : "string",
+      "expecting" : "Romans"
+    }, {
+      "tag" : "string",
+      "expecting" : "Acts"
+    }, {
+      "tag" : "string",
+      "expecting" : "John"
+    }, {
+      "tag" : "string",
+      "expecting" : "Luke"
+    }, {
+      "tag" : "string",
+      "expecting" : "Mark"
+    }, {
+      "tag" : "string",
+      "expecting" : "Matthew"
+    }, {
+      "tag" : "string",
+      "expecting" : "Malachi"
+    }, {
+      "tag" : "string",
+      "expecting" : "Zechariah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Haggai"
+    }, {
+      "tag" : "string",
+      "expecting" : "Zephaniah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Habakkuk"
+    }, {
+      "tag" : "string",
+      "expecting" : "Nahum"
+    }, {
+      "tag" : "string",
+      "expecting" : "Micah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Jonah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Obadiah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Amos"
+    }, {
+      "tag" : "string",
+      "expecting" : "Joel"
+    }, {
+      "tag" : "string",
+      "expecting" : "Hosea"
+    }, {
+      "tag" : "string",
+      "expecting" : "Daniel"
+    }, {
+      "tag" : "string",
+      "expecting" : "Ezekiel"
+    }, {
+      "tag" : "string",
+      "expecting" : "Lamentations"
+    }, {
+      "tag" : "string",
+      "expecting" : "Jeremiah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Isaiah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Song of Solomon"
+    }, {
+      "tag" : "string",
+      "expecting" : "Ecclesiastes"
+    }, {
+      "tag" : "string",
+      "expecting" : "Proverbs"
+    }, {
+      "tag" : "string",
+      "expecting" : "Psalm"
+    }, {
+      "tag" : "string",
+      "expecting" : "Psalms"
+    }, {
+      "tag" : "string",
+      "expecting" : "Job"
+    }, {
+      "tag" : "string",
+      "expecting" : "Esther"
+    }, {
+      "tag" : "string",
+      "expecting" : "Nehemiah"
+    }, {
+      "tag" : "string",
+      "expecting" : "Ezra"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Chronicles"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Chronicles"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Kings"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Kings"
+    }, {
+      "tag" : "string",
+      "expecting" : "2 Samuel"
+    }, {
+      "tag" : "string",
+      "expecting" : "1 Samuel"
+    }, {
+      "tag" : "string",
+      "expecting" : "Ruth"
+    }, {
+      "tag" : "string",
+      "expecting" : "Judges"
+    }, {
+      "tag" : "string",
+      "expecting" : "Joshua"
+    }, {
+      "tag" : "string",
+      "expecting" : "Deuteronomy"
+    }, {
+      "tag" : "string",
+      "expecting" : "Numbers"
+    }, {
+      "tag" : "string",
+      "expecting" : "Leviticus"
+    }, {
+      "tag" : "string",
+      "expecting" : "Exodus"
+    }, {
+      "tag" : "string",
+      "expecting" : "Genesis"
+    } ],
+    "line" : 1,
+    "column" : 1,
+    "text" : "A Review of Mark 1-8"
+  },
+  "series" : "FIX_SERIES",
+  "slug" : "2011-01-02-A-Review-Of-Mark-1-8",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus Is the Christ",
+  "type" : "Sermon"
+}

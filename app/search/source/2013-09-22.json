@@ -1,0 +1,16 @@
+{
+  "blurb" : "Christian freedom is not finally about what’s permissible for us but what’s beneficial for others. Jesus frees us from bondage to our own interests, and he frees us for binding ourselves to each other.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46009001,
+    "lte" : 46009027
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-09-22-1-Cor-9-Free-To-Serve",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Free to Serve",
+  "type" : "Sermon"
+}

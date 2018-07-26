@@ -1,0 +1,16 @@
+{
+  "blurb" : "The message of the cross will always be foolishness to the world, but true foolishness would be loving the respect of our peers more than we love the gospel.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46001017,
+    "lte" : 46001025
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-05-01-1-Cor-1-Greg-Wills",
+  "speaker" : "Greg Wills",
+  "tags" : [ ],
+  "title" : "The Wrong Kind of Fools",
+  "type" : "Sermon"
+}

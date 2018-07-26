@@ -1,0 +1,16 @@
+{
+  "blurb" : "One of Proverbs’ favorite subjects is the sluggard—a comedic, somewhat endearing, ultimately tragic figure that looks a little too familiar. The portrait of the sluggard warns us against the destructive power of sloth, and points us towards the invigorating rest promised in Jesus.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 20001001,
+    "lte" : 20999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-05-03-Proverbs-The-Sluggard",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Sluggard",
+  "type" : "Sermon"
+}

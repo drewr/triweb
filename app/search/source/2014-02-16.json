@@ -1,0 +1,16 @@
+{
+  "blurb" : "This story captures the first of Jesus’s “signs,” actions that symbolize what he came to do for us. It isn’t as eye-catching as some of his later miracles. There’s no healing of the sick, no calming of a storm, no resurrection of the dead. But when Jesus turned water into wine, he offered a perfect taste of what his coming means for his people: he will turn guilt and shame to unimaginable joy.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43002001,
+    "lte" : 43002012
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-02-16-John-2-The-Wedding",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Wedding",
+  "type" : "Sermon"
+}

@@ -1,0 +1,16 @@
+{
+  "blurb" : "Psalm 23 is a dramatic portrayal of trusting God completely. When we read its 6 verses, we are drawn to ask ourselves if we trust God enough to proclaim, “The LORD is my shepherd, I shall not want.”",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 19023001,
+    "lte" : 19023999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-06-02-Ps-23-The-Good-Shepherd",
+  "speaker" : "Bill Heerman",
+  "tags" : [ ],
+  "title" : "The Good Shepherd",
+  "type" : "Sermon"
+}

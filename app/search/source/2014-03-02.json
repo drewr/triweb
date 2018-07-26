@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus insists that only those who are born again can enter the kingdom he came to establish. But what does it mean to be born again? And where can you get this experience? The answers come out in Jesus’s conversation with a religious leader named Nicodemus. They’re unexpected, but they’re life-giving.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43002023,
+    "lte" : 43003015
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-03-02-John-2-3-Born-Again",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Born Again",
+  "type" : "Sermon"
+}

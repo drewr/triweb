@@ -1,0 +1,16 @@
+{
+  "blurb" : "Mark concludes his story with an earth-shattering claim that launches the life of the church: Jesus was really dead, but now he’s alive. He leaves us to ask two questions. Is it true? And if it is true, if Jesus really is alive, what are the implications?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 41015040,
+    "lte" : 41016008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-03-20-Mark-16-Jesus-Is-Alive",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Jesus Is Alive",
+  "type" : "Sermon"
+}

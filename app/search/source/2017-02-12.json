@@ -1,0 +1,16 @@
+{
+  "blurb" : "What is true Christianity? And how can you see if Christianity is true? Paul’s answer may surprise you. It should definitely encourage you.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 47003001,
+    "lte" : 47003011
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2017-02-12-2-Cor-3-Proof-In-The-Pudding",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Proof In The Pudding",
+  "type" : "Sermon"
+}

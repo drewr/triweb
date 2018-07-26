@@ -1,0 +1,16 @@
+{
+  "blurb" : "God’s Word has the power to cut through our layers of pretension and expose who we really are. Thankfully, this same Word offers us a new identity.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58004012,
+    "lte" : 58004013
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-03-11-Heb-4-Gods-Living-Active-Word",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "God’s Living and Active Word",
+  "type" : "Sermon"
+}

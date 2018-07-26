@@ -1,0 +1,16 @@
+{
+  "blurb" : "When we add to the gospel, we nullify it.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 48002019,
+    "lte" : 48002019
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-07-14-Gal-2-Crucified-With-Christ",
+  "speaker" : "David Atchison",
+  "tags" : [ ],
+  "title" : "Crucified With Christ",
+  "type" : "Sermon"
+}

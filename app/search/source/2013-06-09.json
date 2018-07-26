@@ -1,0 +1,16 @@
+{
+  "blurb" : "Paul writes this letter to a dysfunctional church plant to clarify what defines a healthy church community: Holiness, grace, and love.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 46001001,
+    "lte" : 46001009
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2013-06-09-1-Cor-1-Cross-Centered-Community",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Cross-Centered Community",
+  "type" : "Sermon"
+}

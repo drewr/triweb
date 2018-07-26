@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus ends his time with his disciples in prayer. What requests does he make to His Father and what relevance do they have to us?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43017001,
+    "lte" : 43017026
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-11-30-John-17-Jesus-Prays",
+  "speaker" : "Drew Raines",
+  "tags" : [ ],
+  "title" : "Jesus Prays",
+  "type" : "Sermon"
+}

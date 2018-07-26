@@ -1,0 +1,16 @@
+{
+  "blurb" : "Writing to a church he’d never visited in person, Paul uses this section of his letter to explain his philosophy of ministry. Not surprisingly, it begins and ends with the gospel, with what he calls “God’s mystery.” If modeled on Paul’s, our philosophy of ministry as a church and as individuals will be gospel-centered in content, in methods, and in goals.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 51001024,
+    "lte" : 51002005
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-07-10-Col-1-Gospel-Centered-Ministry",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Gospel-Centered Ministry",
+  "type" : "Sermon"
+}

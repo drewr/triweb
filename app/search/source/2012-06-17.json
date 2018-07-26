@@ -1,0 +1,16 @@
+{
+  "blurb" : "We all want to change, Christian or not. We try to change by swapping out behaviors, but the radical message of Christianity is that change comes through a set of promises.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58008007,
+    "lte" : 58008013
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-06-17-Heb-8-Promises-Applied",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Promises Applied",
+  "type" : "Sermon"
+}

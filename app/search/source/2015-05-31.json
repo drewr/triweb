@@ -1,0 +1,16 @@
+{
+  "blurb" : "Proverbs walks through the lifecycle of the human experience — as a child, an adult, a spouse, and a parent — and applies the fear of the Lord at each phase.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 20001001,
+    "lte" : 20999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2015-05-31-Proverbs-Wisdom-In-The-Home",
+  "speaker" : "Drew Raines",
+  "tags" : [ ],
+  "title" : "Wisdom in the Home",
+  "type" : "Sermon"
+}

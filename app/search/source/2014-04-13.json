@@ -1,0 +1,16 @@
+{
+  "blurb" : "We have a hope that does not disappoint, one in which we should invest everything.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 62003002,
+    "lte" : 62003003
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-04-13-1-John-3-The-Power-Of-Biblical-Hope",
+  "speaker" : "Bill Maynard",
+  "tags" : [ ],
+  "title" : "The Power of Biblical Hope",
+  "type" : "Sermon"
+}

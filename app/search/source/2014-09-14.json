@@ -1,0 +1,16 @@
+{
+  "blurb" : "Why was Jesus so widely rejected by his own people? That’s the question John takes up as Jesus’s public ministry draws to a close. And his answer is crucial for us as we face unbelief in ourselves and in those around us.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 43012036,
+    "lte" : 43012050
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-09-14-John-12-Understanding-Unbelief",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Understanding Unbelief",
+  "type" : "Sermon"
+}

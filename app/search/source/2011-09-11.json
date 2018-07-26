@@ -1,0 +1,16 @@
+{
+  "blurb" : "Like so many of the Minor Prophets, Joel is a book of warning. He speaks especially of a coming “Day of the Lord,” a decisive and terrible day when everyone opposed to God’s rule will be destroyed. That has never been a fashionable message, perhaps never less so than now. But what if Joel is right? How could we avoid our share in that judgment?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 29001001,
+    "lte" : 29999999
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2011-09-11-Joel-The-Day-of-the-Lord",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "The Day of the Lord and the Call to Repentance",
+  "type" : "Sermon"
+}

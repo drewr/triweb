@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus warns us against standing in judgment over others because we’re not worthy ourselves, and because we don’t see everything clearly.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40007001,
+    "lte" : 40007006
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-06-26-Matt-7-Judge-Not",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Judge Not",
+  "type" : "Sermon"
+}

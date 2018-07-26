@@ -1,0 +1,16 @@
+{
+  "blurb" : "trivial. In fact, our words reveal what’s inside our hearts and for those of us that follow Jesus, the truthfulness of our words show the world who He is.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40005033,
+    "lte" : 40005037
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-04-24-Matt-5-Our-Word-Is-Our-Bond",
+  "speaker" : "Shaka Mitchell",
+  "tags" : [ ],
+  "title" : "Our Word is Our Bond",
+  "type" : "Sermon"
+}

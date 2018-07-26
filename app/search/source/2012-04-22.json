@@ -1,0 +1,16 @@
+{
+  "blurb" : "In one of the most difficult and controversial passages in the entire New Testament, the author of Hebrews warns of the irreversible consequences of falling away from Jesus. What is the nature, purpose, and proper effect of this harsh warning?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 58006004,
+    "lte" : 58006008
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2012-04-22-Heb-6-Warning",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Warning",
+  "type" : "Sermon"
+}

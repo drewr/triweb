@@ -1,0 +1,16 @@
+{
+  "blurb" : "Paul’s prayers for his friends offer us a wonderful model for how we should pray for each other.",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 51001009,
+    "lte" : 51001014
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2014-12-28-Col-1-Learning-To-Pray-For-People",
+  "speaker" : "Bill Heerman",
+  "tags" : [ ],
+  "title" : "Learning to Pray for People",
+  "type" : "Sermon"
+}

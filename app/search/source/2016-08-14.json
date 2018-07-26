@@ -1,0 +1,16 @@
+{
+  "blurb" : "Jesus brings his sermon to a close with a vivid appeal to respond well to what he has said. The choice is clear. The stakes are high. Now what will you do with Jesus?",
+  "has-audio" : true,
+  "has-audio-error" : false,
+  "published" : true,
+  "scripture" : [ {
+    "gte" : 40007024,
+    "lte" : 40007029
+  } ],
+  "series" : "FIX_SERIES",
+  "slug" : "2016-08-14-Matt-7-Now-What",
+  "speaker" : "Matt McCullough",
+  "tags" : [ ],
+  "title" : "Now What?",
+  "type" : "Sermon"
+}
