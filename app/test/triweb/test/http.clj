@@ -14,6 +14,7 @@
   (is (not (nil? (:number (es/check ES)))))
   (is (= 1 (-> (es/search ES IDX {:body
                                   {:query
-                                   {:match_all {}}}})
+                                   {:match
+                                    {:date "2018-04-01"}}}})
                :hits
                :total))))
