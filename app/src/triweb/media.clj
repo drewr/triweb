@@ -45,7 +45,7 @@
 (defn make-id [{:keys [slug date]}]
   (format "%s-%s" date slug))
 
-(defn make-doc [path]
+(defn make-doc [path raw]
   (let [path-str (str path)
         file-str (str (.getFileName path))
         [_ date-str] (re-find #"(\d{4}-\d{2}-\d{2}).*" file-str)
@@ -54,19 +54,21 @@
                        (json/decode true))
               :date date-str)]
     (merge doc {:id (make-id doc)
-                :scripture (scripture/unparse (:scripture doc))})))
+                :scripture (if raw
+                             (:scripture doc)
+                             (scripture/unparse (:scripture doc)))})))
 
-(defn make-docs [dir]
+(defn make-docs [dir raw]
   (for [path (->> (file-seq (io/file dir "source"))
                   (filter #(.isFile %))
                   (map #(.toPath %)))]
-    (make-doc path)))
+    (make-doc path raw)))
 
 (defn index-dir [dir conn index]
   (let [settings-file (io/file dir "settings.json")
         settings (-> settings-file slurp (json/decode true))]
     (indices/ensure conn index {:body settings})
-    (doseq [doc (make-docs dir)]
+    (doseq [doc (make-docs dir true)]
       (try
         (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)})
         (catch Exception e
