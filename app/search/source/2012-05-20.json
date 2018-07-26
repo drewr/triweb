@@ -3,11 +3,14 @@
   "has-audio" : true,
   "has-audio-error" : false,
   "published" : true,
-  "scripture" : "FIX_SCRIPTURE",
-  "series" : "FIX_SERIES",
-  "slug" : "2012-05-20-Heb-7",
+  "scripture" : [ {
+    "gte" : 58007011,
+    "lte" : 58007022
+  } ],
+  "series" : "Hebrews",
+  "slug" : "Heb-7",
   "speaker" : "Bill Heerman",
   "tags" : [ ],
-  "title" : "Hebrews 7:11-22",
+  "title" : "Untitled",
   "type" : "Sermon"
 }
