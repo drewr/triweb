@@ -63,12 +63,15 @@
     (make-doc path)))
 
 (defn index-dir [dir conn index]
-  (let [source-dir (io/file dir "source")
-        settings-file (io/file dir "settings.json")
+  (let [settings-file (io/file dir "settings.json")
         settings (-> settings-file slurp (json/decode true))]
     (indices/ensure conn index {:body settings})
-    (doseq [doc (make-docs source-dir)]
-      (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)}))
+    (doseq [doc (make-docs dir)]
+      (try
+        (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)})
+        (catch Exception e
+          (clojure.pprint/pprint doc)
+          (throw e))))
     (indices/refresh conn index)))
 
 (defn compile-sermons [dir]

@@ -157,9 +157,8 @@ main = shakeArgs shakeOpts $ do
           { env = Just ([ ("DEV", "true") ] <> env') }
     withProcess "jetty" p $ do
       unit $ cmd [ Cwd appDir
-                 , AddEnv "ES_URL" "http://localhost:9200"
                  ]
-        "lein do clean, test"
+        "lein test"
 
   phony "run-jetty" $ do
     need [ projectClj ]
