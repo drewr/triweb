@@ -46,6 +46,7 @@
   (format "%s-%s" date slug))
 
 (defn make-doc [path raw]
+  (println path)
   (let [path-str (str path)
         file-str (str (.getFileName path))
         [_ date-str] (re-find #"(\d{4}-\d{2}-\d{2}).*" file-str)
@@ -72,8 +73,7 @@
       (try
         (es.doc/index conn index search/_type (:id doc) {:body (dissoc doc :id)})
         (catch Exception e
-          (clojure.pprint/pprint doc)
-          (throw e))))
+          (clojure.pprint/pprint doc))))
     (indices/refresh conn index)))
 
 (defn compile-sermons [dir]
