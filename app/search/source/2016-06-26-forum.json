@@ -3,11 +3,11 @@
   "has-audio" : true,
   "has-audio-error" : false,
   "published" : true,
-  "scripture" : "FIX_SCRIPTURE",
-  "series" : "FIX_SERIES",
-  "slug" : "2016-06-26-Christians-And-Politics",
+  "scripture" : [ ],
+  "series" : "Trinity Forums",
+  "slug" : "Christians-And-Politics",
   "speaker" : "Matt McCullough",
   "tags" : [ ],
   "title" : "Trinity Forum: How Should Christians Engage with Politics?",
-  "type" : "Sermon"
+  "type" : "Forum"
 }
