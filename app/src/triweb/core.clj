@@ -33,14 +33,16 @@
       (r/charset "utf-8")))
 
 (defn html-response [body]
-  (-> (r/response body)
-      (r/content-type "text/html")
-      (r/charset "utf-8")))
+  (-> (text-response body)
+      (r/content-type "text/html")))
 
 (defn json-response [body]
-  (-> (r/response body)
-      (r/content-type "application/json")
-      (r/charset "utf-8")))
+  (-> (text-response body)
+      (r/content-type "application/json")))
+
+(defn xml-response [body]
+  (-> (text-response body)
+      (r/content-type "application/xml")))
 
 (defmulti handle-route
   (fn [req]
@@ -55,6 +57,11 @@
   (json-response
    (json/encode {:status "default"}
                 {:pretty json-pretty-printer})))
+
+(defmethod handle-route :podcast
+  [req]
+  (xml-response
+   (podcast/latest-entries (-> req :es :conn) (-> req :es :idx) 10)))
 
 (defmethod handle-route :es-info
   [req]
@@ -93,7 +100,8 @@
               (r/charset "utf-8")))))))
 
 (def raw-routes
-  #{[:get     "/by-date/:date"         [:date-view]]
+  #{[:get     "/podcast.xml"           [:podcast]]
+    [:get     "/by-date/:date"         [:date-view]]
     [:get     "/ping"                  [:ping]]
     [:head    "/ping"                  [:ping]]
     [:get     "/es/info"               [:es-info]]

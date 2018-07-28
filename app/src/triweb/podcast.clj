@@ -6,6 +6,7 @@
             [clojure.string :as str]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
+            [triweb.elasticsearch :as es]
             [triweb.template :as t])
   (:import (java.text SimpleDateFormat)))
 
@@ -182,3 +183,7 @@
          (r/content-type "text/xml")
          (r/charset "utf-8"))
         (app req)))))
+
+(defn latest-entries [conn idx number]
+  (->> (es/find-latest conn idx number)
+       (map edn-to-xml)))
