@@ -1,0 +1,16 @@
+{
+  "series": "Lament",
+  "speaker": "Matt McCullough",
+  "title": "Remember",
+  "scripture": [
+      {
+      "gte": 25005001,
+      "lte": 25005999
+    }
+  ],
+  "blurb": "This book of sorrow ends with a prayer. It's a prayer that wonderfully models the steps of lament we've been following all summer. And it's a prayer perfectly answered in Jesus.",
+  "tags": [
+  ],
+  "slug": "Lam-5-Remember",
+  "type": "Sermon"
+}
