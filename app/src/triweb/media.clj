@@ -78,8 +78,7 @@
 
 (defn compile-sermons [dir]
   (let [target (io/file "target" "sermons.json.gz")
-        docs (->> dir
-                  make-docs
+        docs (->> (make-docs dir true)
                   (filter #(= (:type %) "Sermon")))]
     (with-open [^java.io.Writer w (-> target
                                       io/output-stream

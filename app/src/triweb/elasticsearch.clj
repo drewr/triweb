@@ -2,8 +2,7 @@
   (:require [clojure.spec.alpha :as s]
             [elasticsearch.connection.http :refer [make]]
             [elasticsearch.connection :as conn]
-            [elasticsearch.document :as es.doc]
-            triweb.media))
+            [elasticsearch.document :as es.doc]))
 
 (defn connect [url]
   (make {:url url}))
@@ -14,6 +13,12 @@
 (defn search [conn & args]
   (apply es.doc/search conn args))
 
-(s/fdef )
-(defn find-latest [conn idx size]
-  )
+(defn find-latest [conn idx type size]
+  (let [q {:query
+           {:match
+            {:type type}}
+           :size size}]
+    (->> (es.doc/search conn idx {:body q})
+         :hits
+         :hits
+         (map :_source))))

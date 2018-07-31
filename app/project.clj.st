@@ -45,4 +45,5 @@
   :aot [triweb.boot
         triweb.core]
   :ring {:handler triweb.core/app
-         :uberwar-name "app.war"})
+         :uberwar-name "app.war"
+         :port 9000})

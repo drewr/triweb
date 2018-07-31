@@ -57,3 +57,11 @@
        (parse-iso iso-string) now))
      (catch IllegalArgumentException _
        -1))))
+
+(defn current-year []
+  (f/unparse (f/formatter "yyyy") (t/now)))
+
+(defn podcast-date [datetime-str]
+  (->> datetime-str
+       (f/parse (f/formatter :date-time))
+       (f/unparse (f/formatter "EEE, dd MMM yyyy HH:mm:SS Z"))))

@@ -6,7 +6,7 @@
             [sibiro.core :as sibiro]
             [sibiro.extras :refer [route-handler wrap-try-alts wrap-routes]]
             [triweb.log :refer [log]]
-            [triweb.podcast :refer [wrap-podcast]]
+            [triweb.podcast :refer [wrap-podcast] :as podcast]
             [triweb.elasticsearch :as elasticsearch]
             [triweb.files :refer [wrap-file]]
             [triweb.media :as media]
@@ -61,7 +61,7 @@
 (defmethod handle-route :podcast
   [req]
   (xml-response
-   (podcast/latest-entries (-> req :es :conn) (-> req :es :idx) 10)))
+   (podcast/podcast-str (-> req :es :conn) (-> req :es :idx) 10)))
 
 (defmethod handle-route :es-info
   [req]
