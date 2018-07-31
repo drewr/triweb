@@ -48,6 +48,9 @@ dockerFile = dockerDir </> "Dockerfile"
 appDockerWar = dockerDir </> "app.war"
 appDockerJar = dockerDir </> "app.jar"
 sermonJson = dockerDir </> "sermons.json.gz"
+mediaIndex = "triweb-media"
+kubeContext = "gke_trinitynashville-188115_us-central1-a_triweb"
+
 
 shakeOpts = shakeOptions { shakeFiles="_build"
                          , shakeTimings=True}
@@ -213,6 +216,25 @@ main = shakeArgs shakeOpts $ do
       , "image"
       , "deployment/" <> gcrDeploymentName
       , gcrDeploymentName <> "=" <> makeGcrImageName ver
+      ]
+
+  phony "load-media" $ do
+    ver <- liftIO gitVersion
+    need [ "update-gcr"
+         ]
+    cmd
+      [ "kubectl"
+      , "run"
+      , "--context", kubeContext
+      , "load-data"
+      , "--rm", "-i"
+      , "--image", makeGcrImageName ver
+      , "--restart", "Never"
+      , "--env=SERMONS_FILE=/sermons.json.gz"
+      , "--env=ES_URL=http://elasticsearch:9200"
+      , "--env=ES_INDEX=" <> mediaIndex
+      , "--"
+      , "java", "-cp", "/app/app.jar", "triweb.load"
       ]
 
   phony "docker-run" $ do

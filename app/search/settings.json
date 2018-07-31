@@ -6,7 +6,7 @@
     }
   },
   "mappings": {
-    "t": {
+    "_doc": {
       "properties": {
         "blurb": {
           "type": "text"

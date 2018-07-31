@@ -43,7 +43,8 @@
   :resource-paths ["resources" "lib"]
   ;; stupid :aot :all started hanging for no reason, I love computers
   :aot [triweb.boot
-        triweb.core]
+        triweb.core
+        triweb.load]
   :ring {:handler triweb.core/app
          :uberwar-name "app.war"
          :port 9000})

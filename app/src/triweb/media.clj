@@ -7,6 +7,7 @@
             [clojure.spec.alpha :as s]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
+            [triweb.elasticsearch :as triweb.es]
             [triweb.scripture :as scripture]
             [triweb.podcast :as podcast]
             [triweb.search :as search])
@@ -86,15 +87,18 @@
                                       io/writer)]
       (.write w (json/encode docs)))))
 
+(defn decompress-and-deserialized-file [f]
+  (-> f
+      io/input-stream
+      GZIPInputStream.
+      io/reader
+      slurp
+      (json/decode true)))
+
 (def load-sermons
   (memoize
    (fn [f url-prefix]
-     (let [docs (-> f
-                    io/input-stream
-                    GZIPInputStream.
-                    io/reader
-                    slurp
-                    (json/decode true))]
+     (let [docs (decompress-and-deserialized-file f)]
        (reduce #(conj %1 [(:date %2)
                           (assoc %2
                             :link (format "%s/%s-%s.mp3"
@@ -102,3 +106,10 @@
                                           (:date %2)
                                           (:slug %2)))])
                {} docs)))))
+
+(defn load-sermons-in-es [f conn idx]
+  (let [docs (decompress-and-deserialized-file f)]
+    (doseq [d docs]
+      (let [id (make-id d)]
+        (println id)
+        (es.doc/index conn idx "_doc" id {:body d})))))
