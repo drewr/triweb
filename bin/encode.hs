@@ -47,7 +47,7 @@ import System.Directory
 import Filesystem.Path.CurrentOS (fromText)
 import qualified Control.Foldl as Fold
 
-defaultBucket = "media.trinitynashville.org"
+defaultBucket = "trinitynashville-media"
 defaultAuthor = "Trinity Church"
 defaultGenre  = "Speech"
 defaultImage  = "resources/static/img/podcast5.png"
@@ -154,7 +154,7 @@ encode ctx preset suffix = do
     addMeta ctx title dest
     rt <- runtime dest
     upload ctx dest rt
-    echo (format ("*** LINK: http://"%s%"/"%s) (pack . bucket $ o) dest)
+    echo (format ("*** LINK: https://storage.googleapis.com/"%s%"/"%s) (pack . bucket $ o) dest)
 
 lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
@@ -205,17 +205,14 @@ upload ctx dest rt =
   let o = ctxOpts ctx
       pi = ctxPi ctx
   in
-    loggingProc "aws"
-         [ "s3api", "put-object"
-         , "--acl", "public-read"
-         , "--metadata", "duration="
-                      <> duration rt
-                      <> ","
-                      <> "seconds=" <> ( pack . show . seconds $ rt )
-         , "--content-type", "audio/mpeg"
-         , "--body", dest
-         , "--bucket", (pack . bucket $ o)
-         , "--key", (pack . takeFileName . unpack $ dest)
+    loggingProc "gsutil"
+         [ "-h", "Content-Type:audio/mpeg"
+         , "-h", "x-goog-meta-duration:" <> duration rt
+         , "-h", "x-goog-meta-seconds:" <> ( pack . show . seconds $ rt )
+         , "cp"
+         , "-a", "public-read"
+         , (pack . takeFileName . unpack $ dest)
+         , "gs://" <> (pack . bucket $ o) <> "/" 
          ]
 
 loggingProc :: Text -> [Text] -> IO ()
