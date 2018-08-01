@@ -6,8 +6,8 @@
             [ring.adapter.jetty :as jetty]
             [triweb.core :as app]))
 
-(defn run [port es-conn]
+(defn run [port es-conn es-index]
   (jetty/run-jetty
-   (app/make-with-es app/app es-conn)
+   (app/make-with-es app/app es-conn es-index)
    {:port (if (string? port) (Integer/parseInt port) port)
     :send-server-version? false}))

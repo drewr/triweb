@@ -125,15 +125,17 @@
   (fn [req]
     (app (assoc req :sermon-file file))))
 
-(defn wrap-es-conn [app conn]
+(defn wrap-es-conn [app conn idx]
   (fn [req]
-    (app (assoc-in req [:es :conn] conn))))
+    (app (-> req
+             (assoc-in [:es :conn] conn)
+             (assoc-in [:es :idx] idx)))))
 
 (def app
   (-> router
       (wrap-sermon-file "/sermons.json.gz")
       (wrap-content-type)))
 
-(defn make-with-es [app es-conn]
+(defn make-with-es [app es-conn es-index]
   (-> app
-      (wrap-es-conn es-conn)))
+      (wrap-es-conn es-conn es-index)))

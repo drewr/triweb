@@ -27,9 +27,10 @@
   (when-not (env/env :es-url)
     (log/info "ES_URL not populated, defaulting to http://localhost:9200"))
   (let [conn (es/connect (env/env :es-url "http://localhost:9200"))
+        idx (env/env :es-index "triweb-media")
         es-info (es/check conn)]
     (if-let [v (:number es-info)]
       (log/infof "connected to elasticsearch-%s" v)
       (log/errorf "something has happened connecting to elasticsearch: %s" (pr-str es-info)))
     (println "starting web server")
-    (http/run (or (env/env :port) 9000) conn)))
+    (http/run (or (env/env :port) 9000) conn idx)))
