@@ -76,7 +76,10 @@
           obj))
       (catch Exception e
         (log/errorf "problem with %s" mp3)
-        (throw e)))))
+        {:mp3/url mp3
+         :mp3/bytes -1
+         :mp3/duration -1
+         :mp3/seconds -1}))))
 
 (def mp3-info
   (memo/ttl mp3-info* :ttl/threshold (* MP3-CACHE-SECS 1000)))
@@ -127,7 +130,9 @@
           obj)))))
 
 (defn media-to-entry [media]
-  (when-let [mp3 (mp3-info (format "%s/%s-%s.mp3" STORAGE_ROOT (:date media) (:slug media)))]
+  (when-let [mp3 (mp3-info
+                  (format "%s/%s-%s.mp3" STORAGE_ROOT
+                          (:date media) (:slug media)))]
     (let [date (:date media)
           speaker (:speaker media)
           title (:title media)
