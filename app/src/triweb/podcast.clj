@@ -4,6 +4,7 @@
             [clojure.data.xml :as xml]
             [clojure.spec.alpha :as s]
             [clojure.string :as str]
+            [clojure.tools.logging :as log]
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.elasticsearch :as es]
@@ -60,18 +61,22 @@
 
 (defn mp3-info* [mp3]
   (when mp3
-    (let [headers (-> mp3 http/head :headers)
-          obj {:mp3/url mp3
-               :mp3/bytes (when-let [l (headers "content-length")]
-                            (Long/parseLong l))
-               :mp3/duration (headers "x-goog-meta-duration")
-               :mp3/seconds (Integer/parseInt
-                             (or (headers "x-goog-meta-seconds") "-1"))}]
-      (if (= ::s/invalid (s/conform :podcast/mp3 obj))
-        (throw
-         (ex-info (str "bad mp3: " mp3)
-                  (s/explain-data :podcast/mp3 obj)))
-        obj))))
+    (try
+      (let [headers (-> mp3 http/head :headers)
+            obj {:mp3/url mp3
+                 :mp3/bytes (when-let [l (headers "content-length")]
+                              (Long/parseLong l))
+                 :mp3/duration (headers "x-goog-meta-duration")
+                 :mp3/seconds (Integer/parseInt
+                               (or (headers "x-goog-meta-seconds") "-1"))}]
+        (if (= ::s/invalid (s/conform :podcast/mp3 obj))
+          (throw
+           (ex-info (str "bad mp3: " mp3)
+                    (s/explain-data :podcast/mp3 obj)))
+          obj))
+      (catch Exception e
+        (log/errorf "problem with %s" mp3)
+        (throw e)))))
 
 (def mp3-info
   (memo/ttl mp3-info* :ttl/threshold (* MP3-CACHE-SECS 1000)))
