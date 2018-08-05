@@ -77,15 +77,18 @@
 (defmethod handle-route :date-view
   [req]
   (let [date (-> req :route-params :date)
-        sermons (media/load-sermons (-> req :sermon-file)
-                                    "http://media.trinitynashville.org")
-        doc (get-in sermons [date])]
-    (if doc
+        conn (-> req :es :conn)
+        idx (-> req :es :idx)
+        doc (media/find-by-date
+             conn idx date
+             "https://storage.googleapis.com/trinitynashville-media")]
+    (if (seq doc)
       (json-response
        (json/encode doc {:pretty json-pretty-printer}))
       (if-let [possible-date (time/previous-possible-date
                               (time/parse-ymd date)
-                              (->> sermons keys sort (map time/parse-ymd)))]
+                              (->> (media/available-sermon-dates conn idx)
+                                   (map time/parse-ymd)))]
         (let [guess (time/unparse-ymd possible-date)
               body (format "Maybe you meant <a href=\"/by-date/%s\">%s</a>?"
                            guess guess)]
@@ -127,9 +130,10 @@
 
 (defn wrap-es-conn [app conn idx]
   (fn [req]
-    (app (-> req
-             (assoc-in [:es :conn] conn)
-             (assoc-in [:es :idx] idx)))))
+    (app
+     (-> req
+         (assoc-in [:es :conn] conn)
+         (assoc-in [:es :idx] idx)))))
 
 (def app
   (-> router

@@ -7,6 +7,7 @@
             [clojure.spec.alpha :as s]
             [elasticsearch.document :as es.doc]
             [elasticsearch.indices :as indices]
+            [elasticsearch.scroll :as es.scroll]
             [triweb.elasticsearch :as triweb.es]
             [triweb.scripture :as scripture]
             [triweb.podcast :as podcast]
@@ -40,13 +41,10 @@
          :media/title
          :media/type]))
 
-(defn from-legacy-yaml [source]
-  )
-
 (defn make-id [{:keys [slug date]}]
   (format "%s-%s" date slug))
 
-(defn make-doc [path raw]
+(defn make-doc [path]
   (let [path-str (str path)
         file-str (str (.getFileName path))
         [_ date-str] (re-find #"(\d{4}-\d{2}-\d{2}).*" file-str)
@@ -54,16 +52,13 @@
                        slurp
                        (json/decode true))
               :date date-str)]
-    (merge doc {:id (make-id doc)
-                :scripture (if raw
-                             (:scripture doc)
-                             (scripture/unparse (:scripture doc)))})))
+    (merge doc {:id (make-id doc)})))
 
-(defn make-docs [dir raw]
+(defn make-docs [dir]
   (for [path (->> (file-seq (io/file dir "source"))
                   (filter #(.isFile %))
                   (map #(.toPath %)))]
-    (make-doc path raw)))
+    (make-doc path)))
 
 (defn index-dir [dir conn index]
   (let [settings-file (io/file dir "settings.json")
@@ -79,7 +74,7 @@
 
 (defn compile-sermons [dir]
   (let [target (io/file "target" "sermons.json.gz")
-        docs (->> (make-docs dir true)
+        docs (->> (make-docs dir)
                   (filter #(= (:type %) "Sermon")))]
     (with-open [^java.io.Writer w (-> target
                                       io/output-stream
@@ -104,7 +99,9 @@
                             :link (format "%s/%s-%s.mp3"
                                           url-prefix
                                           (:date %2)
-                                          (:slug %2)))])
+                                          (:slug %2))
+                            :scripture (scripture/unparse
+                                        (:scripture %2)))])
                {} docs)))))
 
 (defn load-sermons-in-es [f conn idx]
@@ -113,3 +110,33 @@
       (let [id (make-id d)]
         (println id)
         (es.doc/index conn idx "_doc" id {:body d})))))
+
+(defn enrich [url-prefix doc]
+  (assoc doc
+    :link (format "%s/%s-%s.mp3"
+                  url-prefix
+                  (:date doc)
+                  (:slug doc))
+    :scripture (scripture/unparse
+                (:scripture doc))))
+
+(defn find-by-date [conn idx date url-prefix]
+  (let [q {:query
+           {:bool
+            {:must
+             [{:match {:date date}}
+              {:match {:type "Sermon"}}]}}}]
+    (->> (es.doc/search conn idx {:body q})
+         :hits
+         :hits
+         (map :_source)
+         (map (partial enrich url-prefix)))))
+
+(defn available-sermon-dates [conn idx]
+  (let [q {:query
+           {:match
+            {:type "Sermon"}}
+           :sort [{:date :asc}]}]
+    (->> (es.scroll/scroll conn idx {:body q})
+         (map :_source)
+         (map :date))))
