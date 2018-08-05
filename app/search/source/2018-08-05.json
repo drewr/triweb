@@ -1,0 +1,16 @@
+{
+  "series": "1 Peter",
+  "speaker": "Matt McCullough",
+  "title": "Resident Aliens",
+  "scripture": [
+      {
+      "gte": 60001001,
+      "lte": 60001002
+    }
+  ],
+  "blurb": "Peter wrote this letter to help new Christians understand what it means to follow Jesus when identifying with him sets you apart from the culture where you live.",
+  "tags": [
+  ],
+  "slug": "1-Pet-1-Resident-Aliens",
+  "type": "Sermon"
+}
