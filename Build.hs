@@ -237,11 +237,13 @@ main = shakeArgs shakeOpts $ do
       , "java", "-cp", "/app/app.jar", "triweb.load"
       ]
 
-  phony "docker-run" $ do
+  phony "load-media-local" $ do
     ver <- liftIO gitVersion
     need [ "docker-build"
          ]
-    cmd
+    cmd [ AddEnv "ES_INDEX" mediaIndex
+        , AddEnv "SERMONS_FILE" "/sermons.json.gz"
+        ]
       [ "docker"
       , "run"
       , "-t"
@@ -250,6 +252,32 @@ main = shakeArgs shakeOpts $ do
       , "host"
       , "-e"
       , "ES_URL"
+      , "-e"
+      , "ES_INDEX"
+      , "-e"
+      , "SERMONS_FILE"
+      , "-p"
+      , "9000:9000"
+      , "trinitynashville/media:" <> ver
+      , "java", "-cp", "/app/app.jar", "triweb.load"
+      ]
+
+  phony "docker-run" $ do
+    ver <- liftIO gitVersion
+    need [ "docker-build"
+         ]
+    cmd [ AddEnv "ES_INDEX" mediaIndex
+        ]
+      [ "docker"
+      , "run"
+      , "-t"
+      , "-i"
+      , "--network"
+      , "host"
+      , "-e"
+      , "ES_URL"
+      , "-e"
+      , "ES_INDEX"
       , "-p"
       , "9000:9000"
       , "trinitynashville/media:" <> ver
