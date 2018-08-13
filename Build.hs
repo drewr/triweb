@@ -48,6 +48,7 @@ dockerFile = dockerDir </> "Dockerfile"
 appDockerWar = dockerDir </> "app.war"
 appDockerJar = dockerDir </> "app.jar"
 sermonJson = dockerDir </> "sermons.json.gz"
+sermonJsonStaging = appDir </> "target" </> "sermons.json.gz"
 mediaIndex = "triweb-media"
 kubeContext = "gke_trinitynashville-188115_us-central1-a_triweb"
 
@@ -195,7 +196,7 @@ main = shakeArgs shakeOpts $ do
       , "trinitynashville/media:" <> ver
       , makeGcrImageName ver
       ]
-    
+
   phony "docker-push-gcr" $ do
     ver <- liftIO gitVersion
     need [ "docker-tag-gcr"
@@ -322,15 +323,18 @@ main = shakeArgs shakeOpts $ do
                , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
             "lein with-profile package uberjar"
 
-  sermonJson %> \out -> do
-    let sermonStaging = (appDir </> "target" </> "sermons.json.gz")
+  sermonJsonStaging %> \out -> do
     need [ projectClj
          , versionTxtApp
          ]
     unit $ cmd [ Cwd appDir
                , AddEnv "LEIN_SNAPSHOTS_IN_RELEASE" "true" ]
       "lein with-profile sermon-compile run -m triweb.media/compile-sermons -- search/"
-    copyFile' sermonStaging out
+
+  sermonJson %> \out -> do
+    need [ sermonJsonStaging
+         ]
+    copyFile' sermonJsonStaging out
 
   appDockerWar %> \out -> do
     let archive = appUberWar
