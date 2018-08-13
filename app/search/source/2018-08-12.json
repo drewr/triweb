@@ -1,0 +1,16 @@
+{
+  "series": "1 Peter",
+  "speaker": "Matt McCullough",
+  "title": "Hope Secured",
+  "scripture": [
+      {
+      "gte": 60001003,
+      "lte": 60001005
+    }
+  ],
+  "blurb": "No one can live without hope. That's why Peter begins his letter with this profile of Christian hope--a secure hope because it begins and ends with God.",
+  "tags": [
+  ],
+  "slug": "1-Pet-1-Hope-Secured",
+  "type": "Sermon"
+}
