@@ -223,20 +223,21 @@ main = shakeArgs shakeOpts $ do
     ver <- liftIO gitVersion
     need [ "update-gcr"
          ]
-    cmd
-      [ "kubectl"
-      , "run"
-      , "--context", kubeContext
-      , "load-data"
-      , "--rm", "-i"
-      , "--image", makeGcrImageName ver
-      , "--restart", "Never"
-      , "--env=SERMONS_FILE=/sermons.json.gz"
-      , "--env=ES_URL=http://elasticsearch:9200"
-      , "--env=ES_INDEX=" <> mediaIndex
-      , "--"
-      , "java", "-cp", "/app/app.jar", "triweb.load"
-      ]
+    let c = [ "kubectl"
+            , "run"
+            , "--context", kubeContext
+            , "load-data"
+            , "--rm", "-i"
+            , "--image", makeGcrImageName ver
+            , "--restart", "Never"
+            , "--env=SERMONS_FILE=/sermons.json.gz"
+            , "--env=ES_URL=http://elasticsearch:9200"
+            , "--env=ES_INDEX=" <> mediaIndex
+            , "--"
+            , "java", "-cp", "/app/app.jar", "triweb.load"
+            ]
+    putNormal $ intercalate " " c
+    cmd c
 
   phony "load-media-local" $ do
     ver <- liftIO gitVersion
