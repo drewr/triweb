@@ -22,6 +22,9 @@ docker:
 gcr:
 	./Build.hs update-gcr
 
+load-media:
+	./Build.hs load-media
+
 restart:
 	ssh ubuntu@$(HOST) sudo svc -tu /etc/service/jetty
 
