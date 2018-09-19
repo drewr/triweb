@@ -12,7 +12,8 @@
             [triweb.media :as media]
             [triweb.template :refer [wrap-template]]
             [triweb.template :as tmpl]
-            [triweb.time :as time]))
+            [triweb.time :as time]
+            [triweb.version :as version]))
 
 (def json-pretty-printer
   (json/create-pretty-printer
@@ -74,6 +75,11 @@
          (clojure.pprint/pprint
           (elasticsearch/check es)))))))
 
+(defmethod handle-route :version
+  [req]
+  (text-response
+   (version/version-string)))
+
 (defmethod handle-route :date-view
   [req]
   (let [date (-> req :route-params :date)
@@ -105,6 +111,7 @@
 (def raw-routes
   #{[:get     "/podcast.xml"           [:podcast]]
     [:get     "/by-date/:date"         [:date-view]]
+    [:get     "/version"               [:version]]
     [:get     "/ping"                  [:ping]]
     [:head    "/ping"                  [:ping]]
     [:get     "/es/info"               [:es-info]]
