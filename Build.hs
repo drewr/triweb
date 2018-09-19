@@ -219,6 +219,25 @@ main = shakeArgs shakeOpts $ do
       , gcrDeploymentName <> "=" <> makeGcrImageName ver
       ]
 
+  phony "kube-shell" $ do
+    ver <- liftIO gitVersion
+    need [ "update-gcr"
+         ]
+    let c = [ "kubectl"
+            , "run"
+            , "--context", kubeContext
+            , "shell"
+            , "--rm", "-i"
+            , "--image", makeGcrImageName ver
+            , "--restart", "Never"
+            , "--env=SERMONS_FILE=/sermons.json.gz"
+            , "--env=ES_URL=http://elasticsearch:9200"
+            , "--env=ES_INDEX=" <> mediaIndex
+            , "/bin/bash"
+            ]
+    putNormal $ intercalate " " c
+    cmd c
+
   phony "load-media" $ do
     ver <- liftIO gitVersion
     need [ "update-gcr"
