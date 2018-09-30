@@ -8,6 +8,7 @@
             [net.cgrand.enlive-html :as h]
             [ring.util.response :as r]
             [triweb.elasticsearch :as es]
+            [triweb.scripture :as scripture]
             [triweb.template :as t]
             [triweb.time :as time])
   (:import (java.text SimpleDateFormat)))
@@ -84,14 +85,17 @@
 (def mp3-info
   (memo/ttl mp3-info* :ttl/threshold (* MP3-CACHE-SECS 1000)))
 
+(defn make-title [title speaker ref]
+  (format "%s%s"
+          (format "%s | %s" title speaker ref)
+          (if ref
+            (format " | %s" ref)
+            "")))
+
 (defn infuse-speaker-into-title [maybe-title speaker]
   (let [[t ref] (if (string? maybe-title)
                   (str/split maybe-title #" - " 2))]
-    (format "%s%s"
-            (format "%s | %s" t speaker ref)
-            (if ref
-              (format " | %s" ref)
-              ""))))
+    (make-title t speaker ref)))
 
 (defn html-to-edn [entry]
   (when-let [mp3 (mp3-info (-> entry (h/select [:a]) first :attrs :href))]
@@ -136,7 +140,8 @@
     (let [date (:date media)
           speaker (:speaker media)
           title (:title media)
-          title (infuse-speaker-into-title title speaker)
+          title (make-title title speaker (scripture/unparse
+                                           (:scripture media)))
           body (:blurb media)
           guid (:mp3/url mp3)
           link SERMON_API_URL
