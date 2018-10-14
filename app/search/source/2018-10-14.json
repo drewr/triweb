@@ -1,0 +1,16 @@
+{
+  "series": "1 Peter",
+  "speaker": "Matt McCullough",
+  "title": "In Christ In The World",
+  "scripture": [
+      {
+      "gte": 60003013,
+      "lte": 60003017
+    }
+  ],
+  "blurb": "What does it look like to engage the world around you as a Christian?",
+  "tags": [
+  ],
+  "slug": "1-Pet-3-In-Christ-In-The-World",
+  "type": "Sermon"
+}
