@@ -1,0 +1,16 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Phil Newton",
+  "title": "The Lamb Rules, Let's Worship",
+  "scripture": [
+      {
+      "gte": 66005001,
+      "lte": 66005010
+    }
+  ],
+  "blurb": "How can you live with hope even when you're suffering and don't know what will happen next? Only when you know the Lamb who was slain rules all for his glory and your good.",
+  "tags": [
+  ],
+  "slug": "Rev-5-The-Lamb-Rules",
+  "type": "Sermon"
+}
