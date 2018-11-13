@@ -1,0 +1,16 @@
+{
+  "series": "1 Peter",
+  "speaker": "Matt McCullough",
+  "title": "The End",
+  "scripture": [
+      {
+      "gte": 60004007,
+      "lte": 60004011
+    }
+  ],
+  "blurb": "Peter says the end of all things is at hand. But what he tells us to do about it may surprise you.",
+  "tags": [
+  ],
+  "slug": "1-Pet-4-The-End",
+  "type": "Sermon"
+}
