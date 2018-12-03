@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 {- stack
-     --resolver lts-6.10
+     --resolver lts-11.22
      --install-ghc
      --nix
      --no-nix-pure
@@ -154,7 +154,7 @@ encode ctx preset suffix = do
     addMeta ctx title dest
     rt <- runtime dest
     upload ctx dest rt
-    echo (format ("*** LINK: https://storage.googleapis.com/"%s%"/"%s) (pack . bucket $ o) dest)
+    printf ("*** LINK: https://storage.googleapis.com/"%s%"/"%s) (pack . bucket $ o) dest
 
 lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
@@ -179,7 +179,8 @@ runtime dest = do
   rt <- fold (inshell (format ("eyeD3 "%s%" | egrep ^Time | awk '{print $2}'") dest) empty) Fold.head
   case rt of
     (Just rt') -> do
-        return $ Runtime { duration=rt', seconds=parseSecs rt'}
+        let rt'' = lineToText rt'
+        return $ Runtime { duration=rt'', seconds=parseSecs rt''}
     Nothing -> die (format ("cannot get runtime from "%s) dest)
 
 addMeta :: Context -> Text -> Text -> IO ()
@@ -217,7 +218,7 @@ upload ctx dest rt =
 
 loggingProc :: Text -> [Text] -> IO ()
 loggingProc cmd args = do
-  echo $ format ("running: "%s%" "%s) cmd (intercalate " " args)
+  printf ("running: "%s%" "%s) cmd (intercalate " " args)
   ret <- proc cmd args empty
   case ret of
      ExitSuccess -> return ()
@@ -225,7 +226,7 @@ loggingProc cmd args = do
 
 loggingShell :: Text -> IO ()
 loggingShell cmd = do
-  echo $ format ("running: "%s) cmd
+  printf ("running: "%s) cmd
   ret <- shell cmd empty
   case ret of
      ExitSuccess -> return ()
@@ -233,7 +234,7 @@ loggingShell cmd = do
 
 main :: IO ()
 main = do
-  o <- execParser $ info (helper <*> opts) (header "Trinity Audio Encoder")
+  o <- execParser $ info (helper <*> opts) (Options.Applicative.header "Trinity Audio Encoder")
   j <- getContents
   case (eitherDecode (B.pack j) :: Either String PodcastSource) of
     (Left err) -> putStrLn $ "\n*** problem reading information file:\n\n" ++ err ++ "\n"
