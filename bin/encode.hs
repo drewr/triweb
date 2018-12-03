@@ -154,7 +154,7 @@ encode ctx preset suffix = do
     addMeta ctx title dest
     rt <- runtime dest
     upload ctx dest rt
-    printf ("*** LINK: https://storage.googleapis.com/"%s%"/"%s) (pack . bucket $ o) dest
+    printf ("*** LINK: https://storage.googleapis.com/"%s%"/"%s%"\n") (pack . bucket $ o) dest
 
 lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
@@ -218,7 +218,7 @@ upload ctx dest rt =
 
 loggingProc :: Text -> [Text] -> IO ()
 loggingProc cmd args = do
-  printf ("running: "%s%" "%s) cmd (intercalate " " args)
+  printf ("running: "%s%" "%s%"\n") cmd (intercalate " " args)
   ret <- proc cmd args empty
   case ret of
      ExitSuccess -> return ()
@@ -226,7 +226,7 @@ loggingProc cmd args = do
 
 loggingShell :: Text -> IO ()
 loggingShell cmd = do
-  printf ("running: "%s) cmd
+  printf ("running: "%s%"\n") cmd
   ret <- shell cmd empty
   case ret of
      ExitSuccess -> return ()
