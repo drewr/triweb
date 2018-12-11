@@ -215,6 +215,7 @@ main = shakeArgs shakeOpts $ do
       [ "kubectl"
       , "set"
       , "image"
+      , "--context", kubeContext
       , "deployment/" <> gcrDeploymentName
       , gcrDeploymentName <> "=" <> makeGcrImageName ver
       ]
