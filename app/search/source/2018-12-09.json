@@ -1,0 +1,16 @@
+{
+  "series": "1 Peter",
+  "speaker": "Matt McCullough",
+  "title": "Hopeful Aliens",
+  "scripture": [
+      {
+      "gte": 60001001,
+      "lte": 60999999
+    }
+  ],
+  "blurb": "Our hope defines who we are. Our hope distinguishes us from what we were. And our hope depends completely on the coming of Jesus.",
+  "tags": [
+  ],
+  "slug": "1-Pet-Hopeful-Aliens",
+  "type": "Sermon"
+}
