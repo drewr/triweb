@@ -39,9 +39,12 @@ deploy: upload restart
 converge:
 	sudo bin/provision
 
-encode:
+$(HOME)/Downloads/$(DATE).mp3:
+	wget -LO $(HOME)/Downloads/$(DATE).mp3 $(URL)
+
+encode: $(HOME)/Downloads/$(DATE).mp3
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
-	nix-shell --command "bin/encode.hs --setDate $(DATE) --imagePath app/resources/static/img/podcast5.png ~/Downloads/$(DATE).mp3 <app/search/source/$(DATE).json"
+	nix-shell --command "bin/encode.hs --setDate $(DATE) --imagePath app/resources/static/img/podcast5.png $(HOME)/Downloads/$(DATE).mp3 <app/search/source/$(DATE).json"
 	./Build.hs app/project.clj
 
 # Hack because Dropbox won't update anymore on the server
