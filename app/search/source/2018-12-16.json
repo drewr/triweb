@@ -1,0 +1,16 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Matt McCullough",
+  "title": "Waiting For Comfort",
+  "scripture": [
+      {
+      "gte": 42002022,
+      "lte": 42002032
+    }
+  ],
+  "blurb": "The story of Simeon helps us see how, for now, hope often looks like waiting. But Simeon's story also shows us how to find joy in what he saw while we wait.",
+  "tags": [
+  ],
+  "slug": "Luke-2-Waiting-For-Comfort",
+  "type": "Sermon"
+}
