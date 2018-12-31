@@ -1,0 +1,16 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Justin Turner",
+  "title": "A Prayer For Hope",
+  "scripture": [
+      {
+      "gte": 45015013,
+      "lte": 45015013
+    }
+  ],
+  "blurb": "A study of Paul’s prayer for an abounding hope. We look deeper at Paul’s petition to God to fill the church with joy and peace so that hope overflows.",
+  "tags": [
+  ],
+  "slug": "Rom-15-A-Prayer-For-Hope",
+  "type": "Sermon"
+}
