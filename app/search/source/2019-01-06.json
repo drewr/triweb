@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "Grace & Obedience",
+  "scripture": [
+      {
+      "gte": 2001001,
+      "lte": 2999999
+    }
+  ],
+  "blurb": "Exodus shows us the God who redeems, and what his redemption is for.",
+  "tags": [
+  ],
+  "slug": "Exodus-Intro-Grace-Obedience",
+  "type": "Sermon"
+}
