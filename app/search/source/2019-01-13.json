@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "God Knew",
+  "scripture": [
+      {
+      "gte": 2001001,
+      "lte": 2002025
+    }
+  ],
+  "blurb": "These two chapters set the stage for the story that follows, and, at the center, they draw our attention to a contest of powers: the king who forgets, and the God who remembers.",
+  "tags": [
+  ],
+  "slug": "Exodus-1-God-Knew",
+  "type": "Sermon"
+}
