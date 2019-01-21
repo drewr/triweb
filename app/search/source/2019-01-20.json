@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "I Am",
+  "scripture": [
+      {
+      "gte": 2003001,
+      "lte": 2003022
+    }
+  ],
+  "blurb": "With three crucial statements God introduces himself to Moses, and to us: I will be with you, I am, I promise.",
+  "tags": [
+  ],
+  "slug": "Exodus-1-I-AM",
+  "type": "Sermon"
+}
