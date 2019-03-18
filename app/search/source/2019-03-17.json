@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "Introducing the Ten Commandments",
+  "scripture": [
+      {
+      "gte": 2020001,
+      "lte": 2020003
+    }
+  ],
+  "blurb": "What are the Ten Commandments, and why should we care about them?",
+  "tags": [
+  ],
+  "slug": "Exodus-20-Ten-Commandments-Intro",
+  "type": "Sermon"
+}
