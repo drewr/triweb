@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Seth Jones",
+  "title": "Sabbath Rest",
+  "scripture": [
+      {
+      "gte": 2020008,
+      "lte": 2020011
+    }
+  ],
+  "blurb": "In a list of commandments, it can seem peculiar for God to require his people to rest. What did it mean for the Israelites to remember the Sabbath, and what does it mean for us today?",
+  "tags": [
+  ],
+  "slug": "Exodus-20-Sabbath-Rest",
+  "type": "Sermon"
+}
