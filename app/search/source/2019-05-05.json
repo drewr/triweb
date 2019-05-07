@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Justin Turner",
+  "title": "The Eighth Commandment",
+  "scripture": [
+      {
+      "gte": 2020015,
+      "lte": 2020015
+    }
+  ],
+  "blurb": "A familiar command calls us to remember the generosity of God who has set us free in Christ to be a generous people.",
+  "tags": [
+  ],
+  "slug": "Exodus-20-The-Eighth-Commandment",
+  "type": "Sermon"
+}
