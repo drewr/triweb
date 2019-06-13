@@ -1,8 +1,8 @@
-FROM voidlinux/voidlinux
+FROM archlinux/base
 
-RUN xbps-install -Suy \\
- && xbps-install -ASy openjdk-jre curl \\
- && xbps-remove -Oo
+RUN pacman -Sy \\
+ && pacman -S --noconfirm curl jdk-openjdk \\
+ && pacman -Scc --noconfirm
 
 MAINTAINER $maintainer$
 
