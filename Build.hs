@@ -114,6 +114,12 @@ gitVersion = do
 makeGcrImageName :: String -> String
 makeGcrImageName ver = gcrRoot <> "/" <> gcrProject <> "/" <> gcrTagName <> ":" <> ver
 
+logCmd :: String -> [String] -> Action ()
+logCmd dir c = do
+  putNormal $ unwords $ [">>>"] ++ c
+  cmd [Cwd dir] c
+
+
 main :: IO ()
 main = shakeArgs shakeOpts $ do
   want [ "info"
@@ -177,8 +183,8 @@ main = shakeArgs shakeOpts $ do
          , dockerFile
          , sermonJson
          ]
-    cmd
-      [ Cwd dockerDir ]
+    logCmd
+      dockerDir
       [ "docker"
       , "build"
       , "-t"
@@ -201,11 +207,13 @@ main = shakeArgs shakeOpts $ do
     ver <- liftIO gitVersion
     need [ "docker-tag-gcr"
          ]
-    cmd
+    logCmd
+      "."
       [ "docker"
       , "push"
       , makeGcrImageName ver
       ]
+
 
   phony "update-gcr" $ do
     ver <- liftIO gitVersion
@@ -224,40 +232,40 @@ main = shakeArgs shakeOpts $ do
     ver <- liftIO gitVersion
     need [ "update-gcr"
          ]
-    let c = [ "kubectl"
-            , "run"
-            , "--context", kubeContext
-            , "shell"
-            , "--rm", "-i"
-            , "--image", makeGcrImageName ver
-            , "--restart", "Never"
-            , "--env=SERMONS_FILE=/sermons.json.gz"
-            , "--env=ES_URL=http://elasticsearch:9200"
-            , "--env=ES_INDEX=" <> mediaIndex
-            , "/bin/bash"
-            ]
-    putNormal $ intercalate " " c
-    cmd c
+    logCmd
+      "."
+      [ "kubectl"
+      , "run"
+      , "--context", kubeContext
+      , "shell"
+      , "--rm", "-i"
+      , "--image", makeGcrImageName ver
+      , "--restart", "Never"
+      , "--env=SERMONS_FILE=/sermons.json.gz"
+      , "--env=ES_URL=http://elasticsearch:9200"
+      , "--env=ES_INDEX=" <> mediaIndex
+      , "/bin/bash"
+      ]
 
   phony "load-media" $ do
     ver <- liftIO gitVersion
     need [ "update-gcr"
          ]
-    let c = [ "kubectl"
-            , "run"
-            , "--context", kubeContext
-            , "load-data"
-            , "--rm", "-i"
-            , "--image", makeGcrImageName ver
-            , "--restart", "Never"
-            , "--env=SERMONS_FILE=/sermons.json.gz"
-            , "--env=ES_URL=http://elasticsearch:9200"
-            , "--env=ES_INDEX=" <> mediaIndex
-            , "--"
-            , "java", "-cp", "/app/app.jar", "triweb.load"
-            ]
-    putNormal $ intercalate " " c
-    cmd c
+    logCmd
+      "."
+      [ "kubectl"
+      , "run"
+      , "--context", kubeContext
+      , "load-data"
+      , "--rm", "-i"
+      , "--image", makeGcrImageName ver
+      , "--restart", "Never"
+      , "--env=SERMONS_FILE=/sermons.json.gz"
+      , "--env=ES_URL=http://elasticsearch:9200"
+      , "--env=ES_INDEX=" <> mediaIndex
+      , "--"
+      , "java", "-cp", "/app/app.jar", "triweb.load"
+      ]
 
   phony "load-media-local" $ do
     ver <- liftIO gitVersion
