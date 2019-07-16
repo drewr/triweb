@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "The Presence of the Lord",
+  "scripture": [
+      {
+      "gte": 40114001,
+      "lte": 40114999
+    }
+  ],
+  "blurb": "This psalm celebrates the presence of the Lord with his people as the purpose of the Exodus. But what do you have when you have God's presence?",
+  "tags": [
+  ],
+  "slug": "Ps-114-The-Presence-of-the-Lord",
+  "type": "Sermon"
+}
