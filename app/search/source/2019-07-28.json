@@ -1,0 +1,16 @@
+{
+  "series": "Exodus",
+  "speaker": "Matt McCullough",
+  "title": "The Praise of the Lord",
+  "scripture": [
+      {
+      "gte": 19145001,
+      "lte": 19145999
+    }
+  ],
+  "blurb": "This psalm shows us what appropriate praise looks like, in response to God's kindness. But how can we hope to praise the Lord as we should?",
+  "tags": [
+  ],
+  "slug": "Ps-145-Praise-Of-The-Lord",
+  "type": "Sermon"
+}
