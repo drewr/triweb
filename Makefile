@@ -40,7 +40,7 @@ converge:
 	sudo bin/provision
 
 $(HOME)/Downloads/$(DATE).mp3:
-	wget -LO $(HOME)/Downloads/$(DATE).mp3 $(URL)
+	nix-shell --command "wget -LO $(HOME)/Downloads/$(DATE).mp3 $(URL)"
 
 encode: $(HOME)/Downloads/$(DATE).mp3
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
