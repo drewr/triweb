@@ -6,6 +6,6 @@ stdenv.mkDerivation rec {
     awscli
     wget
     lame
-    python3.7-eyeD3
+    "python3.7-eyeD3"
   ];
 }
