@@ -6,5 +6,6 @@ stdenv.mkDerivation rec {
     awscli
     wget
     lame
+    python3.7-pylast
   ];
 }
