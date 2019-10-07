@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 {- stack
-     --resolver lts-11.22
+     --resolver lts-14.7
      --install-ghc
      --nix
      --no-nix-pure

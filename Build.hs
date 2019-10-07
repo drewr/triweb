@@ -2,7 +2,7 @@
 {- stack
     --nix
     --no-nix-pure
-    --resolver=lts-11.22
+    --resolver=lts-14.7
     runghc
     --package filemanip
     --package HStringTemplate
@@ -73,7 +73,7 @@ cleanUpProcess hdl desc = do
 withProcess :: String -> CreateProcess -> Action () -> Action ()
 withProcess name p action = do
   (_, _, _, handle) <- liftIO . createProcess $ p
-  (Just pid) <- liftIO . getPid $ handle
+  (Just pid) <- liftIO . Main.getPid $ handle
   let desc = name <> " (" <> show pid <> ")"
   putNormal $ ">>>>> starting " <> desc
   flip actionFinally (cleanUpProcess handle desc) action
