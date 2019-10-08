@@ -54,7 +54,9 @@ kubeContext = "gke_trinitynashville-188115_us-central1-a_triweb"
 
 
 shakeOpts = shakeOptions { shakeFiles="_build"
-                         , shakeTimings=True}
+                         , shakeTimings=True
+                         , shakeVerbosity=Loud
+                         }
 
 -- http://stackoverflow.com/a/27388709/3227
 getPid :: ProcessHandle -> IO (Maybe PHANDLE)
