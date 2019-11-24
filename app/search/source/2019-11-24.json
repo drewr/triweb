@@ -1,0 +1,16 @@
+{
+  "series": "Galatians",
+  "speaker": "Matt McCullough",
+  "title": "Christian Friendship",
+  "scripture": [
+      {
+        "gte": 48006001,
+        "lte": 48006005
+      }
+  ],
+  "blurb": "What kind of friend does the gospel create? These verses give us a profile of Christian friendship, showing us both the work to be done and the tools we'll need for the job.",
+  "tags": [
+  ],
+  "slug": "Gal-6-Christian-Friendship",
+  "type": "Sermon"
+}
