@@ -1,0 +1,16 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Bill Heerman",
+  "title": "A Birth Announcement",
+  "scripture": [
+      {
+      "gte": 42001067,
+      "lte": 42001079
+    }
+  ],
+  "blurb": "Jesus is the savior that God promised to send, making peace with God for those who trust in him through the blood of the cross. But what exactly is this peace that Jesus purchases for us, how can we get it, and why does God give it to us?",
+  "tags": [
+  ],
+  "slug": "Luke-1-Birth-Announcement",
+  "type": "Sermon"
+}
