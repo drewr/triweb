@@ -1,0 +1,16 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Bill Heerman",
+  "title": "The Glorious Birth Of Jesus",
+  "scripture": [
+      {
+      "gte": 42002001,
+      "lte": 42002021
+    }
+  ],
+  "blurb": "The birth of Jesus displays the glory of God.  But Jesus was born into humility, which means he is the savior for everyone, especially those who are broken and marginalized.  By temporarily setting aside His glory, Jesus makes a way for us to know the glory of God forever.",
+  "tags": [
+  ],
+  "slug": "Luke-2-Birth-Of-Jesus",
+  "type": "Sermon"
+}
