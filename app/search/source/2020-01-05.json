@@ -1,0 +1,16 @@
+{
+  "series": "Acts",
+  "speaker": "Matt McCullough",
+  "title": "The Word Spread",
+  "scripture": [
+      {
+      "gte": 44001001,
+      "lte": 44999999
+    }
+  ],
+  "blurb": "Acts tells the story of the earliest days of the church. It's a remarkable story, full of dramatic twists and turns. But through it all Acts tells a story about God, what he's doing in the world, and how we can join him.",
+  "tags": [
+  ],
+  "slug": "Acts-Intro-The-Word-Spread",
+  "type": "Sermon"
+}
