@@ -1,0 +1,17 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Jonathan Worsley",
+  "title": "Lifted From The Depths",
+  "scripture": [
+      {
+      "gte": 19001001,
+      "lte": 19999999
+    }
+  ],
+  "blurb": "In this psalm David sings of the goodness of God who found him in death and restored him to life. Because David's song is really Jesus's song, it can be our song too.",
+  "tags": [
+    "sheryl crow"
+  ],
+  "slug": "Psalm-30-Lifted-From-The-Depths",
+  "type": "Sermon"
+}
