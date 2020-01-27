@@ -39,11 +39,11 @@ deploy: upload restart
 converge:
 	sudo bin/provision
 
-$(HOME)/Downloads/$(DATE).mp3:
-	nix-shell --command "wget -LO $(HOME)/Downloads/$(DATE).mp3 $(URL)"
+$(DATE).mp3:
+	./getfile
 
-encode: $(HOME)/Downloads/$(DATE).mp3
+encode: $(DATE).mp3
 #	ghc -O2 -o encode -ddump-minimal-imports bin/encode
-	nix-shell --command "bin/encode.hs --setDate $(DATE) --imagePath app/resources/static/img/podcast5.png $(HOME)/Downloads/$(DATE).mp3 <app/search/source/$(DATE).json"
+	nix-shell --command "bin/encode.hs --setDate $(DATE) --imagePath app/resources/static/img/podcast5.png $(DATE).mp3 <app/search/source/$(DATE).json"
 	./Build.hs app/project.clj
 
