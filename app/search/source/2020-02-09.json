@@ -1,0 +1,16 @@
+{
+  "series": "Acts",
+  "speaker": "Matt McCullough",
+  "title": "This Is That",
+  "scripture": [
+      {
+      "gte": 44002001,
+      "lte": 44002021
+    }
+  ],
+  "blurb": "The story of Acts began with a promise, the promise that God's Spirit would come with power to his people. In this passage we see that promise fulfilled. But what does it mean?",
+  "tags": [
+  ],
+  "slug": "Acts-2-This-Is-That",
+  "type": "Sermon"
+}
