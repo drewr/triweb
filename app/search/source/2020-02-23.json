@@ -1,0 +1,21 @@
+{
+  "series": "Acts",
+  "speaker": "Matt McCullough",
+  "title": "Life Together",
+  "scripture": [
+      {
+      "gte": 44002042,
+      "lte": 44002047
+    }
+  ],
+  "blurb": "What kind of community does the Spirit create through the gospel?",
+  "tags": [
+    "social",
+    "sharing",
+    "possessions",
+    "fellowship",
+    "breaking bread"
+  ],
+  "slug": "Acts-2-Life-Together",
+  "type": "Sermon"
+}
