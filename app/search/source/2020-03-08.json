@@ -1,0 +1,16 @@
+{
+  "series": "Acts",
+  "speaker": "Matt McCullough",
+  "title": "No Other Name",
+  "scripture": [
+      {
+      "gte": 44004001,
+      "lte": 44004022
+    }
+  ],
+  "blurb": "There is only one savior, so there can be only one Lord.",
+  "tags": [
+  ],
+  "slug": "Acts-4-No-Other-Name",
+  "type": "Sermon"
+}
