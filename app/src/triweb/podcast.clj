@@ -16,6 +16,7 @@
 (def CACHE-SECS 3600)
 (def MP3-CACHE-SECS 300)
 (def STORAGE_ROOT "https://storage.googleapis.com/trinitynashville-media")
+(def CDN_ROOT "https://media.cdn.trinitynashville.org")
 (def SERMON_API_URL "http://sermon-api.trinitynashville.org/podcast.xml")
 
 (s/def :podcast/date        (s/and string?
@@ -135,7 +136,7 @@
 
 (defn media-to-entry [media]
   (when-let [mp3 (mp3-info
-                  (format "%s/%s-%s.mp3" STORAGE_ROOT
+                  (format "%s/%s-%s.mp3" CDN_ROOT
                           (:date media) (:slug media)))]
     (let [date (:date media)
           speaker (:speaker media)
