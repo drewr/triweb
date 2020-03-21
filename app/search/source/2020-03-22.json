@@ -1,0 +1,23 @@
+{
+  "series": "Sunday Sermons",
+  "speaker": "Matt McCullough",
+  "title": "Hope Secured (Repost)",
+  "scripture": [
+      {
+      "gte": 60001003,
+      "lte": 60001005
+    }
+  ],
+  "blurb": "No one can live without hope. That's why Peter begins his letter with this profile of Christian hope--a secure hope because it begins and ends with God.
+
+(Reposted from 2018-08-12, while Trinity is unable to meet during COVID-19 outbreak)",
+  "tags": [
+    "covid-19",
+    "coronavirus",
+    "pandemic",
+    "inheritance",
+    "unfading"
+  ],
+  "slug": "1-Pet-1-Hope-Secured--Orig-20180812",
+  "type": "Sermon"
+}
