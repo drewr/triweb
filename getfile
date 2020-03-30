@@ -2,7 +2,4 @@ bucketName=trinitynashville-upload
 gsUploadRoot="gs://$bucketName/"
 gsHttpRoot="https://storage.googleapis.com/$bucketName/"
 gsUrl=$(gsutil ls "gs://trinitynashville-upload/$DATE*")
-fileName=$(echo $gsUrl | perl -pe 's,gs://trinitynashville-upload/,,')
-httpUrl="${gsHttpRoot}${fileName}"
-gsutil acl ch -u AllUsers:R "${gsUploadRoot}${fileName}"
-nix-shell --command "wget -LO ${DATE}.mp3 ${httpUrl}"
+gsutil cp $gsUrl ${DATE}.mp3
