@@ -378,3 +378,4 @@ main = shakeArgs shakeOpts $ do
     need [ archive
          ]
     copyFile' archive out
+
