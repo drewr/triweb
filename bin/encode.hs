@@ -160,8 +160,8 @@ lame :: Text -> Int -> Text -> Text -> IO ()
 lame preset scale src dest =
   loggingProc "lame"
        [ "-S"
-       , "--scale", (pack . show $ scale)
-       , "--preset", preset
+    --   , "--scale", (pack . show $ scale)
+    --   , "--preset", preset
        , src
        , dest
        ]
