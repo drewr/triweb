@@ -87,11 +87,7 @@
   (memo/ttl mp3-info* :ttl/threshold (* MP3-CACHE-SECS 1000)))
 
 (defn make-title [title speaker ref]
-  (format "%s%s"
-          (format "%s | %s" title speaker ref)
-          (if ref
-            (format " | %s" ref)
-            "")))
+  (str/join " | " (filter identity [title speaker ref])))
 
 (defn infuse-speaker-into-title [maybe-title speaker]
   (let [[t ref] (if (string? maybe-title)
