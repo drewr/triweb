@@ -16,7 +16,7 @@
 (defn find-latest [conn idx types size sort-by]
   (let [q {:query
            {:bool
-            {:filter
+            {:should
              (map
               (fn [t]
                 {:match
