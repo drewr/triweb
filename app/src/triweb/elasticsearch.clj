@@ -13,10 +13,15 @@
 (defn search [conn & args]
   (apply es.doc/search conn args))
 
-(defn find-latest [conn idx type size sort-by]
+(defn find-latest [conn idx types size sort-by]
   (let [q {:query
-           {:match
-            {:type type}}
+           {:bool
+            {:should
+             (map
+              (fn [t]
+                {:term
+                 {:type t}})
+              types)}}
            :size size
            :sort [{sort-by {"order" "desc"}}]}]
     (->> (es.doc/search conn idx {:body q})

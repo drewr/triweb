@@ -263,7 +263,7 @@ http://creativecommons.org/licensenc-nd/3.0/us/" (time/current-year)))
     items)))
 
 (defn latest-entries-as-xml [conn idx number]
-  (->> (es/find-latest conn idx "Sermon" number "date")
+  (->> (es/find-latest conn idx ["Sermon" "Podcast"] number "date")
        (map media-to-entry)
        (map edn-to-xml)))
 
