@@ -16,10 +16,10 @@
 (defn find-latest [conn idx types size sort-by]
   (let [q {:query
            {:bool
-            {:should
+            {:filter
              (map
               (fn [t]
-                {:term
+                {:match
                  {:type t}})
               types)}}
            :size size
