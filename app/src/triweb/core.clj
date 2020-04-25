@@ -64,6 +64,11 @@
   (xml-response
    (podcast/podcast-str (-> req :es :conn) (-> req :es :idx) 10)))
 
+(defmethod handle-route :podcast-all
+  [req]
+  (xml-response
+   (podcast/podcast-str (-> req :es :conn) (-> req :es :idx) :all)))
+
 (defmethod handle-route :es-info
   [req]
   (let [es (-> req :es :conn)
@@ -110,6 +115,7 @@
 
 (def raw-routes
   #{[:get     "/podcast.xml"           [:podcast]]
+    [:get     "/podcast/all.xml"       [:podcast-all]]
     [:get     "/by-date/:date"         [:date-view]]
     [:get     "/version"               [:version]]
     [:get     "/ping"                  [:ping]]
