@@ -110,6 +110,25 @@
              "http://media.trinitynashville.org/%s-%s.mp3" ymd (:slug json)))
     (printf "%s\n" (:blurb json))))
 
+(defn remove-slug-date [file]
+  (let [json (-> file slurp (json/decode true))]
+    (if (:slug json)
+      (spit file
+            (json/encode
+             (assoc json
+               :slug (str/replace-first (:slug json) #"^\d\d\d\d-\d\d-\d\d-" ""))
+             {:pretty true}))
+      (prn json))))
+
+(defn fix-slugs [dir]
+  (doall
+   (->> (.list (io/file dir))
+        (map #(io/file dir %))
+        (filter #(.endsWith (str %) ".json"))
+        (map remove-slug-date))))
+
 (comment
   (scrape-sermons urls "./search/source-tmp")
+
+
   )

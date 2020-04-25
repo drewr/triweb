@@ -267,6 +267,16 @@ http://creativecommons.org/licensenc-nd/3.0/us/" (time/current-year)))
        (map media-to-entry)
        (map edn-to-xml)))
 
+(defn all-entries-as-xml [conn idx]
+  (->> (es/all conn idx ["Sermon"])
+       (map media-to-entry)
+       (map edn-to-xml)
+       first))
+
 (defn podcast-str [conn idx number]
   (xml/emit-str
-   (podcast-xml (latest-entries-as-xml conn idx number))))
+   (cond
+     (number? number)
+     (podcast-xml (latest-entries-as-xml conn idx number))
+     (= number :all)
+     (podcast-xml (all-entries-as-xml conn idx number)))))

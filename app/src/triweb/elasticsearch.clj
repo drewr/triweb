@@ -2,7 +2,8 @@
   (:require [clojure.spec.alpha :as s]
             [elasticsearch.connection.http :refer [make]]
             [elasticsearch.connection :as conn]
-            [elasticsearch.document :as es.doc]))
+            [elasticsearch.document :as es.doc]
+            [elasticsearch.scroll :as scroll]))
 
 (defn connect [url]
   (make {:url url}))
@@ -27,4 +28,16 @@
     (->> (es.doc/search conn idx {:body q})
          :hits
          :hits
+         (map :_source))))
+
+(defn all [conn idx types]
+  (let [q {:query
+           {:bool
+            {:should
+             (map
+              (fn [t]
+                {:match
+                 {:type t}})
+              types)}}}]
+    (->> (scroll/scroll conn idx {:body q})
          (map :_source))))
