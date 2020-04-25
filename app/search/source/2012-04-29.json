@@ -1,16 +1,16 @@
 {
-  "blurb" : "Because the power of the gospel transforms, genuine followers of Jesus bear certain marks. This passage presents three of these marks–love, faith, and patience–and why they’re so important.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-6-Genuine-Christianity",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Genuine Christianity",
   "scripture" : [ {
     "gte" : 58006009,
     "lte" : 58006012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-04-29-Heb-6-Genuine-Christianity",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Genuine Christianity",
-  "type" : "Sermon"
+  "blurb" : "Because the power of the gospel transforms, genuine followers of Jesus bear certain marks. This passage presents three of these marks–love, faith, and patience–and why they’re so important.",
+  "published" : true
 }

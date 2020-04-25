@@ -1,16 +1,16 @@
 {
-  "blurb" : "If we are to understand why Mark labels his story about Jesus as “good news,” we must first see how he answers the three questions at the heart of his story: Who is Jesus? What did Jesus come here to do? And what does that require of us?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-1-Who-Is-Jesus",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Who Is Jesus?",
   "scripture" : [ {
     "gte" : 41001001,
     "lte" : 41001016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-09-19-Mark-1-Who-Is-Jesus",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Who Is Jesus?",
-  "type" : "Sermon"
+  "blurb" : "If we are to understand why Mark labels his story about Jesus as “good news,” we must first see how he answers the three questions at the heart of his story: Who is Jesus? What did Jesus come here to do? And what does that require of us?",
+  "published" : true
 }

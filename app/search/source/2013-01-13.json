@@ -1,16 +1,16 @@
 {
-  "blurb" : "“Holy” is Isaiah’s favorite description of God, the one that stands behind everything else he says about him. But what does that mean, and how can we understand and love that God is holy?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-6-Holy-One-Of-Israel",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Holy One of Israel",
   "scripture" : [ {
     "gte" : 23006001,
     "lte" : 23006007
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-01-13-Is-6-Holy-One-Of-Israel",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Holy One of Israel",
-  "type" : "Sermon"
+  "blurb" : "“Holy” is Isaiah’s favorite description of God, the one that stands behind everything else he says about him. But what does that mean, and how can we understand and love that God is holy?",
+  "published" : true
 }

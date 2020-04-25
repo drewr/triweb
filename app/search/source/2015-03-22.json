@@ -1,16 +1,16 @@
 {
-  "blurb" : "Everybody wants to live a life that’s long, peaceful, and loved well by others. Proverbs tells us wisdom—a skill or instinct for living life well—is the key. And Proverbs 3 shows us where all true wisdom begins. It begins with a trust in the Lord that leans on him with everything you have and looks for him in everything you face.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-3-Trust-In-The-Lord",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Trust in the Lord",
   "scripture" : [ {
     "gte" : 20003001,
     "lte" : 20003012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-03-22-Proverbs-3-Trust-In-The-Lord",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Trust in the Lord",
-  "type" : "Sermon"
+  "blurb" : "Everybody wants to live a life that’s long, peaceful, and loved well by others. Proverbs tells us wisdom—a skill or instinct for living life well—is the key. And Proverbs 3 shows us where all true wisdom begins. It begins with a trust in the Lord that leans on him with everything you have and looks for him in everything you face.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus has warned us not to pray like hypocrites or pagans, but what does healthy Christian prayer look like? Christian prayer is based on who God is, it’s focused on what God wants, and it’s honest about what we need.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-6-Pray-Like-This",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Pray Like This",
   "scripture" : [ {
     "gte" : 40006009,
     "lte" : 40006015
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-05-29-Matt-6-Pray-Like-This",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Pray Like This",
-  "type" : "Sermon"
+  "blurb" : "Jesus has warned us not to pray like hypocrites or pagans, but what does healthy Christian prayer look like? Christian prayer is based on who God is, it’s focused on what God wants, and it’s honest about what we need.",
+  "published" : true
 }

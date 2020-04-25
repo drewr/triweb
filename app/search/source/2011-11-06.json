@@ -1,16 +1,16 @@
 {
-  "blurb" : "When the people of Israel first returned to Jerusalem after the exile, what they found was a far cry from what they had hoped for. Haggai confronted their disillusionment, recasting their expectations and calling for trust in the faithfulness of God. His message gives us insight into how Jesus fulfills the hope of the prophets, and what it looks like for us to live as if God’s promises are true.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Haggai-Great-Expectations",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Great Expectations",
   "scripture" : [ {
     "gte" : 37001001,
     "lte" : 37999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-11-06-Haggai-Great-Expectations",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Great Expectations",
-  "type" : "Sermon"
+  "blurb" : "When the people of Israel first returned to Jerusalem after the exile, what they found was a far cry from what they had hoped for. Haggai confronted their disillusionment, recasting their expectations and calling for trust in the faithfulness of God. His message gives us insight into how Jesus fulfills the hope of the prophets, and what it looks like for us to live as if God’s promises are true.",
+  "published" : true
 }

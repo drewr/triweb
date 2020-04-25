@@ -1,16 +1,16 @@
 {
-  "blurb" : "John gives us more detail about Roman governor Pontius Pilate than all the other Gospel writers combined. And John tells us that everything he’s included is meant to persuade us to believe that Jesus is the Christ. So how does looking at Pilate help us see the beauty of Jesus?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-18-Behold-Your-King",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Behold Your King",
   "scripture" : [ {
     "gte" : 43018028,
     "lte" : 43019016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-01-18-John-18-Behold-Your-King",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Behold Your King",
-  "type" : "Sermon"
+  "blurb" : "John gives us more detail about Roman governor Pontius Pilate than all the other Gospel writers combined. And John tells us that everything he’s included is meant to persuade us to believe that Jesus is the Christ. So how does looking at Pilate help us see the beauty of Jesus?",
+  "published" : true
 }

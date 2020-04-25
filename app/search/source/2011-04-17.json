@@ -1,16 +1,16 @@
 {
-  "blurb" : "Genesis, as a story of beginnings, explains the roots of a reality we can’t reasonbly deny: this world is not what it ought to be. Genesis 3 explains something of the nature of sin, that it replaces God’s authority with ours; the results of sin, that it destroys relationships, separates us from God, and ultimately brings death; and the solution for sin, that one we now know to be Jesus would come to perfectly solve the problem of sin.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Genesis-3-Paradise-Lost",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Paradise Lost",
   "scripture" : [ {
     "gte" : 1003001,
     "lte" : 1003999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-04-17-Genesis-3-Paradise-Lost",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Paradise Lost",
-  "type" : "Sermon"
+  "blurb" : "Genesis, as a story of beginnings, explains the roots of a reality we can’t reasonbly deny: this world is not what it ought to be. Genesis 3 explains something of the nature of sin, that it replaces God’s authority with ours; the results of sin, that it destroys relationships, separates us from God, and ultimately brings death; and the solution for sin, that one we now know to be Jesus would come to perfectly solve the problem of sin.",
+  "published" : true
 }

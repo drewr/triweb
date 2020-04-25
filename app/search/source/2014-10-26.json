@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this text Jesus implies that understanding and anticipating the hatred of the world for Jesus and his followers is crucial for faith that lasts. But what does Jesus mean by the hatred of the world? And how should we deal with the hatred of the world?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-16-Love-Hate-Life-In-The-World",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Love, Hate, and Life in the World",
   "scripture" : [ {
     "gte" : 43015018,
     "lte" : 43016004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-10-26-John-16-Love-Hate-Life-In-The-World",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Love, Hate, and Life in the World",
-  "type" : "Sermon"
+  "blurb" : "In this text Jesus implies that understanding and anticipating the hatred of the world for Jesus and his followers is crucial for faith that lasts. But what does Jesus mean by the hatred of the world? And how should we deal with the hatred of the world?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "In his healing of the lame man, Jesus shows he is the one who will make all things new. But in the responses of the Jewish leaders and the healed man, we’re warned against two ways to miss out on the new world Jesus came to bring.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-5-Do-You-Want-To-Be-Healed",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Do You Want to Be Healed?",
   "scripture" : [ {
     "gte" : 43005001,
     "lte" : 43005015
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-04-27-John-5-Do-You-Want-To-Be-Healed",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Do You Want to Be Healed?",
-  "type" : "Sermon"
+  "blurb" : "In his healing of the lame man, Jesus shows he is the one who will make all things new. But in the responses of the Jewish leaders and the healed man, we’re warned against two ways to miss out on the new world Jesus came to bring.",
+  "published" : true
 }

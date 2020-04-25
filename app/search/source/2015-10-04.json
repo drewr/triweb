@@ -1,16 +1,16 @@
 {
-  "blurb" : "James says your tongue or your speech is to your life what a bit is to a horse or a rudder to a ship. Given this incredible power, what can we do to use our words wisely?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-3-Your-Words-Matter",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Your Words Matter",
   "scripture" : [ {
     "gte" : 59003001,
     "lte" : 59003012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-10-04-James-3-Your-Words-Matter",
+  "has-audio" : true,
   "speaker" : "Bill Heerman",
-  "tags" : [ ],
-  "title" : "Your Words Matter",
-  "type" : "Sermon"
+  "blurb" : "James says your tongue or your speech is to your life what a bit is to a horse or a rudder to a ship. Given this incredible power, what can we do to use our words wisely?",
+  "published" : true
 }

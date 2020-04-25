@@ -1,16 +1,16 @@
 {
-  "blurb" : "We must avoid faith based merely on what we see and aimed merely at the lives we want. Instead, we must seek faith based primarily on what we hear–on Jesus’s Word–and aimed at the life Jesus promises us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-4-True-Faith",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "True Faith",
   "scripture" : [ {
     "gte" : 43004043,
     "lte" : 43004054
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-04-06-John-4-True-Faith",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "True Faith",
-  "type" : "Sermon"
+  "blurb" : "We must avoid faith based merely on what we see and aimed merely at the lives we want. Instead, we must seek faith based primarily on what we hear–on Jesus’s Word–and aimed at the life Jesus promises us.",
+  "published" : true
 }

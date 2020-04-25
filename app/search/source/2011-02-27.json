@@ -1,16 +1,16 @@
 {
-  "blurb" : "In the longest section of teaching recorded in Mark’s Gospel, Jesus turns to questions asked by the religious and the philosophical since the beginning of time. What does the future hold, and how should we live now in light of that future? The details of Jesus’s predictions–about the destruction of the Temple in the near future and about his final return in power and glory–have always baffled interpreters. But the bottom line couldn’t be more clear: because Jesus is coming back in victory and judgment, and because we don’t know when, our responsibility is to trust Jesus and stay ready.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-13-The-Future",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus on the Future",
   "scripture" : [ {
     "gte" : 41013001,
     "lte" : 41013999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-02-27-Mark-13-The-Future",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus on the Future",
-  "type" : "Sermon"
+  "blurb" : "In the longest section of teaching recorded in Mark’s Gospel, Jesus turns to questions asked by the religious and the philosophical since the beginning of time. What does the future hold, and how should we live now in light of that future? The details of Jesus’s predictions–about the destruction of the Temple in the near future and about his final return in power and glory–have always baffled interpreters. But the bottom line couldn’t be more clear: because Jesus is coming back in victory and judgment, and because we don’t know when, our responsibility is to trust Jesus and stay ready.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Wrapping up this letter to his friends, the author of Hebrews urges them to view their leaders as God gift to their community. This passage explains how we’re to follow faithful leaders, and where those leaders should be leading us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-13-Follow-Faithful-Leaders",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Follow Faithful Leaders",
   "scripture" : [ {
     "gte" : 58013007,
     "lte" : 58013019
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-11-18-Heb-13-Follow-Faithful-Leaders",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Follow Faithful Leaders",
-  "type" : "Sermon"
+  "blurb" : "Wrapping up this letter to his friends, the author of Hebrews urges them to view their leaders as God gift to their community. This passage explains how we’re to follow faithful leaders, and where those leaders should be leading us.",
+  "published" : true
 }

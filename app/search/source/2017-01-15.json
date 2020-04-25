@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul describes a community where, though everyone experiences suffering, everyone is comforted and everyone is responsible for comforting others. He helps us learn to see our suffering for what God is doing in us and what he will do through us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "2-Cor-1-Afflicted-Comforters",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Afflicted Comforters",
   "scripture" : [ {
     "gte" : 47001003,
     "lte" : 47001011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2017-01-15-2-Cor-1-Afflicted-Comforters",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Afflicted Comforters",
-  "type" : "Sermon"
+  "blurb" : "Paul describes a community where, though everyone experiences suffering, everyone is comforted and everyone is responsible for comforting others. He helps us learn to see our suffering for what God is doing in us and what he will do through us.",
+  "published" : true
 }

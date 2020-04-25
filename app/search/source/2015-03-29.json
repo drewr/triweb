@@ -1,16 +1,16 @@
 {
-  "blurb" : "Wisdom is about choices. And behind every choice—even the ones that seem mundane—is an act of worship. The wise are those who seek to express love and loyalty to God in every area of life, trusting that this is the path to true and lasting joy.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-9-Two-Ways-to-Live",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Two Ways to Live",
   "scripture" : [ {
     "gte" : 20009001,
     "lte" : 20009018
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-03-29-Proverbs-9-Two-Ways-to-Live",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Two Ways to Live",
-  "type" : "Sermon"
+  "blurb" : "Wisdom is about choices. And behind every choice—even the ones that seem mundane—is an act of worship. The wise are those who seek to express love and loyalty to God in every area of life, trusting that this is the path to true and lasting joy.",
+  "published" : true
 }

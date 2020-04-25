@@ -1,16 +1,16 @@
 {
-  "blurb" : "Hebrews opens with a dramatic claim that gives focus and meaning to everything that comes later. God had spoken in many ways before; but in his Son, the ultimate medium, he speaks in such a way that everything becomes clearer and comes together once and for all. But what does the fact that God has spoken in his Son tell us about his message and how we should receive it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-1-Medium-Message",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Medium and Message: “God has spoken by his Son”",
   "scripture" : [ {
     "gte" : 58001001,
     "lte" : 58001004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-01-15-Heb-1-Medium-Message",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Medium and Message: “God has spoken by his Son”",
-  "type" : "Sermon"
+  "blurb" : "Hebrews opens with a dramatic claim that gives focus and meaning to everything that comes later. God had spoken in many ways before; but in his Son, the ultimate medium, he speaks in such a way that everything becomes clearer and comes together once and for all. But what does the fact that God has spoken in his Son tell us about his message and how we should receive it?",
+  "published" : true
 }

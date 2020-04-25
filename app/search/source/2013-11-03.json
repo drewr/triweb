@@ -1,16 +1,16 @@
 {
-  "blurb" : "Christians are defined by love, not by what they possess or how they perform. Christians are bound by love, because only love like God’s can keep sinful, selfish people together. And Christians are destined for love, for the endless world of love that we taste in part when we love each other well.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-13-The-More-Excellent-Way",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The More Excellent Way",
   "scripture" : [ {
     "gte" : 46013001,
     "lte" : 46013013
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-11-03-1-Cor-13-The-More-Excellent-Way",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The More Excellent Way",
-  "type" : "Sermon"
+  "blurb" : "Christians are defined by love, not by what they possess or how they perform. Christians are bound by love, because only love like God’s can keep sinful, selfish people together. And Christians are destined for love, for the endless world of love that we taste in part when we love each other well.",
+  "published" : true
 }

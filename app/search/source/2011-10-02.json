@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jonah is a powerful story celebrating the extent of God’s mercy that reaches even to the enemies of his people. But even more, it is an ironic and witty satire exposing the foolishness and hypocrisy of Jonah. The story contrasts, on one hand, Jonah’s experience of God’s mercy when he deserved to die for his disobedience; and, on the other hand, Jonah’s burning resentment when Ninevah receives the same mercy he enjoyed. The key question for us: how can we avoid Jonah’s hypocrisy?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Jonah-Gods-Mercy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Embracing the Wideness of God’s Mercy",
   "scripture" : [ {
     "gte" : 32001001,
     "lte" : 32999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-10-02-Jonah-Gods-Mercy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Embracing the Wideness of God’s Mercy",
-  "type" : "Sermon"
+  "blurb" : "Jonah is a powerful story celebrating the extent of God’s mercy that reaches even to the enemies of his people. But even more, it is an ironic and witty satire exposing the foolishness and hypocrisy of Jonah. The story contrasts, on one hand, Jonah’s experience of God’s mercy when he deserved to die for his disobedience; and, on the other hand, Jonah’s burning resentment when Ninevah receives the same mercy he enjoyed. The key question for us: how can we avoid Jonah’s hypocrisy?",
+  "published" : true
 }

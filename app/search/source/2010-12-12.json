@@ -1,16 +1,16 @@
 {
-  "blurb" : "This exchange between Jesus and his disciples represents a turning point in Mark’s Gospel. Just after Peter’s climactic confession of Jesus as the Christ, Jesus explains what kind of Christ he would be and what that implied for all who would follow him. Jesus explains to his followers–and to us–that there is no Christ without the cross and resurrection, and there is no Christian discipleship without suffering.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-8-Christ-Cross-Discipleship",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Christ, the Cross, and Christian Discipleship",
   "scripture" : [ {
     "gte" : 41008031,
     "lte" : 41008038
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-12-12-Mark-8-Christ-Cross-Discipleship",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Christ, the Cross, and Christian Discipleship",
-  "type" : "Sermon"
+  "blurb" : "This exchange between Jesus and his disciples represents a turning point in Mark’s Gospel. Just after Peter’s climactic confession of Jesus as the Christ, Jesus explains what kind of Christ he would be and what that implied for all who would follow him. Jesus explains to his followers–and to us–that there is no Christ without the cross and resurrection, and there is no Christian discipleship without suffering.",
+  "published" : true
 }

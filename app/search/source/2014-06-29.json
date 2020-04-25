@@ -1,16 +1,16 @@
 {
-  "blurb" : "Though most agree this famous story doesn’t belong in John’s Gospel, it stands as a vivid and beautiful illustration of the Bible’s consistent and clear message: sin is a universal problem (and not just someone else’s problem), but it is no match for the liberating power of Jesus’s grace.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-7-Neither-Do-I-Condemn-You",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Neither Do I Condemn You",
   "scripture" : [ {
     "gte" : 43007053,
     "lte" : 43008011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-06-29-John-7-Neither-Do-I-Condemn-You",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Neither Do I Condemn You",
-  "type" : "Sermon"
+  "blurb" : "Though most agree this famous story doesn’t belong in John’s Gospel, it stands as a vivid and beautiful illustration of the Bible’s consistent and clear message: sin is a universal problem (and not just someone else’s problem), but it is no match for the liberating power of Jesus’s grace.",
+  "published" : true
 }

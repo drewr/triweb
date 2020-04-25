@@ -1,16 +1,16 @@
 {
-  "blurb" : "This picture of what God has promised to do shows that risks for the kingdom aren’t really risks.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Rev-15-Happy-Endings",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Happy Endings",
   "scripture" : [ {
     "gte" : 66015001,
     "lte" : 66015004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-11-06-Rev-15-Happy-Endings",
+  "has-audio" : true,
   "speaker" : "M.K.",
-  "tags" : [ ],
-  "title" : "Happy Endings",
-  "type" : "Sermon"
+  "blurb" : "This picture of what God has promised to do shows that risks for the kingdom aren’t really risks.",
+  "published" : true
 }

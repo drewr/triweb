@@ -1,16 +1,16 @@
 {
-  "blurb" : "The book of Judges is like a negative space portrait–the colorful characters catch our eye, but we’re really supposed to see what’s missing. Israel’s awful experience shows us that if we want peace what we need is a very specific kind of leader to take us there.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "The-King-We-All-Need",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Advent With The Judges: The King We All Need",
   "scripture" : [ {
     "gte" : 7001001,
     "lte" : 7999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-12-11-The-King-We-All-Need",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Advent With The Judges: The King We All Need",
-  "type" : "Sermon"
+  "blurb" : "The book of Judges is like a negative space portrait–the colorful characters catch our eye, but we’re really supposed to see what’s missing. Israel’s awful experience shows us that if we want peace what we need is a very specific kind of leader to take us there.",
+  "published" : true
 }

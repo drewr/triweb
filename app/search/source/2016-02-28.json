@@ -1,16 +1,16 @@
 {
-  "blurb" : "For one reason or another, we want to see God. We want to understand the forces in the world that are bigger than us and outside our control. We want to know that there’s meaning beyond our own preferences and something that last longer than our own lives. We want to know the claims of the Bible are true, that we aren’t alone in our suffering, that our connection to God can be more than abstract and impersonal. We want to see God, and Jesus promises that it’s possible–for the pure in heart. So why is it necessary to be pure in heart? And how can I become pure in heart?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-8-Pure-In-Heart",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Pure in Heart",
   "scripture" : [ {
     "gte" : 40005008,
     "lte" : 40005008
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-02-28-Matt-5-8-Pure-In-Heart",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Pure in Heart",
-  "type" : "Sermon"
+  "blurb" : "For one reason or another, we want to see God. We want to understand the forces in the world that are bigger than us and outside our control. We want to know that there’s meaning beyond our own preferences and something that last longer than our own lives. We want to know the claims of the Bible are true, that we aren’t alone in our suffering, that our connection to God can be more than abstract and impersonal. We want to see God, and Jesus promises that it’s possible–for the pure in heart. So why is it necessary to be pure in heart? And how can I become pure in heart?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The resurrection proves Jesus’s death fully accounted for sin and opened up a new world of hope.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-53-The-Servant-Shall-Be-Exalted",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Servant Shall Be Exalted",
   "scripture" : [ {
     "gte" : 23053010,
     "lte" : 23053012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-03-31-Is-53-The-Servant-Shall-Be-Exalted",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Servant Shall Be Exalted",
-  "type" : "Sermon"
+  "blurb" : "The resurrection proves Jesus’s death fully accounted for sin and opened up a new world of hope.",
+  "published" : true
 }

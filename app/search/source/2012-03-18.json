@@ -1,16 +1,16 @@
 {
-  "blurb" : "This crucial section of Hebrews offers a summary of what’s already been said and a taste of what’s still to come. Jesus is the Son of God who became our sympathetic high priest. These titles–admitedly abstract to our modern ears–are introduced for a profoundly practical purpose. They’re meant to convince us to hold fast to Jesus because only Jesus offers what we really need.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-4-Hold-Fast",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Hold Fast",
   "scripture" : [ {
     "gte" : 58004014,
     "lte" : 58004016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-03-18-Heb-4-Hold-Fast",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Hold Fast",
-  "type" : "Sermon"
+  "blurb" : "This crucial section of Hebrews offers a summary of what’s already been said and a taste of what’s still to come. Jesus is the Son of God who became our sympathetic high priest. These titles–admitedly abstract to our modern ears–are introduced for a profoundly practical purpose. They’re meant to convince us to hold fast to Jesus because only Jesus offers what we really need.",
+  "published" : true
 }

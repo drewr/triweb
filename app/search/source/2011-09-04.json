@@ -1,16 +1,16 @@
 {
-  "blurb" : "Hosea offers one of the Bible’s most vivid illustrations of the nature of sin: sin boils down to spiritual adultery, rejecting God’s love in favor of other options. But Hosea offers just as vivid an illustration of redemption in the face of judgment, what one author has called “an anticipation in pageant form of Christ’s story.”",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Hosea-Spiritual-Adultery",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Spiritual Adultery and the Relentless Love of God",
   "scripture" : [ {
     "gte" : 28001001,
     "lte" : 28999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-09-04-Hosea-Spiritual-Adultery",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Spiritual Adultery and the Relentless Love of God",
-  "type" : "Sermon"
+  "blurb" : "Hosea offers one of the Bible’s most vivid illustrations of the nature of sin: sin boils down to spiritual adultery, rejecting God’s love in favor of other options. But Hosea offers just as vivid an illustration of redemption in the face of judgment, what one author has called “an anticipation in pageant form of Christ’s story.”",
+  "published" : true
 }

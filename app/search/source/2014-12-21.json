@@ -1,16 +1,16 @@
 {
-  "blurb" : "Part of our calling as Christians is to reflect the light of Christmas until Jesus comes again. John tells us that the old command, the command to love one another, has been made new because the light is already shining and the darkness is passing away. So how must we love one another if we are to walk in the light of Jesus?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-John-2-Walk-In-The-Light",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Walk in the Light",
   "scripture" : [ {
     "gte" : 62002007,
     "lte" : 62002011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-12-21-1-John-2-Walk-In-The-Light",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Walk in the Light",
-  "type" : "Sermon"
+  "blurb" : "Part of our calling as Christians is to reflect the light of Christmas until Jesus comes again. John tells us that the old command, the command to love one another, has been made new because the light is already shining and the darkness is passing away. So how must we love one another if we are to walk in the light of Jesus?",
+  "published" : true
 }

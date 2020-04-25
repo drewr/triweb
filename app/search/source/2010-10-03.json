@@ -1,16 +1,16 @@
 {
-  "blurb" : "At the beginning of chapter 2, Mark reveals new dimensions of Jesus’s identity and mission. Mark’s stories show that Jesus has the unique ability to forgive sins, and that this is precisely what he came here to do. The only question, then, is whether you will come to Jesus for forgiveness.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-2-Will-You-Be-Forgiven",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Will You Be Forgiven?",
   "scripture" : [ {
     "gte" : 41002001,
     "lte" : 41002017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-10-03-Mark-2-Will-You-Be-Forgiven",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Will You Be Forgiven?",
-  "type" : "Sermon"
+  "blurb" : "At the beginning of chapter 2, Mark reveals new dimensions of Jesus’s identity and mission. Mark’s stories show that Jesus has the unique ability to forgive sins, and that this is precisely what he came here to do. The only question, then, is whether you will come to Jesus for forgiveness.",
+  "published" : true
 }

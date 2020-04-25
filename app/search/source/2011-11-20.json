@@ -1,16 +1,16 @@
 {
-  "blurb" : "“I have loved you”–so begins God’s communication with his people in this final book of the Old Testament. It’s a fitting summary of the story of God’s dealings with Israel to that point. But Malachi is essentially a disputation between God and unbelieving Israel over whether and how he had loved them. If the prophets dramatize the character of God for us, this prophet illustrates what God’s love is like, and it isn’t what Israel or we would expect. God’s love is free, it’s steadfast, it’s inviting, and it’s self-centered–all of which makes for wonderfully good news.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Malachi-Love-Of-God",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Wonderfully Counterintuitive Love of God",
   "scripture" : [ {
     "gte" : 39001001,
     "lte" : 39999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-11-20-Malachi-Love-Of-God",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Wonderfully Counterintuitive Love of God",
-  "type" : "Sermon"
+  "blurb" : "“I have loved you”–so begins God’s communication with his people in this final book of the Old Testament. It’s a fitting summary of the story of God’s dealings with Israel to that point. But Malachi is essentially a disputation between God and unbelieving Israel over whether and how he had loved them. If the prophets dramatize the character of God for us, this prophet illustrates what God’s love is like, and it isn’t what Israel or we would expect. God’s love is free, it’s steadfast, it’s inviting, and it’s self-centered–all of which makes for wonderfully good news.",
+  "published" : true
 }

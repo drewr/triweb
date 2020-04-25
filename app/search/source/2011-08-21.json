@@ -1,16 +1,16 @@
 {
-  "blurb" : "The nature of the gospel – Paul’s “mystery of Christ” – controls how we communicate this message to those who don’t follow Jesus. In other words, the message should control the medium.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Col-4-Gospel-and-Evangelism",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Gospel and Evangelism",
   "scripture" : [ {
     "gte" : 51004002,
     "lte" : 51004006
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-08-21-Col-4-Gospel-and-Evangelism",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Gospel and Evangelism",
-  "type" : "Sermon"
+  "blurb" : "The nature of the gospel – Paul’s “mystery of Christ” – controls how we communicate this message to those who don’t follow Jesus. In other words, the message should control the medium.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "What is the wise way to think about the future? James warns us against any planning that assumes the future belongs to us. Instead, wisdom means trusting the one who gave his own Son for us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-4-Wisdom-For-Tomorrow",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Wisdom for Tomorrow",
   "scripture" : [ {
     "gte" : 59004013,
     "lte" : 59004017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-11-08-James-4-Wisdom-For-Tomorrow",
+  "has-audio" : true,
   "speaker" : "Shaka Mitchell",
-  "tags" : [ ],
-  "title" : "Wisdom for Tomorrow",
-  "type" : "Sermon"
+  "blurb" : "What is the wise way to think about the future? James warns us against any planning that assumes the future belongs to us. Instead, wisdom means trusting the one who gave his own Son for us.",
+  "published" : true
 }

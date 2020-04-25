@@ -1,16 +1,16 @@
 {
-  "blurb" : "This conclusion to John’s Gospel does more than tie up a few loose ends. It illustrates the faithful, patient love of Jesus toward those who have failed him. And it shows us the only power that can transform our lives and sustain our faith to the end. Do you love Jesus?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-21-Do-You-Love-Me",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Do You Love Me?",
   "scripture" : [ {
     "gte" : 43021001,
     "lte" : 43021025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-02-15-John-21-Do-You-Love-Me",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Do You Love Me?",
-  "type" : "Sermon"
+  "blurb" : "This conclusion to John’s Gospel does more than tie up a few loose ends. It illustrates the faithful, patient love of Jesus toward those who have failed him. And it shows us the only power that can transform our lives and sustain our faith to the end. Do you love Jesus?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Why do we need a priest? And why does it matter that Jesus is a priest like Melchizedek? Hebrews 7, the meat of this letter, introduces the mysterious beauty of Jesus’s priesthood.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-7-Order-of-Melchizedek",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Order of Melchizedek",
   "scripture" : [ {
     "gte" : 58007001,
     "lte" : 58007010
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-05-13-Heb-7-Order-of-Melchizedek",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Order of Melchizedek",
-  "type" : "Sermon"
+  "blurb" : "Why do we need a priest? And why does it matter that Jesus is a priest like Melchizedek? Hebrews 7, the meat of this letter, introduces the mysterious beauty of Jesus’s priesthood.",
+  "published" : true
 }

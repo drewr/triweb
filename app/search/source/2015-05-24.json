@@ -1,16 +1,16 @@
 {
-  "blurb" : "Proverbs reminds us that the same wise God who designed the Earth and everything within it is also the sovereign God over our individual lives. Therefore, we are wise to trust him to guide our steps.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-Trusting-A-Sovereign-God",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Trusting a Sovereign God is the Foundation of Wisdom",
   "scripture" : [ {
     "gte" : 20001001,
     "lte" : 20999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-05-24-Proverbs-Trusting-A-Sovereign-God",
+  "has-audio" : true,
   "speaker" : "Bill Heerman",
-  "tags" : [ ],
-  "title" : "Trusting a Sovereign God is the Foundation of Wisdom",
-  "type" : "Sermon"
+  "blurb" : "Proverbs reminds us that the same wise God who designed the Earth and everything within it is also the sovereign God over our individual lives. Therefore, we are wise to trust him to guide our steps.",
+  "published" : true
 }

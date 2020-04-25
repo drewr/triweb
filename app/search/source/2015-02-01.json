@@ -1,16 +1,16 @@
 {
-  "blurb" : "All the good news in Christianity hinges on what John tells us about Jesus in this text: Jesus’s physical body really did die, it really was buried, and it really did rise to new physical life. Why should you believe what John reports?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-19-I-Have-Seen-The-Lord",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "I Have Seen the Lord",
   "scripture" : [ {
     "gte" : 43019038,
     "lte" : 43020018
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-02-01-John-19-I-Have-Seen-The-Lord",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "I Have Seen the Lord",
-  "type" : "Sermon"
+  "blurb" : "All the good news in Christianity hinges on what John tells us about Jesus in this text: Jesus’s physical body really did die, it really was buried, and it really did rise to new physical life. Why should you believe what John reports?",
+  "published" : true
 }

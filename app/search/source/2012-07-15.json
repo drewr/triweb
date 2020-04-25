@@ -1,16 +1,16 @@
 {
-  "blurb" : "Everyone faces a future defined by one of two realities: death and judgment, or Jesus’s death and coming redemption. What will your future be? Are you eagerly waiting for him?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-9-Jesus-And-Your-Future",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus and Your Future",
   "scripture" : [ {
     "gte" : 58009027,
     "lte" : 58009028
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-07-15-Heb-9-Jesus-And-Your-Future",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus and Your Future",
-  "type" : "Sermon"
+  "blurb" : "Everyone faces a future defined by one of two realities: death and judgment, or Jesus’s death and coming redemption. What will your future be? Are you eagerly waiting for him?",
+  "published" : true
 }

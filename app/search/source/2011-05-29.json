@@ -1,16 +1,16 @@
 {
-  "blurb" : "God is faithful to the promises He makes in the Bible. Since we are grafted in as Abraham’s descendants through faith in Christ, we have confidence that he is working for our good despite our circumstances.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Gen-15-God-Is-Faithful",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "God is Faithful to His Promises",
   "scripture" : [ {
     "gte" : 1015001,
     "lte" : 1015008
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-05-29-Gen-15-God-Is-Faithful",
+  "has-audio" : true,
   "speaker" : "Bill Heerman",
-  "tags" : [ ],
-  "title" : "God is Faithful to His Promises",
-  "type" : "Sermon"
+  "blurb" : "God is faithful to the promises He makes in the Bible. Since we are grafted in as Abraham’s descendants through faith in Christ, we have confidence that he is working for our good despite our circumstances.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "This passage, the rhetorical climax of the letter, summarizes the major themes of Hebrews. It reminds us where we’ve come through Jesus, where we’re going, and how we get there.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-12-Gods-Kingdom",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "God’s Accessible, Unshakeable Kingdom",
   "scripture" : [ {
     "gte" : 58012018,
     "lte" : 58012029
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-11-04-Heb-12-Gods-Kingdom",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "God’s Accessible, Unshakeable Kingdom",
-  "type" : "Sermon"
+  "blurb" : "This passage, the rhetorical climax of the letter, summarizes the major themes of Hebrews. It reminds us where we’ve come through Jesus, where we’re going, and how we get there.",
+  "published" : true
 }

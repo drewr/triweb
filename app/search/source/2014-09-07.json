@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus came to win glory—the glory of his death, the glory of his Father, and the glory of all those who trust in him.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-12-For-This-Purpose",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "For This Purpose",
   "scripture" : [ {
     "gte" : 43012020,
     "lte" : 43012036
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-09-07-John-12-For-This-Purpose",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "For This Purpose",
-  "type" : "Sermon"
+  "blurb" : "Jesus came to win glory—the glory of his death, the glory of his Father, and the glory of all those who trust in him.",
+  "published" : true
 }

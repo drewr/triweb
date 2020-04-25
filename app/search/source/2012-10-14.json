@@ -1,16 +1,16 @@
 {
-  "blurb" : "The witness of Israel’s heroes and especially of Jesus is this: God’s promises are more precious than the comforts of this world. But this text reveals another dimension to how we should view our pain as people of faith. Our pain is used by our Father to discipline us; it shows God loves us, it aims at our holiness, and it always bears fruit.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-12-Endure-Pain",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Endure Pain",
   "scripture" : [ {
     "gte" : 58012001,
     "lte" : 58012011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-10-14-Heb-12-Endure-Pain",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Endure Pain",
-  "type" : "Sermon"
+  "blurb" : "The witness of Israel’s heroes and especially of Jesus is this: God’s promises are more precious than the comforts of this world. But this text reveals another dimension to how we should view our pain as people of faith. Our pain is used by our Father to discipline us; it shows God loves us, it aims at our holiness, and it always bears fruit.",
+  "published" : true
 }

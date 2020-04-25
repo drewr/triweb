@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus warns us that we can only serve one Master. His words challenge us to make God our beloved treasure, not earthly wealth that will only decay.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-6-Do-Not-Lay-Up-Treasures-On-Earth",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Do Not Lay Up for Yourselves Treasures on Earth",
   "scripture" : [ {
     "gte" : 40006019,
     "lte" : 40006024
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-06-12-Matt-6-Do-Not-Lay-Up-Treasures-On-Earth",
+  "has-audio" : true,
   "speaker" : "Will Acuff",
-  "tags" : [ ],
-  "title" : "Do Not Lay Up for Yourselves Treasures on Earth",
-  "type" : "Sermon"
+  "blurb" : "Jesus warns us that we can only serve one Master. His words challenge us to make God our beloved treasure, not earthly wealth that will only decay.",
+  "published" : true
 }

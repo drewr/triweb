@@ -1,16 +1,16 @@
 {
-  "blurb" : "Habakkuk wonderfully frames a question that runs through the Bible and human experience: if God is good and powerful, why do evil and injustice flourish? God’s unexpected answer and Habakkuk’s prayerful response show us what realistic faith looks like.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Habakkuk-Live-By-Faith",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Live by Faith",
   "scripture" : [ {
     "gte" : 35001001,
     "lte" : 35999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-10-23-Habakkuk-Live-By-Faith",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Live by Faith",
-  "type" : "Sermon"
+  "blurb" : "Habakkuk wonderfully frames a question that runs through the Bible and human experience: if God is good and powerful, why do evil and injustice flourish? God’s unexpected answer and Habakkuk’s prayerful response show us what realistic faith looks like.",
+  "published" : true
 }

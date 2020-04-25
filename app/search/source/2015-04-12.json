@@ -1,16 +1,16 @@
 {
-  "blurb" : "Proverbs 18:21 claims that “death and life are in the power of the tongue.” That’s a strong claim, for sure, but it’s proven over and over again in our experience. Our words have incredible power to hurt others or to help them. And few things offer so clear a window into our hearts. So how do we use our words wisely?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-Words-Of-The-Wise",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Words of the Wise",
   "scripture" : [ {
     "gte" : 20001001,
     "lte" : 20999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-04-12-Proverbs-Words-Of-The-Wise",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Words of the Wise",
-  "type" : "Sermon"
+  "blurb" : "Proverbs 18:21 claims that “death and life are in the power of the tongue.” That’s a strong claim, for sure, but it’s proven over and over again in our experience. Our words have incredible power to hurt others or to help them. And few things offer so clear a window into our hearts. So how do we use our words wisely?",
+  "published" : true
 }

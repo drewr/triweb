@@ -1,16 +1,16 @@
 {
-  "blurb" : "Typically stories about national founders—stories designed to give a nation identity and purpose—talk up moral virtues worthy of emulation and play down embarrasing flaws. Israel’s origin stories—perhaps especially stories about Jacob, Israel himself—provide a noticeable contrast to this pattern. That’s because Israel’s national identity—and now the identity of the church—rests upon a different sort of foundation, a foundation that has everything to do with the answer to two crucial questions: What can we expect from God? And what does God expect from us? These are questions the story of Jacob is meant to answer.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Gen-28-Grace-Faith-Jacob",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Grace and Faith in the Life of Jacob",
   "scripture" : [ {
     "gte" : 1028010,
     "lte" : 1028022
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-06-12-Gen-28-Grace-Faith-Jacob",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Grace and Faith in the Life of Jacob",
-  "type" : "Sermon"
+  "blurb" : "Typically stories about national founders—stories designed to give a nation identity and purpose—talk up moral virtues worthy of emulation and play down embarrasing flaws. Israel’s origin stories—perhaps especially stories about Jacob, Israel himself—provide a noticeable contrast to this pattern. That’s because Israel’s national identity—and now the identity of the church—rests upon a different sort of foundation, a foundation that has everything to do with the answer to two crucial questions: What can we expect from God? And what does God expect from us? These are questions the story of Jacob is meant to answer.",
+  "published" : true
 }

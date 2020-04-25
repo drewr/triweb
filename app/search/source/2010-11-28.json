@@ -1,16 +1,16 @@
 {
-  "blurb" : "In chapter 7, by relating Jesus’s confrontation with the Pharisees along with his ministry among the Gentiles, Mark exposes the two sides of Jesus’s radical message: the problem of sin is universal, but the promise of salvation is universal too.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-7-Jesus-Radical-Message",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus’s Radical Message of Sin and Salvation",
   "scripture" : [ {
     "gte" : 41007001,
     "lte" : 41007999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-11-28-Mark-7-Jesus-Radical-Message",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus’s Radical Message of Sin and Salvation",
-  "type" : "Sermon"
+  "blurb" : "In chapter 7, by relating Jesus’s confrontation with the Pharisees along with his ministry among the Gentiles, Mark exposes the two sides of Jesus’s radical message: the problem of sin is universal, but the promise of salvation is universal too.",
+  "published" : true
 }

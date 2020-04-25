@@ -1,16 +1,16 @@
 {
-  "blurb" : "The cross of Jesus is the ultimate light through which we understand the world, find hope in sorrow, and experience freedom from sin.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-8-See-The-Light",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "See the Light",
   "scripture" : [ {
     "gte" : 43008012,
     "lte" : 43008030
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-07-06-John-8-See-The-Light",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "See the Light",
-  "type" : "Sermon"
+  "blurb" : "The cross of Jesus is the ultimate light through which we understand the world, find hope in sorrow, and experience freedom from sin.",
+  "published" : true
 }

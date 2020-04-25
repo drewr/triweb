@@ -1,16 +1,16 @@
 {
-  "blurb" : "For all the mystery surrounding its origin, context, and style, Hebrews makes a case that is perfectly clear: Jesus is greater than any alternative hope for salvation, so we must hold fast to him.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-Introduction",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Introducing the Book of Hebrews",
   "scripture" : [ {
     "gte" : 58001001,
     "lte" : 58999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-01-08-Heb-Introduction",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Introducing the Book of Hebrews",
-  "type" : "Sermon"
+  "blurb" : "For all the mystery surrounding its origin, context, and style, Hebrews makes a case that is perfectly clear: Jesus is greater than any alternative hope for salvation, so we must hold fast to him.",
+  "published" : true
 }

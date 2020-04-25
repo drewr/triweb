@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this passage Paul confronts one of the major problems in the church at Corinth and in so many churches since then: the people were divided against each other. Paul points us to where division comes from, why it’s so dangerous, and how the cross helps us overcome it.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-1-Be-United",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Be United",
   "scripture" : [ {
     "gte" : 46001010,
     "lte" : 46001017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-06-16-1-Cor-1-Be-United",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Be United",
-  "type" : "Sermon"
+  "blurb" : "In this passage Paul confronts one of the major problems in the church at Corinth and in so many churches since then: the people were divided against each other. Paul points us to where division comes from, why it’s so dangerous, and how the cross helps us overcome it.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The righteousness of Jesus’s followers will always stand out, but his followers are never righteous in order to stand out.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-6-Beware-Hypocrisy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Beware Hypocrisy",
   "scripture" : [ {
     "gte" : 40006001,
     "lte" : 40006004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-05-15-Matt-6-Beware-Hypocrisy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Beware Hypocrisy",
-  "type" : "Sermon"
+  "blurb" : "The righteousness of Jesus’s followers will always stand out, but his followers are never righteous in order to stand out.",
+  "published" : true
 }

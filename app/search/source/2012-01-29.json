@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this first of several warning passages in Hebrews, the message is as simple as it is serious: don’t drift away from Jesus. What makes this drifting so dangerous? What would it look like for us to drift from Jesus? And how can we avoid it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-2-Dont-Drift-Away",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Don’t Drift Away",
   "scripture" : [ {
     "gte" : 58002001,
     "lte" : 58002004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-01-29-Heb-2-Dont-Drift-Away",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Don’t Drift Away",
-  "type" : "Sermon"
+  "blurb" : "In this first of several warning passages in Hebrews, the message is as simple as it is serious: don’t drift away from Jesus. What makes this drifting so dangerous? What would it look like for us to drift from Jesus? And how can we avoid it?",
+  "published" : true
 }

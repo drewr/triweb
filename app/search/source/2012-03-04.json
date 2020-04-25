@@ -1,16 +1,16 @@
 {
-  "blurb" : "This passage offers both an invitation to share in God’s rest and a warning not to miss out. On one hand, we’re invited to enjoy perfect satisfaction in God and the security that comes from knowing he provides everything we need. On the other hand we’re told to fear and strive against unbelief and disobedience. How do these commands square with our promise of rest?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-4-Rest",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Rest",
   "scripture" : [ {
     "gte" : 58004001,
     "lte" : 58004011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-03-04-Heb-4-Rest",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Rest",
-  "type" : "Sermon"
+  "blurb" : "This passage offers both an invitation to share in God’s rest and a warning not to miss out. On one hand, we’re invited to enjoy perfect satisfaction in God and the security that comes from knowing he provides everything we need. On the other hand we’re told to fear and strive against unbelief and disobedience. How do these commands square with our promise of rest?",
+  "published" : true
 }

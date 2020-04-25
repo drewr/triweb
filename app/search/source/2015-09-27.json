@@ -1,16 +1,16 @@
 {
-  "blurb" : "Throughout his letter, and especially in this text, James makes one main point: faith apart from works is dead. But what does James mean? And how should we respond?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-2-Faith-Always-Works",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Faith Always Works",
   "scripture" : [ {
     "gte" : 59002014,
     "lte" : 59002026
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-09-27-James-2-Faith-Always-Works",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Faith Always Works",
-  "type" : "Sermon"
+  "blurb" : "Throughout his letter, and especially in this text, James makes one main point: faith apart from works is dead. But what does James mean? And how should we respond?",
+  "published" : true
 }

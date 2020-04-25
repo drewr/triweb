@@ -1,16 +1,16 @@
 {
-  "blurb" : "Throughout his letter James has been showing us what it looks like to live as if we truly believe that God is and that he is for us in Jesus. It makes sense, then, that he would close his letter with a call to prayer. Prayer demonstrates the fear of the Lord that is the source of all wisdom.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-5-The-Church-In-Prayer",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Church in Prayer",
   "scripture" : [ {
     "gte" : 59005013,
     "lte" : 59005018
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-11-29-James-5-The-Church-In-Prayer",
+  "has-audio" : true,
   "speaker" : "Drew Raines",
-  "tags" : [ ],
-  "title" : "The Church in Prayer",
-  "type" : "Sermon"
+  "blurb" : "Throughout his letter James has been showing us what it looks like to live as if we truly believe that God is and that he is for us in Jesus. It makes sense, then, that he would close his letter with a call to prayer. Prayer demonstrates the fear of the Lord that is the source of all wisdom.",
+  "published" : true
 }

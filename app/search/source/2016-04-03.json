@@ -1,16 +1,16 @@
 {
-  "blurb" : "What does the Old Testament have to do with the kingdom Jesus came to establish? He came to fulfill its purpose and demands, and now his followers should be careful to follow his commandments out of delight instead of duty.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-Christ-The-Law",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Christ, the Law and Christian Righteousness",
   "scripture" : [ {
     "gte" : 40005017,
     "lte" : 40005020
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-04-03-Matt-5-Christ-The-Law",
+  "has-audio" : true,
   "speaker" : "Matt Givens",
-  "tags" : [ ],
-  "title" : "Christ, the Law and Christian Righteousness",
-  "type" : "Sermon"
+  "blurb" : "What does the Old Testament have to do with the kingdom Jesus came to establish? He came to fulfill its purpose and demands, and now his followers should be careful to follow his commandments out of delight instead of duty.",
+  "published" : true
 }

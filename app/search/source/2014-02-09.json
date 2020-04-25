@@ -1,16 +1,16 @@
 {
-  "blurb" : "The best way to evaluate whether Jesus is the Messiah is to experience him as a person or, in Jesus’ words, to come and see. But when you experience Jesus you see, as did his first disciples, that he knows you already and has the power to make you new.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-1-Come-And-See",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Come and See",
   "scripture" : [ {
     "gte" : 43001035,
     "lte" : 43001051
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-02-09-John-1-Come-And-See",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Come and See",
-  "type" : "Sermon"
+  "blurb" : "The best way to evaluate whether Jesus is the Messiah is to experience him as a person or, in Jesus’ words, to come and see. But when you experience Jesus you see, as did his first disciples, that he knows you already and has the power to make you new.",
+  "published" : true
 }

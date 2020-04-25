@@ -1,16 +1,16 @@
 {
-  "blurb" : "Samuel said to Saul, “To obey is better than sacrifice.” Obedience is lovingly conforming our lives to the ways of God in thought, word, deed, and attitude. The apostle John, in his last writings, put it even more simply: walk as Jesus did. We do not impress God with our obedience; we delight him. It gives us the peaceful fruit of righteousness.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1Jn-2-Obedience",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Obedience",
   "scripture" : [ {
     "gte" : 62002001,
     "lte" : 62002006
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-10-28-1Jn-2-Obedience",
+  "has-audio" : true,
   "speaker" : "Bill Maynard",
-  "tags" : [ ],
-  "title" : "Obedience",
-  "type" : "Sermon"
+  "blurb" : "Samuel said to Saul, “To obey is better than sacrifice.” Obedience is lovingly conforming our lives to the ways of God in thought, word, deed, and attitude. The apostle John, in his last writings, put it even more simply: walk as Jesus did. We do not impress God with our obedience; we delight him. It gives us the peaceful fruit of righteousness.",
+  "published" : true
 }

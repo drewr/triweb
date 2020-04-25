@@ -1,16 +1,16 @@
 {
-  "blurb" : "Everyone struggles with contentment, and no one likes the way discontent feels. The wisdom of Proverbs helps us recognize where our discontent comes from and points the way toward true contentment through fear of the Lord.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-Contentment",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Contentment",
   "scripture" : [ {
     "gte" : 20030001,
     "lte" : 20030009
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-05-17-Proverbs-Contentment",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Contentment",
-  "type" : "Sermon"
+  "blurb" : "Everyone struggles with contentment, and no one likes the way discontent feels. The wisdom of Proverbs helps us recognize where our discontent comes from and points the way toward true contentment through fear of the Lord.",
+  "published" : true
 }

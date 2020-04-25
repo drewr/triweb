@@ -1,16 +1,16 @@
 {
-  "blurb" : "This conclusion to Hebrews’s list of faith’s exemplars offers a striking contrast. Sometimes faith brings back the dead, and sometimes faith costs everything. But the key point is this: if Jesus is alive, the difference between gaining or losing everything in this life doesn’t ultimately matter.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-11-Faith-In-Better-Resurrection",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Faith in a Better Resurrection",
   "scripture" : [ {
     "gte" : 58011032,
     "lte" : 58011040
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-10-07-Heb-11-Faith-In-Better-Resurrection",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Faith in a Better Resurrection",
-  "type" : "Sermon"
+  "blurb" : "This conclusion to Hebrews’s list of faith’s exemplars offers a striking contrast. Sometimes faith brings back the dead, and sometimes faith costs everything. But the key point is this: if Jesus is alive, the difference between gaining or losing everything in this life doesn’t ultimately matter.",
+  "published" : true
 }

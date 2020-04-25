@@ -1,16 +1,16 @@
 {
-  "blurb" : "Proverbs describes the beauty of good friendships, the sort of friendships without which we can’t really grow wiser. And Jesus shows us what makes true friendship possible. He is the friend we need so we can be friends to others.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-Life-Shaping-Friendship",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Life-Shaping Friendship",
   "scripture" : [ {
     "gte" : 20001001,
     "lte" : 20999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-04-19-Proverbs-Life-Shaping-Friendship",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Life-Shaping Friendship",
-  "type" : "Sermon"
+  "blurb" : "Proverbs describes the beauty of good friendships, the sort of friendships without which we can’t really grow wiser. And Jesus shows us what makes true friendship possible. He is the friend we need so we can be friends to others.",
+  "published" : true
 }

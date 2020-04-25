@@ -1,16 +1,16 @@
 {
-  "blurb" : "For Paul, Christianity stands or falls on whether Jesus is alive. But why? Only a living Jesus can truly free us from guilt in life and fear in death. And only a living Jesus makes the Christian life anything less than pitiful.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-15-Christ-Is-Risen",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Christ Is Risen",
   "scripture" : [ {
     "gte" : 46015001,
     "lte" : 46015034
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-11-17-1-Cor-15-Christ-Is-Risen",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Christ Is Risen",
-  "type" : "Sermon"
+  "blurb" : "For Paul, Christianity stands or falls on whether Jesus is alive. But why? Only a living Jesus can truly free us from guilt in life and fear in death. And only a living Jesus makes the Christian life anything less than pitiful.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Mark demonstrates in these stories that Jesus is more powerful than nature, evil, sickness, and even death. In each case, the person or group afflicted with their malady is paralized by fear. Jesus’s response to them is his message to us, “Do not fear, only believe.”",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-4-Jesus-Is-More-Powerful",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus Is More Powerful",
   "scripture" : [ {
     "gte" : 41004035,
     "lte" : 41005043
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-11-07-Mark-4-Jesus-Is-More-Powerful",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus Is More Powerful",
-  "type" : "Sermon"
+  "blurb" : "Mark demonstrates in these stories that Jesus is more powerful than nature, evil, sickness, and even death. In each case, the person or group afflicted with their malady is paralized by fear. Jesus’s response to them is his message to us, “Do not fear, only believe.”",
+  "published" : true
 }

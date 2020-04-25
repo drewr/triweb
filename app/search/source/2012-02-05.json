@@ -1,16 +1,16 @@
 {
-  "blurb" : "Death is the fundamental human problem. It shows us the limits of our power perhaps more clearly than anything else. It calls into question everything we were meant to be and all we try to accomplish. And, from the perspective of the Bible and Hebrews in particular, death is unnatural–an impostor, a weapon in the hands of a ruthless enemy whose days are numbered. For the death and resurrection of Jesus hold out a promise, a promise that his sacrifice means the death of death itself.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-2-Death-Of-Death",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Death of Death",
   "scripture" : [ {
     "gte" : 58002005,
     "lte" : 58002009
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-02-05-Heb-2-Death-Of-Death",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Death of Death",
-  "type" : "Sermon"
+  "blurb" : "Death is the fundamental human problem. It shows us the limits of our power perhaps more clearly than anything else. It calls into question everything we were meant to be and all we try to accomplish. And, from the perspective of the Bible and Hebrews in particular, death is unnatural–an impostor, a weapon in the hands of a ruthless enemy whose days are numbered. For the death and resurrection of Jesus hold out a promise, a promise that his sacrifice means the death of death itself.",
+  "published" : true
 }

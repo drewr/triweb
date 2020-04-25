@@ -1,16 +1,16 @@
 {
-  "blurb" : "To begin his public ministry, according to the Gospel of Matthew, Jesus traveled around proclaiming the “gospel of the kingdom.” The Sermon on the Mount is the longest, most detailed account of the sorts of things Jesus was saying. What does he say the kingdom is like? In what sense is this gospel–good news? And how can we make the most of this sermon?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-4-5-Introducing-The-Sermon-Mount",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Introducing the Sermon on the Mount",
   "scripture" : [ {
     "gte" : 40004023,
     "lte" : 40005003
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-01-10-Matt-4-5-Introducing-The-Sermon-Mount",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Introducing the Sermon on the Mount",
-  "type" : "Sermon"
+  "blurb" : "To begin his public ministry, according to the Gospel of Matthew, Jesus traveled around proclaiming the “gospel of the kingdom.” The Sermon on the Mount is the longest, most detailed account of the sorts of things Jesus was saying. What does he say the kingdom is like? In what sense is this gospel–good news? And how can we make the most of this sermon?",
+  "published" : true
 }

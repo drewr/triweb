@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus’s warning is straightforward: “Beware of false prophets.” But who are these false prophets? And how can we recognize them?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-7-Beware-False-Prophets",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Beware False Prophets",
   "scripture" : [ {
     "gte" : 40007015,
     "lte" : 40007020
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-07-31-Matt-7-Beware-False-Prophets",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Beware False Prophets",
-  "type" : "Sermon"
+  "blurb" : "Jesus’s warning is straightforward: “Beware of false prophets.” But who are these false prophets? And how can we recognize them?",
+  "published" : true
 }

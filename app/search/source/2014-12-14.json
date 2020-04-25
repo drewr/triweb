@@ -1,16 +1,16 @@
 {
-  "blurb" : "The Advent season is an opportunity to reflect on why we need Jesus, on why the news of his coming is such wonderful news. John frames our need and what Jesus offers us in the images of light and darkness. We need Jesus because we are the people walking in darkness–the darkness of sin and the darkness of sorrow. And Jesus has come to us as the light no darkness can overpower.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-1-The-Light-Shines",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Light Shines",
   "scripture" : [ {
     "gte" : 43001004,
     "lte" : 43001005
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-12-14-John-1-The-Light-Shines",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Light Shines",
-  "type" : "Sermon"
+  "blurb" : "The Advent season is an opportunity to reflect on why we need Jesus, on why the news of his coming is such wonderful news. John frames our need and what Jesus offers us in the images of light and darkness. We need Jesus because we are the people walking in darkness–the darkness of sin and the darkness of sorrow. And Jesus has come to us as the light no darkness can overpower.",
+  "published" : true
 }

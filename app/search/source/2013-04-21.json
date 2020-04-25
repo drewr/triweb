@@ -1,16 +1,16 @@
 {
-  "blurb" : "God’s plan to redeem extends as far as the brokenness of the world. In the new heavens and the new earth, there will be gladness and no sorrow; life and no death; fruitfulness and no futility; peace and no hostility.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-65-New-Creation",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "New Creation",
   "scripture" : [ {
     "gte" : 23065017,
     "lte" : 23065025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-04-21-Is-65-New-Creation",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "New Creation",
-  "type" : "Sermon"
+  "blurb" : "God’s plan to redeem extends as far as the brokenness of the world. In the new heavens and the new earth, there will be gladness and no sorrow; life and no death; fruitfulness and no futility; peace and no hostility.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "With this radical rule of love Jesus sums up the ethics of the kingdom he’s been describing all along. It’s an incredibly simple rule: do for others what you wish they would do for you. But where do we get the strength to obey it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-7-The-Narrow-Gate",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Narrow Gate",
   "scripture" : [ {
     "gte" : 40007013,
     "lte" : 40007014
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-07-24-Matt-7-The-Narrow-Gate",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Narrow Gate",
-  "type" : "Sermon"
+  "blurb" : "With this radical rule of love Jesus sums up the ethics of the kingdom he’s been describing all along. It’s an incredibly simple rule: do for others what you wish they would do for you. But where do we get the strength to obey it?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "This chapter unpacks the beautiful reality that’s possible because the Servant has suffered for our sins. God’s grace can reframe your past, and God’s grace can perfectly secure your future.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-54-Gracious-Redefinition",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Gracious Redefinition",
   "scripture" : [ {
     "gte" : 23054001,
     "lte" : 23054010
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-04-07-Is-54-Gracious-Redefinition",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Gracious Redefinition",
-  "type" : "Sermon"
+  "blurb" : "This chapter unpacks the beautiful reality that’s possible because the Servant has suffered for our sins. God’s grace can reframe your past, and God’s grace can perfectly secure your future.",
+  "published" : true
 }

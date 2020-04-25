@@ -1,16 +1,16 @@
 {
-  "blurb" : "When the apostles preached about Jesus they preached him as crucified and as risen from the dead. In his letter to the Romans, Paul explains why the gospel is incomplete apart from Jesus’s resurrection. In theory, the resurrection is the foundation of our faith that God accepts us because he accepts Jesus. In practice, it means ours is a peace and a hope that should hold fast no matter our circumstances.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Romans-4-Living-Out-The-Resurrection",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Living out the Resurrection",
   "scripture" : [ {
     "gte" : 45004023,
     "lte" : 45005004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-04-24-Romans-4-Living-Out-The-Resurrection",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Living out the Resurrection",
-  "type" : "Sermon"
+  "blurb" : "When the apostles preached about Jesus they preached him as crucified and as risen from the dead. In his letter to the Romans, Paul explains why the gospel is incomplete apart from Jesus’s resurrection. In theory, the resurrection is the foundation of our faith that God accepts us because he accepts Jesus. In practice, it means ours is a peace and a hope that should hold fast no matter our circumstances.",
+  "published" : true
 }

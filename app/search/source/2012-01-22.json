@@ -1,16 +1,16 @@
 {
-  "blurb" : "What makes Jesus more trustworthy than any alternative? According to Hebrews 1, the answer to this question has a lot to do with his status as Son of God, and with the fact that he reigns forever.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-1-Jesus-Reigns",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus Reigns",
   "scripture" : [ {
     "gte" : 58001005,
     "lte" : 58001014
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-01-22-Heb-1-Jesus-Reigns",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus Reigns",
-  "type" : "Sermon"
+  "blurb" : "What makes Jesus more trustworthy than any alternative? According to Hebrews 1, the answer to this question has a lot to do with his status as Son of God, and with the fact that he reigns forever.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The life of Abraham offers one of the Bible’s best examples of what it looks like to claim the promises of God by faith. Here our author uses Abraham’s life to call us to live as exiles in this world because we live with a homesick longing for the world to come.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-11-Abraham",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Living the Faith of Abraham",
   "scripture" : [ {
     "gte" : 58011008,
     "lte" : 58011022
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-09-23-Heb-11-Abraham",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Living the Faith of Abraham",
-  "type" : "Sermon"
+  "blurb" : "The life of Abraham offers one of the Bible’s best examples of what it looks like to claim the promises of God by faith. Here our author uses Abraham’s life to call us to live as exiles in this world because we live with a homesick longing for the world to come.",
+  "published" : true
 }

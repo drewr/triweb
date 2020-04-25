@@ -1,16 +1,16 @@
 {
-  "blurb" : "All of us have a idea of what we hope to get out of our lives before we die. And all of us have a future beyond the grave promised to us by God if we trust in Jesus. The question is this: To which unrealized future does your heart belong?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-7-Singleness-Marriage-Hope",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Singleness, Marriage, and the Christian Hope",
   "scripture" : [ {
     "gte" : 46007025,
     "lte" : 46007040
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-09-08-1-Cor-7-Singleness-Marriage-Hope",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Singleness, Marriage, and the Christian Hope",
-  "type" : "Sermon"
+  "blurb" : "All of us have a idea of what we hope to get out of our lives before we die. And all of us have a future beyond the grave promised to us by God if we trust in Jesus. The question is this: To which unrealized future does your heart belong?",
+  "published" : true
 }

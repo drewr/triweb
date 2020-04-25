@@ -1,16 +1,16 @@
 {
-  "blurb" : "Isaiah is full of sweeping promises from God about his plans to redeem his people and remake the world. Many of these promises haven’t been fulfilled yet, so we wait. This text shows us how to wait in faith: we testify to what’s coming and we pray until it gets here.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-61-While-You-Wait",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "While You Wait",
   "scripture" : [ {
     "gte" : 23061010,
     "lte" : 23062007
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-05-12-Is-61-While-You-Wait",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "While You Wait",
-  "type" : "Sermon"
+  "blurb" : "Isaiah is full of sweeping promises from God about his plans to redeem his people and remake the world. Many of these promises haven’t been fulfilled yet, so we wait. This text shows us how to wait in faith: we testify to what’s coming and we pray until it gets here.",
+  "published" : true
 }

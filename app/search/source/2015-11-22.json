@@ -1,16 +1,16 @@
 {
-  "blurb" : "How does the return of Jesus help us endure the hard things of life with patience? James offers us three examples.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-5-While-You-Wait",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "While You Wait",
   "scripture" : [ {
     "gte" : 59005007,
     "lte" : 59005012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-11-22-James-5-While-You-Wait",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "While You Wait",
-  "type" : "Sermon"
+  "blurb" : "How does the return of Jesus help us endure the hard things of life with patience? James offers us three examples.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul’s prayers for his friends offer us a wonderful model for how we should pray for each other.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Eph-3-Praying-With-Paul",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Praying with Paul",
   "scripture" : [ {
     "gte" : 49003014,
     "lte" : 49003019
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-01-04-Eph-3-Praying-With-Paul",
+  "has-audio" : true,
   "speaker" : "Matt Givens",
-  "tags" : [ ],
-  "title" : "Praying with Paul",
-  "type" : "Sermon"
+  "blurb" : "Paul’s prayers for his friends offer us a wonderful model for how we should pray for each other.",
+  "published" : true
 }

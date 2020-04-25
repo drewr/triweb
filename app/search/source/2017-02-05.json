@@ -1,16 +1,16 @@
 {
-  "blurb" : "How does the knowledge of God spread throughout the world? It’s not a question we would normally ask, but it’s crucial for understanding our calling. Paul shows us we’ve got to recognize the difference between God’s responsibility and ours.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "2-Cor-2-Fragrant-Knowledge",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Fragrant Knowledge",
   "scripture" : [ {
     "gte" : 47002012,
     "lte" : 47002017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2017-02-05-2-Cor-2-Fragrant-Knowledge",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Fragrant Knowledge",
-  "type" : "Sermon"
+  "blurb" : "How does the knowledge of God spread throughout the world? It’s not a question we would normally ask, but it’s crucial for understanding our calling. Paul shows us we’ve got to recognize the difference between God’s responsibility and ours.",
+  "published" : true
 }

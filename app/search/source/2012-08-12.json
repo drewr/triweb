@@ -1,16 +1,16 @@
 {
-  "blurb" : "The truth about Jesus explained so carefully earlier in the letter is brought home here with one simple command: draw near to God. But because drawing near to God is easier spoken of than acted on, this passage helps us identify why we struggle to approach God and what we can do about it.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Draw-Near",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Draw Near",
   "scripture" : [ {
     "gte" : 58010019,
     "lte" : 58010022
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-08-12-Heb-10-Draw-Near",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Draw Near",
-  "type" : "Sermon"
+  "blurb" : "The truth about Jesus explained so carefully earlier in the letter is brought home here with one simple command: draw near to God. But because drawing near to God is easier spoken of than acted on, this passage helps us identify why we struggle to approach God and what we can do about it.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The Christian life is a team sport. We will either accomplish the goal together, or not at all.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Stay-Together",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Stay Together",
   "scripture" : [ {
     "gte" : 58010023,
     "lte" : 58010025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-12-07-Heb-10-Stay-Together",
+  "has-audio" : true,
   "speaker" : "Seth Jones",
-  "tags" : [ ],
-  "title" : "Stay Together",
-  "type" : "Sermon"
+  "blurb" : "The Christian life is a team sport. We will either accomplish the goal together, or not at all.",
+  "published" : true
 }

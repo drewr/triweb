@@ -1,16 +1,16 @@
 {
-  "blurb" : "Judges begins where Joshua left off. Israel has entered the land God promised them. They’ve been charged with removing the Canaanites still living there. But why was this so important? Why was it even ok? And then there is the driving question of the story: will Israel be faithful?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Judges-1-No-Compromise",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "No Compromise",
   "scripture" : [ {
     "gte" : 7001001,
     "lte" : 7002005
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-09-11-Judges-1-No-Compromise",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "No Compromise",
-  "type" : "Sermon"
+  "blurb" : "Judges begins where Joshua left off. Israel has entered the land God promised them. They’ve been charged with removing the Canaanites still living there. But why was this so important? Why was it even ok? And then there is the driving question of the story: will Israel be faithful?",
+  "published" : true
 }

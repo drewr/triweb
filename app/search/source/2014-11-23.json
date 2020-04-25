@@ -1,16 +1,16 @@
 {
-  "blurb" : "In his last conversation with his closest friends before his execution, Jesus promises real sorrow overcome by lasting joy. But why should we believe this joy is possible? And how can we connect with it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-16-No-One-Will-Take-Your-Joy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "No One Will Take Your Joy",
   "scripture" : [ {
     "gte" : 43016016,
     "lte" : 43016033
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-11-23-John-16-No-One-Will-Take-Your-Joy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "No One Will Take Your Joy",
-  "type" : "Sermon"
+  "blurb" : "In his last conversation with his closest friends before his execution, Jesus promises real sorrow overcome by lasting joy. But why should we believe this joy is possible? And how can we connect with it?",
+  "published" : true
 }

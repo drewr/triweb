@@ -1,16 +1,16 @@
 {
-  "blurb" : "Using an image of unmistakeable power, Isaiah shows that idols may draw you in with the promise of control, but in the end you’re left to carry their crushing weight. By contrast, the Holy One of Israel demands submissive trust in a God you can’t control, but he is powerful, wise, and loving enough to carry you.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-46-Whos-Carrying-Whom",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Who’s Carrying Whom?",
   "scripture" : [ {
     "gte" : 23046001,
     "lte" : 23046013
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-02-24-Is-46-Whos-Carrying-Whom",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Who’s Carrying Whom?",
-  "type" : "Sermon"
+  "blurb" : "Using an image of unmistakeable power, Isaiah shows that idols may draw you in with the promise of control, but in the end you’re left to carry their crushing weight. By contrast, the Holy One of Israel demands submissive trust in a God you can’t control, but he is powerful, wise, and loving enough to carry you.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "We tend to think of meekness as a weakness, but Jesus calls the meek blessed. So what does he mean by meekness, and how can we cultivate it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-5-Blessed-Are-The-Meek",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Blessed Are the Meek?",
   "scripture" : [ {
     "gte" : 40005005,
     "lte" : 40005005
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-02-07-Matt-5-5-Blessed-Are-The-Meek",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Blessed Are the Meek?",
-  "type" : "Sermon"
+  "blurb" : "We tend to think of meekness as a weakness, but Jesus calls the meek blessed. So what does he mean by meekness, and how can we cultivate it?",
+  "published" : true
 }

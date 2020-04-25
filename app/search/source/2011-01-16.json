@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this story of demon possession and exorcism, Mark returns to one of his favorite questions: what must we do to claim the saving power of Jesus? It’s a story that illustrates what we know from our own experience: unbelief comes from many sources and in many forms. But in the desperate plea of a helpless father Mark illustrates another, even more powerful truth. It’s a decision to rest on Jesus–not mathematical certainty–which constitutes the faith that leads to deliverance.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-9-Belief-Unbelief-Power",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Belief, Unbelief, and the Saving Power of Jesus",
   "scripture" : [ {
     "gte" : 41009014,
     "lte" : 41009029
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-01-16-Mark-9-Belief-Unbelief-Power",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Belief, Unbelief, and the Saving Power of Jesus",
-  "type" : "Sermon"
+  "blurb" : "In this story of demon possession and exorcism, Mark returns to one of his favorite questions: what must we do to claim the saving power of Jesus? It’s a story that illustrates what we know from our own experience: unbelief comes from many sources and in many forms. But in the desperate plea of a helpless father Mark illustrates another, even more powerful truth. It’s a decision to rest on Jesus–not mathematical certainty–which constitutes the faith that leads to deliverance.",
+  "published" : true
 }

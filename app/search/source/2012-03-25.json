@@ -1,16 +1,16 @@
 {
-  "blurb" : "This section of Hebrews introduces one of the letter’s most important subjects: the perfect priesthood of Jesus. But why do we need a priest in the first place? What did biblical priests actually do? And what makes Jesus a perfect priest?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-5-A-Priest-Forever",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "A Priest Forever",
   "scripture" : [ {
     "gte" : 58005001,
     "lte" : 58005010
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-03-25-Heb-5-A-Priest-Forever",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "A Priest Forever",
-  "type" : "Sermon"
+  "blurb" : "This section of Hebrews introduces one of the letter’s most important subjects: the perfect priesthood of Jesus. But why do we need a priest in the first place? What did biblical priests actually do? And what makes Jesus a perfect priest?",
+  "published" : true
 }

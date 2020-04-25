@@ -1,16 +1,16 @@
 {
-  "blurb" : "Hebrews 7, the most challenging section of this letter, has offered a host of minute and obscure details to show that Jesus’s priesthood will last forever. Now, at the end of the chapter, we’re told why this is such good news.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-7-Perm-Priest-Good-News",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Why a Permanent Priest Is Good News",
   "scripture" : [ {
     "gte" : 58007023,
     "lte" : 58007028
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-05-27-Heb-7-Perm-Priest-Good-News",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Why a Permanent Priest Is Good News",
-  "type" : "Sermon"
+  "blurb" : "Hebrews 7, the most challenging section of this letter, has offered a host of minute and obscure details to show that Jesus’s priesthood will last forever. Now, at the end of the chapter, we’re told why this is such good news.",
+  "published" : true
 }

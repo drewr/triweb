@@ -1,16 +1,16 @@
 {
-  "blurb" : "The next two chapters of Hebrews are all about blood. They are especially about Jesus’s blood and why his blood is more precious than any other. So why is blood so important, and what does Jesus’s blood actually accomplish?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-9-Nothing-But-The-Blood",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Nothing But the Blood",
   "scripture" : [ {
     "gte" : 58009001,
     "lte" : 58009014
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-06-24-Heb-9-Nothing-But-The-Blood",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Nothing But the Blood",
-  "type" : "Sermon"
+  "blurb" : "The next two chapters of Hebrews are all about blood. They are especially about Jesus’s blood and why his blood is more precious than any other. So why is blood so important, and what does Jesus’s blood actually accomplish?",
+  "published" : true
 }

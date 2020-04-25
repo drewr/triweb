@@ -1,16 +1,16 @@
 {
-  "blurb" : "Using Isaiah 1 as an introduction to our new series, this sermon aims to clarify the four questions Isaiah helps us answer: Who is God? Who are we? What has God promised us? And how should we respond to his Word?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-1-Gospel-According-To-Isaiah",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Gospel According to Isaiah",
   "scripture" : [ {
     "gte" : 23001001,
     "lte" : 23002005
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-01-06-Is-1-Gospel-According-To-Isaiah",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Gospel According to Isaiah",
-  "type" : "Sermon"
+  "blurb" : "Using Isaiah 1 as an introduction to our new series, this sermon aims to clarify the four questions Isaiah helps us answer: Who is God? Who are we? What has God promised us? And how should we respond to his Word?",
+  "published" : true
 }

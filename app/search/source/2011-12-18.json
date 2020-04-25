@@ -1,16 +1,16 @@
 {
-  "blurb" : "In Luke’s narrative, the angels’ celebration of Jesus’s birth hinges on the promise that his coming means peace on earth. But what did they mean by “peace?” And where is it?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Luke-2-Why-Peace",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Why Peace?",
   "scripture" : [ {
     "gte" : 42002014,
     "lte" : 42002014
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-12-18-Luke-2-Why-Peace",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Why Peace?",
-  "type" : "Sermon"
+  "blurb" : "In Luke’s narrative, the angels’ celebration of Jesus’s birth hinges on the promise that his coming means peace on earth. But what did they mean by “peace?” And where is it?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "It may be that the stories in Judges follow a familiar cycle, but there’s nothing predictable about the way God delivers his people. When he acts to save them, he makes it obvious that he’s the one who does the saving.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Judges-4-Expect-The-Unexpected",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Expect The Unexpected",
   "scripture" : [ {
     "gte" : 7004001,
     "lte" : 7005999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-10-02-Judges-4-Expect-The-Unexpected",
+  "has-audio" : true,
   "speaker" : "Matt Givens",
-  "tags" : [ ],
-  "title" : "Expect The Unexpected",
-  "type" : "Sermon"
+  "blurb" : "It may be that the stories in Judges follow a familiar cycle, but there’s nothing predictable about the way God delivers his people. When he acts to save them, he makes it obvious that he’s the one who does the saving.",
+  "published" : true
 }

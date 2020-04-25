@@ -1,16 +1,16 @@
 {
-  "blurb" : "This verse and the context it draws from help us to trust the faithfulness of God when faced with doubts of mind and soul.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Hold-On-To-Hope",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Hold on to Hope",
   "scripture" : [ {
     "gte" : 58010023,
     "lte" : 58010023
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-08-19-Heb-10-Hold-On-To-Hope",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Hold on to Hope",
-  "type" : "Sermon"
+  "blurb" : "This verse and the context it draws from help us to trust the faithfulness of God when faced with doubts of mind and soul.",
+  "published" : true
 }

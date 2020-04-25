@@ -1,16 +1,16 @@
 {
-  "blurb" : "This passage is a clear and merciless indictment of what happens to the cultures we create when we refuse to trust God to make us secure. Like Israel in Isaiah’s day, we turn each other into threats to be attacked, competitors to be deceived, and resources to be exploited. But this passage also points the way to healing. Honest confession of our own brokenness helps us empathize with the weakness of others, and confidence in God’s saving power frees us to give ourselves to others.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-59-Misplaced-Trust",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "A Culture of Misplaced Trust",
   "scripture" : [ {
     "gte" : 23059001,
     "lte" : 23059016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-03-03-Is-59-Misplaced-Trust",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "A Culture of Misplaced Trust",
-  "type" : "Sermon"
+  "blurb" : "This passage is a clear and merciless indictment of what happens to the cultures we create when we refuse to trust God to make us secure. Like Israel in Isaiah’s day, we turn each other into threats to be attacked, competitors to be deceived, and resources to be exploited. But this passage also points the way to healing. Honest confession of our own brokenness helps us empathize with the weakness of others, and confidence in God’s saving power frees us to give ourselves to others.",
+  "published" : true
 }

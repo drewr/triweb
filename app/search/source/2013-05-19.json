@@ -1,16 +1,16 @@
 {
-  "blurb" : "This final chapter in Isaiah captures the only suitable response to the message of the book: Worship. And worship that pleases God hinges on the heart posture of the worshiper. God wants worshipers who come desperate and empty handed, who tremble at his word.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-66-The-Worshipful-Life",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Worshipful Life",
   "scripture" : [ {
     "gte" : 23066001,
     "lte" : 23066002
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-05-19-Is-66-The-Worshipful-Life",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Worshipful Life",
-  "type" : "Sermon"
+  "blurb" : "This final chapter in Isaiah captures the only suitable response to the message of the book: Worship. And worship that pleases God hinges on the heart posture of the worshiper. God wants worshipers who come desperate and empty handed, who tremble at his word.",
+  "published" : true
 }

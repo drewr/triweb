@@ -1,16 +1,16 @@
 {
-  "blurb" : "With this warning Jesus raises a question that hovers over the entire Sermon on the Mount: who will enter the kingdom of heaven? His answer: it’s not just what you say that matters, but what you do. And it’s not just what you do that matters, it’s whom you know.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-7-Beware-False-Peace",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Beware False Peace",
   "scripture" : [ {
     "gte" : 40007021,
     "lte" : 40007023
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-08-07-Matt-7-Beware-False-Peace",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Beware False Peace",
-  "type" : "Sermon"
+  "blurb" : "With this warning Jesus raises a question that hovers over the entire Sermon on the Mount: who will enter the kingdom of heaven? His answer: it’s not just what you say that matters, but what you do. And it’s not just what you do that matters, it’s whom you know.",
+  "published" : true
 }

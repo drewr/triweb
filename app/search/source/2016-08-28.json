@@ -1,16 +1,16 @@
 {
-  "blurb" : "When we recognize the scale of our debt to God–the debt he has canceled through Jesus–there’s no way we can withhold forgiveness from others.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-18-Debtors-Prison",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Debtor’s Prison",
   "scripture" : [ {
     "gte" : 40018021,
     "lte" : 40018035
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-08-28-Matt-18-Debtors-Prison",
+  "has-audio" : true,
   "speaker" : "Will Acuff",
-  "tags" : [ ],
-  "title" : "Debtor’s Prison",
-  "type" : "Sermon"
+  "blurb" : "When we recognize the scale of our debt to God–the debt he has canceled through Jesus–there’s no way we can withhold forgiveness from others.",
+  "published" : true
 }

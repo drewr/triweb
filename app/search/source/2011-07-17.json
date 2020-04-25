@@ -1,16 +1,16 @@
 {
-  "blurb" : "Everyone has something at the center of life that explains how to be fulfilled in life and what values are worth pursuing. According to Paul, the choice is simple. You can build your life on Christ as the only sure source of purpose and hope. Or you can fall for something that seems plausible at first but ultimately won’t satisfy, what he labels “empty deceit.” The reason Jesus satisfies where nothing else will has everything to do with the fact that he offers something nothing else can: transformation and satisfaction.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Col-2-Jesus-Satisfies",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus Satisfies",
   "scripture" : [ {
     "gte" : 51002006,
     "lte" : 51002015
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-07-17-Col-2-Jesus-Satisfies",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus Satisfies",
-  "type" : "Sermon"
+  "blurb" : "Everyone has something at the center of life that explains how to be fulfilled in life and what values are worth pursuing. According to Paul, the choice is simple. You can build your life on Christ as the only sure source of purpose and hope. Or you can fall for something that seems plausible at first but ultimately won’t satisfy, what he labels “empty deceit.” The reason Jesus satisfies where nothing else will has everything to do with the fact that he offers something nothing else can: transformation and satisfaction.",
+  "published" : true
 }

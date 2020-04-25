@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this passage Mark tells a group of stories designed to show that Jesus came preaching the kingdom with a remarkably distinctive authority. But these stories also reveal a paradoxical truth: submission to Jesus’s loving authority sets you free.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-1-Jesus-Liberating-Authority",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus’s Liberating Authority",
   "scripture" : [ {
     "gte" : 41001016,
     "lte" : 41001045
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-09-26-Mark-1-Jesus-Liberating-Authority",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus’s Liberating Authority",
-  "type" : "Sermon"
+  "blurb" : "In this passage Mark tells a group of stories designed to show that Jesus came preaching the kingdom with a remarkably distinctive authority. But these stories also reveal a paradoxical truth: submission to Jesus’s loving authority sets you free.",
+  "published" : true
 }

@@ -111,13 +111,15 @@
     (printf "%s\n" (:blurb json))))
 
 (defn remove-slug-date [file]
-  (let [json (-> file slurp (json/decode true))]
+  (let [json (-> file slurp (json/decode true))
+        bogus-date-pat #"^\d\d\d\d-\d\d-\d\d-"]
     (if (:slug json)
-      (spit file
-            (json/encode
-             (assoc json
-               :slug (str/replace-first (:slug json) #"^\d\d\d\d-\d\d-\d\d-" ""))
-             {:pretty true}))
+      (when (re-find bogus-date-pat (:slug json))
+        (spit file
+              (json/encode
+               (assoc json
+                 :slug (str/replace-first (:slug json) bogus-date-pat ""))
+               {:pretty true})))
       (prn json))))
 
 (defn fix-slugs [dir]

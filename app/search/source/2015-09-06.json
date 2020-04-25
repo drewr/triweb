@@ -1,16 +1,16 @@
 {
-  "blurb" : "James wants to show us that genuine faith always makes a difference in how we live our lives. In other words, faith always works. In this passage he shows us why faith works, how faith works, and where faith works.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-1-Faith-That-Works",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Faith That Works",
   "scripture" : [ {
     "gte" : 59001019,
     "lte" : 59001027
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-09-06-James-1-Faith-That-Works",
+  "has-audio" : true,
   "speaker" : "Matt Givens",
-  "tags" : [ ],
-  "title" : "Faith That Works",
-  "type" : "Sermon"
+  "blurb" : "James wants to show us that genuine faith always makes a difference in how we live our lives. In other words, faith always works. In this passage he shows us why faith works, how faith works, and where faith works.",
+  "published" : true
 }

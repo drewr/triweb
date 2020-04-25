@@ -1,16 +1,16 @@
 {
-  "blurb" : "All of us possess a moral conscience, and all of us have experienced what it is to have a defiled conscience–a conscience that tells us we have failed to meet our own standards, much less God’s. This passage explains how Jesus came to purify our consciences, to redeem us from living under the dark cloud of our failure.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-9-Failure-Death-Redemption",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Failure, Death, and Redemption",
   "scripture" : [ {
     "gte" : 58009014,
     "lte" : 58009022
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-07-01-Heb-9-Failure-Death-Redemption",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Failure, Death, and Redemption",
-  "type" : "Sermon"
+  "blurb" : "All of us possess a moral conscience, and all of us have experienced what it is to have a defiled conscience–a conscience that tells us we have failed to meet our own standards, much less God’s. This passage explains how Jesus came to purify our consciences, to redeem us from living under the dark cloud of our failure.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Genuine trust in God and his promises produces a different way of life. But God isn’t interested in any good works we might offer as a kind of bargaining chip to get what we want from him. God is pleased by good works done for others as an overflow of our joyful security in him.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-58-What-God-Wants-From-Us",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What God Wants from Us",
   "scripture" : [ {
     "gte" : 23058001,
     "lte" : 23058012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-05-05-Is-58-What-God-Wants-From-Us",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "What God Wants from Us",
-  "type" : "Sermon"
+  "blurb" : "Genuine trust in God and his promises produces a different way of life. But God isn’t interested in any good works we might offer as a kind of bargaining chip to get what we want from him. God is pleased by good works done for others as an overflow of our joyful security in him.",
+  "published" : true
 }

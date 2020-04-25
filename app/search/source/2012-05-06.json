@@ -1,16 +1,16 @@
 {
-  "blurb" : "Few of us would likely claim what makes us confident in the gospel’s promises is the fact that God swore an oath. But this passage suggests that’s precisely how God intended to give us stronger hope and unshakeable confidence. So how does God’s oath make us secure?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-6-Our-Immovable-Anchor",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Our Immovable Anchor",
   "scripture" : [ {
     "gte" : 58006013,
     "lte" : 58006020
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-05-06-Heb-6-Our-Immovable-Anchor",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Our Immovable Anchor",
-  "type" : "Sermon"
+  "blurb" : "Few of us would likely claim what makes us confident in the gospel’s promises is the fact that God swore an oath. But this passage suggests that’s precisely how God intended to give us stronger hope and unshakeable confidence. So how does God’s oath make us secure?",
+  "published" : true
 }

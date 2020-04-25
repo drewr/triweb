@@ -1,16 +1,16 @@
 {
-  "blurb" : "These three stories point us to the irony we have to recognize if we want to understand Jesus and what it means to follow him: he is the death-defeating king who conquers by dying, the champion who wins by losing, the one who gains his glorious throne by embracing the shameful cross.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-11-The-Conquering-Lamb",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Conquering Lamb",
   "scripture" : [ {
     "gte" : 43011045,
     "lte" : 43012019
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-08-31-John-11-The-Conquering-Lamb",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Conquering Lamb",
-  "type" : "Sermon"
+  "blurb" : "These three stories point us to the irony we have to recognize if we want to understand Jesus and what it means to follow him: he is the death-defeating king who conquers by dying, the champion who wins by losing, the one who gains his glorious throne by embracing the shameful cross.",
+  "published" : true
 }

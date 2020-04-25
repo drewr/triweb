@@ -1,16 +1,16 @@
 {
-  "blurb" : "The story of Ehud and Eglon is not one you’d expect to find in the Bible. It’s not just that the story is violent. It’s also crude and darkly comedic. But through the unexpected details we get a picture of the God who inserts himself into the messy lives of his people to turn their mourning into laughter.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Judges-3-Dark-Comedy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Dark Comedy",
   "scripture" : [ {
     "gte" : 7003012,
     "lte" : 7003030
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-09-25-Judges-3-Dark-Comedy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Dark Comedy",
-  "type" : "Sermon"
+  "blurb" : "The story of Ehud and Eglon is not one you’d expect to find in the Bible. It’s not just that the story is violent. It’s also crude and darkly comedic. But through the unexpected details we get a picture of the God who inserts himself into the messy lives of his people to turn their mourning into laughter.",
+  "published" : true
 }

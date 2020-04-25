@@ -1,16 +1,16 @@
 {
-  "blurb" : "The primary mark of a genuine follower of Jesus is a love for others that reflects Jesus’s love for us. So what does this love look like?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-13-A-New-Commandment",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "A New Commandment",
   "scripture" : [ {
     "gte" : 43013021,
     "lte" : 43013038
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-09-28-John-13-A-New-Commandment",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "A New Commandment",
-  "type" : "Sermon"
+  "blurb" : "The primary mark of a genuine follower of Jesus is a love for others that reflects Jesus’s love for us. So what does this love look like?",
+  "published" : true
 }

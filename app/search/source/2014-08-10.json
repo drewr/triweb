@@ -1,16 +1,16 @@
 {
-  "blurb" : "Following Jesus as shepherd means he’s more than an accessory; his call demands your whole life. But the same shepherd who demands our lives also gives life to all who rest in him.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-10-The-Sovereign-Shepherd",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Sovereign Shepherd",
   "scripture" : [ {
     "gte" : 43010022,
     "lte" : 43010042
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-08-10-John-10-The-Sovereign-Shepherd",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Sovereign Shepherd",
-  "type" : "Sermon"
+  "blurb" : "Following Jesus as shepherd means he’s more than an accessory; his call demands your whole life. But the same shepherd who demands our lives also gives life to all who rest in him.",
+  "published" : true
 }

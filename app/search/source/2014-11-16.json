@@ -1,16 +1,16 @@
 {
-  "blurb" : "The Spirit helps us see ourselves for who we really are–our sin, our self-righteousness, our misjudgments about what is good–and the Spirit helps us see Jesus for the all-satisfying glory that he is.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-16-How-The-Spirit-Helps-Us",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "How the Spirit Helps Us",
   "scripture" : [ {
     "gte" : 43016005,
     "lte" : 43016015
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-11-16-John-16-How-The-Spirit-Helps-Us",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "How the Spirit Helps Us",
-  "type" : "Sermon"
+  "blurb" : "The Spirit helps us see ourselves for who we really are–our sin, our self-righteousness, our misjudgments about what is good–and the Spirit helps us see Jesus for the all-satisfying glory that he is.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The story of Ruth reminds us that the story of every life of every one of God’s children is a story of redemption. Our paths won’t be the same, or straight or easy—but with every step God is bringing us to Jesus.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Ruth-3-4-Redemption",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Redemption",
   "scripture" : [ {
     "gte" : 8003001,
     "lte" : 8004999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-12-04-Ruth-3-4-Redemption",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Redemption",
-  "type" : "Sermon"
+  "blurb" : "The story of Ruth reminds us that the story of every life of every one of God’s children is a story of redemption. Our paths won’t be the same, or straight or easy—but with every step God is bringing us to Jesus.",
+  "published" : true
 }

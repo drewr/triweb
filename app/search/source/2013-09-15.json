@@ -1,16 +1,16 @@
 {
-  "blurb" : "As Christians, we’re defined not by what we know but by who knows us–our loving God–and what we’re known for–our love for each other.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-8-Known-By-Love",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Known by Love",
   "scripture" : [ {
     "gte" : 46008001,
     "lte" : 46008013
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-09-15-1-Cor-8-Known-By-Love",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Known by Love",
-  "type" : "Sermon"
+  "blurb" : "As Christians, we’re defined not by what we know but by who knows us–our loving God–and what we’re known for–our love for each other.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "This opening passage in Proverbs is a poetic introduction to the whole book. It points us to what the proverbs are for and to the truth that is the key to understanding them.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-1-How-Proverbs-Helps-Us",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "How Proverbs Helps Us",
   "scripture" : [ {
     "gte" : 20001001,
     "lte" : 20001007
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-03-08-Proverbs-1-How-Proverbs-Helps-Us",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "How Proverbs Helps Us",
-  "type" : "Sermon"
+  "blurb" : "This opening passage in Proverbs is a poetic introduction to the whole book. It points us to what the proverbs are for and to the truth that is the key to understanding them.",
+  "published" : true
 }

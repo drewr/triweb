@@ -1,16 +1,16 @@
 {
-  "blurb" : "If Jesus represents what God has done to redeem our broken relationship with him, faith is what that healed relationship looks like in us. Hebrews 11 is one of the Bible’s most beautiful descriptions of faith, and these first verses show us what it is and why it pleases God.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-11-By-Faith",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "By Faith",
   "scripture" : [ {
     "gte" : 58011001,
     "lte" : 58011007
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-09-16-Heb-11-By-Faith",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "By Faith",
-  "type" : "Sermon"
+  "blurb" : "If Jesus represents what God has done to redeem our broken relationship with him, faith is what that healed relationship looks like in us. Hebrews 11 is one of the Bible’s most beautiful descriptions of faith, and these first verses show us what it is and why it pleases God.",
+  "published" : true
 }

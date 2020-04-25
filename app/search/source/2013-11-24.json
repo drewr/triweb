@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus does more than remove the threat of death. He promises to give us bodies that won’t die through which we’ll know joy that is endless and complete. With this promise before us, there is nothing in this life we can’t do without for the sake of his kingdom.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-15-Because-Christ-Is-Risen",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Because Christ Is Risen",
   "scripture" : [ {
     "gte" : 46015035,
     "lte" : 46015058
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-11-24-1-Cor-15-Because-Christ-Is-Risen",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Because Christ Is Risen",
-  "type" : "Sermon"
+  "blurb" : "Jesus does more than remove the threat of death. He promises to give us bodies that won’t die through which we’ll know joy that is endless and complete. With this promise before us, there is nothing in this life we can’t do without for the sake of his kingdom.",
+  "published" : true
 }

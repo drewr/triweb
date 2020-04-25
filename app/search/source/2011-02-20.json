@@ -1,16 +1,16 @@
 {
-  "blurb" : "After a parable of judgment that sets the stage for his confrontation with Israel’s religious leaders, Jesus fields challenges from each primary group of leaders: the Pharisees, the Sadducees, and the scribes. In each case, Jesus’s answers turn the tables on his challengers to expose their hypocrisy. In the end, Jesus proposes the only solution to religious hypocrisy: a love of God for God’s sake and with everything you have.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-12-Religious-Hypocrisy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Religious Hypocrisy and the Love of God",
   "scripture" : [ {
     "gte" : 41011027,
     "lte" : 41012044
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-02-20-Mark-12-Religious-Hypocrisy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Religious Hypocrisy and the Love of God",
-  "type" : "Sermon"
+  "blurb" : "After a parable of judgment that sets the stage for his confrontation with Israel’s religious leaders, Jesus fields challenges from each primary group of leaders: the Pharisees, the Sadducees, and the scribes. In each case, Jesus’s answers turn the tables on his challengers to expose their hypocrisy. In the end, Jesus proposes the only solution to religious hypocrisy: a love of God for God’s sake and with everything you have.",
+  "published" : true
 }

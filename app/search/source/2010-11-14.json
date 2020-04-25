@@ -1,16 +1,16 @@
 {
-  "blurb" : "In chapter 6 Mark illustrates how we should respond to Jesus by contrast to two more examples of unbelief. People in Jesus’s hometown were offended by his claims to authority because they’d been inoculated through overexposure. They were familiar with Jesus as brother and son and carpenter, but he seemed too familiar for them to accept his radical words or actions. Jesus’s disciples struggle with another sort of unbelief, which Mark illustrates with the stories of Jesus feeding 5000 people and Jesus walking on water. Confronted with vivid danger, the disciples respond in fear because, as Mark explains, they failed to appreciate the significance of Jesus’s miraculous provision in the past.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-6-Overexposure-Underappreciation",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Overexposure and Underappreciation",
   "scripture" : [ {
     "gte" : 41006001,
     "lte" : 41006056
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-11-14-Mark-6-Overexposure-Underappreciation",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Overexposure and Underappreciation",
-  "type" : "Sermon"
+  "blurb" : "In chapter 6 Mark illustrates how we should respond to Jesus by contrast to two more examples of unbelief. People in Jesus’s hometown were offended by his claims to authority because they’d been inoculated through overexposure. They were familiar with Jesus as brother and son and carpenter, but he seemed too familiar for them to accept his radical words or actions. Jesus’s disciples struggle with another sort of unbelief, which Mark illustrates with the stories of Jesus feeding 5000 people and Jesus walking on water. Confronted with vivid danger, the disciples respond in fear because, as Mark explains, they failed to appreciate the significance of Jesus’s miraculous provision in the past.",
+  "published" : true
 }

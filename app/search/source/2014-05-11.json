@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this dialogue with those who opposed him, having just claimed to be equal with God, Jesus points to the evidence that supports his claim. But his main focus is explaining why those who’ve seen the evidence still don’t believe in him. If we believe based on what we want, and if we want the respect and praise of other people, we’ll never believe in Jesus. But if we want the approval of God more than the approval of other people, Jesus becomes beautiful to us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-5-How-Can-You-Believe",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "How Can You Believe?",
   "scripture" : [ {
     "gte" : 43005030,
     "lte" : 43005047
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-05-11-John-5-How-Can-You-Believe",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "How Can You Believe?",
-  "type" : "Sermon"
+  "blurb" : "In this dialogue with those who opposed him, having just claimed to be equal with God, Jesus points to the evidence that supports his claim. But his main focus is explaining why those who’ve seen the evidence still don’t believe in him. If we believe based on what we want, and if we want the respect and praise of other people, we’ll never believe in Jesus. But if we want the approval of God more than the approval of other people, Jesus becomes beautiful to us.",
+  "published" : true
 }

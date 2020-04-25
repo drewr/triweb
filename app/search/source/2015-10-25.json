@@ -1,16 +1,16 @@
 {
-  "blurb" : "James says you’re either God’s friend or God’s enemy. So what is friendship with God? Who are God’s friends? And how can I pursue friendship with God?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-4-Friend-Or-Foe",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Friend or Foe?",
   "scripture" : [ {
     "gte" : 59004004,
     "lte" : 59004012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-10-25-James-4-Friend-Or-Foe",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Friend or Foe?",
-  "type" : "Sermon"
+  "blurb" : "James says you’re either God’s friend or God’s enemy. So what is friendship with God? Who are God’s friends? And how can I pursue friendship with God?",
+  "published" : true
 }

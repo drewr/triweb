@@ -1,16 +1,16 @@
 {
-  "blurb" : "Whether or not we endure in faith makes a statement about God, a statement that means life or death. We endure by fixing our hope on our true possession in Christ.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Endure",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Endure",
   "scripture" : [ {
     "gte" : 58010026,
     "lte" : 58010039
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-09-02-Heb-10-Endure",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Endure",
-  "type" : "Sermon"
+  "blurb" : "Whether or not we endure in faith makes a statement about God, a statement that means life or death. We endure by fixing our hope on our true possession in Christ.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Moses’s life gives us an important window to see faith.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-11-Navigating-A-Broken-World-By-Faith",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Navigating a Broken World by Faith",
   "scripture" : [ {
     "gte" : 58011023,
     "lte" : 58011029
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-07-20-Heb-11-Navigating-A-Broken-World-By-Faith",
+  "has-audio" : true,
   "speaker" : "David Atchison",
-  "tags" : [ ],
-  "title" : "Navigating a Broken World by Faith",
-  "type" : "Sermon"
+  "blurb" : "Moses’s life gives us an important window to see faith.",
+  "published" : true
 }

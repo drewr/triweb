@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus came to save people from their biggest problem: death.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-6-What-It-Means-To-Follow-Jesus",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What it Means to Follow Jesus",
   "scripture" : [ {
     "gte" : 43006060,
     "lte" : 43006071
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-06-08-John-6-What-It-Means-To-Follow-Jesus",
+  "has-audio" : true,
   "speaker" : "Bill Heerman",
-  "tags" : [ ],
-  "title" : "What it Means to Follow Jesus",
-  "type" : "Sermon"
+  "blurb" : "Jesus came to save people from their biggest problem: death.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "What does it look like to live our lives “to the glory of God”? We were made to glorify God by loving his gifts for God’s sake, and by loving each other in God’s strength.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-10-What-Were-Made-For",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What We’re Made For",
   "scripture" : [ {
     "gte" : 46010023,
     "lte" : 46011001
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-10-06-1-Cor-10-What-Were-Made-For",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "What We’re Made For",
-  "type" : "Sermon"
+  "blurb" : "What does it look like to live our lives “to the glory of God”? We were made to glorify God by loving his gifts for God’s sake, and by loving each other in God’s strength.",
+  "published" : true
 }

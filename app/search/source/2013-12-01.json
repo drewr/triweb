@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul’s first letter to the church in Corinth covers a full range of issues basic to human life across the centuries. It’s a letter about politics and competition, about fashion and style, about sex and money and food. And straight through every issue it’s about selfishness and the power of cross-centered love to overcome the root of evil. It’s a letter well-summarized by Paul’s final instruction: “Let all that you do be done in love.”",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-16-In-Love-Things-Love",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "In All Things Love",
   "scripture" : [ {
     "gte" : 46016001,
     "lte" : 46016024
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-12-01-1-Cor-16-In-Love-Things-Love",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "In All Things Love",
-  "type" : "Sermon"
+  "blurb" : "Paul’s first letter to the church in Corinth covers a full range of issues basic to human life across the centuries. It’s a letter about politics and competition, about fashion and style, about sex and money and food. And straight through every issue it’s about selfishness and the power of cross-centered love to overcome the root of evil. It’s a letter well-summarized by Paul’s final instruction: “Let all that you do be done in love.”",
+  "published" : true
 }

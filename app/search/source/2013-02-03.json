@@ -1,16 +1,16 @@
 {
-  "blurb" : "The Bible claims that God is love, but in trying to understand what that means we’ve got to be careful to avoid imposing our confused views of what love is onto God. The fact is that God’s love isn’t like any love in our experience, which is to say it’s holy love. In light of Isaiah 40, God’s holy love is preemptive, pardoning, and permanent.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-40-True-Love",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "True Love",
   "scripture" : [ {
     "gte" : 23040001,
     "lte" : 23040008
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-02-03-Is-40-True-Love",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "True Love",
-  "type" : "Sermon"
+  "blurb" : "The Bible claims that God is love, but in trying to understand what that means we’ve got to be careful to avoid imposing our confused views of what love is onto God. The fact is that God’s love isn’t like any love in our experience, which is to say it’s holy love. In light of Isaiah 40, God’s holy love is preemptive, pardoning, and permanent.",
+  "published" : true
 }

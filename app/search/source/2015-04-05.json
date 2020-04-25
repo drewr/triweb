@@ -1,16 +1,16 @@
 {
-  "blurb" : "The message of Ecclesiastes is as straightforward as it is depressing: everything in meaningless because everyone dies. But this message is the essential backdrop for the hope of Easter: everything is meaningful because Jesus is alive!",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "The-Wisdom-of-Ecclesiastes-and-the-Hope-of-Easter",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Wisdom of Ecclesiastes and the Hope of Easter",
   "scripture" : [ {
     "gte" : 21001001,
     "lte" : 21999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-04-05-The-Wisdom-of-Ecclesiastes-and-the-Hope-of-Easter",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Wisdom of Ecclesiastes and the Hope of Easter",
-  "type" : "Sermon"
+  "blurb" : "The message of Ecclesiastes is as straightforward as it is depressing: everything in meaningless because everyone dies. But this message is the essential backdrop for the hope of Easter: everything is meaningful because Jesus is alive!",
+  "published" : true
 }

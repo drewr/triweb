@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus claims that he is the door into the good life—a life of safety and satisfaction. He claims that everyone else offering the good life will ultimately bleed you dry, not fill you up. And he claims that he will deliver where all others fall short because he is the Good Shepherd who loves his sheep enough to die for them and who’s powerful enough to conquer death for them.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-10-The-Good-Life-And-The-Good-Shepherd",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Good Life and the Good Shepherd",
   "scripture" : [ {
     "gte" : 43010001,
     "lte" : 43010021
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-08-03-John-10-The-Good-Life-And-The-Good-Shepherd",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Good Life and the Good Shepherd",
-  "type" : "Sermon"
+  "blurb" : "Jesus claims that he is the door into the good life—a life of safety and satisfaction. He claims that everyone else offering the good life will ultimately bleed you dry, not fill you up. And he claims that he will deliver where all others fall short because he is the Good Shepherd who loves his sheep enough to die for them and who’s powerful enough to conquer death for them.",
+  "published" : true
 }

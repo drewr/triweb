@@ -1,16 +1,16 @@
 {
-  "blurb" : "Here, at the climax of the entire letter, we get two images that help us see that Jesus’s work for us is finished and how his work begins to change us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Sitting-Waiting",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Sitting and Waiting",
   "scripture" : [ {
     "gte" : 58010011,
     "lte" : 58010018
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-08-05-Heb-10-Sitting-Waiting",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Sitting and Waiting",
-  "type" : "Sermon"
+  "blurb" : "Here, at the climax of the entire letter, we get two images that help us see that Jesus’s work for us is finished and how his work begins to change us.",
+  "published" : true
 }

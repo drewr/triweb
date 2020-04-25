@@ -1,16 +1,16 @@
 {
-  "blurb" : "James finishes his letter by calling us to do for each other what he had done for his friends through his letter. He calls on every one of us to pursue everyone with the truth, because everything is on the line. We’re all responsible for helping each other bridge the gap between what is true about God and what is going on in our lives.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "James-5-Growing-Wise-Together",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Growing Wise Together",
   "scripture" : [ {
     "gte" : 59005019,
     "lte" : 59005020
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-12-06-James-5-Growing-Wise-Together",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Growing Wise Together",
-  "type" : "Sermon"
+  "blurb" : "James finishes his letter by calling us to do for each other what he had done for his friends through his letter. He calls on every one of us to pursue everyone with the truth, because everything is on the line. We’re all responsible for helping each other bridge the gap between what is true about God and what is going on in our lives.",
+  "published" : true
 }

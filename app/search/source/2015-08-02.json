@@ -1,16 +1,16 @@
 {
-  "blurb" : "When we look to wealth to make us happy or to make us secure, we’re only striving after wind. But when we trust the providence of God we can fully enjoy his gifts, and when we trust the promises of God we can hold his gifts loosely.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Ecclesiastes-What-Good-Is-Wealth",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What Good Is Wealth?",
   "scripture" : [ {
     "gte" : 21005010,
     "lte" : 21005020
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-08-02-Ecclesiastes-What-Good-Is-Wealth",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "What Good Is Wealth?",
-  "type" : "Sermon"
+  "blurb" : "When we look to wealth to make us happy or to make us secure, we’re only striving after wind. But when we trust the providence of God we can fully enjoy his gifts, and when we trust the promises of God we can hold his gifts loosely.",
+  "published" : true
 }

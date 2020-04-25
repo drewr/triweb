@@ -1,16 +1,16 @@
 {
-  "blurb" : "Mark begins to document the opposition that builds against Jesus, ultimately leading to his execution. Why did the religious leaders, who were experts of the law, fail to understand the signficance of Jesus and his kingdom? How do we avoid similar error?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-2-3-Jesus-And-Religion",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Jesus and Religion-as-Usual",
   "scripture" : [ {
     "gte" : 41002018,
     "lte" : 41003006
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-10-10-Mark-2-3-Jesus-And-Religion",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Jesus and Religion-as-Usual",
-  "type" : "Sermon"
+  "blurb" : "Mark begins to document the opposition that builds against Jesus, ultimately leading to his execution. Why did the religious leaders, who were experts of the law, fail to understand the signficance of Jesus and his kingdom? How do we avoid similar error?",
+  "published" : true
 }

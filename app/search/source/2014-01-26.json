@@ -1,16 +1,16 @@
 {
-  "blurb" : "At the heart of Christianity is the claim that God became human for us. But how can we get our minds and hearts around this claim? It’s at once abstract and too familiar, but John would have us taste the beauty of incarnation.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-1-The-Beauty-Of-Incarnation",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Beauty of Incarnation",
   "scripture" : [ {
     "gte" : 43001014,
     "lte" : 43001018
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-01-26-John-1-The-Beauty-Of-Incarnation",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Beauty of Incarnation",
-  "type" : "Sermon"
+  "blurb" : "At the heart of Christianity is the claim that God became human for us. But how can we get our minds and hearts around this claim? It’s at once abstract and too familiar, but John would have us taste the beauty of incarnation.",
+  "published" : true
 }

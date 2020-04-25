@@ -1,16 +1,16 @@
 {
-  "blurb" : "One of the ways in which God is holy, in which he is not like us, is his perfect moral righteousness. We redefine what’s right and justify doing wrong; God is perfectly committed to what’s right and unfailingly judges what’s wrong. This makes God’s holy perfection a severe threat. But his holy perfection also comes to us as a promise: God offers us Jesus’s record of perfect righteousness, and by his Spirit we come to love what’s right and hate what’s wrong as God does.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-5-Holy-In-Righteousness",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "“Holy in Righteousness”",
   "scripture" : [ {
     "gte" : 23005008,
     "lte" : 23005025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-01-27-Is-5-Holy-In-Righteousness",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "“Holy in Righteousness”",
-  "type" : "Sermon"
+  "blurb" : "One of the ways in which God is holy, in which he is not like us, is his perfect moral righteousness. We redefine what’s right and justify doing wrong; God is perfectly committed to what’s right and unfailingly judges what’s wrong. This makes God’s holy perfection a severe threat. But his holy perfection also comes to us as a promise: God offers us Jesus’s record of perfect righteousness, and by his Spirit we come to love what’s right and hate what’s wrong as God does.",
+  "published" : true
 }

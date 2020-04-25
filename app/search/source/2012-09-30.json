@@ -1,16 +1,16 @@
 {
-  "blurb" : "Moses’s life shows how faith is a matter of identity. Faith says that Jesus is more satisfying than the fleeting pleasure of sin. He’s more rewarding than the greatest treasures of this world. He’s more secure than the powers we admire and crave. And that’s because Jesus alone overcomes our inadequacy and makes us children of God.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-11-Moses-Faith-Our-Identity",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Moses, Faith, and Our Identity",
   "scripture" : [ {
     "gte" : 58011023,
     "lte" : 58011031
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-09-30-Heb-11-Moses-Faith-Our-Identity",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Moses, Faith, and Our Identity",
-  "type" : "Sermon"
+  "blurb" : "Moses’s life shows how faith is a matter of identity. Faith says that Jesus is more satisfying than the fleeting pleasure of sin. He’s more rewarding than the greatest treasures of this world. He’s more secure than the powers we admire and crave. And that’s because Jesus alone overcomes our inadequacy and makes us children of God.",
+  "published" : true
 }

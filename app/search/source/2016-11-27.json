@@ -1,16 +1,16 @@
 {
-  "blurb" : "In the darkest of times, can God pull us through, and make us better for having faced the challenge?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Ruth-1-2-From-Bad-To-Worse",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "From Bad to Worse?",
   "scripture" : [ {
     "gte" : 8001001,
     "lte" : 8002999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-11-27-Ruth-1-2-From-Bad-To-Worse",
+  "has-audio" : true,
   "speaker" : "Shaka Mitchell",
-  "tags" : [ ],
-  "title" : "From Bad to Worse?",
-  "type" : "Sermon"
+  "blurb" : "In the darkest of times, can God pull us through, and make us better for having faced the challenge?",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus offers freedom to everyone who hears his word and embraces him. But in what sense do we need freedom? How do we know Jesus can deliver? And how is it that he can set us free?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-8-True-Freedom",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "True Freedom",
   "scripture" : [ {
     "gte" : 43008031,
     "lte" : 43008059
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-07-13-John-8-True-Freedom",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "True Freedom",
-  "type" : "Sermon"
+  "blurb" : "Jesus offers freedom to everyone who hears his word and embraces him. But in what sense do we need freedom? How do we know Jesus can deliver? And how is it that he can set us free?",
+  "published" : true
 }

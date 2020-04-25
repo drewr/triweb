@@ -1,16 +1,16 @@
 {
-  "blurb" : "John wrote this book to persuade readers that Jesus is the only one who can give us the life we’re made for. And though he originally aimed at first-century Jewish readers, John’s Gospel is for all of us because all of us need to trust Jesus more than we do.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-20-Why-Believe-Introducing-Johns-Gospel",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Why Believe?: Introducing John’s Gospel",
   "scripture" : [ {
     "gte" : 43020030,
     "lte" : 43020031
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-01-12-John-20-Why-Believe-Introducing-Johns-Gospel",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Why Believe?: Introducing John’s Gospel",
-  "type" : "Sermon"
+  "blurb" : "John wrote this book to persuade readers that Jesus is the only one who can give us the life we’re made for. And though he originally aimed at first-century Jewish readers, John’s Gospel is for all of us because all of us need to trust Jesus more than we do.",
+  "published" : true
 }

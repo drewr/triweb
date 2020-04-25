@@ -1,16 +1,16 @@
 {
-  "blurb" : "Isaiah presents idolatry–worshipping and trusting what isn’t God–as one of Israel’s most consistent and most significant problems. And though the symptoms have changed from culture to culture, idolatry is a heart disease we all carry. This chapter helps us understand what idolatry is, why it’s useless, how we’re guilty of it, and how we can be saved from it.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-44-Uselessness-Of-Idolatry",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Uselessness of Idolatry",
   "scripture" : [ {
     "gte" : 23044009,
     "lte" : 23044023
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-02-17-Is-44-Uselessness-Of-Idolatry",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Uselessness of Idolatry",
-  "type" : "Sermon"
+  "blurb" : "Isaiah presents idolatry–worshipping and trusting what isn’t God–as one of Israel’s most consistent and most significant problems. And though the symptoms have changed from culture to culture, idolatry is a heart disease we all carry. This chapter helps us understand what idolatry is, why it’s useless, how we’re guilty of it, and how we can be saved from it.",
+  "published" : true
 }

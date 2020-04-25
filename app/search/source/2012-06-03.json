@@ -1,16 +1,16 @@
 {
-  "blurb" : "Hebrews is a letter full of comparisons, especially comparisons between what Jesus has accomplished and what the system of Moses was meant to provide. This passage introduces two new comparisons that are central in the chapters to come: the new tabernacle, or where Jesus intercedes for us; and the new covenant, or how Jesus intercedes for us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-8-Shadow-Reality",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Shadow and Reality",
   "scripture" : [ {
     "gte" : 58008001,
     "lte" : 58008006
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-06-03-Heb-8-Shadow-Reality",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Shadow and Reality",
-  "type" : "Sermon"
+  "blurb" : "Hebrews is a letter full of comparisons, especially comparisons between what Jesus has accomplished and what the system of Moses was meant to provide. This passage introduces two new comparisons that are central in the chapters to come: the new tabernacle, or where Jesus intercedes for us; and the new covenant, or how Jesus intercedes for us.",
+  "published" : true
 }

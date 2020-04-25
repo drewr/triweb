@@ -1,16 +1,16 @@
 {
-  "blurb" : "What do we do when the message and cultural context of the Bible seem far removed from our values and assumptions?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-11-Headship-Headcoverings-Hope",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Headship, Headcoverings, and Hope in God",
   "scripture" : [ {
     "gte" : 46011002,
     "lte" : 46011016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-10-13-1-Cor-11-Headship-Headcoverings-Hope",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Headship, Headcoverings, and Hope in God",
-  "type" : "Sermon"
+  "blurb" : "What do we do when the message and cultural context of the Bible seem far removed from our values and assumptions?",
+  "published" : true
 }

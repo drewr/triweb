@@ -1,16 +1,16 @@
 {
-  "blurb" : "Judges has shown us what sort of king we need. John’s gospel shows us God has given us exactly what we need in Jesus.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "The-King-God-Has-Given-Us",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Advent With The Judges: The King God Has Given Us",
   "scripture" : [ {
     "gte" : 7001001,
     "lte" : 7999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-12-18-The-King-God-Has-Given-Us",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Advent With The Judges: The King God Has Given Us",
-  "type" : "Sermon"
+  "blurb" : "Judges has shown us what sort of king we need. John’s gospel shows us God has given us exactly what we need in Jesus.",
+  "published" : true
 }

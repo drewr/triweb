@@ -1,16 +1,16 @@
 {
-  "blurb" : ". We should approach Jesus with the same desire.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Luke-11-Teach-Us-To-Pray",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Teach Us To Pray",
   "scripture" : [ {
     "gte" : 42011001,
     "lte" : 42011999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-08-14-Luke-11-Teach-Us-To-Pray",
+  "has-audio" : true,
   "speaker" : "David Atchison",
-  "tags" : [ ],
-  "title" : "Teach Us To Pray",
-  "type" : "Sermon"
+  "blurb" : ". We should approach Jesus with the same desire.",
+  "published" : true
 }

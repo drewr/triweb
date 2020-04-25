@@ -1,16 +1,16 @@
 {
-  "blurb" : "Still on the road towards Jerusalem, Jesus shifts the focus of his teaching on discipleship to the subject of marriage and divorce. As so often before, he explodes standard religious convention. Jesus answers a question from the Pharisees about divorce with an explanation of God’s original design for marriage. Marriage viewed from the perspective of creation, in the eyes of God, is an unbreakable bond. But how do we square Jesus’s marriage ideal with our experience in a world deeply marred by sin?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-10-Marriage-Design-Reality",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Marriage by Design, Marriage in Reality",
   "scripture" : [ {
     "gte" : 41010001,
     "lte" : 41010012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-01-30-Mark-10-Marriage-Design-Reality",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Marriage by Design, Marriage in Reality",
-  "type" : "Sermon"
+  "blurb" : "Still on the road towards Jerusalem, Jesus shifts the focus of his teaching on discipleship to the subject of marriage and divorce. As so often before, he explodes standard religious convention. Jesus answers a question from the Pharisees about divorce with an explanation of God’s original design for marriage. Marriage viewed from the perspective of creation, in the eyes of God, is an unbreakable bond. But how do we square Jesus’s marriage ideal with our experience in a world deeply marred by sin?",
+  "published" : true
 }

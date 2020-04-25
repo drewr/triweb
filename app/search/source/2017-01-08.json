@@ -1,16 +1,16 @@
 {
-  "blurb" : "Why do we need this ancient letter? Here are at least three reasons.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "2-Cor-Intro-Authentic-Christianity",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Authentic Christianity",
   "scripture" : [ {
     "gte" : 47001001,
     "lte" : 47999999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2017-01-08-2-Cor-Intro-Authentic-Christianity",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Authentic Christianity",
-  "type" : "Sermon"
+  "blurb" : "Why do we need this ancient letter? Here are at least three reasons.",
+  "published" : true
 }

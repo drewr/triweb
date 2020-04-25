@@ -1,16 +1,16 @@
 {
-  "blurb" : "Just after Jesus has told his disciples that he must suffer and die, and that following him means they will suffer too, Jesus reinforces their confidence in him with a glimpse of his glory, a mysterious event called the transfiguration. In this story and in Jesus’s discussion with his disciples about this event, Mark helps us understand a central Christian paradox: as Son of God Jesus is undeniably glorious, but his glory as Messiah comes through a death of unimaginable shame.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-9-Glory-Shame-Paradox",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Glory, Shame, and the Christian Paradox",
   "scripture" : [ {
     "gte" : 41009001,
     "lte" : 41009013
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-01-09-Mark-9-Glory-Shame-Paradox",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Glory, Shame, and the Christian Paradox",
-  "type" : "Sermon"
+  "blurb" : "Just after Jesus has told his disciples that he must suffer and die, and that following him means they will suffer too, Jesus reinforces their confidence in him with a glimpse of his glory, a mysterious event called the transfiguration. In this story and in Jesus’s discussion with his disciples about this event, Mark helps us understand a central Christian paradox: as Son of God Jesus is undeniably glorious, but his glory as Messiah comes through a death of unimaginable shame.",
+  "published" : true
 }

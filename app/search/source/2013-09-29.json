@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul points to the example of Israel to show that receiving great blessing from God doesn’t mean you won’t crave something more and fall into idolatry. Because comfort in Christian trappings isn’t the same as faith in Christ, be careful what you crave.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-10-Careful-What-You-Crave",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Careful What You Crave",
   "scripture" : [ {
     "gte" : 46010001,
     "lte" : 46010022
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-09-29-1-Cor-10-Careful-What-You-Crave",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Careful What You Crave",
-  "type" : "Sermon"
+  "blurb" : "Paul points to the example of Israel to show that receiving great blessing from God doesn’t mean you won’t crave something more and fall into idolatry. Because comfort in Christian trappings isn’t the same as faith in Christ, be careful what you crave.",
+  "published" : true
 }

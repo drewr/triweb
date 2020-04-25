@@ -1,16 +1,16 @@
 {
-  "blurb" : "The story of Genesis–a book of beginnings–opens with a poem that answers questions as old as time: Where did we come from? Why is there something rather than nothing? And who is in charge?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Gen-1-In-The-Beginning",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "In the Beginning",
   "scripture" : [ {
     "gte" : 1001001,
     "lte" : 1001027
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-04-03-Gen-1-In-The-Beginning",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "In the Beginning",
-  "type" : "Sermon"
+  "blurb" : "The story of Genesis–a book of beginnings–opens with a poem that answers questions as old as time: Where did we come from? Why is there something rather than nothing? And who is in charge?",
+  "published" : true
 }

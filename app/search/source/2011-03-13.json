@@ -1,16 +1,16 @@
 {
-  "blurb" : "must Jesus die? Mark’s telling of Jesus’s trial and crucifixion removes a couple possible explanations. Jesus didn’t die because he was guilty: the trial of Jesus shows no one found any legitimate legal reason to kill him. And Jesus didn’t die because he was powerless: Mark’s readers know Jesus is innocent and has power to overcome his captors, but he doesn’t defend himself. So why then? Jesus died to establish a kingdom you could live in. Mark’s chief irony and his central message is that Jesus comes to power and invites us into his kingdom through his death.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-15-Why-Did-Jesus-Die",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Why Did Jesus Die?",
   "scripture" : [ {
     "gte" : 41014053,
     "lte" : 41014065
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-03-13-Mark-15-Why-Did-Jesus-Die",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Why Did Jesus Die?",
-  "type" : "Sermon"
+  "blurb" : "must Jesus die? Mark’s telling of Jesus’s trial and crucifixion removes a couple possible explanations. Jesus didn’t die because he was guilty: the trial of Jesus shows no one found any legitimate legal reason to kill him. And Jesus didn’t die because he was powerless: Mark’s readers know Jesus is innocent and has power to overcome his captors, but he doesn’t defend himself. So why then? Jesus died to establish a kingdom you could live in. Mark’s chief irony and his central message is that Jesus comes to power and invites us into his kingdom through his death.",
+  "published" : true
 }

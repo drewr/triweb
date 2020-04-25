@@ -1,16 +1,16 @@
 {
-  "blurb" : "The story of Ahaz illustrates Isaiah’s perspective on what’s wrong with Israel and with us. Then and now, everything rides on a single question: whom will you trust?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-7-Whom-Will-You-Trust",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Whom Will You Trust?",
   "scripture" : [ {
     "gte" : 23007001,
     "lte" : 23007017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-02-10-Is-7-Whom-Will-You-Trust",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Whom Will You Trust?",
-  "type" : "Sermon"
+  "blurb" : "The story of Ahaz illustrates Isaiah’s perspective on what’s wrong with Israel and with us. Then and now, everything rides on a single question: whom will you trust?",
+  "published" : true
 }

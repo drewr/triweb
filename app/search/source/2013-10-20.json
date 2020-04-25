@@ -1,16 +1,16 @@
 {
-  "blurb" : "Confronting self-centered divisiveness at Corinth, Paul helps us understand what we do in the Lord’s Supper and what the Lord’s Supper does in us.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-11-Do-This-Until-He-Comes",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Do This…Until He Comes",
   "scripture" : [ {
     "gte" : 46011017,
     "lte" : 46011034
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-10-20-1-Cor-11-Do-This-Until-He-Comes",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Do This…Until He Comes",
-  "type" : "Sermon"
+  "blurb" : "Confronting self-centered divisiveness at Corinth, Paul helps us understand what we do in the Lord’s Supper and what the Lord’s Supper does in us.",
+  "published" : true
 }

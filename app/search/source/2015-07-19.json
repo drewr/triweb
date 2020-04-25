@@ -1,16 +1,16 @@
 {
-  "blurb" : "Ecclesiastes catalogs the meaningless of life “under the sun” —the world as it is if there is nothing and no one that lasts forever. The author takes up his first example with a question: what good is all of our work? The answer? It all depends on our perspective. Under the sun, our work is a dead end. But in the Lord, our work is an opportunity.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Ecclesiastes-What-Good-Is-Work",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What Good Is Work?",
   "scripture" : [ {
     "gte" : 21001001,
     "lte" : 21001011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-07-19-Ecclesiastes-What-Good-Is-Work",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "What Good Is Work?",
-  "type" : "Sermon"
+  "blurb" : "Ecclesiastes catalogs the meaningless of life “under the sun” —the world as it is if there is nothing and no one that lasts forever. The author takes up his first example with a question: what good is all of our work? The answer? It all depends on our perspective. Under the sun, our work is a dead end. But in the Lord, our work is an opportunity.",
+  "published" : true
 }

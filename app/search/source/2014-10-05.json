@@ -1,16 +1,16 @@
 {
-  "blurb" : "Jesus promises his followers a place of rest and belonging that only he can provide. Connecting with that promise is the key to lasting peace now.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-14-The-Way-The-Truth-The-Life",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Way, the Truth, the Life",
   "scripture" : [ {
     "gte" : 43014001,
     "lte" : 43014011
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-10-05-John-14-The-Way-The-Truth-The-Life",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Way, the Truth, the Life",
-  "type" : "Sermon"
+  "blurb" : "Jesus promises his followers a place of rest and belonging that only he can provide. Connecting with that promise is the key to lasting peace now.",
+  "published" : true
 }

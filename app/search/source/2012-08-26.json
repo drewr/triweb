@@ -1,16 +1,16 @@
 {
-  "blurb" : "Christian community is the key to holding on to faith and to living for the return of Jesus. This passage helps clarify what Christian community is and how it works.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Embrace-Christian-Community",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Embrace Christian Community",
   "scripture" : [ {
     "gte" : 58010024,
     "lte" : 58010025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-08-26-Heb-10-Embrace-Christian-Community",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Embrace Christian Community",
-  "type" : "Sermon"
+  "blurb" : "Christian community is the key to holding on to faith and to living for the return of Jesus. This passage helps clarify what Christian community is and how it works.",
+  "published" : true
 }

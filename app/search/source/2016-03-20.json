@@ -1,16 +1,16 @@
 {
-  "blurb" : "In the Beatitudes Jesus described the character of those who follow him. Now he tells us why our character matters. When we’re with Jesus, we’re called to be different, called to be useful, and ultimately called to glorify God.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-Salt-Light-Christian-Calling",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Salt, Light, and Christian Calling",
   "scripture" : [ {
     "gte" : 40005013,
     "lte" : 40005016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-03-20-Matt-5-Salt-Light-Christian-Calling",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Salt, Light, and Christian Calling",
-  "type" : "Sermon"
+  "blurb" : "In the Beatitudes Jesus described the character of those who follow him. Now he tells us why our character matters. When we’re with Jesus, we’re called to be different, called to be useful, and ultimately called to glorify God.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "The story of Jephthah is a dark one. It is a story of deliverance like the others, but the focus is not on his courage or even God’s power. The focus is Jephthah’s tragic misunderstanding of God’s love— and it shows us our only hope for a peaceful, life-giving relationship with God is God’s free, undeserved, gracious love for us in Jesus.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Judges-10-11-Holy-Love",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Holy Love",
   "scripture" : [ {
     "gte" : 7010006,
     "lte" : 7011040
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-10-23-Judges-10-11-Holy-Love",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Holy Love",
-  "type" : "Sermon"
+  "blurb" : "The story of Jephthah is a dark one. It is a story of deliverance like the others, but the focus is not on his courage or even God’s power. The focus is Jephthah’s tragic misunderstanding of God’s love— and it shows us our only hope for a peaceful, life-giving relationship with God is God’s free, undeserved, gracious love for us in Jesus.",
+  "published" : true
 }

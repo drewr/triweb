@@ -1,16 +1,16 @@
 {
-  "blurb" : "Chapter 11 marks Jesus’s arrival at Jersalem, an event laced through with prophecy fulfillment. Here, by an “enacted parable” and by a dramatic confrontation in the Temple, Jesus shows more of what he’s come to do. As King, he’s come to purge and to restore.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-11-King-Has-Come",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The King Has Come",
   "scripture" : [ {
     "gte" : 41011001,
     "lte" : 41011025
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-02-13-Mark-11-King-Has-Come",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The King Has Come",
-  "type" : "Sermon"
+  "blurb" : "Chapter 11 marks Jesus’s arrival at Jersalem, an event laced through with prophecy fulfillment. Here, by an “enacted parable” and by a dramatic confrontation in the Temple, Jesus shows more of what he’s come to do. As King, he’s come to purge and to restore.",
+  "published" : true
 }

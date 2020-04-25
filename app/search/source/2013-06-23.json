@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul calls the message of the cross foolishness, and there’s no question that’s how it’s always seemed to the powers that be. But what did Paul mean by this description? And why would God choose this foolishness?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-1-The-Foolishness-And-Glory-Of-God",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Foolishness and Glory of God",
   "scripture" : [ {
     "gte" : 46001018,
     "lte" : 46001031
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-06-23-1-Cor-1-The-Foolishness-And-Glory-Of-God",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Foolishness and Glory of God",
-  "type" : "Sermon"
+  "blurb" : "Paul calls the message of the cross foolishness, and there’s no question that’s how it’s always seemed to the powers that be. But what did Paul mean by this description? And why would God choose this foolishness?",
+  "published" : true
 }

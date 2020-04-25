@@ -1,16 +1,16 @@
 {
-  "blurb" : "God’s promised redeemer, both king and servant, triumphs through suffering. That’s the unexpected message of this famous passage, which explains for us both why he had to suffer and why his suffering is such good news for us. His suffering is substitutionary, voluntary, and obedient.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-53-The-Royal-Servant-Suffers",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Royal Servant Suffers",
   "scripture" : [ {
     "gte" : 23052013,
     "lte" : 23053012
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-03-24-Is-53-The-Royal-Servant-Suffers",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Royal Servant Suffers",
-  "type" : "Sermon"
+  "blurb" : "God’s promised redeemer, both king and servant, triumphs through suffering. That’s the unexpected message of this famous passage, which explains for us both why he had to suffer and why his suffering is such good news for us. His suffering is substitutionary, voluntary, and obedient.",
+  "published" : true
 }

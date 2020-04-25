@@ -1,16 +1,16 @@
 {
-  "blurb" : "Some of us need to be told that it’s possible to be satisfied. Some of us need a reminder that we’re more hungry than we may realize. All of us need the challenge and the comfort in Jesus’s promise that satisfaction comes to those who hunger and thirst for righteousness. So what is righteousness? And what are you hungry for?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-6-Hungry",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Hungry?",
   "scripture" : [ {
     "gte" : 40005006,
     "lte" : 40005006
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-02-14-Matt-5-6-Hungry",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Hungry?",
-  "type" : "Sermon"
+  "blurb" : "Some of us need to be told that it’s possible to be satisfied. Some of us need a reminder that we’re more hungry than we may realize. All of us need the challenge and the comfort in Jesus’s promise that satisfaction comes to those who hunger and thirst for righteousness. So what is righteousness? And what are you hungry for?",
+  "published" : true
 }

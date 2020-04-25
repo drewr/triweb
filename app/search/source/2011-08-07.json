@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this text Paul drives the implications of the gospel even deeper into real life, into those relationships where our selfishness and idolatry are most likely to flourish. He calls us to gospel-centered relationships in marriage, in the family, and in the workplace.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Col-3-Gospel-Centered-Relationships",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Gospel-Centered Relationships",
   "scripture" : [ {
     "gte" : 51003018,
     "lte" : 51004001
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-08-07-Col-3-Gospel-Centered-Relationships",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Gospel-Centered Relationships",
-  "type" : "Sermon"
+  "blurb" : "In this text Paul drives the implications of the gospel even deeper into real life, into those relationships where our selfishness and idolatry are most likely to flourish. He calls us to gospel-centered relationships in marriage, in the family, and in the workplace.",
+  "published" : true
 }

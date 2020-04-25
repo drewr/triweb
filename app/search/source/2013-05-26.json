@@ -1,16 +1,16 @@
 {
-  "blurb" : "When we place God at the center of our lives, we will experience a deep happiness that is not dependent on our circumstances. By understanding the psalmist’s metaphor–a tree planted by streams of water–we hope to gain a deeper knowledge of who God is and what it looks like to love him most.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Ps-1-What-Do-You-Love",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "What Do You Love?",
   "scripture" : [ {
     "gte" : 19001001,
     "lte" : 19001999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-05-26-Ps-1-What-Do-You-Love",
+  "has-audio" : true,
   "speaker" : "Bill Heerman",
-  "tags" : [ ],
-  "title" : "What Do You Love?",
-  "type" : "Sermon"
+  "blurb" : "When we place God at the center of our lives, we will experience a deep happiness that is not dependent on our circumstances. By understanding the psalmist’s metaphor–a tree planted by streams of water–we hope to gain a deeper knowledge of who God is and what it looks like to love him most.",
+  "published" : true
 }

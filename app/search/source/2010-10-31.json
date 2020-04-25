@@ -1,16 +1,16 @@
 {
-  "blurb" : "In this batch of parables Jesus explains what the kingdom is like by analogy to familiar images, all of which aim to show why the kingdom doesn’t look like most expected. The kingdom is like a lamp which, though hidden initially, is ultimately brought in to be revealed. It’s like a seed that grows even though the farmer merely goes to sleep and wakes up again; in other words, kingdom growth is inevitable because God alone makes it grow. And the kingdom is like a mustard seed, small in its beginning but unmatched in its end. If this is what the kingdom is like, how do we respond?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mark-4-The-Kingdom-Is-Like",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Kingdom Is Like…",
   "scripture" : [ {
     "gte" : 41004021,
     "lte" : 41004034
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2010-10-31-Mark-4-The-Kingdom-Is-Like",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Kingdom Is Like…",
-  "type" : "Sermon"
+  "blurb" : "In this batch of parables Jesus explains what the kingdom is like by analogy to familiar images, all of which aim to show why the kingdom doesn’t look like most expected. The kingdom is like a lamp which, though hidden initially, is ultimately brought in to be revealed. It’s like a seed that grows even though the farmer merely goes to sleep and wakes up again; in other words, kingdom growth is inevitable because God alone makes it grow. And the kingdom is like a mustard seed, small in its beginning but unmatched in its end. If this is what the kingdom is like, how do we respond?",
+  "published" : true
 }

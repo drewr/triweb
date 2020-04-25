@@ -1,16 +1,16 @@
 {
-  "blurb" : "Proverbs is about the stuff of life, so it makes sense that Proverbs talks about sex. A lot, in fact. What does it look like to fear the Lord in our sex lives? According to Proverbs, wise sex is bounded sex, and wise sex is better sex.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Proverbs-5-7-Good-Sex-Wise-Sex",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Good Sex Is Wise Sex",
   "scripture" : [ {
     "gte" : 20005001,
     "lte" : 20007999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-04-26-Proverbs-5-7-Good-Sex-Wise-Sex",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Good Sex Is Wise Sex",
-  "type" : "Sermon"
+  "blurb" : "Proverbs is about the stuff of life, so it makes sense that Proverbs talks about sex. A lot, in fact. What does it look like to fear the Lord in our sex lives? According to Proverbs, wise sex is bounded sex, and wise sex is better sex.",
+  "published" : true
 }

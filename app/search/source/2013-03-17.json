@@ -1,16 +1,16 @@
 {
-  "blurb" : "To his emphasis on the coming King, Isaiah adds an unexpected description of the one who will come to save God’s people and bring justice to the nations. The conquering King is also the Servant; he is humble, gentle, and longsuffering.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Is-42-The-Servant",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Servant",
   "scripture" : [ {
     "gte" : 23042001,
     "lte" : 23042004
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-03-17-Is-42-The-Servant",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Servant",
-  "type" : "Sermon"
+  "blurb" : "To his emphasis on the coming King, Isaiah adds an unexpected description of the one who will come to save God’s people and bring justice to the nations. The conquering King is also the Servant; he is humble, gentle, and longsuffering.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "With this Beatitude Jesus shifts focus to how the citizens of his kingdom treat others. Blessed are the merciful. So what does Jesus mean by mercy, and what does it take to be merciful?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Matt-5-7-Have-Mercy",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Have Mercy",
   "scripture" : [ {
     "gte" : 40005007,
     "lte" : 40005007
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2016-02-21-Matt-5-7-Have-Mercy",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Have Mercy",
-  "type" : "Sermon"
+  "blurb" : "With this Beatitude Jesus shifts focus to how the citizens of his kingdom treat others. Blessed are the merciful. So what does Jesus mean by mercy, and what does it take to be merciful?",
+  "published" : true
 }

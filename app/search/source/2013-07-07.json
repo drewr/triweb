@@ -1,16 +1,16 @@
 {
-  "blurb" : "Still pushing back against self-centered divisiveness in the church, Paul insists there’s only one distinction that really matters: those who love the cross of Jesus and those who reject it. And it’s only by God’s Spirit that any of us come to understand and to love that cross, to see the wisdom of God.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-2-Natural-Or-Spiritual",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Natural or Spiritual?",
   "scripture" : [ {
     "gte" : 46002006,
     "lte" : 46002016
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-07-07-1-Cor-2-Natural-Or-Spiritual",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Natural or Spiritual?",
-  "type" : "Sermon"
+  "blurb" : "Still pushing back against self-centered divisiveness in the church, Paul insists there’s only one distinction that really matters: those who love the cross of Jesus and those who reject it. And it’s only by God’s Spirit that any of us come to understand and to love that cross, to see the wisdom of God.",
+  "published" : true
 }

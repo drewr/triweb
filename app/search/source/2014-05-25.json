@@ -1,16 +1,16 @@
 {
-  "blurb" : "The difference between life and death hinges on the difference between the work God wants from us and the work God does for us. According to Jesus, the work God requires of us is to believe on him. But it is God’s work to make us satisfied and to make us secure.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-6-The-Work-Of-God",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "The Work of God",
   "scripture" : [ {
     "gte" : 43006016,
     "lte" : 43006040
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-05-25-John-6-The-Work-Of-God",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "The Work of God",
-  "type" : "Sermon"
+  "blurb" : "The difference between life and death hinges on the difference between the work God wants from us and the work God does for us. According to Jesus, the work God requires of us is to believe on him. But it is God’s work to make us satisfied and to make us secure.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "Paul uses his own life to call his friends to a humility rooted in the promises of the gospel. When we embrace God’s approval of us through Jesus, our security isn’t tied to what others think of us or what we think of ourselves. And when we taste the sweetness of what’s ours in Jesus, we’re set free from the restless pursuit of what we think we need or deserve.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "1-Cor-4-Gospel-Humility",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Gospel Humility: Be Like Paul",
   "scripture" : [ {
     "gte" : 46004001,
     "lte" : 46004021
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2013-08-04-1-Cor-4-Gospel-Humility",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Gospel Humility: Be Like Paul",
-  "type" : "Sermon"
+  "blurb" : "Paul uses his own life to call his friends to a humility rooted in the promises of the gospel. When we embrace God’s approval of us through Jesus, our security isn’t tied to what others think of us or what we think of ourselves. And when we taste the sweetness of what’s ours in Jesus, we’re set free from the restless pursuit of what we think we need or deserve.",
+  "published" : true
 }

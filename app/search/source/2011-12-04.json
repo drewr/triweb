@@ -1,8 +1,10 @@
 {
-  "blurb" : "Luke begins his story of Jesus’s life not with Jesus but with the announcement and birth of another character, John the Baptist. Why was he so important? The answer has everything to do with an ancient story, a story left off by the Minor Prophets and picked up here by Luke.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Mal-3-4-Why-John-the-Baptist",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Why John the Baptist?",
   "scripture" : [ {
     "gte" : 39003001,
     "lte" : 39004999
@@ -10,10 +12,8 @@
     "gte" : 42001001,
     "lte" : 42001999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-12-04-Mal-3-4-Why-John-the-Baptist",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Why John the Baptist?",
-  "type" : "Sermon"
+  "blurb" : "Luke begins his story of Jesus’s life not with Jesus but with the announcement and birth of another character, John the Baptist. Why was he so important? The answer has everything to do with an ancient story, a story left off by the Minor Prophets and picked up here by Luke.",
+  "published" : true
 }

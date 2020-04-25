@@ -1,16 +1,16 @@
 {
-  "blurb" : "If we want to understand the full significance of Jesus and what he came to do for us, we have to look squarely at the awful reality of death. It’s in the context of this most basic human problem that the glory of Jesus shines most brightly.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-11-Death-Resurrection-Glory-Jesus",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Death, Resurrection, and the Glory of Jesus",
   "scripture" : [ {
     "gte" : 43011001,
     "lte" : 43011044
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-08-17-John-11-Death-Resurrection-Glory-Jesus",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Death, Resurrection, and the Glory of Jesus",
-  "type" : "Sermon"
+  "blurb" : "If we want to understand the full significance of Jesus and what he came to do for us, we have to look squarely at the awful reality of death. It’s in the context of this most basic human problem that the glory of Jesus shines most brightly.",
+  "published" : true
 }

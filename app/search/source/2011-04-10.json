@@ -1,16 +1,16 @@
 {
-  "blurb" : "The conclusion to Genesis 1 claims that humans are unique among God’s creatures because they’re made in the image of God. That was a counter-cultural claim when first written and, in some ways, remains so today. But unique how? This text suggests the image of God gives us unique dignity, unique responsibility, and unique accountability.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Gen-1-Made-in-Gods-Image",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Made in God’s Image",
   "scripture" : [ {
     "gte" : 1001026,
     "lte" : 1001031
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2011-04-10-Gen-1-Made-in-Gods-Image",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Made in God’s Image",
-  "type" : "Sermon"
+  "blurb" : "The conclusion to Genesis 1 claims that humans are unique among God’s creatures because they’re made in the image of God. That was a counter-cultural claim when first written and, in some ways, remains so today. But unique how? This text suggests the image of God gives us unique dignity, unique responsibility, and unique accountability.",
+  "published" : true
 }

@@ -1,16 +1,16 @@
 {
-  "blurb" : "How can we bring the light of Christmas into the darkness of our lives? Psalm 43, read on this side of the coming of Christ, shows us two simple steps. Talk with God about the darkness. And talk to your soul about Jesus.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Psalm-43-Light-And-Truth",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Light and Truth",
   "scripture" : [ {
     "gte" : 19043001,
     "lte" : 19043999
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2015-12-20-Psalm-43-Light-And-Truth",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Light and Truth",
-  "type" : "Sermon"
+  "blurb" : "How can we bring the light of Christmas into the darkness of our lives? Psalm 43, read on this side of the coming of Christ, shows us two simple steps. Talk with God about the darkness. And talk to your soul about Jesus.",
+  "published" : true
 }

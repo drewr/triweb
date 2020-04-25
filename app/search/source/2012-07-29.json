@@ -1,16 +1,16 @@
 {
-  "blurb" : "We know from human relationships how disruptive it is to have displeased the other person and to know we’ve been displeasing. Israel’s relationship with God suffered from this sense that God wasn’t fully pleased with his people, and a major point of their sacrificial system was to remind them of this problem. But Jesus came to perfectly please God, to do his will once and for all, and because of Jesus we can please God too.",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "Heb-10-Pleasing-God",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Pleasing God",
   "scripture" : [ {
     "gte" : 58010001,
     "lte" : 58010010
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2012-07-29-Heb-10-Pleasing-God",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Pleasing God",
-  "type" : "Sermon"
+  "blurb" : "We know from human relationships how disruptive it is to have displeased the other person and to know we’ve been displeasing. Israel’s relationship with God suffered from this sense that God wasn’t fully pleased with his people, and a major point of their sacrificial system was to remind them of this problem. But Jesus came to perfectly please God, to do his will once and for all, and because of Jesus we can please God too.",
+  "published" : true
 }

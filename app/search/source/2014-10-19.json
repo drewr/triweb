@@ -1,16 +1,16 @@
 {
-  "blurb" : "When it comes to growth as a Christian, Jesus leaves no middle ground. Those who abide in him bear fruit, and those who don’t abide in him wither and die. It’s either/or. So what does it mean to abide in him? And what sort of fruit comes from those who do?",
-  "has-audio" : true,
+  "tags" : [ ],
+  "slug" : "John-15-Abide-In-Me",
+  "series" : "FIX_SERIES",
   "has-audio-error" : false,
-  "published" : true,
+  "type" : "Sermon",
+  "title" : "Abide in Me",
   "scripture" : [ {
     "gte" : 43015001,
     "lte" : 43015017
   } ],
-  "series" : "FIX_SERIES",
-  "slug" : "2014-10-19-John-15-Abide-In-Me",
+  "has-audio" : true,
   "speaker" : "Matt McCullough",
-  "tags" : [ ],
-  "title" : "Abide in Me",
-  "type" : "Sermon"
+  "blurb" : "When it comes to growth as a Christian, Jesus leaves no middle ground. Those who abide in him bear fruit, and those who don’t abide in him wither and die. It’s either/or. So what does it mean to abide in him? And what sort of fruit comes from those who do?",
+  "published" : true
 }
