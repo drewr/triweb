@@ -269,9 +269,9 @@ http://creativecommons.org/licensenc-nd/3.0/us/" (time/current-year)))
 
 (defn all-entries-as-xml [conn idx]
   (->> (es/all conn idx ["Sermon"])
+       (filter :has-audio)
        (map media-to-entry)
-       (map edn-to-xml)
-       first))
+       (map edn-to-xml)))
 
 (defn podcast-str [conn idx number]
   (xml/emit-str
@@ -279,4 +279,6 @@ http://creativecommons.org/licensenc-nd/3.0/us/" (time/current-year)))
      (number? number)
      (podcast-xml (latest-entries-as-xml conn idx number))
      (= number :all)
-     (podcast-xml (all-entries-as-xml conn idx number)))))
+     (podcast-xml (all-entries-as-xml conn idx))
+     :else
+     (prn :nope))))
