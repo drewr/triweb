@@ -269,7 +269,9 @@ http://creativecommons.org/licensenc-nd/3.0/us/" (time/current-year)))
 
 (defn all-entries-as-xml [conn idx]
   (->> (es/all conn idx ["Sermon"])
-       (filter :has-audio)
+       (filter #(cond
+                  (contains? % :has-audio) (:has-audio %)
+                  :else true))
        (map media-to-entry)
        (map edn-to-xml)))
 

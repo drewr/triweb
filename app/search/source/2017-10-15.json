@@ -2,6 +2,7 @@
   "series": "Experiencing God In The Psalms",
   "speaker": "Matt McCullough",
   "title": "Bless The Lord",
+  "slug": "Psalm-103-Bless-The-Lord",
   "scripture": [
     {
       "gte": 19103001,
@@ -9,5 +10,6 @@
     }
   ],
   "problem": "E_NO_AUDIO",
+  "has-audio": false,
   "type": "Sermon"
 }
