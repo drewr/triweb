@@ -77,3 +77,52 @@ spec:
         persistentVolumeClaim:
           claimName: es-data-claim
 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: triweb-media
+  name: triweb-media
+  namespace: default
+spec:
+  progressDeadlineSeconds: 60
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: triweb-media
+  strategy:
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: triweb-media
+    spec:
+      containers:
+      - env:
+        - name: ES_URL
+          value: http://elasticsearch:9200
+        - name: ES_INDEX
+          value: triweb-media
+        image: gcr.io/trinitynashville-188115/media:20200505114824-f125631
+        imagePullPolicy: Always
+        name: triweb-media
+        ports:
+        - containerPort: 9000
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 250m
+            memory: 400Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
